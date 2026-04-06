@@ -1,0 +1,44 @@
+{
+  "id": "trae",
+  "name": "Trae",
+  "company": "ByteDance",
+  "category": "AI IDE",
+  "tags": ["closed", "free"],
+  "oneLiner": "ByteDance 的完全免費 AI IDE。無限使用 DeepSeek R1 和 Claude，Builder Mode 可用自然語言一鍵生成完整專案。",
+  "overview": "Trae 是字節跳動（ByteDance）開發的 AI 整合開發環境，基於 VS Code，核心賣點是**完全免費**——無限存取 DeepSeek R1、Claude 3.7 Sonnet、GPT-4o 等大型語言模型，不收任何費用。\n核心功能 Builder Mode 讓使用者用自然語言描述專案，Trae 自動生成完整的前後端架構（frontend、backend、設定檔）。也支援多模態輸入——貼截圖或設計稿，AI 分析後生成對應的 UI 程式碼。\n支援 MCP 整合，可透過 .rules 檔案設定專案特定的 AI 行為。相容大部分 VS Code 外掛（.vsix 格式）。Mac 和 Windows 都支援。",
+  "pros": [
+    "完全免費——無限使用 DeepSeek R1、Claude、GPT-4o",
+    "Builder Mode 一鍵生成完整專案",
+    "多模態輸入（截圖、設計稿 → 程式碼）",
+    "支援 MCP",
+    "相容 VS Code 外掛",
+    "Mac 和 Windows 都支援"
+  ],
+  "cons": [
+    "ByteDance 背景，資料隱私疑慮",
+    "免費模式的可持續性未知（ByteDance 補貼能持續多久？）",
+    "功能深度不如 Cursor 和 Windsurf",
+    "社群和生態系較小",
+    "不開源"
+  ],
+  "features": [
+    {"name": "Builder Mode", "desc": "自然語言描述 → 自動生成完整前後端專案"},
+    {"name": "免費 AI 模型", "desc": "無限使用 DeepSeek R1、Claude 3.7 Sonnet、GPT-4o"},
+    {"name": "多模態", "desc": "截圖和設計稿作為輸入，生成 UI 程式碼"},
+    {"name": "MCP 支援", "desc": "透過 .rules 設定專案特定整合"},
+    {"name": "VS Code 相容", "desc": "支援大部分 .vsix 外掛"}
+  ],
+  "history": [
+    {"date": "2025-01", "event": "Trae 首次發布（macOS）"},
+    {"date": "2025-03", "event": "新增 DeepSeek R1 和 Claude 3.7 Sonnet 免費存取"},
+    {"date": "2025-06", "event": "Windows 版本發布"},
+    {"date": "2025-09", "event": "Builder Mode 發布"},
+    {"date": "2026-01", "event": "新增 MCP 支援和多模態輸入"}
+  ],
+  "pricing": "完全免費。無付費方案。",
+  "competitors": ["Cursor", "Windsurf", "Kiro", "Zed", "Antigravity"],
+  "links": [
+    {"title": "Trae 官網", "url": "https://traeide.com"},
+    {"title": "Trae 下載", "url": "https://traeide.com"}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "windsurf",
+  "name": "Windsurf",
+  "company": "Cognition AI（原 Codeium）",
+  "category": "AI IDE",
+  "tags": ["closed", "paid"],
+  "oneLiner": "Cognition AI 的 AI IDE（2025/12 以 ~$2.5 億收購原 Codeium）。Cascade agent 具備 Flow 感知和記憶系統，$15/月起。",
+  "overview": "Windsurf 是一個 AI 整合開發環境，原由 Codeium 開發，2025 年 12 月被 Cognition AI（Devin 的開發商）以約 $2.5 億收購。核心功能 Cascade 是一個 AI agent，具備 Flow 感知（追蹤你編輯的檔案、終端指令、剪貼簿內容、對話歷史）和 Memories 系統（自動學習程式碼庫的架構模式、命名慣例、設定細節）。\n2025-2026 年間發布了 14 個「Wave」版本，新增 Arena Mode（盲測比較不同模型）、平行 agents、瀏覽器整合、語音指令等功能。支援 MCP（一鍵設定 Figma、Slack、Stripe、PostgreSQL 等）和自帶 API Key（Anthropic）。",
+  "pros": [
+    "Cascade agent 的 Flow 感知——追蹤你的所有動作推測意圖",
+    "Memories 系統自動學習程式碼庫慣例",
+    "Arena Mode 可盲測比較不同 AI 模型",
+    "$15/月，比 Cursor $20/月 便宜",
+    "支援 MCP 一鍵設定",
+    "支援自帶 Anthropic API Key",
+    "更新頻率高（14 個 Wave 版本）"
+  ],
+  "cons": [
+    "被 Cognition AI 收購後方向可能變動",
+    "市佔不如 Cursor（$2B ARR）",
+    "信用點數制度曾被批評不透明（2026/3 已簡化）",
+    "不開源"
+  ],
+  "features": [
+    {"name": "Cascade", "desc": "AI agent，理解整個程式碼庫，建議多檔案編輯和終端指令"},
+    {"name": "Flow 感知", "desc": "追蹤編輯的檔案、終端指令、剪貼簿、對話歷史"},
+    {"name": "Memories", "desc": "自動學習程式碼庫的架構模式和命名慣例"},
+    {"name": "Arena Mode", "desc": "盲測比較兩個 AI 模型的輸出"},
+    {"name": "MCP 支援", "desc": "一鍵設定 Figma、Slack、Stripe 等整合"},
+    {"name": "平行 Agents", "desc": "多個 agent 同時處理不同任務"}
+  ],
+  "history": [
+    {"date": "2023", "event": "Codeium 發布（AI 程式碼補全工具）"},
+    {"date": "2024-11", "event": "Codeium 重新品牌為 Windsurf，轉型為完整 AI IDE"},
+    {"date": "2025-12", "event": "Cognition AI 以 ~$2.5 億收購 Windsurf/Codeium"},
+    {"date": "2026-03", "event": "簡化定價為使用量制，Wave 14 發布"}
+  ],
+  "pricing": "Free（25 credits/月）/ Pro $15/月（500 credits）/ Teams $30-40/用戶/月 / Enterprise $60/用戶/月",
+  "competitors": ["Cursor", "Kiro", "Trae", "Zed", "Antigravity"],
+  "links": [
+    {"title": "Windsurf 官網", "url": "https://windsurf.com"},
+    {"title": "Cascade 功能", "url": "https://windsurf.com/cascade"},
+    {"title": "Windsurf 文件", "url": "https://docs.windsurf.com"}
+  ]
+}

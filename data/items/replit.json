@@ -1,0 +1,49 @@
+{
+  "id": "replit",
+  "name": "Replit",
+  "company": "Replit",
+  "category": "AI IDE",
+  "tags": ["closed", "paid"],
+  "oneLiner": "瀏覽器內的 AI 開發平台。Agent 3 可用自然語言生成完整應用（含前後端+資料庫+部署），Effort-Based 定價。",
+  "overview": "Replit 是一個瀏覽器內的雲端開發平台，核心賣點是「不用安裝任何東西，打開瀏覽器就能開發和部署」。AI Agent（目前第 3 版）可接受自然語言描述，自動生成完整應用——前端、後端、資料庫、部署全包。\n2026 年初擴展到行動開發：描述一個 app 想法，Agent 自動生成 React Native + Expo 專案，可直接在手機上用 Expo Go 測試。\n內建 Ghostwriter 程式碼補全引擎，提供即時建議和程式碼解釋。支援 MCP 整合（OpenAI、Stripe、Google Workspace）。\n定價在 2026 年改為 Effort-Based——簡單修改通常 < $0.25，複雜任務按實際運算量計費。",
+  "pros": [
+    "瀏覽器內完成所有事——不用安裝開發環境",
+    "Agent 3 可生成完整應用（前後端+DB+部署）",
+    "支援行動開發（React Native + Expo）",
+    "Ghostwriter 即時程式碼補全",
+    "支援 MCP",
+    "Agent 會自動搜尋網路取得最新資訊",
+    "一鍵部署"
+  ],
+  "cons": [
+    "瀏覽器 IDE 的效能不如本地 IDE",
+    "Effort-Based 定價不透明——複雜任務可能很貴",
+    "產出的程式碼品質對 production 不一定夠用",
+    "不適合大型專案",
+    "不開源"
+  ],
+  "features": [
+    {"name": "Agent 3", "desc": "自然語言 → 完整應用（前後端+DB+部署）"},
+    {"name": "Ghostwriter", "desc": "即時程式碼補全和解釋"},
+    {"name": "行動開發", "desc": "生成 React Native + Expo 專案，手機即測"},
+    {"name": "一鍵部署", "desc": "開發完直接在 Replit 上部署"},
+    {"name": "MCP 支援", "desc": "整合 OpenAI、Stripe、Google Workspace"},
+    {"name": "Effort-Based 定價", "desc": "按實際運算量計費，簡單修改 < $0.25"}
+  ],
+  "history": [
+    {"date": "2016", "event": "Replit 創立"},
+    {"date": "2023-09", "event": "Replit AI 和 Ghostwriter 發布"},
+    {"date": "2024-09", "event": "Replit Agent 發布"},
+    {"date": "2025-06", "event": "Agent 2 發布"},
+    {"date": "2025-12", "event": "Agent 3 發布"},
+    {"date": "2026-01", "event": "行動開發支援（React Native + Expo）。Effort-Based 定價"}
+  ],
+  "pricing": "Starter 免費 / Core $17/月（年付，含 $20 credit）/ Pro $95/月（15 人團隊）/ Enterprise 客製",
+  "competitors": ["Cursor", "Windsurf", "Lovable", "Bolt"],
+  "links": [
+    {"title": "Replit 官網", "url": "https://replit.com"},
+    {"title": "Replit Agent", "url": "https://replit.com/products/agent"},
+    {"title": "Replit 定價", "url": "https://replit.com/pricing"},
+    {"title": "Effort-Based 定價說明", "url": "https://blog.replit.com/effort-based-pricing"}
+  ]
+}

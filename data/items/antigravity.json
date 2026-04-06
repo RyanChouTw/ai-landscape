@@ -1,0 +1,45 @@
+{
+  "id": "antigravity",
+  "name": "Antigravity",
+  "company": "Google",
+  "category": "AI IDE",
+  "tags": ["closed", "free"],
+  "oneLiner": "Google 的 agent-first IDE。Manager Surface 可同時指揮多個專業化 agent（Architect/Code/Test/Debug）平行工作。SWE-bench Verified 76.2%。",
+  "overview": "Google Antigravity 是 Google 推出的 agentic 開發平台，採用「agent-first」設計——AI agent 不是輔助工具，而是主角。\n獨特的雙介面設計：Editor View 是傳統的 AI IDE（tab 補全、inline 指令），Manager Surface 則是專門用來指揮和觀察多個 agent 同時工作的介面。你可以同時派 5 個 agent 處理 5 個 bug，各自獨立工作。\n每個 agent 會產生 Artifacts（任務清單、實作計畫、截圖、瀏覽器錄影），你可以在 Artifact 上直接留回饋，agent 不用停下來就能吸收你的意見。\n支援多模型：Claude Sonnet 4.6、Claude Opus 4.6、GPT-OSS-120B。在 SWE-bench Verified 達 76.2%。Plan 模式和 Fast 模式可選。目前免費。",
+  "pros": [
+    "多 agent 平行工作——同時 5 個 agent 處理不同任務",
+    "Manager Surface 專門介面觀察和指揮 agent",
+    "Artifacts 系統——agent 產生可驗證的交付物",
+    "SWE-bench Verified 76.2%，benchmark 表現強",
+    "支援 Claude Opus/Sonnet + GPT-OSS",
+    "目前完全免費",
+    "Plan / Fast 雙模式"
+  ],
+  "cons": [
+    "仍在早期/beta 階段",
+    "不確定免費能持續多久",
+    "Google 產品——可能隨時被關閉（Google 有砍產品的歷史）",
+    "生態系剛起步",
+    "不開源"
+  ],
+  "features": [
+    {"name": "Manager Surface", "desc": "專門介面，指揮和觀察多個 agent 平行工作"},
+    {"name": "多 Agent 平行", "desc": "同時派多個專業化 agent（Architect/Code/Test/Debug）"},
+    {"name": "Artifacts", "desc": "agent 產生任務清單、計畫、截圖、錄影等可驗證的交付物"},
+    {"name": "Editor View", "desc": "傳統 IDE 功能：tab 補全、inline 指令"},
+    {"name": "Plan / Fast", "desc": "Plan 先規劃再執行、Fast 即時執行"},
+    {"name": "多模型", "desc": "Claude Opus/Sonnet 4.6、GPT-OSS-120B"}
+  ],
+  "history": [
+    {"date": "2025-12", "event": "Google Antigravity 發布（beta）"},
+    {"date": "2026-01", "event": "Manager Surface 和多 agent 功能上線"},
+    {"date": "2026-03", "event": "SWE-bench Verified 76.2%"}
+  ],
+  "pricing": "目前完全免費（beta 階段）。未來定價未公布。",
+  "competitors": ["Cursor", "Windsurf", "Kiro", "Trae"],
+  "links": [
+    {"title": "Antigravity 官網", "url": "https://antigravity.dev"},
+    {"title": "Antigravity 開發者部落格", "url": "https://developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform/"},
+    {"title": "Antigravity Codelab", "url": "https://codelabs.developers.google.com/getting-started-google-antigravity"}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "kiro",
+  "name": "Kiro",
+  "company": "AWS",
+  "category": "AI IDE",
+  "tags": ["closed", "paid"],
+  "oneLiner": "AWS 的 spec-driven AI IDE。先寫規格（EARS notation）再寫程式碼，用 Claude Sonnet 驅動。Hooks 系統可事件驅動自動執行 agent。",
+  "overview": "Kiro 是 AWS 開發的 AI IDE，基於 Code OSS（VS Code 開源版本）。核心理念是 Spec-driven Development——不是直接讓 AI 寫程式碼，而是先將自然語言需求轉成正式的規格文件（使用 EARS notation 的 requirements + acceptance criteria），確認規格沒問題後再讓 agent 實作。\n獨特功能 Hooks 類似「經驗豐富的開發者」——可設定事件驅動的自動化（存檔、建檔、刪檔時自動觸發 agent），在背景自動產生文件、單元測試、或優化程式碼。\n支援多模態輸入（檔案、程式碼庫、文件、圖片、repository maps）。2025/7 公開預覽，2025/11 正式上線，也提供 CLI 版本。",
+  "pros": [
+    "Spec-driven Development 減少需求偏離",
+    "Hooks 系統——事件驅動自動執行 agent（存檔觸發測試等）",
+    "多模態理解（圖片、文件、程式碼庫）",
+    "Claude Sonnet 驅動",
+    "有 CLI 版本",
+    "AWS 生態系整合"
+  ],
+  "cons": [
+    "Spec-driven 流程對小任務顯得繁重",
+    "信用點數制（複雜 prompt 可能花多個 credit）",
+    "不如 Cursor 的自動補全流暢",
+    "不開源"
+  ],
+  "features": [
+    {"name": "Spec-driven", "desc": "自然語言 → EARS 規格 → 架構設計 → 程式碼實作"},
+    {"name": "Hooks", "desc": "事件驅動自動化，存檔/建檔時自動觸發 agent"},
+    {"name": "多模態", "desc": "理解檔案、程式碼庫、文件、圖片、repo maps"},
+    {"name": "CLI", "desc": "也可透過命令列使用"},
+    {"name": "Plan / Fast 模式", "desc": "Plan 先規劃再執行，Fast 直接執行"}
+  ],
+  "history": [
+    {"date": "2025-07", "event": "Kiro 公開預覽"},
+    {"date": "2025-11", "event": "Kiro 正式上線（GA），新增 CLI"},
+    {"date": "2026-02", "event": "新增 Hooks 系統和多模態支援"}
+  ],
+  "pricing": "Free（50 credits）/ Pro $20/月 / Pro+ $40/月 / Power $200/月。超額 $0.04/credit。",
+  "competitors": ["Cursor", "Windsurf", "Trae", "Antigravity"],
+  "links": [
+    {"title": "Kiro 官網", "url": "https://kiro.dev"},
+    {"title": "Kiro 定價", "url": "https://kiro.dev/pricing/"},
+    {"title": "Kiro 介紹文章", "url": "https://kiro.dev/blog/introducing-kiro/"}
+  ]
+}

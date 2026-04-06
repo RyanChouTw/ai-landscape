@@ -1,0 +1,45 @@
+{
+  "id": "zed",
+  "name": "Zed",
+  "company": "Zed Industries",
+  "category": "AI IDE",
+  "tags": ["open", "free"],
+  "oneLiner": "Rust 原生的 GPU 加速程式碼編輯器。120fps 渲染、開源，AI 功能內建但不是核心——速度才是。",
+  "overview": "Zed 是一個用 Rust 從頭打造的高效能程式碼編輯器，使用自有的 GPU 加速 UI 框架 GPUI，以 120fps 渲染文字。不是 VS Code fork——完全從零開始的原生應用。\nAI 是 Zed 的附加層（不是核心賣點）：內建 inline 程式碼生成、持久 Assistant Panel、支援多模型（OpenAI、Anthropic、Google、Ollama 本地模型）。\n核心差異化在於**速度**——啟動速度、檔案切換、搜尋、渲染都遠快於 VS Code 系的 IDE。Rust 的記憶體安全和零成本抽象確保效能穩定。\n截至 2026 年 2 月為 v0.224.x，1.0 預計 2026 春季發布。開源（GPUI 為 Apache 2.0）。",
+  "pros": [
+    "120fps GPU 加速渲染，體感極為流暢",
+    "Rust 原生，記憶體安全，不會像 Electron 一樣吃記憶體",
+    "開源（GPUI Apache 2.0）",
+    "支援多 AI 模型（OpenAI、Anthropic、Google、Ollama）",
+    "啟動和檔案切換極快",
+    "不依賴 Electron/VS Code 生態的包袱"
+  ],
+  "cons": [
+    "不是 VS Code 系——VS Code 外掛不能直接用",
+    "AI 功能深度不如 Cursor、Windsurf（沒有 Background Agent 等）",
+    "生態系（外掛、主題）還在成長中",
+    "尚未到 1.0 穩定版",
+    "Windows 版較晚推出，功能可能落後 Mac"
+  ],
+  "features": [
+    {"name": "GPU 加速渲染", "desc": "GPUI 框架，120fps 文字渲染"},
+    {"name": "Rust 原生", "desc": "非 Electron，記憶體效率高"},
+    {"name": "AI Assistant Panel", "desc": "內建 AI 對話，支援多模型"},
+    {"name": "Inline Generation", "desc": "行內程式碼生成"},
+    {"name": "多模型支援", "desc": "OpenAI、Anthropic、Google、Ollama"},
+    {"name": "即時協作", "desc": "類似 Google Docs 的即時多人編輯"}
+  ],
+  "history": [
+    {"date": "2022-03", "event": "Zed 開始開發（by Atom 編輯器原創者）"},
+    {"date": "2024-01", "event": "Zed 開源"},
+    {"date": "2024-06", "event": "AI 功能加入"},
+    {"date": "2025-10", "event": "Windows 版發布"},
+    {"date": "2026-02", "event": "v0.224.x，1.0 預計春季發布"}
+  ],
+  "pricing": "免費開源（GPUI Apache 2.0）。AI 功能使用自己的 API key 或 Zed 提供的額度。",
+  "competitors": ["Cursor", "Windsurf", "VS Code"],
+  "links": [
+    {"title": "Zed 官網", "url": "https://zed.dev"},
+    {"title": "Zed GitHub", "url": "https://github.com/zed-industries/zed"}
+  ]
+}
