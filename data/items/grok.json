@@ -1,0 +1,50 @@
+{
+  "id": "grok",
+  "name": "Grok",
+  "company": "xAI",
+  "category": "閉源模型",
+  "tags": ["closed", "paid"],
+  "oneLiner": "xAI 的 AI 模型家族。最新 Grok 4.1 幻覺率降 65%，API 定價極具競爭力（$0.20/$0.50 per M tokens），深度整合 X/Twitter 即時資料。",
+  "overview": "Grok 是由 Elon Musk 創立的 xAI 開發的 AI 模型家族。最新版本 Grok 4.1 強化了情緒智商（EQ）、創意表現和推理可靠性，幻覺率從 12.09% 降至 4.22%（降 65%）。Grok 4.2 目前在 public beta。\nGrok 的獨特優勢在於：API 定價極低（Grok 4.1 Fast 僅 $0.20/$0.50 per M tokens，比 GPT-5.4 便宜 12 倍）、深度整合 X/Twitter 即時資料、以及語音聊天和圖像/影片生成能力。\n訂閱方面，SuperGrok $30/月是旗艦方案，SuperGrok Heavy $300/月 提供最高用量。Grok 3 Mini 以 90% 更低成本在 benchmark 上超越 Grok 3。",
+  "pros": [
+    "API 定價極低（Grok 4.1 Fast $0.20/$0.50，比 GPT-5.4 便宜 12 倍）",
+    "幻覺率降 65%（4.22%），可靠性大幅提升",
+    "即時存取 X/Twitter 資料",
+    "支援語音聊天、圖像和影片生成",
+    "Grok 3 Mini 以 90% 更低成本超越 Grok 3",
+    "Grok 4.1 情緒智商和創意表現強"
+  ],
+  "cons": [
+    "不開源",
+    "和 X/Twitter 深度綁定，非 X 用戶價值有限",
+    "Elon Musk 的爭議性可能影響企業採用",
+    "知識截止日為 2024 年 11 月（Grok 3/4）",
+    "Grok 4.2 仍在 beta",
+    "生態系（外掛、整合）遠不如 ChatGPT 和 Claude"
+  ],
+  "features": [
+    {"name": "低幻覺率", "desc": "Grok 4.1 幻覺率 4.22%，業界領先"},
+    {"name": "即時 X/Twitter 資料", "desc": "可存取 X 平台的即時貼文和趨勢"},
+    {"name": "語音聊天", "desc": "支援語音對話"},
+    {"name": "圖像/影片生成", "desc": "內建圖像和影片生成能力"},
+    {"name": "極低 API 定價", "desc": "Grok 4.1 Fast $0.20/$0.50，適合高量使用"},
+    {"name": "可配置推理", "desc": "不同模型變體適合不同速度/品質需求"}
+  ],
+  "history": [
+    {"date": "2023-11", "event": "xAI 發布 Grok 1.0"},
+    {"date": "2024-03", "event": "Grok 1.5 發布"},
+    {"date": "2024-08", "event": "Grok 2 發布"},
+    {"date": "2025-02", "event": "Grok 3 和 Grok 3 Mini 發布"},
+    {"date": "2025-08", "event": "Grok 4 發布，推理能力大幅提升"},
+    {"date": "2026-01", "event": "Grok 4.1 發布，幻覺率降 65%、EQ 和創意提升"},
+    {"date": "2026-03", "event": "Grok 4.2 進入 public beta"}
+  ],
+  "pricing": "Free（有限使用）/ SuperGrok $30/月（$300/年）/ SuperGrok Heavy $300/月 / Business $30/seat/月。API：Grok 4 $3/$15、Grok 4.1 Fast $0.20/$0.50、Grok 3 Mini $0.30/$0.50 per M tokens。",
+  "competitors": ["Claude", "GPT", "Gemini", "DeepSeek V3/R1"],
+  "links": [
+    {"title": "Grok 官網", "url": "https://grok.x.ai"},
+    {"title": "xAI 官網", "url": "https://x.ai"},
+    {"title": "xAI API 文件", "url": "https://docs.x.ai"},
+    {"title": "SuperGrok", "url": "https://supergrok.online"}
+  ]
+}

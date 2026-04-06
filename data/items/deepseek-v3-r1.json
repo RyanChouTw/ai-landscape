@@ -1,0 +1,48 @@
+{
+  "id": "deepseek-v3-r1",
+  "name": "DeepSeek V3 / R1",
+  "company": "DeepSeek",
+  "category": "開源模型",
+  "tags": ["open", "free"],
+  "oneLiner": "中國 DeepSeek 開發的開源大模型。V3 為 671B MoE（37B 活躍），R1 為推理模型。以極低訓練成本達到接近閉源模型的水準。",
+  "overview": "DeepSeek V3 是由中國 AI 公司 DeepSeek 開發的開源大型語言模型，採用 Mixture-of-Experts（MoE）架構，總參數 671B，每個 token 激活 37B 參數。使用 Multi-head Latent Attention（MLA）和 DeepSeekMoE 架構實現高效推論。\n預訓練資料量 14.8 兆 token，context length 128K。訓練僅需 2.788M H800 GPU 小時，成本極低。在 MMLU（88.5）、MMLU-Pro（75.9）等 benchmark 上與 GPT-4o 和 Claude 3.5 Sonnet 相當。\nDeepSeek R1 是基於 V3-Base 的推理模型，透過大規模強化學習（不用監督式微調）學會推理，MMLU 達 84.9%，超越多數開源競品。\n後續版本 V3.1 和 V3.2 持續迭代。DeepSeek V3.2 被評為 2026 年最佳整體開源 LLM。",
+  "pros": [
+    "開源（MIT 授權），可自行部署",
+    "671B MoE 但只激活 37B，推論效率高",
+    "訓練成本極低（2.788M H800 GPU 小時），挑戰了「AI 需要天文數字投資」的敘事",
+    "R1 推理能力接近 o3 水準",
+    "V3.2 被評為 2026 年最佳整體開源 LLM",
+    "128K context window",
+    "API 定價極低"
+  ],
+  "cons": [
+    "中國公司，部分國家/地區可能有地緣政治疑慮",
+    "多語言能力以中英為主，其他語言較弱",
+    "部署需要大量 GPU 資源（671B 參數）",
+    "社群和生態系不如 Llama 成熟",
+    "知識截止日可能較舊"
+  ],
+  "features": [
+    {"name": "MoE 架構", "desc": "671B 總參數，每 token 只激活 37B，效率高"},
+    {"name": "MLA", "desc": "Multi-head Latent Attention，高效推論"},
+    {"name": "128K Context", "desc": "透過兩階段擴展達到 128K token"},
+    {"name": "R1 推理", "desc": "純 RL 訓練的推理模型，不需監督式微調"},
+    {"name": "多 token 預測", "desc": "訓練目標包含多 token 預測，提升效率"},
+    {"name": "無輔助損失負載均衡", "desc": "首創 auxiliary-loss-free 策略"}
+  ],
+  "history": [
+    {"date": "2024-05", "event": "DeepSeek-V2 發布（236B MoE）"},
+    {"date": "2024-12", "event": "DeepSeek-V3 發布（671B MoE，37B 活躍），14.8T token 預訓練"},
+    {"date": "2025-01", "event": "DeepSeek R1 發布，推理能力接近 o1/o3"},
+    {"date": "2025-06", "event": "DeepSeek V3.1 發布"},
+    {"date": "2025-11", "event": "DeepSeek V3.2 發布，被評為最佳整體開源 LLM"}
+  ],
+  "pricing": "開源免費（MIT 授權）。DeepSeek API 按量計費，定價極低。",
+  "competitors": ["Llama 4", "Qwen 3", "Mistral Large 2", "Kimi K2.5"],
+  "links": [
+    {"title": "DeepSeek GitHub", "url": "https://github.com/deepseek-ai/DeepSeek-V3"},
+    {"title": "DeepSeek 官網", "url": "https://deepseek.com"},
+    {"title": "DeepSeek API 文件", "url": "https://api-docs.deepseek.com"},
+    {"title": "DeepSeek V3 Technical Report", "url": "https://arxiv.org/pdf/2412.19437"}
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "id": "llama-4",
+  "name": "Llama 4",
+  "company": "Meta",
+  "category": "開源模型",
+  "tags": ["open", "free"],
+  "oneLiner": "Meta 的開源模型家族。Scout（109B，10M context，單張 H100 可跑）和 Maverick（400B，128 專家）是首批原生多模態開源 MoE 模型。",
+  "overview": "Llama 4 是 Meta 發布的開源大型語言模型家族，包含兩個主要變體：\n• Scout（109B 總參數，16 專家，17B 活躍）——業界最長的 10M token context window，單張 NVIDIA H100 GPU 可跑。在 benchmark 上超越 Gemma 3、Gemini 2.0 Flash-Lite、Mistral 3.1。\n• Maverick（400B 總參數，128 專家，17B 活躍）——打敗 GPT-4o 和 Gemini 2.0 Flash，在推理和程式碼上與 DeepSeek V3 相當。可在單台 H100 DGX host 上執行。\n兩者都是首批原生多模態的開源 MoE 模型，在訓練初期就整合了文字、圖片、影片等不同類型的資料。訓練資料量 40 兆 token。",
+  "pros": [
+    "Scout 擁有業界最長 10M token context window",
+    "開源（Llama License），可自行部署",
+    "Scout 單張 H100 可跑，部署門檻低",
+    "首批原生多模態的開源 MoE 模型",
+    "Maverick 128 專家但只激活 17B，效率高",
+    "40T token 訓練資料",
+    "Meta 的品牌和社群支持力強大"
+  ],
+  "cons": [
+    "Llama License 不是標準開源授權（有商用限制條件）",
+    "Maverick 需要分散式推論，部署成本較高",
+    "多語言能力不如 Qwen 3",
+    "推理能力不如 DeepSeek R1",
+    "10M context 的實際品質在極長文本下仍待更多驗證"
+  ],
+  "features": [
+    {"name": "10M Context（Scout）", "desc": "業界最長的上下文視窗，可處理整本書或大型程式碼庫"},
+    {"name": "原生多模態", "desc": "訓練初期就整合文字、圖片、影片"},
+    {"name": "MoE 架構", "desc": "Scout 16 專家、Maverick 128 專家，活躍參數僅 17B"},
+    {"name": "單 GPU 部署", "desc": "Scout 可在單張 H100 上跑"},
+    {"name": "1M Context（Maverick）", "desc": "Maverick instruct 版本支援 1M token"}
+  ],
+  "history": [
+    {"date": "2023-02", "event": "LLaMA 1 發布（7B-65B）"},
+    {"date": "2023-07", "event": "Llama 2 發布（7B-70B），開放商用"},
+    {"date": "2024-04", "event": "Llama 3 發布（8B/70B）"},
+    {"date": "2024-07", "event": "Llama 3.1 發布（405B）"},
+    {"date": "2025-04", "event": "Llama 4 Scout（109B）和 Maverick（400B）發布，首批原生多模態開源 MoE"}
+  ],
+  "pricing": "開源免費（Llama License，有商用條件）。可透過 AWS Bedrock、Vertex AI、Azure AI 等雲端平台使用。",
+  "competitors": ["DeepSeek V3/R1", "Qwen 3", "Mistral Large 2", "Gemma 4", "Kimi K2.5"],
+  "links": [
+    {"title": "Llama 官網", "url": "https://www.llama.com"},
+    {"title": "Llama 4 發布公告", "url": "https://ai.meta.com/blog/llama-4-multimodal-intelligence/"},
+    {"title": "Llama 4 Hugging Face", "url": "https://huggingface.co/blog/llama4-release"},
+    {"title": "Meta AI 官網", "url": "https://ai.meta.com"}
+  ]
+}

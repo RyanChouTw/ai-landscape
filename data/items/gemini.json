@@ -1,0 +1,52 @@
+{
+  "id": "gemini",
+  "name": "Gemini",
+  "company": "Google",
+  "category": "閉源模型",
+  "tags": ["closed", "paid"],
+  "oneLiner": "Google 的旗艦 AI 模型家族。最新 Gemini 3.1 Pro 支援 1M+ context、Computer Use、可配置思考深度，深度整合 Google 生態系。",
+  "overview": "Gemini 是 Google DeepMind 開發的多模態 AI 模型家族。最新版本 Gemini 3.1 Pro Preview 於 2026 年 2 月 19 日發布，是 Google 目前最強的推理模型。\n核心特點包括：1M+ token context window（且在長文本上品質不衰減）、原生 Computer Use 支援（不需要像 2.5 系列用獨立模型）、可配置思考深度（MEDIUM 參數）、以及改進的軟體工程和 agentic 行為。\nGemini 3.1 Flash-Lite Preview 是成本效率最高的新模型（$0.25/$1.50 per M tokens）。整個 Gemini 家族深度整合 Google 生態系（Gmail、Calendar、Drive、Workspace），也透過 Vertex AI 和 Google AI Studio 提供 API 服務。",
+  "pros": [
+    "1M+ context window 且長文本品質不衰減",
+    "原生多模態（文字、圖片、音訊、影片）",
+    "原生 Computer Use 支援（Gemini 3 Pro/Flash）",
+    "可配置思考深度（thinking_level 參數）",
+    "Google 生態系深度整合（Gmail/Calendar/Drive/Workspace）",
+    "Flash-Lite 極低價（$0.25/$1.50 per M tokens）",
+    "Gemini CLI 支援 OAuth 免費層"
+  ],
+  "cons": [
+    "高 context（>200K tokens）時定價翻倍（$4/$18）",
+    "不開源（Gemma 是開源版本但能力差距大）",
+    "API 在 2026/3 起改為預付制（Prepay），新用戶需先儲值",
+    "程式碼能力略遜於 Claude",
+    "3.1 Pro Preview 仍在預覽階段，穩定性待驗證"
+  ],
+  "features": [
+    {"name": "1M+ Context", "desc": "支援超過 100 萬 token，長文本品質不衰減"},
+    {"name": "Computer Use", "desc": "Gemini 3 Pro 和 Flash 原生支援操控桌面"},
+    {"name": "可配置思考深度", "desc": "thinking_level 參數控制推理深度（含 MEDIUM）"},
+    {"name": "多模態", "desc": "原生支援文字、圖片、音訊、影片輸入輸出"},
+    {"name": "Google 整合", "desc": "Gmail、Calendar、Drive、Maps、Workspace 深度整合"},
+    {"name": "Gemini CLI", "desc": "終端機工具，OAuth 免費層 60 RPM / 1,000 RPD"},
+    {"name": "64K Output", "desc": "最多 64K token 輸出"}
+  ],
+  "history": [
+    {"date": "2023-12", "event": "Gemini 1.0 發布（Ultra/Pro/Nano）"},
+    {"date": "2024-02", "event": "Gemini 1.5 Pro 發布，1M context window"},
+    {"date": "2024-09", "event": "Gemini 1.5 Pro 正式版，支援音訊和影片輸入"},
+    {"date": "2025-02", "event": "Gemini 2.0 發布，原生多模態"},
+    {"date": "2025-06", "event": "Gemini 2.5 Pro 發布，推理能力提升"},
+    {"date": "2025-10", "event": "Gemini 3 Pro 發布，原生 Computer Use"},
+    {"date": "2026-02-19", "event": "Gemini 3.1 Pro Preview 發布，最強推理模型"},
+    {"date": "2026-03", "event": "Gemini 3.1 Flash-Lite Preview 發布，最低成本。API 改為預付制"}
+  ],
+  "pricing": "Google AI Pro $19.99/月（消費者訂閱）。API：Gemini 3.1 Pro $2/$12 per M tokens（>200K context: $4/$18）、Flash-Lite $0.25/$1.50。Gemini CLI OAuth 免費層。",
+  "competitors": ["Claude", "GPT", "Grok", "DeepSeek V3/R1"],
+  "links": [
+    {"title": "Gemini 官網", "url": "https://gemini.google.com"},
+    {"title": "Gemini API 文件", "url": "https://ai.google.dev/gemini-api/docs"},
+    {"title": "Gemini 定價", "url": "https://ai.google.dev/gemini-api/docs/pricing"},
+    {"title": "Vertex AI", "url": "https://cloud.google.com/vertex-ai"}
+  ]
+}
