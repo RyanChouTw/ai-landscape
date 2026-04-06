@@ -1,50 +1,54 @@
 {
   "id": "mcp",
   "name": "MCP",
-  "company": "Anthropic",
+  "company": "Anthropic → Agentic AI Foundation (Linux Foundation)",
   "category": "整合協議",
   "tags": ["open", "free"],
-  "oneLiner": "Model Context Protocol——AI 助手呼叫外部工具和服務的開放標準協議，由 Anthropic 發起並捐贈給 Linux Foundation。",
-  "overview": "MCP（Model Context Protocol）是一個開放標準，定義了 AI 模型如何與外部工具、資料來源和服務互動的通訊協議。它類似於 AI 世界的「USB 接口」——不管是什麼 AI 模型，不管要連什麼工具，只要都支援 MCP，就能互相溝通。\n在 MCP 之前，每個 AI 工具要連接外部服務都需要各自寫客製化的整合程式碼。MCP 把這個過程標準化了：工具開發者只需要寫一個 MCP Server，任何支援 MCP 的 AI 客戶端都能使用。\nMCP 由 Anthropic 在 2024 年 11 月發起並開源，2025 年 12 月捐贈給 Linux Foundation，從公司專案變成業界標準。目前 Claude Desktop、Claude Code、Cursor、Windsurf 等主流 AI 工具都支援 MCP。",
+  "oneLiner": "Model Context Protocol——AI 與外部工具溝通的開放標準協議。97M 月 SDK 下載、10,000+ servers，由 Anthropic 發起，現由 Linux Foundation 下的 AAIF 管理。",
+  "overview": "MCP（Model Context Protocol）是一個開放標準，定義 AI 模型如何與外部工具、資料來源和服務互動。類似 AI 世界的「USB 接口」——不管什麼 AI 模型，不管要連什麼工具，支援 MCP 就能互通。\nMCP 在一年內成為 AI 領域成長最快的開源專案之一：97M 月 SDK 下載、10,000+ active servers、所有主流 AI 平台都已支援（ChatGPT、Claude、Cursor、Gemini、Microsoft Copilot、VS Code 等）。\n2025 年 12 月，Anthropic 將 MCP 捐贈給 Linux Foundation 下新成立的 Agentic AI Foundation（AAIF），共同創辦者包括 Anthropic、Block 和 OpenAI，支持者包括 Google、Microsoft、AWS、Cloudflare 和 Bloomberg。MCP 現在和 Kubernetes、PyTorch、Node.js 一樣由中立基金會管理。\n2025 年 11 月的規格更新引入了非同步操作、無狀態模式、Server Identity、官方 Extensions，以及 MCP Apps（可在對話中渲染互動式 UI 元件）。",
   "pros": [
     "開放標準，任何人都能建立 MCP Server 或 Client",
-    "一次建立的 Server 可被所有支援 MCP 的工具使用（寫一次，到處用）",
-    "已有數千個社群開發的 MCP Server（Notion、Google、Slack、GitHub 等）",
-    "由 Linux Foundation 管理，不被單一公司控制",
-    "協議設計簡潔，開發者容易上手",
-    "支援 stdio 和 SSE 兩種傳輸方式"
+    "成長驚人：97M 月 SDK 下載、10,000+ active servers",
+    "所有主流平台支援：ChatGPT、Claude、Cursor、Gemini、Copilot、VS Code",
+    "由 Linux Foundation 的 AAIF 管理，共同創辦者含 Anthropic、Block、OpenAI",
+    "MCP Apps 可在對話中渲染互動式 UI（儀表板、表單、視覺化）",
+    "Streamable HTTP 提供 production-ready 傳輸",
+    "完全免費開源"
   ],
   "cons": [
-    "安全模型仍在發展中——MCP Server 有權限存取用戶資料，信任邊界需要使用者自行判斷",
-    "目前主要由 Anthropic 生態系推動，OpenAI 和 Google 的支援度較低",
-    "Server 品質參差不齊（社群開發，沒有統一審核機制）",
-    "對非技術使用者來說，安裝和設定 MCP Server 仍有門檻",
-    "與 OpenAI 的 Function Calling 和 Google 的 A2A 存在競爭關係"
+    "安全模型仍在發展——Server 有權限存取用戶資料，信任邊界需使用者判斷",
+    "Server 品質參差不齊（社群開發，無統一審核）",
+    "水平擴展和無狀態操作仍有缺口（2026 roadmap 重點）",
+    "安裝和設定對非技術使用者仍有門檻",
+    "與 Google A2A 存在競合關係（雖然 Google 也支持 AAIF）"
   ],
   "features": [
-    {"name": "Tools", "desc": "MCP Server 提供工具讓 AI 呼叫（如讀取 Notion 頁面、發送 Slack 訊息）"},
-    {"name": "Resources", "desc": "MCP Server 提供資料資源讓 AI 讀取（如資料庫內容、檔案系統）"},
-    {"name": "Prompts", "desc": "MCP Server 可提供預設的 prompt 模板"},
-    {"name": "Sampling", "desc": "MCP Server 可請求 AI 模型生成內容（反向呼叫）"},
-    {"name": "多傳輸方式", "desc": "支援 stdio（本地進程間通訊）和 SSE（HTTP 串流）"},
-    {"name": "跨平台支援", "desc": "Python SDK、TypeScript SDK、以及各語言的社群 SDK"}
+    {"name": "Tools", "desc": "Server 提供工具讓 AI 呼叫（讀 Notion、發 Slack 訊息等）"},
+    {"name": "Resources", "desc": "Server 提供資料資源讓 AI 讀取"},
+    {"name": "Prompts", "desc": "Server 提供預設 prompt 模板"},
+    {"name": "MCP Apps", "desc": "官方 Extension，工具可回傳互動式 UI 元件（儀表板、表單等）"},
+    {"name": "Streamable HTTP", "desc": "Production-ready 傳輸協議"},
+    {"name": "Server Identity", "desc": "Server 可驗證身份，提升安全性"},
+    {"name": "非同步操作", "desc": "支援長時間運行的工具呼叫"},
+    {"name": "多語言 SDK", "desc": "Python、TypeScript 官方 SDK，以及各語言社群 SDK"}
   ],
   "history": [
     {"date": "2024-11", "event": "Anthropic 發布 MCP 開源規格，同時推出 Python 和 TypeScript SDK"},
-    {"date": "2024-12", "event": "Claude Desktop 開始支援 MCP，社群開始大量建立 MCP Server"},
-    {"date": "2025-01", "event": "Claude Code 支援 MCP，Cursor 也加入支援"},
-    {"date": "2025-03", "event": "MCP Server 數量突破 1,000 個"},
-    {"date": "2025-06", "event": "Windsurf、Kiro 等更多 IDE 加入 MCP 支援"},
-    {"date": "2025-12", "event": "Anthropic 將 MCP 捐贈給 Linux Foundation，成為業界開放標準"},
-    {"date": "2026-01", "event": "MCP Server 數量突破 5,000 個"}
+    {"date": "2024-12", "event": "Claude Desktop 開始支援 MCP"},
+    {"date": "2025-01", "event": "Claude Code 和 Cursor 加入 MCP 支援"},
+    {"date": "2025-06", "event": "更多 IDE（Windsurf、Kiro）加入支援"},
+    {"date": "2025-11", "event": "重大規格更新：非同步操作、無狀態、Server Identity、MCP Apps"},
+    {"date": "2025-12", "event": "捐贈給 Linux Foundation，成立 Agentic AI Foundation（AAIF）。共同創辦：Anthropic、Block、OpenAI。支持者：Google、Microsoft、AWS、Cloudflare、Bloomberg"},
+    {"date": "2026-01", "event": "ChatGPT、Gemini、Microsoft Copilot 等加入支援。SDK 月下載突破 97M"},
+    {"date": "2026-Q2", "event": "Roadmap：Streamable HTTP 進化為無狀態水平擴展"}
   ],
-  "pricing": "完全免費開源（MIT 授權）",
+  "pricing": "完全免費開源",
   "competitors": ["A2A Protocol", "OpenAPI", "Agent Skills", "Tool Use / Function Calling"],
   "links": [
     {"title": "MCP 官方規格", "url": "https://modelcontextprotocol.io"},
+    {"title": "MCP Blog", "url": "https://blog.modelcontextprotocol.io"},
     {"title": "MCP GitHub", "url": "https://github.com/modelcontextprotocol"},
-    {"title": "MCP Server 目錄", "url": "https://github.com/modelcontextprotocol/servers"},
-    {"title": "MCP Python SDK", "url": "https://github.com/modelcontextprotocol/python-sdk"},
-    {"title": "MCP TypeScript SDK", "url": "https://github.com/modelcontextprotocol/typescript-sdk"}
+    {"title": "Agentic AI Foundation 公告", "url": "https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation"},
+    {"title": "MCP Wikipedia", "url": "https://en.wikipedia.org/wiki/Model_Context_Protocol"}
   ]
 }

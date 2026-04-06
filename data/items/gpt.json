@@ -4,55 +4,58 @@
   "company": "OpenAI",
   "category": "閉源模型",
   "tags": ["closed", "paid"],
-  "oneLiner": "OpenAI 開發的大型語言模型家族，擁有最大的使用者生態系和外掛市場。",
-  "overview": "GPT（Generative Pre-trained Transformer）是由 OpenAI 開發的大型語言模型家族，目前最新版本包括 GPT-4o（多模態旗艦）、o1 和 o3（推理模型）。GPT 系列透過 ChatGPT 擁有超過 1 億的月活躍用戶，是目前使用者基數最大的 AI 模型。\nOpenAI 由 Sam Altman 領導，2015 年創立時為非營利組織，後轉型為「有上限利潤」的營利公司。GPT 系列從 GPT-1（2018）到 GPT-4（2023）經歷了多次重大升級，每次都顯著提升了語言理解和生成能力。\nGPT 的核心優勢在於其龐大的生態系——GPT Store 有數百萬個自訂 GPT、ChatGPT 外掛系統、以及廣泛的第三方整合。在 API 層面，OpenAI 的 API 格式已成為業界事實標準（幾乎所有開源模型都支援 OpenAI 相容 API）。",
+  "oneLiner": "OpenAI 開發的大型語言模型家族，最新版本 GPT-5.4 統一了推理、程式碼和 Computer Use 能力，擁有最大的使用者生態系。",
+  "overview": "GPT（Generative Pre-trained Transformer）是由 OpenAI 開發的大型語言模型家族。最新版本 GPT-5.4 於 2026 年 3 月 5 日發布，代表了架構上的重大轉變——不再區分獨立的推理模型（o 系列）和通用模型，而是統一為一個模型，透過可配置的推理深度（5 級：none/low/medium/high/xhigh）讓開發者控制思考深度。\nGPT-5.4 在多項 benchmark 上創新高：SWE-bench Pro 57.7%（程式碼）、OSWorld 75%（Computer Use）、GDPval 83%（知識工作）。同時推出 Mini 變體（成本降 6 倍）和 Nano 變體（邊緣裝置用）。\nGPT 系列透過 ChatGPT 擁有超過 2 億月活躍用戶，API 格式已成為業界事實標準。",
   "pros": [
-    "使用者基數最大（ChatGPT 月活超過 1 億），生態系最成熟",
-    "GPT Store 有數百萬個自訂 GPT 可直接使用",
-    "API 格式是業界事實標準，所有工具和框架都優先支援",
-    "多模態能力強（GPT-4o 原生支援文字、圖片、音訊）",
-    "o1/o3 推理模型在數學和邏輯推理上領先",
-    "ChatGPT 搜尋功能整合即時網路資訊",
-    "DALL-E 圖像生成、Sora 影片生成整合在同一平台"
+    "GPT-5.4 統一架構——推理、程式碼、Computer Use 合一，不用選模型",
+    "可配置推理深度（5 級），開發者可依需求平衡速度和品質",
+    "Computer Use API 原生支援——可操控桌面應用（OSWorld 75%）",
+    "使用者基數最大（ChatGPT 月活超過 2 億），API 格式是業界標準",
+    "Mini 和 Nano 變體覆蓋從雲端到邊緣的全場景",
+    "GPT Store 有數百萬個自訂 GPT",
+    "1M context window"
   ],
   "cons": [
-    "程式碼能力略遜於 Claude（多項 benchmark 被超越）",
-    "定價與 Claude 相近但 context window 較短",
-    "公司治理爭議不斷（Sam Altman 被解僱又復職事件）",
-    "從非營利轉營利引發社會信任問題",
-    "Sora 影片生成品質不如 Veo 和 Kling",
-    "不開源（GPT-2 之後再未開源）"
+    "API 定價較高（GPT-5.4 $2.50/$15 per M tokens，Pro 版 $30/$180）",
+    "不開源（GPT-2 之後再未開源）",
+    "公司治理爭議（Sam Altman 解僱復職事件、非營利轉營利）",
+    "Sora 影片生成即將停止網頁版（2026/9 前）",
+    "Computer Use 功能仍在早期，穩定性待驗證"
   ],
   "features": [
-    {"name": "ChatGPT", "desc": "全球最多人使用的 AI 聊天介面，月活超過 1 億"},
-    {"name": "GPT-4o", "desc": "多模態旗艦模型，原生支援文字、圖片、音訊輸入輸出"},
-    {"name": "o1 / o3", "desc": "推理模型，在數學、程式碼和邏輯推理上的專用模型"},
-    {"name": "GPT Store", "desc": "數百萬個自訂 GPT 的市集"},
-    {"name": "ChatGPT Search", "desc": "整合即時網路搜尋的 AI 搜尋功能"},
-    {"name": "Codex CLI", "desc": "終端機 coding agent"},
-    {"name": "DALL-E / Sora", "desc": "圖像和影片生成，整合在 ChatGPT 內"}
+    {"name": "統一架構", "desc": "GPT-5.4 將推理、程式碼、Computer Use 合為一個模型，不再需要選 o1/o3"},
+    {"name": "可配置推理深度", "desc": "5 級推理（none/low/medium/high/xhigh），開發者控制思考深度"},
+    {"name": "Computer Use API", "desc": "AI 可看螢幕、移動游標、點擊元素、打字，操控桌面應用"},
+    {"name": "1M Context Window", "desc": "支援百萬 token 的上下文"},
+    {"name": "Mini / Nano 變體", "desc": "Mini 成本降 6 倍（$0.40/$1.60），Nano 可跑在邊緣裝置"},
+    {"name": "ChatGPT Search", "desc": "整合即時網路搜尋"},
+    {"name": "GPT Store", "desc": "數百萬個自訂 GPT 的市集"}
   ],
   "history": [
     {"date": "2015-12", "event": "OpenAI 成立（非營利組織）"},
     {"date": "2018-06", "event": "GPT-1 發布（1.17 億參數）"},
-    {"date": "2019-02", "event": "GPT-2 發布（15 億參數），因擔心濫用而延遲開源"},
-    {"date": "2020-06", "event": "GPT-3 發布（1,750 億參數），API 開始商業化"},
+    {"date": "2019-02", "event": "GPT-2 發布（15 億參數）"},
+    {"date": "2020-06", "event": "GPT-3 發布（1,750 億參數），API 商業化"},
     {"date": "2022-11", "event": "ChatGPT 發布，兩個月內用戶破億"},
-    {"date": "2023-03", "event": "GPT-4 發布，支援多模態（圖片輸入）"},
-    {"date": "2023-11", "event": "Sam Altman 被 OpenAI 董事會解僱，5 天後復職"},
+    {"date": "2023-03", "event": "GPT-4 發布"},
+    {"date": "2023-11", "event": "Sam Altman 被解僱又復職事件"},
     {"date": "2024-05", "event": "GPT-4o 發布，原生多模態"},
     {"date": "2024-09", "event": "o1 推理模型發布"},
-    {"date": "2024-12", "event": "Sora 影片生成模型發布"},
+    {"date": "2024-12", "event": "Sora 影片生成發布"},
     {"date": "2025-04", "event": "o3 推理模型發布"},
     {"date": "2025-07", "event": "Codex CLI 發布"},
-    {"date": "2026-01", "event": "GPT-4o 持續迭代，ChatGPT 月活超過 2 億"}
+    {"date": "2025-08", "event": "GPT-5 發布"},
+    {"date": "2025-11", "event": "GPT-5.2 發布"},
+    {"date": "2026-03-05", "event": "GPT-5.4 發布——統一架構，整合推理 + Computer Use"},
+    {"date": "2026-03-17", "event": "GPT-5.4 Mini 發布（成本降 6 倍）"}
   ],
-  "pricing": "Free（免費版，GPT-4o 有限額）/ Plus $20/月 / Pro $200/月 / Team $30/用戶/月 / API 按量計費（GPT-4o $5/$15 per M tokens）",
+  "pricing": "ChatGPT Free（免費）/ Go / Plus $20/月 / Pro $200/月 / Business / Enterprise。API：GPT-5.4 $2.50/$15 per M tokens、GPT-5.4 Mini $0.40/$1.60、GPT-5.4 Pro $30/$180",
   "competitors": ["Claude", "Gemini", "Grok", "DeepSeek V3/R1"],
   "links": [
-    {"title": "ChatGPT", "url": "https://chat.openai.com"},
+    {"title": "ChatGPT", "url": "https://chatgpt.com"},
     {"title": "OpenAI 官網", "url": "https://openai.com"},
-    {"title": "OpenAI API 文件", "url": "https://platform.openai.com/docs"},
-    {"title": "GPT Store", "url": "https://chat.openai.com/gpts"}
+    {"title": "GPT-5.4 發布公告", "url": "https://openai.com/index/introducing-gpt-5-for-developers/"},
+    {"title": "OpenAI API 定價", "url": "https://openai.com/api/pricing/"},
+    {"title": "OpenAI API 文件", "url": "https://platform.openai.com/docs"}
   ]
 }

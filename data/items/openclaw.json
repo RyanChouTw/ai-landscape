@@ -4,51 +4,56 @@
   "company": "開源社群",
   "category": "電腦代理 / Computer Use",
   "tags": ["open", "free"],
-  "oneLiner": "全球最受歡迎的開源 AI 電腦代理，145K GitHub stars，可在本地操控你的電腦完成任務。",
-  "overview": "OpenClaw 是一個開源的 AI 電腦代理平台，讓 AI 可以像人一樣操控你的電腦——開瀏覽器、讀寫檔案、執行程式碼、控制應用程式。它是目前最受歡迎的 Computer Use 工具，在 GitHub 上有超過 145,000 顆星。\nOpenClaw 的核心理念是「your computer, your agent, your data」——所有操作都在本地執行，資料不離開你的電腦。使用者可以自由選擇要用哪個 LLM 作為後端（Claude、GPT、Llama、DeepSeek 等），不綁定任何一家模型提供商。\n圍繞 OpenClaw 已經形成了龐大的生態系：超過 5,000 個 Skills（可重用的自動化工作流）、多個衍生版本（NemoClaw 安全層、PicoClaw 輕量版、ZeroClaw Rust 版、MaxClaw MiniMax 版），以及活躍的社群。",
+  "oneLiner": "全球最受歡迎的開源 AI 電腦代理。346K GitHub stars（超越 React）、3.2M 活躍用戶、44,000+ Skills。",
+  "overview": "OpenClaw 是開源的 AI 電腦代理平台，讓 AI 像人一樣操控你的電腦。在不到五個月內達到 346K GitHub stars（超越 React 十年累積的紀錄），月訪客 38M、活躍用戶 3.2M、50 萬+ running instances。\nOpenClaw 的核心理念是「your computer, your agent, your data」——所有操作本地執行，資料不離開你的電腦。使用者自由選擇 LLM 後端（Claude、GPT、Llama、DeepSeek 等）。\n圍繞 OpenClaw 形成了龐大的生態系：44,000+ ClawHub Skills、多個衍生版本（NemoClaw 安全層、PicoClaw Go 輕量版、ZeroClaw Rust 版、MaxClaw MiniMax 版），以及 QQ Bot、Telegram、Discord、WhatsApp 等頻道整合。\n最新版本 v2026.4.2 新增了 chat-native /tasks board、bundled provider 和 plugin 支援、SecretRef 安全升級（覆蓋 64 個整合目標）、PDF diff artifact 輸出等功能。\n2026/4 Anthropic 封鎖訂閱 OAuth 用於第三方工具，直接影響了大量使用 Claude 訂閱的 OpenClaw 用戶。",
   "pros": [
+    "346K GitHub stars，超越 React，開源 AI 工具人氣最高",
     "完全開源免費（MIT 授權）",
-    "本地執行，資料不離開電腦，隱私有保障",
-    "自由選擇 LLM 後端（Claude、GPT、開源模型等）",
-    "5,000+ Skills 生態系，社群極活躍",
-    "145K stars，開源 AI 工具中人氣最高",
-    "支援 MCP，可串接外部工具",
-    "多個衍生版本適合不同需求（NemoClaw 安全、PicoClaw 輕量）"
+    "本地執行，資料不離開電腦",
+    "自由選擇 LLM 後端",
+    "44,000+ ClawHub Skills 生態系",
+    "多頻道整合（Telegram、Discord、Slack、WhatsApp、QQ Bot）",
+    "多個衍生版本（NemoClaw 安全、PicoClaw 輕量、MaxClaw MiniMax）",
+    "SecretRef 安全升級覆蓋 64 個整合目標"
   ],
   "cons": [
     "需要技術背景安裝和設定（CLI 操作）",
-    "品質和穩定性取決於所選的 LLM",
-    "操控電腦意味著高風險——AI 判斷錯誤可能刪除檔案或執行破壞性操作",
-    "對非技術使用者門檻高",
-    "2026/4 Anthropic 封鎖訂閱 OAuth 用於第三方工具，影響使用 Claude 的成本",
-    "消耗大量 token，長時間運行成本可觀"
+    "操控電腦風險高——AI 判斷錯誤可能執行破壞性操作",
+    "2026/4 Anthropic 封鎖訂閱 OAuth，使用 Claude 的成本大增",
+    "品質和穩定性取決於所選 LLM",
+    "消耗大量 token，長時間運行成本可觀",
+    "對非技術使用者門檻高"
   ],
   "features": [
-    {"name": "Computer Use", "desc": "AI 像人一樣操控你的電腦——瀏覽器、檔案系統、終端機、應用程式"},
-    {"name": "自選 LLM", "desc": "支援 Claude、GPT、Llama、DeepSeek 等任何 LLM 作為後端"},
-    {"name": "Skills 系統", "desc": "5,000+ 可重用的自動化工作流，社群持續貢獻"},
-    {"name": "MCP 支援", "desc": "透過 MCP 串接外部工具和服務"},
-    {"name": "多平台", "desc": "支援 macOS、Windows、Linux"},
-    {"name": "WebSocket Gateway", "desc": "可透過 WhatsApp、Telegram、Slack 等訊息平台遠端操控"},
+    {"name": "Computer Use", "desc": "AI 操控瀏覽器、檔案系統、終端機、應用程式"},
+    {"name": "自選 LLM", "desc": "支援 Claude、GPT、Llama、DeepSeek 等任何 LLM"},
+    {"name": "ClawHub Skills", "desc": "44,000+ 可重用的自動化工作流"},
+    {"name": "Chat & Tasks", "desc": "chat-native /tasks board，管理多任務"},
+    {"name": "多頻道整合", "desc": "Telegram、Discord、Slack、WhatsApp、QQ Bot"},
+    {"name": "SecretRef", "desc": "安全認證管理，覆蓋 64 個整合目標"},
+    {"name": "PDF Diff Artifacts", "desc": "生成的 diff 可輸出為 PDF"},
+    {"name": "MCP 支援", "desc": "透過 MCP 串接外部工具"},
     {"name": "Headless 模式", "desc": "可在伺服器上無 GUI 執行"}
   ],
   "history": [
-    {"date": "2025-01", "event": "OpenClaw 首次發布，迅速獲得社群關注"},
+    {"date": "2025-01", "event": "OpenClaw 首次發布"},
     {"date": "2025-03", "event": "GitHub stars 突破 10,000"},
-    {"date": "2025-06", "event": "Skills 系統發布，社群開始貢獻自動化工作流"},
+    {"date": "2025-06", "event": "Skills 系統發布"},
     {"date": "2025-08", "event": "NVIDIA 推出 NemoClaw（安全/隱私層）"},
     {"date": "2025-10", "event": "GitHub stars 突破 50,000"},
-    {"date": "2025-12", "event": "PicoClaw（Go 輕量版）和 ZeroClaw（Rust 版）出現"},
-    {"date": "2026-01", "event": "GitHub stars 突破 100,000，MiniMax 推出 MaxClaw"},
-    {"date": "2026-03", "event": "GitHub stars 突破 145,000"},
-    {"date": "2026-04", "event": "Anthropic 封鎖訂閱 OAuth 用於第三方工具，影響 OpenClaw 使用者的 Claude 成本"}
+    {"date": "2025-12", "event": "PicoClaw（Go）和 ZeroClaw（Rust）出現。MiniMax 推出 MaxClaw"},
+    {"date": "2026-01", "event": "GitHub stars 突破 100,000"},
+    {"date": "2026-02", "event": "超越 React（250K stars），60 天完成 React 十年累積"},
+    {"date": "2026-03", "event": "v2026.3.2 發布。GitHub stars 突破 346K、活躍用戶 3.2M、ClawHub Skills 44,000+"},
+    {"date": "2026-04", "event": "v2026.4.2 發布。Anthropic 封鎖訂閱 OAuth 影響大量用戶。新增 QQ Bot、SecretRef 安全升級、PDF diff artifacts"}
   ],
-  "pricing": "完全免費（開源 MIT 授權）。使用成本取決於所選 LLM 的 API 費用。",
+  "pricing": "完全免費（MIT 授權）。使用成本取決於所選 LLM 的 API 費用。",
   "competitors": ["Claude Computer Use", "Perplexity Computer", "Manus My Computer", "Tencent Workbuddy"],
   "links": [
-    {"title": "OpenClaw GitHub", "url": "https://github.com/openclaw"},
-    {"title": "OpenClaw 文件", "url": "https://docs.openclaw.ai"},
-    {"title": "Skills 目錄", "url": "https://github.com/VoltAgent/awesome-openclaw-skills"},
-    {"title": "NemoClaw（NVIDIA 安全層）", "url": "https://github.com/nvidia/nemoclaw"}
+    {"title": "OpenClaw GitHub", "url": "https://github.com/openclaw/openclaw"},
+    {"title": "OpenClaw 官網", "url": "https://openclaw.ai"},
+    {"title": "OpenClaw 統計", "url": "https://openclawvps.io/blog/openclaw-statistics"},
+    {"title": "ClawHub Skills", "url": "https://github.com/openclaw/openclaw"},
+    {"title": "NemoClaw（NVIDIA）", "url": "https://github.com/nvidia/nemoclaw"}
   ]
 }
