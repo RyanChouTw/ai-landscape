@@ -1,0 +1,58 @@
+{
+  "id": "manus",
+  "name": "Manus",
+  "company": "Meta（原 Butterfly Effect）",
+  "category": "聊天助手",
+  "tags": ["agent", "automation", "meta", "paid"],
+  "oneLiner": "Meta 旗下的通用 AI 代理，可自主執行多步驟任務（研究、分析、程式碼、內容生成），2026 年新增桌面版 My Computer 和 Meta 生態整合。",
+  "overview": "Manus 是由 Butterfly Effect（創辦人蕭弘 Xiao Hong）開發的通用 AI 代理，2025 年 3 月正式上線。2025 年 12 月 Meta 以超過 $2B 收購 Butterfly Effect，Manus 成為 Meta 的 AI 代理核心產品。\n\nManus 的核心能力是自主執行多步驟任務——研究、分析、程式碼撰寫、規劃和內容生成。它在 GAIA 測試（評估 AI 推理、工具使用和真實世界任務自動化能力的基準）上超越 GPT-4 等領先模型。\n\n2026 年 3 月推出桌面應用和 My Computer 功能，讓 Manus 直接操作使用者本地檔案、工具和應用程式。同時宣布與 Meta Ads Manager、Instagram 和 Instagram Creator Marketplace 三大 Meta 服務的整合。\n\nManus 1.6 Max 是最新版本，引入更強大的規劃和問題解決架構、Mobile Development 行動開發能力和 Design View 互動式圖片生成功能。採用信用點數制定價，Free 方案提供 300 日刷新點數，付費方案從 $20/月起。",
+  "pros": [
+    "真正自主的多步驟任務執行——研究到完成一條龍",
+    "GAIA 基準測試超越 GPT-4，任務完成能力強",
+    "My Computer 可直接操作本地檔案和應用程式",
+    "Meta 生態整合——Ads Manager、Instagram、Creator Marketplace",
+    "Free 方案每日 300 刷新點數，無需信用卡",
+    "1.6 Max 版本支援 Mobile Development 和 Design View",
+    "1.5 版速度提升 4 倍，支援全端 Web 應用開發",
+    "Meta $2B 收購確保持續投入資源"
+  ],
+  "cons": [
+    "信用點數制度不透明——複雜任務可能消耗 500-900+ 點",
+    "Free 方案 1,000 初始點數可能只夠做一個複雜任務",
+    "Extended 方案 $200/月 對個人使用者偏貴",
+    "被 Meta 收購後的隱私和資料使用政策仍有疑慮",
+    "任務執行速度受複雜度影響，等待時間可能較長",
+    "生態系統仍在早期——第三方整合有限",
+    "桌面版 My Computer 剛推出（2026/3），穩定性待驗證"
+  ],
+  "features": [
+    {"name": "自主任務執行", "desc": "多步驟自主完成研究、分析、程式碼、規劃和內容生成"},
+    {"name": "My Computer", "desc": "桌面版直接操作本地檔案、工具和應用程式"},
+    {"name": "Meta 整合", "desc": "連接 Meta Ads Manager、Instagram、Creator Marketplace"},
+    {"name": "Mobile Development", "desc": "1.6 Max 新增行動應用開發能力"},
+    {"name": "Design View", "desc": "互動式圖片生成和視覺設計"},
+    {"name": "全端 Web 開發", "desc": "1.5 版起支援全端 Web 應用開發"},
+    {"name": "研究與分析", "desc": "深度研究、數據分析和報告生成"},
+    {"name": "規劃與決策", "desc": "進階規劃和問題解決架構"}
+  ],
+  "history": [
+    {"date": "2022-01", "event": "Butterfly Effect（蝴蝶效應科技）由蕭弘在中國創立，開發 AI 瀏覽器插件"},
+    {"date": "2023-01", "event": "獲得騰訊和紅杉中國領投的 A 輪融資"},
+    {"date": "2024-06", "event": "ByteDance 嘗試以 $30M 收購 Monica（前身產品），被蕭弘拒絕"},
+    {"date": "2024-12", "event": "公司遷移至新加坡，估值近 $100M"},
+    {"date": "2025-03", "event": "Manus AI 代理正式上線，GAIA 測試超越 GPT-4"},
+    {"date": "2025-04", "event": "Benchmark 領投 $75M Series B"},
+    {"date": "2025-10", "event": "Manus 1.5 發布——速度提升 4 倍，支援全端 Web 開發"},
+    {"date": "2025-12", "event": "Meta 以超過 $2B 收購 Butterfly Effect，Manus 1.6 發布"},
+    {"date": "2026-03", "event": "桌面版上線，My Computer 功能發布，Meta 三大服務整合（Ads Manager、IG、Creator Marketplace）"},
+    {"date": "2026-03", "event": "Manus 1.6 Max 發布——更強規劃架構、Mobile Dev、Design View"}
+  ],
+  "pricing": "Free（1,000 初始點數 + 300 日刷新點數，1 並行任務）/ Standard $20/月（4,000 點數）/ Customizable $40/月（8,000 點數）/ Extended $200/月（40,000 點數）。年付 17% 折扣。所有方案含每日 300 刷新點數。",
+  "competitors": ["ChatGPT Agent Mode", "Claude Cowork", "Perplexity Computer", "OpenClaw"],
+  "links": [
+    {"title": "Manus 官網", "url": "https://manus.im"},
+    {"title": "Manus 定價", "url": "https://manus.im/pricing"},
+    {"title": "Manus 文件", "url": "https://manus.im/docs/introduction/plans"},
+    {"title": "Manus Blog", "url": "https://manus.im/blog/manus-joins-meta-for-next-era-of-innovation"}
+  ]
+}

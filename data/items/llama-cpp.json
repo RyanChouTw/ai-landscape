@@ -1,0 +1,53 @@
+{
+  "id": "llama-cpp",
+  "name": "llama.cpp",
+  "company": "ggml.org（Georgi Gerganov）",
+  "category": "模型推論",
+  "tags": ["open-source", "inference", "local", "cpu"],
+  "oneLiner": "純 C/C++ 實現的 LLM 推論引擎，GGUF 量化格式的創造者。讓 LLM 能在 CPU 和消費級硬體上高效運行，是 Ollama 等工具的底層引擎。",
+  "overview": "llama.cpp 是由 Georgi Gerganov 開發的純 C/C++ LLM 推論引擎，目標是讓大型語言模型能在消費級硬體上高效運行，無需依賴 Python 或 CUDA。\nllama.cpp 創造了 GGUF（GPT-Generated Unified Format）量化格式，這是目前最流行的模型量化格式。2026 年的 i-quants（importance-matrix quants）使用非線性 codebook 最佳化的量化方法，在極端壓縮下仍維持良好品質，是目前最先進的量化技術。\n2026 年的重要改進包括：lazy conversion 功能（不需將整個模型載入 RAM，大幅降低轉換門檻）、Docker Hub 整合（直接從 Docker Hub 拉取和運行 GGUF 模型，使用 OCI manifest 管理）、以及 Hugging Face Inference Endpoints 原生支援 GGUF。\nllama.cpp 是 Ollama、LM Studio 等眾多本地 LLM 工具的底層引擎。支援 CPU（AVX/AVX2/AVX-512）、NVIDIA CUDA、Apple Metal、AMD ROCm、Vulkan 等多種加速後端。",
+  "pros": [
+    "純 C/C++ 實現，零 Python 依賴，部署極簡",
+    "CPU 推論效能業界最佳，無 GPU 也能跑",
+    "GGUF 格式——最流行的模型量化標準",
+    "i-quants 極端壓縮仍維持良好品質",
+    "支援多種加速後端（CUDA/Metal/ROCm/Vulkan）",
+    "Docker Hub 整合，模型版本管理方便",
+    "是 Ollama 等工具的底層引擎，生態系影響力大"
+  ],
+  "cons": [
+    "命令列介面為主，一般使用者門檻較高",
+    "編譯配置可能需要調整（CMake 選項多）",
+    "不含 web UI，需搭配其他前端",
+    "模型轉換和量化流程需要學習",
+    "大模型仍需足夠 RAM（VRAM + 主記憶體）",
+    "API server 功能不如 vLLM 完整"
+  ],
+  "features": [
+    {"name": "GGUF 格式", "desc": "最流行的模型量化格式，被各大平台支援"},
+    {"name": "i-quants", "desc": "importance-matrix 非線性 codebook 量化，極端壓縮最先進"},
+    {"name": "CPU 推論", "desc": "AVX/AVX2/AVX-512 最佳化，無 GPU 也能高效運行"},
+    {"name": "多加速後端", "desc": "CUDA、Metal、ROCm、Vulkan 等 GPU 加速"},
+    {"name": "Lazy Conversion", "desc": "轉換時不需載入整個模型到 RAM"},
+    {"name": "Docker Hub 整合", "desc": "從 Docker Hub 直接拉取 GGUF 模型"},
+    {"name": "API Server", "desc": "內建 HTTP server，提供 OpenAI 相容 API"}
+  ],
+  "history": [
+    {"date": "2023-03", "event": "Georgi Gerganov 發布 llama.cpp，支援 Meta LLaMA"},
+    {"date": "2023-08", "event": "GGUF 格式發布，取代舊版 GGML 格式"},
+    {"date": "2024-01", "event": "支援 Mixtral 等 MoE 模型"},
+    {"date": "2024-06", "event": "K-quants 量化方法成熟"},
+    {"date": "2025-01", "event": "i-quants 非線性 codebook 量化引入"},
+    {"date": "2025-08", "event": "Hugging Face Inference Endpoints 原生支援 GGUF"},
+    {"date": "2026-01", "event": "Lazy conversion 和 Docker Hub 整合上線"},
+    {"date": "2026-03", "event": "支援 Gemma 4 系列模型"}
+  ],
+  "pricing": "完全免費開源（MIT License）。",
+  "competitors": ["vLLM", "Ollama", "TensorRT-LLM", "ExLlamaV2"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/ggml-org/llama.cpp"},
+    {"title": "GGUF 格式說明", "url": "https://huggingface.co/docs/hub/en/gguf-llamacpp"},
+    {"title": "Docker Hub 整合", "url": "https://www.docker.com/blog/llama-cpp-pulls-gguf-models-from-docker-hub/"},
+    {"title": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Llama.cpp"}
+  ]
+}

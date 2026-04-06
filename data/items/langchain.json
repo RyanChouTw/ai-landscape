@@ -1,0 +1,53 @@
+{
+  "id": "langchain",
+  "name": "LangChain",
+  "company": "LangChain, Inc.",
+  "category": "Agent 框架",
+  "tags": ["open-source", "framework", "agent"],
+  "oneLiner": "最廣泛使用的 LLM 應用開發框架，提供鏈式（chain）抽象、工具整合、RAG pipeline 和 LangSmith 可觀測性平台。2026 年推出 LangSmith Fleet 和 Agent Builder。",
+  "overview": "LangChain 是由 LangChain, Inc. 開發的開源 LLM 應用框架，提供 Python 和 JavaScript SDK，讓開發者能以模組化方式串接 LLM、工具、記憶體和資料來源，建構從簡單 chatbot 到複雜 multi-agent 系統的各種應用。\n核心抽象包括 Chain（串聯多個步驟）、Agent（讓 LLM 自主選擇工具）、Tool（外部功能整合）、Memory（對話記憶）和 Retriever（RAG 資料檢索）。\n2026 年 LangChain 推出 Agent Builder（後更名為 LangSmith Fleet），可用自然語言描述需求，自動產生 prompt、工具選擇和 subagent 架構。LangSmith Fleet 加入了 agent identity、sharing 和 permissions，支援企業級 agent 管理。\n搭配的 LangSmith 平台提供 LLM 可觀測性、實驗比較、Insights Agent 自動分析 traces、以及 Polly AI 助手。Deep Agents v0.5.0 支援 async subagent 非同步背景執行。",
+  "pros": [
+    "生態系最成熟——Python/JS 雙語言支援，整合數百種 LLM 和工具",
+    "LangSmith 提供業界領先的 LLM 可觀測性和實驗管理",
+    "Agent Builder / LangSmith Fleet 降低 agent 開發門檻",
+    "Deep Agents 支援 async subagent，可非同步執行複雜任務",
+    "Insights Agent 自動分析 traces，偵測失敗模式和使用模式",
+    "與 LangGraph 深度整合，形成完整的 agent 開發生態",
+    "開源核心 + 商業 LangSmith 平台，彈性選擇"
+  ],
+  "cons": [
+    "抽象層過厚，debug 困難，學習曲線較陡",
+    "API 頻繁變動，版本升級常需大幅改動程式碼",
+    "過度封裝導致效能開銷，簡單場景可能過於複雜",
+    "LangSmith 商業版價格對小團隊偏高",
+    "文件品質參差不齊，部分範例已過時"
+  ],
+  "features": [
+    {"name": "Agent Builder / Fleet", "desc": "用自然語言描述需求，自動產生 agent 架構，含 prompt、工具和 subagent"},
+    {"name": "LangSmith 可觀測性", "desc": "trace 記錄、實驗比較、自動分析和 Polly AI 助手"},
+    {"name": "Deep Agents", "desc": "v0.5.0 支援 async subagent 非同步背景執行"},
+    {"name": "Sandboxes", "desc": "為 agent 提供沙箱環境安全執行程式碼（Private Preview）"},
+    {"name": "多模態工具", "desc": "read_file 工具支援 PDF、音訊、影片等多模態檔案"},
+    {"name": "RAG Pipeline", "desc": "內建 document loader、text splitter、vector store 和 retriever"},
+    {"name": "NVIDIA 整合", "desc": "2026 年 3 月與 NVIDIA 深度整合"}
+  ],
+  "history": [
+    {"date": "2022-10", "event": "Harrison Chase 以開源專案形式發布 LangChain"},
+    {"date": "2023-04", "event": "LangChain, Inc. 成立，獲得 $10M 種子輪"},
+    {"date": "2023-07", "event": "LangSmith（LLM 可觀測平台）上線"},
+    {"date": "2024-01", "event": "LangChain v0.1 發布，API 大幅重構"},
+    {"date": "2024-06", "event": "LangGraph 獨立為子產品"},
+    {"date": "2025-06", "event": "LangSmith Insights Agent 上線"},
+    {"date": "2026-01", "event": "Agent Builder 上線，Deep Agents v0.5.0 發布"},
+    {"date": "2026-03", "event": "Agent Builder 更名為 LangSmith Fleet，NVIDIA 整合發布"}
+  ],
+  "pricing": "LangChain 框架免費開源。LangSmith：Developer 免費（5,000 traces/月，14 天保留）/ Plus $39/seat/月（10,000 traces，$2.50/1k 超額）/ Enterprise 客製定價。Extended traces $5.00/1k（400 天保留）。",
+  "competitors": ["LlamaIndex", "CrewAI", "Microsoft Agent Framework", "Google ADK", "Dify"],
+  "links": [
+    {"title": "LangChain 官網", "url": "https://www.langchain.com"},
+    {"title": "GitHub", "url": "https://github.com/langchain-ai/langchain"},
+    {"title": "LangSmith", "url": "https://smith.langchain.com"},
+    {"title": "文件", "url": "https://docs.langchain.com"},
+    {"title": "定價", "url": "https://www.langchain.com/pricing"}
+  ]
+}

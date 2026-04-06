@@ -1,0 +1,49 @@
+{
+  "id": "cloudflare-crawl",
+  "name": "Cloudflare /crawl",
+  "company": "Cloudflare",
+  "category": "資料擷取",
+  "tags": ["api", "scraping", "cloud"],
+  "oneLiner": "Cloudflare Browser Rendering 的 /crawl 端點——一個 API 呼叫即可爬取整個網站，輸出 HTML、Markdown 或結構化 JSON。尊重 robots.txt 和 AI Crawl Control。",
+  "overview": "Cloudflare /crawl 是 Cloudflare Browser Rendering 服務的端點，於 2026 年 3 月以 open beta 形式推出。只需提交一個起始 URL，即可自動發現頁面、在 headless 瀏覽器中渲染、並以多種格式（HTML、Markdown、Workers AI 驅動的結構化 JSON）輸出結果。\n爬取任務以非同步方式運行——提交 URL 後收到 job ID，之後定期查詢結果。可配置爬取深度、頁面上限、以及 include/exclude URL wildcard 模式來控制範圍。\n/crawl 是 signed-agent，預設尊重 robots.txt 和 Cloudflare 的 AI Crawl Control 設定，讓開發者輕鬆遵守網站規則。爬取任務最長運行 7 天，結果保存 14 天。\n核心使用場景包括 RAG pipeline 資料擷取、模型訓練資料蒐集、網站內容監控和研究。\n可在 Workers Free 和 Paid 方案上使用，對已在 Cloudflare 生態系的開發者是最方便的選擇。",
+  "pros": [
+    "一個 API 呼叫爬取整個網站，極度簡單",
+    "多輸出格式（HTML、Markdown、結構化 JSON）",
+    "預設尊重 robots.txt 和 AI Crawl Control",
+    "Cloudflare 全球邊緣網路，速度和可靠性佳",
+    "Workers Free 方案即可使用",
+    "非同步處理，適合大型網站",
+    "與 Workers AI 整合，可直接做結構化提取"
+  ],
+  "cons": [
+    "仍在 Open Beta，功能和 API 可能變動",
+    "綁定 Cloudflare 生態系（需 Workers 環境）",
+    "爬取任務最長 7 天，超大網站可能不夠",
+    "結果只保存 14 天，需及時取回",
+    "反爬蟲能力不如 Firecrawl 專業",
+    "不支援需要登入的頁面",
+    "Workers 免費方案有請求數限制"
+  ],
+  "features": [
+    {"name": "一鍵爬取", "desc": "提交起始 URL 即可自動發現和渲染整個網站"},
+    {"name": "多格式輸出", "desc": "HTML、Markdown、Workers AI 結構化 JSON"},
+    {"name": "Robots.txt 合規", "desc": "signed-agent 預設尊重 robots.txt 和 AI Crawl Control"},
+    {"name": "範圍控制", "desc": "配置深度、頁面上限和 URL wildcard 模式"},
+    {"name": "非同步處理", "desc": "提交後取得 job ID，定期查詢結果"},
+    {"name": "Workers AI 整合", "desc": "結構化 JSON 輸出由 Workers AI 驅動"},
+    {"name": "Headless 瀏覽器", "desc": "完整瀏覽器渲染，處理 JavaScript 內容"}
+  ],
+  "history": [
+    {"date": "2024-09", "event": "Cloudflare Browser Rendering 正式上線"},
+    {"date": "2025-03", "event": "AI Crawl Control 功能發布"},
+    {"date": "2025-10", "event": "/scrape 和 /snapshot 端點上線"},
+    {"date": "2026-03", "event": "/crawl 端點以 Open Beta 形式發布"}
+  ],
+  "pricing": "Workers Free 方案即可使用（有請求數限制）。Workers Paid 方案 $5/月起，依瀏覽器渲染用量計費。",
+  "competitors": ["Firecrawl", "Crawl4AI", "Jina Reader", "Apify"],
+  "links": [
+    {"title": "/crawl 文件", "url": "https://developers.cloudflare.com/browser-rendering/rest-api/crawl-endpoint/"},
+    {"title": "Browser Rendering 文件", "url": "https://developers.cloudflare.com/browser-rendering/"},
+    {"title": "發布公告", "url": "https://developers.cloudflare.com/changelog/post/2026-03-10-br-crawl-endpoint/"}
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "groq-lpu",
+  "name": "Groq LPU",
+  "company": "Groq (NVIDIA 授權)",
+  "category": "硬體",
+  "tags": ["closed", "paid"],
+  "oneLiner": "專為 AI 推論打造的 LPU（Language Processing Unit），用 SRAM 取代 HBM 實現確定性超低延遲推論。NVIDIA 以 $20B 授權收購，GTC 2026 發布 Groq 3 LPU。",
+  "overview": "Groq LPU（Language Processing Unit）是專為 AI 推論（特別是 token 生成階段）設計的處理器，核心創新是用 SRAM 直接整合在晶片上取代傳統 HBM（High Bandwidth Memory），實現確定性（Deterministic）的超低延遲推論。\n\nGroq 的推論速度遠超 GPU：Llama 3 70B 達 280-300 tokens/second，agentic 場景目標 1,500 tokens/second。這是因為 SRAM 直接在晶片上，消除了記憶體搬移瓶頸。\n\n2025 年 12 月聖誕夜，NVIDIA 以 $20B 達成授權+人才收購協議（非完整收購——Groq 保持名義獨立）。創辦人 Jonathan Ross 和團隊加入 NVIDIA。\n\n2026 年 3 月 GTC 2026，NVIDIA 發布 Groq 3 LPU——首顆源自此交易的晶片。Samsung 4nm 製程，記憶體頻寬 150 TB/s（比 NVIDIA Rubin GPU 的 22 TB/s 快 7 倍）。Groq 3 作為 Vera Rubin 平台的 decode-phase 協處理器，與 GPU 搭配使用，組合系統比純 Blackwell 達到 35x tokens/watt 提升。\n\nGroq 3 LPX 機架容納 256 顆 LPU，物理部署在 Vera Rubin 機架系統旁邊。預計 2026 Q3 量產。",
+  "pros": [
+    "推論速度遠超 GPU——Llama 3 70B 280-300 tokens/s",
+    "確定性延遲——可預測的一致效能",
+    "SRAM 架構消除記憶體搬移瓶頸",
+    "Groq 3 記憶體頻寬 150 TB/s，比 GPU 快 7 倍",
+    "與 NVIDIA GPU 搭配實現 35x tokens/watt 提升",
+    "NVIDIA $20B 投資驗證技術價值",
+    "針對 agentic AI 場景優化——目標 1,500 tokens/s"
+  ],
+  "cons": [
+    "僅適合推論，不能訓練模型",
+    "SRAM 成本高，晶片價格昂貴",
+    "Groq 3 尚未量產（預計 2026 Q3）",
+    "被 NVIDIA 授權收購後，獨立性存疑",
+    "目前主要透過 Groq Cloud API 使用，無法購買實體晶片",
+    "軟體生態不如 NVIDIA CUDA 成熟",
+    "模型支援範圍有限"
+  ],
+  "features": [
+    {"name": "LPU 架構", "desc": "SRAM 取代 HBM，確定性超低延遲推論"},
+    {"name": "Groq 3 LPU", "desc": "Samsung 4nm、150 TB/s 記憶體頻寬、1,500 tokens/s 目標"},
+    {"name": "Groq 3 LPX 機架", "desc": "256 顆 LPU 機架，與 Vera Rubin 系統搭配部署"},
+    {"name": "超低延遲推論", "desc": "Llama 3 70B 達 280-300 tokens/s"},
+    {"name": "35x Tokens/Watt", "desc": "與 GPU 搭配比純 Blackwell 高 35 倍能效"},
+    {"name": "Groq Cloud API", "desc": "雲端 API 服務，即時體驗 LPU 推論速度"},
+    {"name": "Agentic AI 優化", "desc": "針對多步驟 Agent 對話場景設計"}
+  ],
+  "history": [
+    {"date": "2016", "event": "Groq 由 Jonathan Ross（前 Google TPU 核心團隊）創立"},
+    {"date": "2020", "event": "第一代 LPU 晶片問世"},
+    {"date": "2024-02", "event": "Groq Cloud 推論 API 上線，Llama 速度驚艷業界"},
+    {"date": "2024-08", "event": "Groq 完成 D 輪融資，估值 $6.8B"},
+    {"date": "2025-06", "event": "第二代 LPU 推出，效能大幅提升"},
+    {"date": "2025-12-24", "event": "NVIDIA 以 $20B 達成授權+人才收購協議"},
+    {"date": "2026-03", "event": "GTC 2026 發布 Groq 3 LPU——Samsung 4nm、150 TB/s、Vera Rubin 協處理器"},
+    {"date": "2026-Q3", "event": "Groq 3 LPU 預計量產出貨"}
+  ],
+  "pricing": "Groq Cloud API：按 token 計費，價格遠低於 GPU 推論。Llama 3 70B 約 $0.59/M input tokens、$0.79/M output tokens。Groq 3 硬體定價尚未公布。",
+  "competitors": ["NVIDIA GPUs", "Google TPU", "Cerebras WSE", "SambaNova", "AWS Inferentia"],
+  "links": [
+    {"title": "Groq 官網", "url": "https://groq.com"},
+    {"title": "LPU 架構說明", "url": "https://groq.com/lpu-architecture"},
+    {"title": "Groq + NVIDIA 公告", "url": "https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale"},
+    {"title": "Groq 3 LPU 報導", "url": "https://www.breezyscroll.com/technology-news/nvidia-groq-3-lpu-gtc-2026-inference-chip/"}
+  ]
+}

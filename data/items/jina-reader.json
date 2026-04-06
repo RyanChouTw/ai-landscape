@@ -1,0 +1,49 @@
+{
+  "id": "jina-reader",
+  "name": "Jina Reader",
+  "company": "Jina AI",
+  "category": "資料擷取",
+  "tags": ["api", "scraping", "free-tier"],
+  "oneLiner": "最簡單的網頁轉 LLM 格式工具——URL 前加上 r.jina.ai/ 前綴即可取得乾淨 Markdown。免費基本使用，內建 ReaderLM-v2 做 HTML→Markdown/JSON 轉換。",
+  "overview": "Jina Reader 是 Jina AI 提供的 API，將任意 URL 轉換為 LLM 友善的格式（Markdown 或 JSON）。最簡單的用法是在 URL 前加上 https://r.jina.ai/ 前綴，即可獲得乾淨的主要內容。\n底層使用 Puppeteer 和 headless Chrome 渲染頁面，原生支援 SPA（Single Page Application）和動態內容。ReaderLM-v2 是其最新的小型語言模型，專門將原始 HTML 轉為乾淨 Markdown 或 JSON，品質比 v1 提升 3 倍，支援 JSON schema 或自然語言指令做結構化提取。\n支援 PDF 內容提取（使用 PDF.js）、iframe 嵌入內容提取、以及 SERP API 功能（搜尋引擎結果頁面的內容擷取）。\n免費基本使用無需 API key，新 API key 附贈 1,000 萬 token。付費後支援更高 RPM 和並發數。定價以 token 計算，約 $0.02/百萬 token，是最便宜的選擇之一。\n回應格式為 JSON，包含 URL、title、content 和 timestamp。",
+  "pros": [
+    "最簡單的使用方式——URL 前加前綴即可",
+    "免費基本使用，新 key 附贈 1,000 萬 token",
+    "ReaderLM-v2 品質提升 3 倍，結構化提取能力強",
+    "支援 PDF 和 iframe 內容提取",
+    "SERP API 可直接獲取搜尋結果內容",
+    "定價極低（~$0.02/百萬 token）",
+    "SPA 和動態內容原生支援"
+  ],
+  "cons": [
+    "功能較 Firecrawl 單一（無全站爬取、無 webhook）",
+    "免費額度的 rate limit 較低（100 RPM，2 concurrent）",
+    "反爬蟲能力不如 Firecrawl（無代理輪換、無 CAPTCHA 解決）",
+    "大量頁面場景需自行管理並發和排程",
+    "不支援全站爬取（只做單頁轉換）",
+    "部分複雜頁面可能提取不完整"
+  ],
+  "features": [
+    {"name": "URL 前綴轉換", "desc": "r.jina.ai/ + URL 即可獲得乾淨 Markdown"},
+    {"name": "ReaderLM-v2", "desc": "小型 LM 做 HTML→Markdown/JSON，品質 3 倍提升"},
+    {"name": "PDF 提取", "desc": "使用 PDF.js 提取 PDF 內容"},
+    {"name": "SERP API", "desc": "搜尋引擎結果頁面的內容擷取"},
+    {"name": "結構化提取", "desc": "JSON schema 或自然語言指令提取結構化資料"},
+    {"name": "SPA 支援", "desc": "Puppeteer + headless Chrome 渲染動態內容"},
+    {"name": "iframe 提取", "desc": "可選啟用 iframe 嵌入內容提取"}
+  ],
+  "history": [
+    {"date": "2024-04", "event": "Jina Reader API 發布"},
+    {"date": "2024-06", "event": "SERP API 功能上線"},
+    {"date": "2024-10", "event": "ReaderLM-v1 發布"},
+    {"date": "2025-02", "event": "ReaderLM-v2 發布，品質提升 3 倍"},
+    {"date": "2025-05", "event": "新定價模型上線"}
+  ],
+  "pricing": "免費基本使用（100 RPM，2 concurrent）。新 API key 附贈 1,000 萬 token。付費方案以 token 計費，約 $0.02/百萬 token。Premium：5,000 RPM，500 concurrent。",
+  "competitors": ["Firecrawl", "Crawl4AI", "Cloudflare /crawl", "Apify"],
+  "links": [
+    {"title": "Reader API", "url": "https://jina.ai/reader/"},
+    {"title": "GitHub", "url": "https://github.com/jina-ai/reader"},
+    {"title": "Jina AI 官網", "url": "https://jina.ai"}
+  ]
+}

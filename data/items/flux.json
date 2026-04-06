@@ -1,0 +1,49 @@
+{
+  "id": "flux",
+  "name": "Flux",
+  "company": "Black Forest Labs",
+  "category": "圖片生成",
+  "tags": ["open-source", "freemium", "image-generation"],
+  "oneLiner": "由 Stable Diffusion 原始團隊打造的開源圖片生成模型，FLUX.2 系列提供從 Apache 2.0 開源到商用 API 的完整產品線。",
+  "overview": "Flux 是由 Black Forest Labs（Stable Diffusion 核心團隊成員創立）開發的圖片生成模型家族。FLUX.1 系列以 12B 參數的 Rectified Flow Transformer 架構為基礎，在文字渲染和提示遵循度上表現出色。\nFLUX.2 系列是 2026 年的最新世代，包含多個版本：FLUX.2 Klein 4B（Apache 2.0 完全開源，4 步生成）、FLUX.2 Klein 9B 和 FLUX.2 Dev（非商業授權，開放研究使用）、FLUX.2 Pro 和 FLUX.2 Max（商業 API）。此外還有 FLUX Kontext 系列用於圖片編輯。\nBlack Forest Labs 提供自有 API 和 Hugging Face 開源模型下載，形成從完全免費到付費 API 的完整產品線。開源版本在社群中極受歡迎，成為 ComfyUI 等工具的首選模型。",
+  "pros": [
+    "FLUX.2 Klein 4B 採 Apache 2.0 完全開源，可商用",
+    "文字渲染能力在開源模型中領先",
+    "FLUX.1 Schnell 僅需 1-4 步即可生成，速度極快",
+    "Stable Diffusion 原始團隊技術底蘊深厚",
+    "ComfyUI 生態系完整支援，社群活躍",
+    "API 定價按解析度計費，靈活彈性"
+  ],
+  "cons": [
+    "FLUX.2 Klein 9B 和 Dev 非商業授權",
+    "頂級模型（Pro/Max）需付費 API",
+    "12B 參數模型需較高 VRAM（建議 24GB+）",
+    "Klein 4B 品質與 Pro/Max 有差距",
+    "缺乏官方 GUI，需依賴第三方工具",
+    "模型更新頻率較快，社群工作流需頻繁適配"
+  ],
+  "features": [
+    {"name": "FLUX.2 Klein 4B", "desc": "Apache 2.0 開源、4 步生成、可商用的輕量版本"},
+    {"name": "FLUX.2 Pro/Max", "desc": "商業級 API，最高品質圖片生成"},
+    {"name": "FLUX Kontext", "desc": "圖片編輯和風格轉換模型"},
+    {"name": "Rectified Flow Transformer", "desc": "12B 參數架構，優異的文字渲染和提示遵循"},
+    {"name": "多平台部署", "desc": "支援 Hugging Face、fal.ai、Replicate 等多平台"},
+    {"name": "FLUX.1 Schnell", "desc": "Apache 2.0 開源，1-4 步超快生成"}
+  ],
+  "history": [
+    {"date": "2024-08", "event": "Black Forest Labs 成立，發布 FLUX.1 系列（Pro/Dev/Schnell）"},
+    {"date": "2024-10", "event": "發布官方 API，被 xAI Grok 採用為圖片生成後端"},
+    {"date": "2025-06", "event": "發布 FLUX Kontext 圖片編輯模型"},
+    {"date": "2026-01", "event": "發布 FLUX.2 系列，Klein 4B 採 Apache 2.0 開源"},
+    {"date": "2026-02", "event": "FLUX.2 Max 上線，最高品質商業模型"}
+  ],
+  "pricing": "開源模型免費下載使用。API 按解析度計費：FLUX.2 Klein $0.014/張起、FLUX.2 Pro 按 megapixel 計費（輸入 $0.03/MP、輸出 $0.07/MP 起）、FLUX.2 Max 輸出 $0.07/MP 起。",
+  "competitors": ["Midjourney", "DALL-E 3", "Imagen 4", "Stable Diffusion"],
+  "links": [
+    {"title": "Black Forest Labs 官網", "url": "https://bfl.ai"},
+    {"title": "FLUX.2 模型頁面", "url": "https://bfl.ai/models/flux-2"},
+    {"title": "GitHub", "url": "https://github.com/black-forest-labs/flux"},
+    {"title": "FLUX.1 Dev（Hugging Face）", "url": "https://huggingface.co/black-forest-labs/FLUX.1-dev"},
+    {"title": "API 定價", "url": "https://bfl.ai/pricing"}
+  ]
+}

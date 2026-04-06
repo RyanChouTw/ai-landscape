@@ -1,0 +1,50 @@
+{
+  "id": "autogen",
+  "name": "AutoGen / Microsoft Agent Framework",
+  "company": "Microsoft",
+  "category": "Agent 框架",
+  "tags": ["open-source", "framework", "agent", "microsoft"],
+  "oneLiner": "Microsoft 的開源 agent 框架，由 AutoGen + Semantic Kernel 合併而成。2026 年 4 月達到 v1.0，支援 sequential/concurrent/handoff/group chat 等編排模式。",
+  "overview": "Microsoft Agent Framework 是由 AutoGen 的簡潔 agent 抽象和 Semantic Kernel 的企業級功能合併而成的開源框架，於 2026 年 4 月正式達到 v1.0。\nAutoGen 最初由 Microsoft Research 開發，以多 agent 對話為核心設計——讓多個 AI agent 和人類在群組聊天中協作解決問題。2025 年 10 月 Microsoft 宣布將 AutoGen 和 Semantic Kernel 合併為統一的 Agent Framework。\nv1.0 版本支援 sequential、concurrent、handoff、group chat 和 Magentic-One 五種編排模式，並提供 streaming、checkpointing、human-in-the-loop、pause/resume 等生產級功能。Agent 和工作流可用 YAML 宣告式定義並版本控制。\n原有的 AutoGen 和 Semantic Kernel 進入維護模式，僅修復 bug 和安全漏洞，不再新增功能。Microsoft 提供詳細的遷移指南和遷移助手工具。",
+  "pros": [
+    "Microsoft 官方支援，與 Azure 生態系深度整合",
+    ".NET 和 Python 雙平台支援",
+    "v1.0 穩定 API，承諾長期維護",
+    "五種編排模式涵蓋常見多 agent 場景",
+    "YAML 宣告式定義，支援版本控制",
+    "遷移助手自動分析現有程式碼並生成遷移計畫",
+    "Magentic-One 提供強大的多 agent 協作能力"
+  ],
+  "cons": [
+    "AutoGen → Agent Framework 的遷移對現有使用者是額外負擔",
+    "與 Azure 生態系綁定較深，非 Azure 使用者較不方便",
+    "v1.0 剛發布，社群生態系仍在重建中",
+    "相較 LangChain 整合的第三方工具較少",
+    "文件仍在從 AutoGen/SK 過渡到統一框架"
+  ],
+  "features": [
+    {"name": "多 Agent 編排", "desc": "sequential、concurrent、handoff、group chat、Magentic-One 五種模式"},
+    {"name": "YAML 宣告式", "desc": "Agent 和工作流可用 YAML 定義，支援版本控制"},
+    {"name": "Streaming", "desc": "即時串流 agent 回應"},
+    {"name": "Checkpointing", "desc": "自動保存執行狀態，支援 pause/resume"},
+    {"name": "Human-in-the-Loop", "desc": "人工審核和批准節點"},
+    {"name": "遷移助手", "desc": "自動分析 AutoGen/SK 程式碼，生成遷移計畫"},
+    {"name": "Magentic-One", "desc": "Microsoft Research 的多 agent 協作架構"}
+  ],
+  "history": [
+    {"date": "2023-09", "event": "Microsoft Research 開源 AutoGen"},
+    {"date": "2024-03", "event": "AutoGen v0.2 發布，multi-agent 對話成熟"},
+    {"date": "2024-11", "event": "AutoGen v0.4 大規模重構"},
+    {"date": "2025-10", "event": "Microsoft 宣布將 AutoGen + Semantic Kernel 合併為 Microsoft Agent Framework"},
+    {"date": "2026-01", "event": "AutoGen 和 Semantic Kernel 進入維護模式"},
+    {"date": "2026-04", "event": "Microsoft Agent Framework v1.0 正式發布（.NET + Python）"}
+  ],
+  "pricing": "完全免費開源（MIT License）。搭配 Azure AI Foundry 使用時依 Azure 定價計費。",
+  "competitors": ["LangGraph", "CrewAI", "Google ADK", "Claude Agent SDK"],
+  "links": [
+    {"title": "Microsoft Agent Framework 文件", "url": "https://learn.microsoft.com/en-us/agent-framework/overview/"},
+    {"title": "AutoGen GitHub", "url": "https://github.com/microsoft/autogen"},
+    {"title": "AutoGen 研究專案", "url": "https://www.microsoft.com/en-us/research/project/autogen/"},
+    {"title": "遷移指南", "url": "https://learn.microsoft.com/en-us/agent-framework/migration-guide/from-autogen/"}
+  ]
+}

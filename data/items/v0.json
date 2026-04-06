@@ -1,0 +1,51 @@
+{
+  "id": "v0",
+  "name": "v0",
+  "company": "Vercel",
+  "category": "AI 設計",
+  "tags": ["closed", "freemium"],
+  "oneLiner": "Vercel 的 AI 開發工具，將自然語言轉換為生產級 React / Next.js 程式碼，使用 shadcn/ui 和 Tailwind CSS，2026 年進化為全端應用建構平台。",
+  "overview": "v0 是 Vercel 打造的 AI 開發工具，用戶用自然語言描述需求，即可生成生產級的 React 元件和 Next.js 應用。v0 產出的程式碼使用 shadcn/ui 元件庫和 Tailwind CSS，品質和慣用性在同類工具中最佳。\n2023 年 10 月以 v0.dev 推出時是 UI 元件生成器，2026 年 1 月更名為 v0.app，反映其從元件生成器進化為全端應用建構平台。\n2026 年 2 月重大更新加入：Git 整合、VS Code 風格編輯器、資料庫連接、Agentic 工作流程。現在可以直接在 v0 中建構、編輯和部署完整應用。\nv0 特別擅長 UI 元件、Landing Page 和 Dashboard，但後端邏輯、認證和資料庫仍依賴外部工具。",
+  "pros": [
+    "React/Next.js 程式碼品質業界最高——shadcn/ui、Tailwind CSS、modern best practices",
+    "從元件生成到全端應用建構的完整進化",
+    "Git 整合和 VS Code 風格編輯器",
+    "免費方案即可嘗試（$5 credits）",
+    "與 Vercel 部署無縫整合——一鍵上線",
+    "Agentic 工作流程支援更複雜的應用建構",
+    "資料庫連接功能（2026 新增）"
+  ],
+  "cons": [
+    "鎖定 React/Next.js 生態——不支援 Vue、Svelte 等",
+    "後端、認證、資料庫邏輯仍需外部工具",
+    "Premium 和 Team 方案費用不低（$20-100/月）",
+    "複雜業務邏輯需要開發者手動補充",
+    "Credit 消耗快，大型專案成本高",
+    "部署鎖定 Vercel 平台"
+  ],
+  "features": [
+    {"name": "自然語言生成", "desc": "描述需求即生成 React/Next.js 元件或完整應用"},
+    {"name": "shadcn/ui + Tailwind", "desc": "使用現代最佳實踐的元件庫和樣式系統"},
+    {"name": "Git 整合", "desc": "與 GitHub 整合，支援版本控制"},
+    {"name": "VS Code 編輯器", "desc": "內建 VS Code 風格程式碼編輯器"},
+    {"name": "資料庫連接", "desc": "直接在 v0 中連接和操作資料庫"},
+    {"name": "Agentic 工作流", "desc": "AI Agent 自動執行多步驟建構任務"},
+    {"name": "一鍵部署", "desc": "與 Vercel 整合，即時部署上線"}
+  ],
+  "history": [
+    {"date": "2023-10", "event": "以 v0.dev 推出，主打 UI 元件生成"},
+    {"date": "2024-03", "event": "加入完整頁面和多元件生成"},
+    {"date": "2024-09", "event": "支援更多 shadcn/ui 元件和設計模式"},
+    {"date": "2025-03", "event": "加入應用建構功能，從元件生成器擴展"},
+    {"date": "2025-09", "event": "推出 Team 和 Business 方案"},
+    {"date": "2026-01", "event": "更名 v0.app，定位為全端應用建構平台"},
+    {"date": "2026-02", "event": "重大更新：Git 整合、VS Code 編輯器、資料庫連接、Agentic 工作流"}
+  ],
+  "pricing": "Free $0（$5 credits）/ Premium $20/月 / Team $30/用戶/月 / Business $100/用戶/月 / Enterprise 客製定價。",
+  "competitors": ["Bolt", "Lovable", "Replit", "Cursor", "Claude Artifacts"],
+  "links": [
+    {"title": "v0 官網", "url": "https://v0.app"},
+    {"title": "Vercel Academy - v0", "url": "https://vercel.com/academy/ai-sdk/ui-with-v0"},
+    {"title": "v0 Guide", "url": "https://www.nxcode.io/resources/news/v0-by-vercel-complete-guide-2026"}
+  ]
+}

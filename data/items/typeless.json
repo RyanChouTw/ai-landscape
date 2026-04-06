@@ -1,0 +1,48 @@
+{
+  "id": "typeless",
+  "name": "Typeless",
+  "company": "Typeless",
+  "category": "語音輸入",
+  "tags": ["closed", "freemium", "voice-input", "dictation"],
+  "oneLiner": "AI 語音聽寫工具，使用 LLM 理解語意後輸出乾淨格式化文字，自動去除語助詞、修正文法、適配語氣，支援 100+ 語言。",
+  "overview": "Typeless 是由史丹佛校友和連續創業者打造的 AI 語音聽寫工具，支援 Mac、Windows、iOS 和 Android。與傳統語音轉文字不同，Typeless 使用大型語言模型理解說話者的語意和意圖，產出經過整理的乾淨文字——不只是逐字轉錄。\n核心差異化：自動去除「嗯」「啊」「你知道的」等語助詞和重複字詞；語氣自適應——AI 自動偵測是在寫輕鬆的 Slack 訊息還是正式 Email，並調整文字語氣；支援 100+ 語言自動偵測，可在語言間自然切換。\nTypeless 可在電腦上任何應用程式中使用，號稱比打字快 4 倍。隱私方面，語音資料零保留且不用於模型訓練。",
+  "pros": [
+    "LLM 驅動的智慧聽寫，非單純轉錄",
+    "自動去除語助詞和重複字詞",
+    "語氣自適應——自動偵測情境調整風格",
+    "100+ 語言支援和自動語言偵測",
+    "跨平台（Mac/Windows/iOS/Android）",
+    "免費方案每週 4,000 字（約每月 16,000 字）",
+    "語音資料零保留，隱私保護佳",
+    "號稱比打字快 4 倍"
+  ],
+  "cons": [
+    "需要雲端處理（非離線工具）",
+    "Pro 方案 $12/月年付，日常使用者成本不低",
+    "免費方案有字數限制（4,000 字/週）",
+    "不開源，無法客製化",
+    "LLM 處理可能偶爾改變原意",
+    "語氣自適應可能不符合使用者預期"
+  ],
+  "features": [
+    {"name": "智慧聽寫", "desc": "LLM 理解語意產出乾淨格式化文字"},
+    {"name": "語助詞去除", "desc": "自動去除「嗯」「啊」等語助詞和重複字詞"},
+    {"name": "語氣自適應", "desc": "AI 偵測情境（Slack/Email/文件）自動調整文字風格"},
+    {"name": "100+ 語言", "desc": "自動偵測語言，支援多語言混合"},
+    {"name": "跨應用程式", "desc": "系統級整合，在任何應用程式中使用"},
+    {"name": "隱私保護", "desc": "語音資料零保留，不用於模型訓練"}
+  ],
+  "history": [
+    {"date": "2024-06", "event": "Typeless 首次公開，Product Hunt 上線"},
+    {"date": "2024-10", "event": "支援 Mac 和 Windows 桌面版"},
+    {"date": "2025-03", "event": "100+ 語言支援和語氣自適應功能上線"},
+    {"date": "2025-08", "event": "iOS 和 Android 行動版發布"},
+    {"date": "2026-01", "event": "持續改進 LLM 聽寫品質和語言支援"}
+  ],
+  "pricing": "Free（4,000 字/週，約 16,000 字/月）。Pro $12/月（年付）或 $16/月（月付），無限字數。",
+  "competitors": ["Handy", "Wispr Flow", "Superwhisper", "macOS/Windows 內建聽寫"],
+  "links": [
+    {"title": "Typeless 官網", "url": "https://www.typeless.com"},
+    {"title": "Product Hunt", "url": "https://www.producthunt.com/products/typeless-2"}
+  ]
+}

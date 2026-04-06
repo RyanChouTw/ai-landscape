@@ -1,0 +1,52 @@
+{
+  "id": "puppeteer",
+  "name": "Puppeteer",
+  "company": "Google",
+  "category": "瀏覽器自動化",
+  "tags": ["open-source", "browser-automation", "scraping"],
+  "oneLiner": "Google 官方的 Chrome DevTools Protocol library，93,600+ GitHub stars。提供高階 Node.js API 控制 Chrome 和 Firefox，常用於網頁抓取、PDF 生成和自動化測試。",
+  "overview": "Puppeteer 是 Google 維護的 JavaScript library，透過 Chrome DevTools Protocol 或 WebDriver BiDi 提供高階 API 來控制 Chrome 和 Firefox 瀏覽器。截至 2026 年 2 月，擁有超過 93,600 GitHub stars。\nPuppeteer 是最早讓 headless Chrome 自動化變得簡單的工具，自 2017 年發布以來一直是瀏覽器自動化的標準選擇。從 v23 版本開始支援 Firefox（透過 WebDriver BiDi），不再限於 Chrome-only。\n典型使用場景包括網頁抓取、自動化測試、截圖和 PDF 生成、效能監控、網路攔截和 Chrome extension 測試。\n2026 年 Puppeteer 加入了 MCP 整合，支援 AI 驅動的自動化。然而在多瀏覽器支援、async API 設計和可靠性上，Playwright 已逐漸取代 Puppeteer 成為更普遍的選擇。\nPuppeteer 仍然是 Chrome-only 自動化和簡單抓取場景的最佳選擇，API 穩定且社群資源豐富。",
+  "pros": [
+    "Google 官方維護，與 Chrome 同步更新",
+    "93,600+ GitHub stars，社群資源最豐富",
+    "API 簡潔直覺，上手快速",
+    "Chrome DevTools Protocol 原生支援，功能最完整",
+    "npm 安裝即附帶 Chrome，零配置開始",
+    "PDF 生成和截圖品質極佳",
+    "MCP 整合支援 AI 自動化"
+  ],
+  "cons": [
+    "多瀏覽器支援不如 Playwright（Firefox 支援透過 WebDriver BiDi 較新）",
+    "WebKit/Safari 不支援",
+    "async API 設計較 Playwright 不一致",
+    "測試框架功能不如 Playwright Test 完整",
+    "自動等待機制較弱，需手動處理",
+    "在 AI agent 場景中 Playwright MCP 生態更成熟"
+  ],
+  "features": [
+    {"name": "Chrome 控制", "desc": "透過 DevTools Protocol 完整控制 Chrome 瀏覽器"},
+    {"name": "Firefox 支援", "desc": "v23 起透過 WebDriver BiDi 支援 Firefox"},
+    {"name": "截圖 & PDF", "desc": "高品質網頁截圖和 PDF 生成"},
+    {"name": "網路攔截", "desc": "攔截、修改和模擬網路請求"},
+    {"name": "效能監控", "desc": "Chrome Performance API 整合"},
+    {"name": "MCP 整合", "desc": "Puppeteer MCP 支援 AI 驅動自動化"},
+    {"name": "Extension 測試", "desc": "Chrome 擴充功能自動化測試"}
+  ],
+  "history": [
+    {"date": "2017-08", "event": "Google 發布 Puppeteer"},
+    {"date": "2018-01", "event": "Puppeteer 成為 headless Chrome 自動化標準"},
+    {"date": "2020-01", "event": "前 Puppeteer 團隊成員加入 Microsoft 開發 Playwright"},
+    {"date": "2022-05", "event": "Puppeteer v14 大幅改進 TypeScript 支援"},
+    {"date": "2024-06", "event": "Puppeteer v23 加入 Firefox 支援（WebDriver BiDi）"},
+    {"date": "2025-06", "event": "GitHub stars 突破 90,000"},
+    {"date": "2026-01", "event": "Puppeteer MCP 整合發布"}
+  ],
+  "pricing": "完全免費開源（Apache 2.0）。",
+  "competitors": ["Playwright", "Selenium", "Cypress"],
+  "links": [
+    {"title": "Puppeteer 官網", "url": "https://pptr.dev"},
+    {"title": "GitHub", "url": "https://github.com/puppeteer/puppeteer"},
+    {"title": "文件", "url": "https://pptr.dev/guides/getting-started"},
+    {"title": "npm", "url": "https://www.npmjs.com/package/puppeteer"}
+  ]
+}

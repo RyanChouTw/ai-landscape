@@ -1,0 +1,59 @@
+{
+  "id": "m365-copilot",
+  "name": "M365 Copilot",
+  "company": "Microsoft",
+  "category": "聊天助手",
+  "tags": ["workspace", "agent", "enterprise", "paid"],
+  "oneLiner": "Microsoft 365 整合的 AI 助手，內建於 Word、Excel、PowerPoint、Outlook、Teams，2026 年新增 Agent Mode、Work IQ 和 Copilot Pages。",
+  "overview": "Microsoft 365 Copilot 是 Microsoft 將 AI 能力深度整合到 Office 套件中的產品，覆蓋 Word、Excel、PowerPoint、Outlook、Teams、OneNote 等所有 M365 應用。它利用 Microsoft Graph 存取使用者的郵件、聊天、會議和文件資料，提供個人化的 AI 協助。\n\n2026 年的最大更新是 Agent Mode——Word、Excel 和 PowerPoint 各自擁有專屬 AI 代理。Word Agent 可撰寫策略計畫、政策文件、技術報告，並從 Microsoft Graph 拉取郵件、聊天和會議內容作為素材。Excel Agent 可生成多工作表工作簿，含公式、預測、儀表板和情境分析。PowerPoint Agent 從大綱或文件生成簡報、建議版面配置。\n\nWork IQ 是新的智慧層，豐富 Copilot 對使用者工作流程和關係的理解——整合 M365 內容和業務線資料。Copilot Pages 和 Notebooks 提供協作式 AI 工作空間。\n\n2026 年 3 月起，Microsoft 推出 Copilot Cowork（由 Anthropic 的 Claude 驅動），顯示 Microsoft 在 AI 策略上的多模型布局。定價方面，Copilot Business 從 $18/用戶/月（促銷價）起，Enterprise $30/用戶/月。2026 年 7 月起 M365 全線方案調漲 $2-3/用戶/月。",
+  "pros": [
+    "與 M365 生態深度整合——Word、Excel、PPT、Outlook、Teams",
+    "Agent Mode 讓 Word/Excel/PPT 各有專屬 AI 代理",
+    "Work IQ 智慧層利用 Microsoft Graph 理解工作脈絡",
+    "Copilot Pages 和 Notebooks 提供 AI 協作空間",
+    "企業級安全和合規——尊重權限和資料治理",
+    "Excel Agent 可生成含公式、預測和儀表板的多工作表工作簿",
+    "Copilot Cowork 整合 Claude 模型——多模型策略",
+    "業界最大的企業用戶基礎——自然融入現有工作流程"
+  ],
+  "cons": [
+    "需要 M365 訂閱作為基礎——額外 AI 費用疊加",
+    "2026/7 起全線 M365 方案調漲 $2-3/用戶/月",
+    "Copilot Business $18-21/用戶/月 加上 M365 基礎費用，總成本高",
+    "企業部署需要 IT 管理和配置",
+    "Agent Mode 能力仍在發展中——部分功能有限",
+    "強依賴 Microsoft 生態——跨平台能力有限",
+    "對非 M365 使用者價值不高"
+  ],
+  "features": [
+    {"name": "Agent Mode", "desc": "Word/Excel/PowerPoint 各有專屬 AI 代理，主動編輯和推理"},
+    {"name": "Work IQ", "desc": "智慧層整合 M365 和業務線資料，理解工作脈絡"},
+    {"name": "Copilot Pages", "desc": "AI 協作工作空間"},
+    {"name": "Copilot Notebooks", "desc": "整合引用、Pages 和聊天的筆記系統"},
+    {"name": "Word Agent", "desc": "研究、排版、內容精煉，可從 Graph 拉取素材"},
+    {"name": "Excel Agent", "desc": "資料分析、公式生成、趨勢辨識、多工作表工作簿"},
+    {"name": "PowerPoint Agent", "desc": "從大綱生成簡報、版面建議、視覺敘事"},
+    {"name": "Copilot Chat", "desc": "跨應用 AI 對話，含收件匣和行事曆感知"},
+    {"name": "Copilot Cowork", "desc": "由 Anthropic Claude 驅動的代理功能"}
+  ],
+  "history": [
+    {"date": "2023-03", "event": "Microsoft 365 Copilot 發布，整合 GPT-4 到 Office 套件"},
+    {"date": "2023-11", "event": "M365 Copilot 正式對企業客戶開放"},
+    {"date": "2024-05", "event": "Copilot+ PC 概念發布"},
+    {"date": "2024-11", "event": "Copilot Pages 和 Copilot Actions 上線"},
+    {"date": "2025-04", "event": "Agent Mode 初始版本上線"},
+    {"date": "2025-12", "event": "宣布 2026 年 M365 新功能和定價更新"},
+    {"date": "2026-01", "event": "Word/Excel/PowerPoint Agents 正式上線，Copilot Chat 增強"},
+    {"date": "2026-02", "event": "Work IQ 智慧層上線，Copilot Notebooks 改版"},
+    {"date": "2026-03", "event": "Copilot Cowork（Claude 驅動）上線，Copilot 授權降價至 $276/用戶/年，Notebook Grounding 功能上線"},
+    {"date": "2026-07", "event": "M365 全線方案調漲——E3 $36→$39、E5 $57→$60、F1 $2.25→$3、F3 $8→$10（預定）"}
+  ],
+  "pricing": "Copilot Business $18/用戶/月（促銷年付價至 2026/6）→ 標準 $21/用戶/月 / Enterprise $30/用戶/月（$276/用戶/年，2026/3 降價）。個人版：Copilot Pro $20/月。需搭配 M365 基礎方案。M365 E3 $36→$39、E5 $57→$60（2026/7 起）。",
+  "competitors": ["Google Workspace AI", "Claude Desktop", "ChatGPT Business", "Notion AI"],
+  "links": [
+    {"title": "M365 Copilot 定價", "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing-new"},
+    {"title": "M365 定價更新", "url": "https://www.microsoft.com/en-us/licensing/news/2026-m365-packaging-pricing-updates"},
+    {"title": "M365 Copilot Blog", "url": "https://www.microsoft.com/en-us/microsoft-365/blog"},
+    {"title": "Copilot 個人版", "url": "https://www.microsoft.com/en-us/microsoft-365-copilot/pricing/individuals"}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "a2a-protocol",
+  "name": "A2A Protocol",
+  "company": "Google → Open Standard",
+  "category": "整合協議",
+  "tags": ["open", "free"],
+  "oneLiner": "Google 發起的 Agent-to-Agent 開放協議，讓不同 AI Agent 跨平台溝通協作，50+ 技術夥伴支持，基於 HTTP/SSE/JSON-RPC 標準建構。",
+  "overview": "A2A（Agent2Agent）是 Google 發起的開放協議，定義 AI Agent 之間如何通訊、交換資訊和協調行動。與 MCP 互補：MCP 定義 Agent 如何使用工具，A2A 定義 Agent 之間如何對話。\n\nA2A 的核心設計基於既有標準——HTTP、SSE（Server-Sent Events）和 JSON-RPC，降低整合門檻。支援企業級認證和授權，與 OpenAPI 認證方案對齊。\n\n50+ 技術夥伴支持：Atlassian、Box、Cohere、Intuit、LangChain、MongoDB、PayPal、Salesforce 等。\n\n核心能力包括：Agent 間以自然的非結構化模態協作（即使不共享記憶、工具和上下文）、支援長時間任務（從秒級到數天）、安全性卡片簽署。\n\nv0.3 版本引入 gRPC 支援、安全卡片簽署、Python SDK 擴展。Google 已在 Agent Engine、Cloud Run 和 GKE 中加入 A2A 支援。\n\nA2A 與 MCP 的關係：互補而非競爭。MCP 像「USB 接口」讓 Agent 使用工具；A2A 像「電話系統」讓 Agent 之間通話。兩者可同時使用。",
+  "pros": [
+    "開放標準，基於 HTTP/SSE/JSON-RPC 等成熟技術",
+    "50+ 技術夥伴支持，包括 Atlassian、Salesforce、PayPal 等",
+    "與 MCP 互補——Agent 用工具（MCP）也與其他 Agent 對話（A2A）",
+    "企業級安全——認證授權對齊 OpenAPI 方案",
+    "支援長時間任務，適合複雜企業工作流",
+    "Google Cloud 原生支援（Agent Engine、Cloud Run、GKE）",
+    "gRPC 支援提供更靈活的整合選項"
+  ],
+  "cons": [
+    "生態系統規模遠不及 MCP（SDK 下載量、server 數量）",
+    "目前主要由 Google 主導，開放治理程度不如 MCP（已捐贈 Linux Foundation）",
+    "協議仍在快速演進中（v0.3），穩定性待觀察",
+    "Agent 間通訊的實際場景和最佳實踐仍在探索",
+    "Python SDK 為主，其他語言支援尚不完善",
+    "與 MCP 的定位區隔需要開發者理解"
+  ],
+  "features": [
+    {"name": "Agent 間通訊", "desc": "定義 AI Agent 之間如何通訊、交換資訊和協調行動"},
+    {"name": "非結構化協作", "desc": "Agent 可在不共享記憶、工具和上下文的情況下協作"},
+    {"name": "長時間任務", "desc": "支援從秒級快速任務到數天的深度研究"},
+    {"name": "安全卡片簽署", "desc": "v0.3 新增，提升 Agent 身份驗證安全性"},
+    {"name": "gRPC 支援", "desc": "v0.3 新增，更靈活的傳輸選項"},
+    {"name": "Google Cloud 整合", "desc": "Agent Engine、Cloud Run、GKE 原生支援"},
+    {"name": "企業級認證", "desc": "對齊 OpenAPI 認證方案"}
+  ],
+  "history": [
+    {"date": "2025-04", "event": "Google 發布 A2A 協議，50+ 技術夥伴支持"},
+    {"date": "2025-06", "event": "A2A v0.1 開源，Python SDK 發布"},
+    {"date": "2025-10", "event": "加入 Google Cloud Agent Engine 支援"},
+    {"date": "2026-01", "event": "A2A v0.3 發布：gRPC 支援、安全卡片簽署、Python SDK 擴展"},
+    {"date": "2026-03", "event": "Google 在 Cloud Run 和 GKE 中加入 A2A 部署支援"}
+  ],
+  "pricing": "完全免費開源",
+  "competitors": ["MCP", "OpenAPI", "Agent Skills", "AutoGen"],
+  "links": [
+    {"title": "A2A 協議官網", "url": "https://a2a-protocol.org"},
+    {"title": "GitHub", "url": "https://github.com/a2aproject/A2A"},
+    {"title": "Google 公告", "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/"},
+    {"title": "A2A 升級公告", "url": "https://cloud.google.com/blog/products/ai-machine-learning/agent2agent-protocol-is-getting-an-upgrade"},
+    {"title": "開發者指南", "url": "https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/"}
+  ]
+}

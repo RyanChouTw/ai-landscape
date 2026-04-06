@@ -1,0 +1,50 @@
+{
+  "id": "funsar",
+  "name": "FunASR",
+  "company": "Alibaba DAMO",
+  "category": "語音辨識",
+  "tags": ["open-source", "free", "asr"],
+  "oneLiner": "阿里巴巴達摩院開發的端到端語音辨識工具包，Paraformer-Large 是最強開源中文 ASR 模型，ModelScope 下載超 1,300 萬次。",
+  "overview": "FunASR 是阿里巴巴達摩院（DAMO Academy）和通義語音實驗室開發的端到端語音辨識工具包，提供語音辨識（ASR）、多說話者 ASR、語音活動檢測（VAD）、標點還原、語言模型、說話者驗證和說話者分辨等完整功能。\n核心模型 Paraformer-Large 在 SpeechIO 排行榜上獲得最佳表現，是目前最強的開源中文 ASR 模型，ModelScope 下載量超過 1,300 萬次。Paraformer 系列採用非自回歸架構，推理速度比傳統自回歸模型快數倍。\nFunASR 支援完整的語音處理管線：VAD → ASR → 標點還原 → 說話者分辨，可一站式完成從原始音訊到結構化文字的轉換。專案持續活躍維護，v1.3.1 於 2026 年 1 月發布。",
+  "pros": [
+    "Paraformer-Large 中文 ASR 品質業界最強（開源）",
+    "ModelScope 下載超 1,300 萬次，經過大規模驗證",
+    "完整語音處理管線（VAD + ASR + 標點 + 說話者分辨）",
+    "非自回歸架構，推理速度快",
+    "完全開源，可本地部署",
+    "支援即時和離線兩種模式",
+    "活躍維護，持續更新"
+  ],
+  "cons": [
+    "主要針對中文優化，英文不如 Whisper/Parakeet",
+    "文件以中文為主，英文文件較少",
+    "社群規模不如 Whisper 生態系",
+    "模型部署需要一定 ML 背景",
+    "GUI 工具較少，主要透過程式碼使用",
+    "與 Hugging Face 生態整合不如 Whisper 緊密"
+  ],
+  "features": [
+    {"name": "Paraformer-Large", "desc": "最強開源中文 ASR，SpeechIO 排行榜冠軍"},
+    {"name": "VAD 語音活動檢測", "desc": "精確偵測語音段落，過濾靜默"},
+    {"name": "標點還原", "desc": "自動為轉錄文字添加標點符號"},
+    {"name": "說話者分辨", "desc": "識別不同說話者並標記"},
+    {"name": "多說話者 ASR", "desc": "支援多人同時說話的辨識"},
+    {"name": "FunClip", "desc": "基於 FunASR 的影片語音辨識和裁切工具"}
+  ],
+  "history": [
+    {"date": "2022-06", "event": "FunASR 開源發布"},
+    {"date": "2023-01", "event": "Paraformer-Large 發布，中文 ASR 品質突破"},
+    {"date": "2023-08", "event": "FunClip 影片裁切工具發布"},
+    {"date": "2024-06", "event": "支援更多語言和即時辨識模式"},
+    {"date": "2025-03", "event": "持續改進 Paraformer 系列模型"},
+    {"date": "2026-01", "event": "v1.3.1 發布，持續維護更新"}
+  ],
+  "pricing": "完全免費開源。透過 GitHub 下載使用，本地部署無需付費。阿里雲語音服務另有商業 API 付費方案。",
+  "competitors": ["Whisper", "VibeVoice", "Parakeet", "SenseVoice"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/modelscope/FunASR"},
+    {"title": "FunASR Wiki", "url": "https://github.com/alibaba-damo-academy/FunASR/wiki"},
+    {"title": "ModelScope", "url": "https://modelscope.cn"},
+    {"title": "FunClip", "url": "https://github.com/alibaba-damo-academy/FunASR-APP"}
+  ]
+}

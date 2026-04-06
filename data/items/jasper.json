@@ -1,0 +1,51 @@
+{
+  "id": "jasper",
+  "name": "Jasper",
+  "company": "Jasper AI",
+  "category": "AI 行銷",
+  "tags": ["closed", "paid"],
+  "oneLiner": "企業級 AI 行銷平台，100+ 專業 AI Agents 與 connected content pipelines，內建行銷知識層與品牌語調控制。",
+  "overview": "Jasper 是專為行銷團隊打造的 AI 平台，核心差異化在於其行銷專用知識層（Marketing Knowledge Layer）——這層架構位於通用 LLM 之上，讓輸出內容符合行銷最佳實踐。\n平台提供 100+ 專業 AI Agents，涵蓋研究、內容創作、優化等行銷工作流程。Connected Content Pipelines 是端到端的結構化工作流程，從計劃到上線發布一條龍。\n核心功能包括：Canvas（長文寫作與腦力激盪）、Jasper Studio（無程式碼建立自訂 AI 應用）、品牌語調分析與控制、SEO 優化工具。\nJasper 的定位是企業級行銷 AI，而非通用寫作工具。Pro 方案支援品牌語調設定和 SEO，Business 方案提供客製化功能、進階安全控制和專屬支援。",
+  "pros": [
+    "行銷專用知識層，輸出品質高於通用 AI",
+    "100+ 專業 AI Agents 覆蓋完整行銷工作流",
+    "品牌語調分析與控制——確保內容一致性",
+    "Jasper Studio 無程式碼建立自訂 AI 應用",
+    "Connected Content Pipelines 端到端工作流",
+    "SEO 功能整合",
+    "企業級安全和團隊協作功能"
+  ],
+  "cons": [
+    "定價較高（企業方案 $5K-70K/年）",
+    "行銷以外的通用寫作不如 ChatGPT 或 Claude",
+    "學習曲線——充分利用需要時間設定品牌語調和工作流",
+    "中小企業可能覺得功能過於複雜",
+    "市場競爭激烈，ChatGPT 等通用 AI 持續蠶食市場份額"
+  ],
+  "features": [
+    {"name": "AI Agents", "desc": "100+ 專業行銷 Agents，處理研究、創作、優化等任務"},
+    {"name": "Marketing Knowledge Layer", "desc": "行銷專用知識層，確保內容符合行銷最佳實踐"},
+    {"name": "品牌語調控制", "desc": "分析內容語調，設定規則確保品牌一致性"},
+    {"name": "Canvas", "desc": "長文寫作與腦力激盪工作區"},
+    {"name": "Jasper Studio", "desc": "無程式碼建立自訂 AI 行銷應用"},
+    {"name": "Content Pipelines", "desc": "結構化端到端工作流程，從計劃到發布"},
+    {"name": "SEO 優化", "desc": "Pro 方案起支援 SEO 功能"}
+  ],
+  "history": [
+    {"date": "2021-01", "event": "以 Jarvis 品牌推出 AI 寫作工具"},
+    {"date": "2022-01", "event": "更名為 Jasper，避免與 MARVEL Jarvis 商標衝突"},
+    {"date": "2022-10", "event": "完成 $125M A 輪融資，估值 $1.5B"},
+    {"date": "2023-06", "event": "推出 Jasper Brand Voice 品牌語調功能"},
+    {"date": "2024-01", "event": "推出 Jasper Studio 無程式碼平台"},
+    {"date": "2024-09", "event": "加入 AI Agents 功能"},
+    {"date": "2025-06", "event": "推出 Connected Content Pipelines"},
+    {"date": "2026-01", "event": "AI Agents 數量擴展至 100+，強化企業級功能"}
+  ],
+  "pricing": "Creator $39/月（年付）或 $49/月 / Pro $59/月（年付）或 $69/月（含 SEO、品牌語調）/ Business 客製定價（$5K-70K/年，含進階安全和專屬支援）。",
+  "competitors": ["Copy.ai", "Writer", "Anyword", "ChatGPT", "Claude"],
+  "links": [
+    {"title": "Jasper 官網", "url": "https://www.jasper.ai"},
+    {"title": "Jasper 定價", "url": "https://www.jasper.ai/pricing"},
+    {"title": "Jasper 平台", "url": "https://www.jasper.ai/platform"}
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "kling-30",
+  "name": "Kling 3.0",
+  "company": "Kuaishou",
+  "category": "影片生成",
+  "tags": ["closed", "freemium", "video-generation"],
+  "oneLiner": "快手開發的 AI 影片生成模型，採用 Multi-modal Visual Language 架構，支援原生 4K/60fps、多語言口型同步和多鏡次分鏡敘事。",
+  "overview": "Kling 是快手（Kuaishou）開發的 AI 影片生成模型，Kling 3.0 於 2026 年 2 月 5 日發布，採用 Multi-modal Visual Language（MVL）架構，將文字、圖片、音訊和影片統一處理。\n核心能力包括：原生 4K 解析度、60fps、最長 15 秒影片；多鏡次分鏡（Multi-shot Storyboarding）支援多場景鏡頭切換；內建多語言口型同步對話和自動音效，單次生成即可完成影音整合；Motion Brush 提供精確的導演級動作控制。\nKling 3.0 在 Sora 關閉後成為重要的替代方案之一，年化收入已超過 2.4 億美元，是商業上最成功的 AI 影片產品之一。國際版透過 klingai.com 提供服務。",
+  "pros": [
+    "原生 4K/60fps 輸出，品質專業級",
+    "多鏡次分鏡敘事，最長 15 秒連續影片",
+    "內建多語言口型同步和自動音效",
+    "Motion Brush 精確控制動作方向",
+    "MVL 架構統一處理多模態輸入",
+    "年化收入超 2.4 億美元，商業驗證成功",
+    "價格比 Runway 和 Veo 更有競爭力"
+  ],
+  "cons": [
+    "中國公司開發，部分地區可能有存取限制",
+    "API 文件和英文資源不如歐美競品完善",
+    "Pro 模式含影片輸入成本較高（$0.168/秒）",
+    "15 秒最大長度不如 Veo 3.1 的 60 秒以上",
+    "不開源，僅雲端服務",
+    "國際版功能可能落後中國版"
+  ],
+  "features": [
+    {"name": "原生 4K/60fps", "desc": "原生 4K 解析度、60fps 高畫質輸出"},
+    {"name": "Multi-shot Storyboarding", "desc": "多場景鏡頭切換的分鏡敘事"},
+    {"name": "多語言口型同步", "desc": "生成對話時自動多語言口型同步"},
+    {"name": "自動音效", "desc": "單次生成同時產出影片和音效"},
+    {"name": "Motion Brush", "desc": "畫筆工具精確控制物件動作方向"},
+    {"name": "Motion Control", "desc": "2026/3 更新，進階動態控制功能"}
+  ],
+  "history": [
+    {"date": "2024-06", "event": "Kling 1.0 發布，首次公開測試"},
+    {"date": "2024-12", "event": "Kling 1.6 發布，改善影片品質"},
+    {"date": "2025-04", "event": "Kling 2.0 發布，引入不同品質模式"},
+    {"date": "2025-05", "event": "Kling 2.1 發布"},
+    {"date": "2025-06", "event": "Kling 一周年，年化收入破 1 億美元"},
+    {"date": "2026-02", "event": "Kling 3.0 發布，MVL 架構、原生 4K、多語言音訊"},
+    {"date": "2026-03", "event": "Kling VIDEO 3.0 Motion Control 更新"}
+  ],
+  "pricing": "API 按秒計費：Standard 模式（無影片輸入）$0.084/秒、Pro 模式（含影片輸入）$0.168/秒。訂閱方案從免費到 $75/月不等，提供不同額度的信用點數。",
+  "competitors": ["Veo 3.1", "Runway Gen-4", "Seedance", "Pika", "Sora 2"],
+  "links": [
+    {"title": "Kling AI 官網", "url": "https://klingai.com"},
+    {"title": "快手 IR 公告", "url": "https://ir.kuaishou.com"},
+    {"title": "Kling AI Wikipedia", "url": "https://en.wikipedia.org/wiki/Kling_AI"}
+  ]
+}

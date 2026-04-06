@@ -1,0 +1,55 @@
+{
+  "id": "claude-computer-use",
+  "name": "Claude Computer Use",
+  "company": "Anthropic",
+  "category": "電腦操控",
+  "tags": ["computer-use", "agent", "desktop", "paid"],
+  "oneLiner": "Anthropic 的桌面操控代理，讓 Claude 以人類的方式操作電腦——點擊按鈕、開啟應用程式、填寫表單、執行多步驟桌面工作流程。",
+  "overview": "Claude Computer Use 是 Anthropic 於 2026 年 3 月 23 日推出的研究預覽功能，讓 Claude 能看到、導航和控制使用者的桌面——點擊按鈕、開啟應用程式、填寫試算表、完成多步驟工作流程，無需人類介入。\n\n此功能在 Claude Cowork 和 Claude Code 中提供，支援 Pro 和 Max 訂閱用戶。2026 年 4 月 3 日從 Mac 擴展至 Windows。核心安全設計採用「許可優先」模式——Claude 在觸碰新應用程式前會先請求存取權限，使用者可隨時中止。\n\nDispatch 功能讓 Claude 在使用者離開時繼續自主操作電腦，等於創造一個使用者午休時仍在工作的 AI 同事。Loop 指令支援 cron 風格的排程操作，如定期檢查 PR、部署監控等。\n\nClaude Opus 4.6（2026 年 2 月發布）在 Computer Use 和 tool use 基準測試中達到頂尖水準。Sonnet 4.6 隨後跟進，同樣增強 Computer Use 能力。雖然在 OSWorld 基準測試中 GPT-5.4 以 75% 領先，但 Claude 的 Computer Use 以安全性和許可控制為設計重點。",
+  "pros": [
+    "「許可優先」安全設計——觸碰新應用前先取得使用者許可",
+    "使用者可隨時中止操作",
+    "支援 Mac 和 Windows（2026/4 擴展）",
+    "Dispatch 功能可在使用者離開時繼續工作",
+    "Loop 指令支援 cron 風格排程（PR 檢查、部署監控）",
+    "與 Cowork 和 Code 深度整合",
+    "Opus 4.6 在 Computer Use 基準測試表現頂尖",
+    "包含在 Pro $20/月 方案中，無額外費用"
+  ],
+  "cons": [
+    "仍為研究預覽——穩定性和能力有限",
+    "OSWorld 基準測試落後 GPT-5.4（75%）",
+    "僅支援 Mac 和 Windows，不支援 Linux 桌面",
+    "複雜操作可能需要較長執行時間",
+    "對某些應用程式的操控可能不夠精確",
+    "安全性限制可能影響自動化效率（需反覆授權）",
+    "目前不支援手機操控"
+  ],
+  "features": [
+    {"name": "桌面操控", "desc": "看到螢幕、移動游標、點擊元素、輸入文字、操控桌面應用"},
+    {"name": "Dispatch", "desc": "使用者離開時 Claude 繼續自主操作電腦"},
+    {"name": "Loop 排程", "desc": "cron 風格排程——定期 PR 檢查、部署監控等"},
+    {"name": "許可優先", "desc": "觸碰新應用前請求存取權限，使用者可隨時中止"},
+    {"name": "Background Agents", "desc": "平行執行子任務，worktree 隔離"},
+    {"name": "Voice Mode", "desc": "支援 20 種語言的語音控制"},
+    {"name": "遠端操控", "desc": "透過手機或網頁遠端控制桌面上的 Claude"},
+    {"name": "多平台", "desc": "支援 Mac（2026/3）和 Windows（2026/4）"}
+  ],
+  "history": [
+    {"date": "2024-10", "event": "Anthropic 首次展示 Computer Use 概念（Claude 3.5 Sonnet API beta）"},
+    {"date": "2025-05", "event": "Claude Opus 4 發布，Computer Use 能力提升"},
+    {"date": "2026-01", "event": "Claude Cowork 上線，奠定 Computer Use 基礎"},
+    {"date": "2026-02", "event": "Claude Opus 4.6 發布，Computer Use 基準測試達頂尖"},
+    {"date": "2026-02", "event": "Claude Sonnet 4.6 發布，增強 Computer Use 能力"},
+    {"date": "2026-03", "event": "Computer Use Agent 研究預覽上線（Mac），支援 Pro 和 Max 用戶"},
+    {"date": "2026-04", "event": "Computer Use 擴展至 Windows"}
+  ],
+  "pricing": "包含在 Claude 訂閱方案中：Pro $20/月 / Max 5x $100/月 / Max 20x $200/月 / Team $30/用戶/月。API：Computer Use 透過 Anthropic API 以標準 token 計價（Opus 4.6 $5/$25 per M tokens）。",
+  "competitors": ["GPT-5.4 Computer Use API", "Perplexity Computer", "Manus My Computer"],
+  "links": [
+    {"title": "Computer Use 介紹", "url": "https://www.anthropic.com"},
+    {"title": "Claude API Docs", "url": "https://platform.claude.com/docs"},
+    {"title": "Cowork 說明", "url": "https://support.claude.com/en/articles/13345190-get-started-with-cowork"},
+    {"title": "Claude 定價", "url": "https://claude.com/pricing"}
+  ]
+}

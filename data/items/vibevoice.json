@@ -1,0 +1,48 @@
+{
+  "id": "vibevoice",
+  "name": "VibeVoice",
+  "company": "Microsoft",
+  "category": "語音合成",
+  "tags": ["open-source", "free", "tts", "asr", "realtime"],
+  "oneLiner": "微軟開源的前沿語音 AI 模型家族，包含 TTS（90 分鐘多講者合成）、ASR（60 分鐘單次處理）和 Realtime（0.5B 串流 TTS），ICLR 2026 Oral。",
+  "overview": "VibeVoice 是微軟於 2026 年初開源的前沿語音 AI 模型家族，涵蓋語音合成（TTS）、語音辨識（ASR）和即時語音（Realtime）三大模組。\nVibeVoice-TTS 1.5B 是長篇多講者語音合成模型，可合成最長 90 分鐘、最多 4 位講者的語音，獲得 ICLR 2026 Oral 論文殊榮。其核心創新是 7.5Hz 超低幀率的連續語音 tokenizer（Acoustic + Semantic），在保持音質的同時大幅提升長序列處理效率。\nVibeVoice-ASR 是統一 STT 模型，可單次處理 60 分鐘長音訊，生成結構化轉錄（Who + When + What），支援 50+ 語言和用戶自訂上下文。2026 年 3 月已整合至 Hugging Face Transformers。\nVibeVoice-Realtime 0.5B 是即時 TTS 模型，支援串流文字輸入和穩健的長篇語音生成。",
+  "pros": [
+    "完全開源，可本地部署和自訂",
+    "TTS 支援 90 分鐘、4 講者長篇合成",
+    "ASR 單次處理 60 分鐘音訊，結構化輸出",
+    "ICLR 2026 Oral 論文，學術品質頂尖",
+    "7.5Hz 超低幀率 tokenizer，長序列處理高效",
+    "已整合 Hugging Face Transformers，易於使用",
+    "Realtime 0.5B 輕量模型適合邊緣部署"
+  ],
+  "cons": [
+    "需要 GPU 硬體進行推理",
+    "TTS 品質可能不及 ElevenLabs 的商業方案",
+    "文件和社群資源相對較少（2026 年初剛發布）",
+    "Realtime 模型目前主要支援英文",
+    "缺乏語音複製功能",
+    "需要一定 ML 背景才能有效使用"
+  ],
+  "features": [
+    {"name": "VibeVoice-TTS 1.5B", "desc": "90 分鐘、4 講者長篇多講者語音合成，ICLR 2026 Oral"},
+    {"name": "VibeVoice-ASR", "desc": "60 分鐘單次處理，結構化轉錄（Who/When/What），50+ 語言"},
+    {"name": "VibeVoice-Realtime 0.5B", "desc": "串流文字輸入的即時 TTS"},
+    {"name": "7.5Hz Tokenizer", "desc": "Acoustic + Semantic 連續語音 tokenizer，超低幀率高效處理"},
+    {"name": "用戶自訂上下文", "desc": "ASR 支援注入專業術語和上下文提升辨識準確度"},
+    {"name": "Hugging Face 整合", "desc": "直接透過 Transformers 庫使用"}
+  ],
+  "history": [
+    {"date": "2025-10", "event": "VibeVoice-TTS 1.5B 論文提交，獲 ICLR 2026 Oral"},
+    {"date": "2026-01", "event": "VibeVoice-ASR 開源發布，支援 60 分鐘長音訊"},
+    {"date": "2026-02", "event": "VibeVoice-TTS 1.5B 和 Realtime 0.5B 模型開源"},
+    {"date": "2026-03", "event": "VibeVoice-ASR 整合至 Hugging Face Transformers"}
+  ],
+  "pricing": "完全免費開源。模型可從 Hugging Face 下載（microsoft/VibeVoice-1.5B、microsoft/VibeVoice-ASR），本地部署無需付費。",
+  "competitors": ["ElevenLabs", "Whisper", "FunASR", "Parakeet", "OpenAI TTS"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/microsoft/VibeVoice"},
+    {"title": "專案首頁", "url": "https://microsoft.github.io/VibeVoice/"},
+    {"title": "VibeVoice-TTS（Hugging Face）", "url": "https://huggingface.co/microsoft/VibeVoice-1.5B"},
+    {"title": "VibeVoice-ASR（Hugging Face）", "url": "https://huggingface.co/microsoft/VibeVoice-ASR"}
+  ]
+}

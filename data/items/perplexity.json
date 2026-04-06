@@ -1,0 +1,59 @@
+{
+  "id": "perplexity",
+  "name": "Perplexity",
+  "company": "Perplexity AI",
+  "category": "聊天助手",
+  "tags": ["search", "chat", "research", "paid"],
+  "oneLiner": "AI 搜尋引擎，以即時引用來源的答案取代傳統搜尋結果頁面。2026 年推出 Model Council 多模型比較和 Perplexity Computer 自主代理。",
+  "overview": "Perplexity 是由 Aravind Srinivas 等人於 2022 年創立的 AI 搜尋引擎，核心理念是用帶有引用來源的直接答案取代傳統搜尋結果列表。2026 年估值達 $21.2B，年度經常性收入約 $200M。\n\nPro Search 是核心功能，使用多步驟推理深度搜尋網路並彙整答案。2026 年 2 月推出的 Model Council 讓使用者同時比較 GPT-5.2、Claude 4.6 等多個 LLM 的輸出。Deep Research 功能可執行長時間深度研究任務。\n\nPerplexity 在 2026 年 2 月轉向訂閱優先模式，停止 AI 整合廣告策略。Pro 方案 $20/月提供無限 Pro Search、多模型存取和文件上傳。Max 方案 $200/月提供 Perplexity Computer 存取和 Perplexity Labs 等進階功能。\n\n2026 年 1 月與 Microsoft Azure 簽訂三年 $750M GPU 資源合約，確保 Deep Research 和 Model Council 所需的運算能力。即將推出的 Comet 是 Perplexity 的 AI 瀏覽器。",
+  "pros": [
+    "每個答案都附帶引用來源，可追溯驗證",
+    "Pro Search 多步驟推理搜尋，比傳統搜尋引擎更直接",
+    "Model Council 可同時比較多個 LLM 輸出",
+    "整合 Claude、GPT-4o、Mistral Large 等多模型",
+    "Education Pro $10/月 提供學生優惠",
+    "Search API 可嵌入應用程式",
+    "免費方案已有基本搜尋功能",
+    "轉向訂閱優先模式，減少廣告干擾"
+  ],
+  "cons": [
+    "版權爭議——曾被 Forbes、Dow Jones、New York Times 控告內容侵權",
+    "Pro $20/月 功能與 ChatGPT Plus 價格相同但場景較窄",
+    "Max $200/月 定價昂貴",
+    "Enterprise Max $325/用戶/月 是所有競品中最貴的企業方案之一",
+    "Free 方案搜尋深度和速度有限",
+    "不擅長程式碼生成——主要定位是搜尋和研究",
+    "AI 生成答案偶有幻覺風險"
+  ],
+  "features": [
+    {"name": "Pro Search", "desc": "多步驟推理搜尋，深度搜尋網路並附帶引用來源"},
+    {"name": "Model Council", "desc": "同時比較 GPT-5.2、Claude 4.6 等多個 LLM 的輸出"},
+    {"name": "Deep Research", "desc": "長時間深度研究任務，彙整報告"},
+    {"name": "多模型存取", "desc": "Pro 用戶可選用 Claude 3.5 Sonnet、GPT-4o、Mistral Large"},
+    {"name": "Perplexity Labs", "desc": "試算表和報告生成工具（Max 專屬）"},
+    {"name": "Search API", "desc": "$5/1,000 requests，可嵌入應用"},
+    {"name": "檔案上傳", "desc": "上傳文件和圖片進行分析"},
+    {"name": "AI 圖片生成", "desc": "整合 DALL-E 和 SDXL 生成圖片"},
+    {"name": "Comet 瀏覽器", "desc": "即將推出的 AI 原生瀏覽器（預覽中）"}
+  ],
+  "history": [
+    {"date": "2022-08", "event": "Perplexity AI 由 Aravind Srinivas、Denis Yarats、Johnny Ho、Andy Konwinski 創立"},
+    {"date": "2022-12", "event": "首個產品 Bird SQL 和搜尋引擎上線"},
+    {"date": "2023-02", "event": "Twitter API 收費後轉型專注搜尋產品"},
+    {"date": "2024-06", "event": "Forbes 和 Dow Jones 提出內容侵權訴訟"},
+    {"date": "2024-10", "event": "New York Times 發出停止使用通知"},
+    {"date": "2025-09", "event": "估值達 $20B"},
+    {"date": "2025-12", "event": "C. Ronaldo 投資 Perplexity，連結 CR7 品牌"},
+    {"date": "2026-01", "event": "與 Microsoft Azure 簽訂三年 $750M GPU 合約"},
+    {"date": "2026-02", "event": "轉向訂閱優先模式，推出 Model Council 功能，Perplexity Computer 上線（Max 專屬）"},
+    {"date": "2026-03", "event": "估值 $21.2B（Series E-6），ARR 約 $200M"}
+  ],
+  "pricing": "Free（基本搜尋）/ Pro $20/月（$200/年）/ Education Pro $10/月 / Enterprise Pro $40/用戶/月（$400/年）/ Enterprise Max $325/用戶/月（$3,250/年）。Search API $5/1,000 requests。",
+  "competitors": ["ChatGPT", "Gemini App", "Google Search", "You.com"],
+  "links": [
+    {"title": "Perplexity", "url": "https://www.perplexity.ai"},
+    {"title": "Perplexity 定價", "url": "https://www.perplexity.ai/help-center/en/articles/11187416-which-perplexity-subscription-plan-is-right-for-you"},
+    {"title": "Enterprise 定價", "url": "https://www.perplexity.ai/enterprise/pricing"},
+    {"title": "Perplexity Blog", "url": "https://www.perplexity.ai/hub/blog"}
+  ]
+}

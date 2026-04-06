@@ -1,0 +1,45 @@
+{
+  "id": "sora-2",
+  "name": "Sora 2",
+  "company": "OpenAI",
+  "category": "影片生成",
+  "tags": ["closed", "paid", "video-generation", "shutting-down"],
+  "oneLiner": "OpenAI 的影片生成模型，支援 1080p 影片生成。因高昂營運成本和低使用率，已宣布 2026 年 4 月關閉 App、9 月關閉 API。",
+  "overview": "Sora 是 OpenAI 開發的 AI 影片生成模型，於 2024 年 2 月首次以技術預覽形式亮相，隨後以 Sora 2 的形式對公眾開放。支援文字轉影片、圖片轉影片，最高 1080p 解析度。\n然而，2026 年 3 月 24 日 OpenAI 宣布關閉 Sora，成為 AI 影片領域的重大事件。App 將於 2026 年 4 月 26 日關閉，API 將於 2026 年 9 月 24 日停止服務。\n關閉原因：Sora 每日營運成本約 100 萬美元，全球用戶數從高峰的約 100 萬跌至不足 50 萬。OpenAI 決定將算力重新分配給更有利可圖的程式碼、推理和企業產品線。此事件被視為 AI 影片商業化的現實警訊。",
+  "pros": [
+    "OpenAI 技術實力背書",
+    "影片品質在早期領先",
+    "支援文字轉影片和圖片轉影片",
+    "最高 1080p 解析度"
+  ],
+  "cons": [
+    "已宣布關閉——App 2026/4/26、API 2026/9/24",
+    "每日營運成本約 100 萬美元",
+    "用戶數從 100 萬跌至不足 50 萬",
+    "最高僅 1080p，不如 Veo 3.1 的 4K",
+    "定價高昂，性價比低",
+    "生成速度慢，等待時間長"
+  ],
+  "features": [
+    {"name": "文字轉影片", "desc": "根據文字描述生成影片"},
+    {"name": "圖片轉影片", "desc": "以靜態圖片為起點生成影片動畫"},
+    {"name": "1080p 解析度", "desc": "最高支援 1080p Full HD 輸出"},
+    {"name": "Storyboard 模式", "desc": "多場景分鏡規劃生成"},
+    {"name": "影片編輯", "desc": "對已生成影片進行修改和延伸"}
+  ],
+  "history": [
+    {"date": "2024-02", "event": "Sora 以技術預覽形式首次公開展示"},
+    {"date": "2024-12", "event": "Sora 2 正式對 ChatGPT Plus/Pro 用戶開放"},
+    {"date": "2025-02", "event": "Sora API 上線"},
+    {"date": "2026-03", "event": "OpenAI 宣布關閉 Sora，App 4/26 關閉、API 9/24 停止"},
+    {"date": "2026-04", "event": "Sora App 正式關閉（預定）"},
+    {"date": "2026-09", "event": "Sora API 正式停止（預定）"}
+  ],
+  "pricing": "已隨 ChatGPT Plus（$20/月）或 Pro（$200/月）提供，額度有限。API 按秒計費。即將全面關閉，不建議新用戶投入。",
+  "competitors": ["Veo 3.1", "Runway Gen-4", "Kling 3.0", "Seedance", "Pika"],
+  "links": [
+    {"title": "OpenAI Sora 頁面", "url": "https://openai.com/sora"},
+    {"title": "Sora 關閉公告（TechCrunch）", "url": "https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/"},
+    {"title": "OpenAI 官網", "url": "https://openai.com"}
+  ]
+}

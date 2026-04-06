@@ -1,0 +1,53 @@
+{
+  "id": "ollama",
+  "name": "Ollama",
+  "company": "Ollama, Inc.",
+  "category": "模型推論",
+  "tags": ["open-source", "local", "inference"],
+  "oneLiner": "最簡單的本地 LLM 運行工具——一個命令即可下載和運行開源模型。支援 Gemma 4、DeepSeek R1、Qwen3.5、Llama 等，兼容 OpenAI API 格式。",
+  "overview": "Ollama 是最受歡迎的本地 LLM 運行工具，讓使用者只需一個命令（ollama run model-name）就能在本地電腦上下載和運行開源大型語言模型。\n截至 2026 年，最新版本為 Ollama 0.20.0，支援的模型包括 Gemma 4（E2B/E4B/26B/31B）、DeepSeek R1、Qwen3.5（27B 在 SWE-bench 達 72.4%，接近 GPT-5 Mini）、Llama 4 等。\nOllama 提供與 OpenAI Chat Completions API 相容的 API，讓現有為 OpenAI 建構的工具可直接使用本地模型。2026 年 3 月起 Ollama 成為 OpenClaw 的官方 provider。\nOllama 0.20.0 加入 Windows ARM64 原生支援（不再需要 x86 模擬）。核心優勢包括資料隱私（敏感資料不離開本機）、低延遲（無需網路通訊）、零 API 費用。\n支援 macOS、Windows、Linux 三大平台，也可透過 Docker 部署。",
+  "pros": [
+    "極簡上手——一個命令安裝和運行模型",
+    "資料完全在本地，隱私和安全有保障",
+    "零 API 費用，適合開發和實驗",
+    "OpenAI API 相容，現有工具無縫切換",
+    "支援的模型持續增加（Gemma 4、DeepSeek R1、Qwen3.5 等）",
+    "跨平台（macOS/Windows/Linux/Docker）",
+    "OpenClaw 官方 provider，整合生態豐富"
+  ],
+  "cons": [
+    "受限於本地硬體，大模型需高階 GPU",
+    "推論速度不如雲端 GPU cluster",
+    "模型量化可能影響輸出品質",
+    "不支援模型微調（fine-tuning）",
+    "多使用者並行能力有限",
+    "Windows ARM64 支援較新，部分邊緣案例仍待完善"
+  ],
+  "features": [
+    {"name": "一鍵運行", "desc": "ollama run model-name 即可下載和執行模型"},
+    {"name": "模型庫", "desc": "支援 Gemma 4、DeepSeek R1、Qwen3.5、Llama 4 等主流模型"},
+    {"name": "OpenAI API 相容", "desc": "相容 Chat Completions API，現有工具可直接使用"},
+    {"name": "本地推論", "desc": "資料不離開本機，零延遲零 API 費用"},
+    {"name": "Modelfile", "desc": "自訂模型設定檔，調整 system prompt 和參數"},
+    {"name": "GGUF 支援", "desc": "直接運行 GGUF 格式量化模型"},
+    {"name": "OpenClaw Provider", "desc": "2026 年 3 月起成為 OpenClaw 官方 provider"}
+  ],
+  "history": [
+    {"date": "2023-08", "event": "Ollama 首次發布（macOS）"},
+    {"date": "2024-01", "event": "Ollama 加入 Windows 和 Linux 支援"},
+    {"date": "2024-04", "event": "OpenAI API 相容性加入"},
+    {"date": "2024-09", "event": "支援 Llama 3.1 和 Gemma 2"},
+    {"date": "2025-03", "event": "加入 DeepSeek R1 和 Qwen 系列模型"},
+    {"date": "2025-10", "event": "Docker 官方映像發布"},
+    {"date": "2026-02", "event": "v0.20.0 發布，支援 Gemma 4 系列和 Windows ARM64"},
+    {"date": "2026-03", "event": "成為 OpenClaw 官方 provider"}
+  ],
+  "pricing": "完全免費開源（MIT License）。無使用費用，模型運行在本地硬體上。",
+  "competitors": ["llama.cpp", "LM Studio", "GPT4All", "Jan"],
+  "links": [
+    {"title": "Ollama 官網", "url": "https://ollama.com"},
+    {"title": "模型庫", "url": "https://ollama.com/library"},
+    {"title": "GitHub", "url": "https://github.com/ollama/ollama"},
+    {"title": "Blog", "url": "https://ollama.com/blog"}
+  ]
+}

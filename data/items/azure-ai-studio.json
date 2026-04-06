@@ -1,0 +1,53 @@
+{
+  "id": "azure-ai-studio",
+  "name": "Azure AI Foundry / Microsoft Foundry",
+  "company": "Microsoft",
+  "category": "雲端平台",
+  "tags": ["cloud", "paid", "enterprise"],
+  "oneLiner": "Microsoft 的統一 AI 平台（原 Azure AI Studio），2026 年更名為 Microsoft Foundry。整合 portal、agent runtime 和模型目錄，支援 multi-agent 編排和 MCP。",
+  "overview": "Microsoft Foundry（前身為 Azure AI Studio → Azure AI Foundry）是 Microsoft 的統一 AI 開發平台，整合了入口網站（portal）、agent 執行環境（runtime）和模型目錄（catalogue）。\n歷經兩次更名：2024 年 11 月從 Azure AI Studio 更名為 Azure AI Foundry，2026 年 1 月再更名為 Microsoft Foundry。\n2026 年 2 月的更新將平台從實驗工具提升為生產級方案，引入 multi-agent 編排、Model Context Protocol（MCP）支援、hosted agents 和 sovereign local 部署選項。\n關鍵功能包括：azure-ai-projects v2 beta（統一 agents、inference、evaluations 和 memory 於單一套件）、Foundry Agent Service 的 managed 長期記憶（自動提取、整合和跨 session 檢索）、以及 Foundry MCP Server（Preview，雲端託管 MCP，支援 VS Code/Visual Studio/portal，Entra auth 整合）。\n與 Microsoft Agent Framework（AutoGen + Semantic Kernel 合併）深度整合，形成從開發到部署的完整 agent 生態。",
+  "pros": [
+    "Microsoft 全生態整合（Azure、M365、GitHub、VS Code）",
+    "Multi-agent 編排和 MCP 原生支援",
+    "Foundry Agent Service 提供全託管 agent 記憶",
+    "模型目錄豐富（OpenAI、Meta、Mistral 等）",
+    "Foundry MCP Server 雲端託管，零本地管理",
+    "Entra ID 企業身分驗證整合",
+    "Sovereign local 部署支援高合規需求"
+  ],
+  "cons": [
+    "頻繁更名造成混亂（AI Studio → AI Foundry → Microsoft Foundry）",
+    "Azure 生態系綁定，遷移成本高",
+    "v2 beta API 的 breaking changes 需注意（class 重新命名）",
+    "學習曲線陡（Azure 概念 + AI 概念）",
+    "部分功能仍在 Preview，穩定性待驗證",
+    "定價不如 Bedrock 透明"
+  ],
+  "features": [
+    {"name": "Multi-Agent 編排", "desc": "生產級多 agent 協作和工作流"},
+    {"name": "MCP 支援", "desc": "Foundry MCP Server 雲端託管，Entra auth 整合"},
+    {"name": "Agent Memory", "desc": "managed 長期記憶，自動提取、整合和跨 session 檢索"},
+    {"name": "統一套件", "desc": "azure-ai-projects v2 統一 agents/inference/evaluations/memory"},
+    {"name": "模型目錄", "desc": "OpenAI、Meta、Mistral 等模型一站式存取"},
+    {"name": "Hosted Agents", "desc": "全託管 agent 執行環境"},
+    {"name": "Sovereign 部署", "desc": "支援 local/sovereign 部署，滿足高合規需求"}
+  ],
+  "history": [
+    {"date": "2023-11", "event": "Azure AI Studio 在 Ignite 2023 發布"},
+    {"date": "2024-05", "event": "Azure AI Studio GA"},
+    {"date": "2024-11", "event": "更名為 Azure AI Foundry"},
+    {"date": "2025-06", "event": "Agent Service 和模型目錄擴充"},
+    {"date": "2025-12", "event": "Foundry MCP Server Preview 上線"},
+    {"date": "2026-01", "event": "更名為 Microsoft Foundry"},
+    {"date": "2026-02", "event": "multi-agent 編排、MCP 支援、managed memory 上線"},
+    {"date": "2026-03", "event": "azure-ai-projects v2 beta 發布"}
+  ],
+  "pricing": "按用量計費（Azure 定價模型）。模型推論依選用模型和用量計費。Agent Service 和 MCP Server 依用量另計。Enterprise 客製定價。",
+  "competitors": ["AWS Bedrock", "Google Vertex AI", "Hugging Face"],
+  "links": [
+    {"title": "Microsoft Foundry", "url": "https://ai.azure.com"},
+    {"title": "文件", "url": "https://learn.microsoft.com/en-us/azure/ai-services/"},
+    {"title": "Foundry Blog", "url": "https://devblogs.microsoft.com/foundry/"},
+    {"title": "定價", "url": "https://azure.microsoft.com/en-us/pricing/"}
+  ]
+}

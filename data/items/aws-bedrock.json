@@ -1,0 +1,53 @@
+{
+  "id": "aws-bedrock",
+  "name": "AWS Bedrock",
+  "company": "Amazon Web Services",
+  "category": "雲端平台",
+  "tags": ["cloud", "paid", "enterprise"],
+  "oneLiner": "AWS 的全託管 AI 服務平台，提供近 100 個 serverless 模型（Claude、GPT、Llama、Mistral、DeepSeek 等），支援 AgentCore、Intelligent Prompt Routing 和結構化輸出。",
+  "overview": "Amazon Bedrock 是 AWS 的全託管生成式 AI 服務平台，讓企業透過統一 API 存取來自多家供應商的基礎模型。截至 2026 年 4 月，平台提供近 100 個 serverless 模型，涵蓋 Anthropic、OpenAI、Google、Meta、Mistral、MiniMax、Moonshot、NVIDIA 和 Qwen 等供應商。\n2026 年的重大更新包括：一次性新增 18 個開源模型（最大規模的單次模型擴充）、AgentCore Policy Controls GA（在 agent 推理迴圈之外驗證操作權限）、以及結構化輸出擴展到 GovCloud 區域。\n最新加入的模型包括 DeepSeek V3.2、GLM 5、Minimax M2.5、Kimi K2.5 和 Qwen3 Coder Next。平台已從文字優先演進為真正的多模態平台，涵蓋語言、視覺、音訊、安全和程式碼等工作負載。\nIntelligent Prompt Routing 可在維持品質的同時降低最多 30% 的成本。支援 OpenAI 相容 API（bedrock-runtime 和 bedrock-mantle 端點）。",
+  "pros": [
+    "近 100 個 serverless 模型，供應商選擇最多",
+    "AWS 生態系深度整合（S3、Lambda、SageMaker 等）",
+    "AgentCore Policy Controls 提供企業級治理",
+    "Intelligent Prompt Routing 最多省 30% 成本",
+    "GovCloud 支援，滿足政府和高合規需求",
+    "OpenAI 相容 API，遷移方便",
+    "全球 AWS 區域部署，延遲低"
+  ],
+  "cons": [
+    "定價較複雜，容易超出預算",
+    "AWS 生態系綁定，遷移成本高",
+    "部分新模型的區域可用性有時差",
+    "學習曲線較陡（IAM、VPC 等 AWS 概念）",
+    "相較直接使用模型 API，多一層抽象和延遲",
+    "Batch 處理的等待時間較長"
+  ],
+  "features": [
+    {"name": "多模型存取", "desc": "近 100 個 serverless 模型，統一 API 存取"},
+    {"name": "AgentCore", "desc": "Policy Controls GA，agent 操作權限治理"},
+    {"name": "Intelligent Prompt Routing", "desc": "自動選擇最佳模型，降低最多 30% 成本"},
+    {"name": "結構化輸出", "desc": "schema-compliant 的機器可讀回應"},
+    {"name": "多模態", "desc": "語言、視覺、音訊、安全和程式碼工作負載"},
+    {"name": "Knowledge Bases", "desc": "全託管 RAG 服務"},
+    {"name": "Guardrails", "desc": "內容過濾和安全護欄"}
+  ],
+  "history": [
+    {"date": "2023-09", "event": "Amazon Bedrock GA"},
+    {"date": "2024-04", "event": "加入 Knowledge Bases 和 Agents 功能"},
+    {"date": "2024-09", "event": "Guardrails 和 Model Evaluation 上線"},
+    {"date": "2025-03", "event": "AgentCore 發布"},
+    {"date": "2025-12", "event": "一次性新增 18 個開源模型"},
+    {"date": "2026-02", "event": "加入 DeepSeek V3.2、GLM 5 等最新模型"},
+    {"date": "2026-03", "event": "AgentCore Policy Controls GA"},
+    {"date": "2026-04", "event": "結構化輸出擴展到 GovCloud"}
+  ],
+  "pricing": "按用量計費。模型定價依供應商不同：如 Claude Sonnet 4.6 $3/$15 per M tokens、Llama 4 模型免推論費（僅計算費用）。Intelligent Prompt Routing 可省最多 30%。Batch 處理有折扣。",
+  "competitors": ["Google Vertex AI", "Azure AI Foundry", "Hugging Face"],
+  "links": [
+    {"title": "AWS Bedrock 官網", "url": "https://aws.amazon.com/bedrock/"},
+    {"title": "定價", "url": "https://aws.amazon.com/bedrock/pricing/"},
+    {"title": "文件", "url": "https://docs.aws.amazon.com/bedrock/"},
+    {"title": "模型目錄", "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle.html"}
+  ]
+}

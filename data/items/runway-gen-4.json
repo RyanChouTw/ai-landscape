@@ -1,0 +1,49 @@
+{
+  "id": "runway-gen-4",
+  "name": "Runway Gen-4",
+  "company": "Runway",
+  "category": "影片生成",
+  "tags": ["closed", "paid", "video-generation"],
+  "oneLiner": "AI 影片生成領域先驅，Gen-4.5 在獨立評測中排名世界第一（1,247 Elo），支援 4K/60 秒影片、Aleph 後製編輯和 Act-Two 動態捕捉。",
+  "overview": "Runway 是 AI 影片生成領域的先驅公司，其 Gen-4 系列模型引入參考圖片功能，可維持角色外觀、服裝和特徵跨場景一致性。2025 年 11 月發布的 Gen-4.5 更是目前全球排名第一的影片生成模型，在 Artificial Analysis Text-to-Video 排行榜上取得 1,247 Elo。\nRunway 持續推出革命性功能：Aleph（2025/7）允許透過文字提示對已生成影片進行後期修改，無需重新生成；Act-Two（2025/7）將專業動態捕捉技術帶給一般創作者——上傳表演影片和角色參考圖即可驅動角色。\nGen-4 支援最長 60 秒連續影片、4K 解析度。Gen-4 Turbo 提供更經濟的選項（5 credits/秒 vs Gen-4 的 12 credits/秒）。平台另有 Unlimited Plan 的 Explore Mode 提供無限量生成。",
+  "pros": [
+    "Gen-4.5 全球排名第一（1,247 Elo）",
+    "Aleph 後製編輯——文字修改已生成影片，無需重新生成",
+    "Act-Two 動態捕捉——上傳表演驅動角色動作",
+    "角色一致性跨場景維持能力強",
+    "Gen-4 Turbo 性價比高（5 credits/秒）",
+    "Unlimited Plan Explore Mode 支援無限量生成",
+    "支援 4K 解析度和 60 秒連續影片"
+  ],
+  "cons": [
+    "信用額度制計費，成本不易預測",
+    "免費方案僅 125 一次性 credits（720p、有浮水印）",
+    "Gen-4.5 需 Standard 以上方案（$12/月起）",
+    "不開源，僅雲端服務",
+    "Explore Mode 品質較低（relaxed quality）",
+    "定價比部分中國競品（Kling、Seedance）高"
+  ],
+  "features": [
+    {"name": "Gen-4.5 模型", "desc": "全球排名第一的影片生成模型，1,247 Elo"},
+    {"name": "Aleph 後製編輯", "desc": "透過文字提示修改已生成影片，無需重新生成"},
+    {"name": "Act-Two", "desc": "上傳表演影片驅動角色動作，專業動態捕捉技術"},
+    {"name": "角色一致性", "desc": "參考圖片維持角色跨場景外觀一致"},
+    {"name": "Gen-4 Turbo", "desc": "經濟版模型，5 credits/秒、最高 10 秒"},
+    {"name": "Explore Mode", "desc": "Unlimited Plan 專屬，relaxed 品質無限量生成"}
+  ],
+  "history": [
+    {"date": "2023-03", "event": "Gen-1 發布，首款影片到影片 AI 模型"},
+    {"date": "2023-06", "event": "Gen-2 發布，支援文字到影片"},
+    {"date": "2024-06", "event": "Gen-3 Alpha 發布，品質大幅提升"},
+    {"date": "2025-03", "event": "Gen-4 發布，引入參考圖片和角色一致性"},
+    {"date": "2025-07", "event": "Aleph 和 Act-Two 發布"},
+    {"date": "2025-11", "event": "Gen-4.5 發布，排名全球第一"}
+  ],
+  "pricing": "Free $0（125 一次性 credits、720p、浮水印）、Standard $12/月（625 credits/月）、Pro $28/月（2,250 credits/月、4K、無浮水印）、Unlimited $76/月（2,250 credits + Explore Mode 無限量）。年付可享折扣。",
+  "competitors": ["Veo 3.1", "Kling 3.0", "Seedance", "Pika", "Sora 2"],
+  "links": [
+    {"title": "Runway 官網", "url": "https://runwayml.com"},
+    {"title": "Runway 定價", "url": "https://runwayml.com/pricing"},
+    {"title": "Runway Research", "url": "https://research.runwayml.com"}
+  ]
+}

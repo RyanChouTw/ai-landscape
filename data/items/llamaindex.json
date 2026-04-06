@@ -1,0 +1,52 @@
+{
+  "id": "llamaindex",
+  "name": "LlamaIndex",
+  "company": "LlamaIndex, Inc.",
+  "category": "Agent 框架",
+  "tags": ["open-source", "framework", "rag"],
+  "oneLiner": "專精於 RAG（Retrieval-Augmented Generation）的 LLM 應用框架。提供 LlamaParse 文件解析、LlamaExtract 結構化資料提取、以及 Agent Workflows 工作流引擎。",
+  "overview": "LlamaIndex 是專為 RAG 和資料密集型 LLM 應用設計的開源框架。不同於 LangChain 的泛用定位，LlamaIndex 聚焦在「如何讓 LLM 有效存取和使用你的資料」這個核心問題上。\n2026 年 LlamaIndex 已從單純的 RAG 框架演進為完整的 agentic retrieval 平台。核心產品包括：LlamaParse（複雜文件解析，支援自訂 schema 的頁面級提取）、LlamaExtract（結構化資料提取）、LlamaClassify（文件分類）、以及 Agent Workflows（結合 ACP 整合、MCP server 和持久記憶的 agent 工作流）。\n先進的 RAG 技術已從 naive chunk retrieval 演進到 hybrid search、CRAG、Self-RAG、HyDE、deep research、reranking、multi-modal embeddings 和 RAPTOR 等策略。\nLlamaParse 支援跨多個知識庫的 query routing，並整合了 EmbeddingGemma 做本地端 RAG 和 Claude Sonnet 4.5 做文件理解。2025 年 LlamaIndex 的 retrieval 準確度提升了 35%。",
+  "pros": [
+    "RAG 領域最專業的框架，retrieval 準確度業界領先",
+    "LlamaParse 處理複雜文件（PDF、PPT）的能力出色",
+    "頁面級結構化提取，保留文件粒度",
+    "Agent Workflows 支援 ACP/MCP 整合和持久記憶",
+    "多種先進 RAG 策略內建（hybrid search、CRAG、Self-RAG 等）",
+    "跨多知識庫 query routing",
+    "開源核心，商業服務可選"
+  ],
+  "cons": [
+    "Agent 能力不如 LangGraph/CrewAI 成熟",
+    "RAG 以外的場景覆蓋較弱",
+    "LlamaParse/LlamaExtract 商業服務定價較高",
+    "學習曲線較陡，概念較多（index、node、retriever、query engine）",
+    "相較 LangChain 社群和整合生態較小"
+  ],
+  "features": [
+    {"name": "LlamaParse", "desc": "複雜文件解析，支援自訂 schema 頁面級提取"},
+    {"name": "LlamaExtract", "desc": "結構化資料提取，Page-Level Extraction"},
+    {"name": "LlamaClassify", "desc": "智慧文件分類"},
+    {"name": "Agent Workflows", "desc": "結合 ACP、MCP server 和持久記憶的 agent 工作流"},
+    {"name": "先進 RAG 策略", "desc": "hybrid search、CRAG、Self-RAG、HyDE、RAPTOR 等"},
+    {"name": "Multi-KB Routing", "desc": "跨多個知識庫的智慧 query routing"},
+    {"name": "EmbeddingGemma", "desc": "整合 compact embedding 模型做本地端 RAG"}
+  ],
+  "history": [
+    {"date": "2022-11", "event": "Jerry Liu 發布 GPT Index（LlamaIndex 前身）"},
+    {"date": "2023-06", "event": "正式更名為 LlamaIndex，成立公司"},
+    {"date": "2024-02", "event": "LlamaParse 文件解析服務上線"},
+    {"date": "2024-08", "event": "LlamaExtract 結構化提取發布"},
+    {"date": "2025-03", "event": "Agent Workflows 上線，RAG 準確度提升 35%"},
+    {"date": "2025-09", "event": "LlamaClassify 文件分類發布"},
+    {"date": "2026-01", "event": "Agent Workflows 加入 ACP/MCP 整合和持久記憶"},
+    {"date": "2026-03", "event": "整合 EmbeddingGemma 和 Claude Sonnet 4.5"}
+  ],
+  "pricing": "LlamaIndex 框架免費開源。LlamaCloud：Free tier 可用 / Pro 和 Enterprise 客製定價。LlamaParse 依頁面數計費。",
+  "competitors": ["LangChain", "Dify", "Haystack", "Unstructured"],
+  "links": [
+    {"title": "LlamaIndex 官網", "url": "https://www.llamaindex.ai"},
+    {"title": "GitHub", "url": "https://github.com/run-llama/llama_index"},
+    {"title": "文件", "url": "https://developers.llamaindex.ai"},
+    {"title": "Blog", "url": "https://www.llamaindex.ai/blog"}
+  ]
+}

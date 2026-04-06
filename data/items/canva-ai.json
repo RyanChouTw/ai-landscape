@@ -1,0 +1,52 @@
+{
+  "id": "canva-ai",
+  "name": "Canva AI",
+  "company": "Canva",
+  "category": "AI 設計",
+  "tags": ["closed", "freemium"],
+  "oneLiner": "Canva 的 Magic Studio AI 工具套件，累計使用超過 50 億次，整合 OpenAI 技術與 1 億+ 素材庫，涵蓋 AI 寫作、設計、編輯、擴展、程式碼生成。",
+  "overview": "Canva AI（Magic Studio）是 Canva 的 AI 工具套件，將 AI 能力整合到設計平台的每個環節。截至 2026 年，累計使用次數超過 50 億次。\n核心功能包括：Magic Write（AI 寫作助手，支援大綱、段落生成、改寫、文法檢查、摘要）、Magic Design（結合 OpenAI API 和 Canva 設計引擎，輸入 prompt 即可生成簡報、社群貼文和影片）、Magic Edit（文字 prompt 編輯圖片）、Magic Grab（將圖片主體分離為可編輯元素）、Magic Expand（AI 延伸圖片邊界）。\n2026 年新增 Canva Code，讓用戶用 AI 在設計中加入互動程式碼元素。Canva AI 的定位是讓非設計師也能快速產出專業品質的視覺內容。\nFree 方案有基本 AI 功能但使用次數有限，Pro 和 Business 方案解鎖完整 Magic Studio 功能。",
+  "pros": [
+    "50 億+ 次使用，產品成熟度高",
+    "免費方案即可使用基本 AI 功能",
+    "1 億+ 素材和模板庫，結合 AI 設計更高效",
+    "Magic Design 一鍵生成完整設計，大幅降低設計門檻",
+    "整合 OpenAI 技術，圖片生成和編輯品質好",
+    "跨平台：網頁、桌面、手機全支援",
+    "團隊協作功能完善"
+  ],
+  "cons": [
+    "Free 方案 AI 使用次數有限",
+    "AI 生成設計風格偏模板化，缺少獨特性",
+    "進階 AI 功能需要 Pro 或 Business 訂閱",
+    "複雜設計需求仍不及 Figma、Photoshop 等專業工具",
+    "AI 圖片生成品質雖好但不及 Midjourney 等專門工具",
+    "匯出格式和品質控制有一定限制"
+  ],
+  "features": [
+    {"name": "Magic Write", "desc": "AI 寫作助手，支援大綱、段落、改寫、文法、摘要"},
+    {"name": "Magic Design", "desc": "輸入 prompt 自動生成簡報、社群貼文、影片"},
+    {"name": "Magic Edit", "desc": "文字描述編輯圖片——選取區域、寫 prompt、即時變換"},
+    {"name": "Magic Grab", "desc": "AI 分離圖片主體為可編輯元素"},
+    {"name": "Magic Expand", "desc": "AI 延伸圖片邊界，修正構圖"},
+    {"name": "Canva Code", "desc": "用 AI 在設計中加入互動程式碼元素"},
+    {"name": "AI 助手", "desc": "全方位 AI 助手，貫穿設計流程"}
+  ],
+  "history": [
+    {"date": "2013", "event": "Canva 在澳洲創立"},
+    {"date": "2023-03", "event": "推出 Magic Design、Magic Edit 等初代 AI 功能"},
+    {"date": "2023-10", "event": "發布 Magic Studio 整合所有 AI 工具"},
+    {"date": "2024-05", "event": "Magic Studio 使用次數突破 10 億"},
+    {"date": "2024-10", "event": "整合 OpenAI 技術提升圖片生成品質"},
+    {"date": "2025-06", "event": "推出 Canva Code 和進階 AI 助手"},
+    {"date": "2026-01", "event": "Magic Studio 累計使用突破 50 億次"}
+  ],
+  "pricing": "Free $0（基本 AI，使用次數有限）/ Pro $12.99/月或 $120/年 / Business $20/用戶/月或 $200/年 / Enterprise 客製定價。",
+  "competitors": ["Adobe Express", "Figma AI", "Microsoft Designer", "Gamma", "Beautiful.ai"],
+  "links": [
+    {"title": "Magic Studio", "url": "https://www.canva.com/magic/"},
+    {"title": "Canva AI 助手", "url": "https://www.canva.com/ai-assistant/"},
+    {"title": "Canva 定價", "url": "https://www.canva.com/en/pricing/"},
+    {"title": "Canva 新聞室", "url": "https://www.canva.com/newsroom/news/magic-studio/"}
+  ]
+}

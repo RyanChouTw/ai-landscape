@@ -1,0 +1,53 @@
+{
+  "id": "elevenlabs",
+  "name": "ElevenLabs",
+  "company": "ElevenLabs",
+  "category": "語音合成",
+  "tags": ["closed", "freemium", "tts", "stt", "voice-cloning"],
+  "oneLiner": "AI 語音技術領導者，提供業界最自然的 TTS、即時 ASR（Scribe v2 Realtime 150ms 延遲）、語音複製和 AI 配音，估值 110 億美元。",
+  "overview": "ElevenLabs 由前 Google ML 工程師 Piotr Dabkowski 和前 Palantir 策略師 Mati Staniszewski 於 2022 年在波蘭創立，靈感來自他們對美國電影配音品質不佳的不滿。公司專注於自然語音合成技術，是目前 TTS 品質最高的商業平台。\n2026 年 2 月完成 5 億美元融資，估值達 110 億美元，正考慮 IPO。\n核心產品線：TTS（多語言語音合成，Flash/Turbo 到 Multilingual v2/v3 多種模型）；Scribe v2 Realtime（150ms 延遲即時語音轉文字，支援 90+ 語言）；Scribe v2（批量轉錄，支援 PII 偵測 56 類別）；語音複製（即時複製和專業複製兩種模式）；AI 配音（保留說話者語調和情感翻譯至 20+ 語言）；Voice Library（社群共享語音檔案）。",
+  "pros": [
+    "TTS 品質業界最自然，多語言支援 90+ 語言",
+    "Scribe v2 Realtime 150ms 延遲，適合即時場景",
+    "語音複製技術成熟，即時和專業兩種模式",
+    "AI 配音保留原始語調和情感",
+    "Scribe v2 內建 PII 偵測（56 類別）",
+    "Voice Library 豐富的社群語音資源",
+    "API 定價明確，Flash/Turbo 模型成本低"
+  ],
+  "cons": [
+    "不開源，僅雲端 API",
+    "Scale 方案 $330/月，企業成本不低",
+    "語音複製可能被濫用（deepfake 風險）",
+    "免費方案額度有限",
+    "Multilingual v2/v3 TTS 成本是 Flash 的 2 倍",
+    "Scribe v2 Realtime 目前主要支援歐洲和亞洲常用語言"
+  ],
+  "features": [
+    {"name": "TTS 語音合成", "desc": "業界最自然的多語言語音合成，多種模型可選"},
+    {"name": "Scribe v2 Realtime", "desc": "150ms 延遲即時 STT，預測式轉錄，90+ 語言"},
+    {"name": "Scribe v2 批量轉錄", "desc": "長音訊轉錄，PII 偵測 56 類別，精確時間戳"},
+    {"name": "語音複製", "desc": "即時複製（短音訊）和專業複製（高品質錄音）"},
+    {"name": "AI 配音", "desc": "保留說話者語調和情感翻譯至 20+ 語言"},
+    {"name": "Voice Library", "desc": "社群共享語音檔案和 Voice Design 工具"}
+  ],
+  "history": [
+    {"date": "2022-01", "event": "ElevenLabs 由 Piotr Dabkowski 和 Mati Staniszewski 創立"},
+    {"date": "2023-01", "event": "200 萬美元 pre-seed 融資"},
+    {"date": "2023-06", "event": "1,900 萬美元 Series A（a16z 領投），估值 1 億美元"},
+    {"date": "2023-10", "event": "AI 配音功能發布，支援 20+ 語言"},
+    {"date": "2024-01", "event": "8,000 萬美元 Series B，估值 11 億美元"},
+    {"date": "2025-01", "event": "1.8 億美元 Series C，估值 33 億美元"},
+    {"date": "2025-09", "event": "Scribe v2 發布，批量轉錄 + PII 偵測"},
+    {"date": "2026-02", "event": "5 億美元融資，估值 110 億美元，考慮 IPO"},
+    {"date": "2026-03", "event": "Scribe v2 Realtime 發布，150ms 延遲即時 STT"}
+  ],
+  "pricing": "Free（有限額度）/ Starter $5/月 / Creator $22/月 / Pro $99/月 / Scale $330/月 / Enterprise 洽詢。API：TTS Flash/Turbo $0.06/千字、Multilingual v2/v3 $0.12/千字。STT：Scribe v1/v2 $0.22/小時、Scribe v2 Realtime $0.39/小時。",
+  "competitors": ["VibeVoice", "OpenAI TTS", "Google Cloud TTS", "Amazon Polly", "Azure Speech"],
+  "links": [
+    {"title": "ElevenLabs 官網", "url": "https://elevenlabs.io"},
+    {"title": "API 定價", "url": "https://elevenlabs.io/pricing/api"},
+    {"title": "Scribe v2 Realtime", "url": "https://elevenlabs.io/realtime-speech-to-text"},
+    {"title": "API 文件", "url": "https://elevenlabs.io/docs"}
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "handy",
+  "name": "Handy",
+  "company": "開源社群（cjpais）",
+  "category": "語音輸入",
+  "tags": ["open-source", "free", "voice-input", "offline"],
+  "oneLiner": "免費開源的離線語音輸入桌面應用，基於 Whisper 和 Parakeet V3，支援 GPU/CPU 推理、VAD 靜音過濾，GitHub 17,000+ stars。",
+  "overview": "Handy 是由開發者 cjpais 創建的免費、開源、可擴展的語音輸入桌面應用程式，所有語音處理完全在本機完成，不傳送任何音訊到雲端。GitHub 超過 17,000 顆星，是目前最受歡迎的開源語音輸入工具之一。\n技術架構基於 Tauri（Rust + React），結合多種 ASR 引擎：OpenAI Whisper（GPU 加速）和 NVIDIA Parakeet V3（CPU 高效推理 + 自動語言偵測），另整合 Silero VAD 進行語音活動偵測和靜音過濾。\n使用方式簡單：設定快捷鍵開始/停止錄音，或使用 push-to-talk 模式。跨平台支援 Windows、macOS 和 Linux。Handy 的設計哲學是「最容易 fork 的語音輸入工具」——強調可擴展性和社群貢獻。\n專案持續活躍開發，2026 年 4 月仍有新版本發布。",
+  "pros": [
+    "完全離線，語音不傳送雲端，隱私最大化",
+    "免費開源（GitHub 17,000+ stars）",
+    "Whisper（GPU）+ Parakeet V3（CPU）雙引擎",
+    "Silero VAD 靜音過濾，減少誤觸發",
+    "跨平台（Windows/macOS/Linux）",
+    "Tauri 架構輕量高效",
+    "可擴展設計，易於 fork 和客製化",
+    "持續活躍開發（2026/4 仍有更新）"
+  ],
+  "cons": [
+    "離線推理品質不及雲端 LLM 驅動的 Typeless",
+    "不含語氣調整和文法修正（純轉錄）",
+    "需要安裝和設定，門檻高於 SaaS 工具",
+    "GPU 加速需 NVIDIA 顯卡",
+    "CPU 模式下延遲較高",
+    "UI 功能相對簡潔"
+  ],
+  "features": [
+    {"name": "完全離線", "desc": "所有語音處理在本機完成，零資料外傳"},
+    {"name": "雙 ASR 引擎", "desc": "Whisper（GPU 加速）+ Parakeet V3（CPU 高效）"},
+    {"name": "Silero VAD", "desc": "語音活動偵測，自動過濾靜音片段"},
+    {"name": "快捷鍵控制", "desc": "可設定快捷鍵開始/停止或 push-to-talk 模式"},
+    {"name": "跨平台", "desc": "Windows、macOS、Linux 原生支援"},
+    {"name": "可擴展架構", "desc": "Tauri（Rust + React），易於 fork 和自訂"}
+  ],
+  "history": [
+    {"date": "2024-08", "event": "Handy 專案在 GitHub 上公開"},
+    {"date": "2024-12", "event": "支援 Whisper GPU 加速推理"},
+    {"date": "2025-04", "event": "整合 Parakeet V3 CPU 推理引擎"},
+    {"date": "2025-09", "event": "GitHub stars 突破 10,000"},
+    {"date": "2026-02", "event": "整合 Silero VAD 和語言自動偵測"},
+    {"date": "2026-04", "event": "持續更新，GitHub 17,000+ stars"}
+  ],
+  "pricing": "完全免費開源。從 GitHub（github.com/cjpais/Handy）下載安裝，或從 handy.computer 官網取得。",
+  "competitors": ["Typeless", "Wispr Flow", "Superwhisper", "OpenWhispr"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/cjpais/Handy"},
+    {"title": "官網", "url": "https://handy.computer"},
+    {"title": "Releases", "url": "https://github.com/cjpais/Handy/releases"}
+  ]
+}

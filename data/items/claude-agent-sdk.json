@@ -1,0 +1,49 @@
+{
+  "id": "claude-agent-sdk",
+  "name": "Claude Agent SDK",
+  "company": "Anthropic",
+  "category": "Agent 框架",
+  "tags": ["open-source", "framework", "agent", "anthropic"],
+  "oneLiner": "Anthropic 推出的 Agent SDK，將 Claude Code 的能力包裝為可程式化的 library。內建工具、18 種 lifecycle hook、最深度的 MCP 整合，支援 Python 和 TypeScript。",
+  "overview": "Claude Agent SDK 讓開發者能以程式化方式建構具有 Claude Code 能力的 AI agent，包括理解程式碼庫、編輯檔案、執行命令和完成複雜工作流。\nSDK 的核心優勢在於三個面向：內建工具省去檔案系統和 shell 存取的 boilerplate；18 種 lifecycle hook 事件讓開發者能攔截 agent 執行的每個環節；以及業界最深度的 MCP 整合——Playwright、Slack、GitHub 等數百個 MCP server 只需一行配置就能連接。\nSession 機制支援跨多次查詢的上下文持久化，透過 session_id 恢復先前的對話記憶。當 context window 滿載時，SDK 會自動壓縮摘要釋放空間。\n2026 年最新版本（v0.2.92）加入了 get_context_usage() 方法查詢 context 使用量、typing.Annotated 支援、tool_use_id/agent_id 暴露給權限系統、以及自訂 session_id 功能。\n目前 SDK 只支援 API 按量計費，不支援訂閱計費。",
+  "pros": [
+    "繼承 Claude Code 的強大 coding 能力",
+    "18 種 lifecycle hook 提供最細緻的執行控制",
+    "業界最深度的 MCP 整合，一行配置連接數百服務",
+    "內建工具（file system、shell）省去大量 boilerplate",
+    "Session 持久化 + 自動 context 壓縮",
+    "Python 和 TypeScript 雙語言支援",
+    "Claude 模型的程式碼能力業界領先"
+  ],
+  "cons": [
+    "只支援 Claude 模型，無法使用其他 LLM",
+    "只能 API 按量計費，不支援訂閱方案",
+    "SDK 版本仍為 0.x，API 可能變動",
+    "相較 LangChain 生態系較小",
+    "缺少視覺化編輯器和低程式碼選項"
+  ],
+  "features": [
+    {"name": "內建工具", "desc": "file system 和 shell 存取工具，無需額外設定"},
+    {"name": "18 種 Lifecycle Hook", "desc": "攔截 agent 執行的每個環節：tool_start、tool_end、message 等"},
+    {"name": "MCP 深度整合", "desc": "一行配置連接 Playwright、Slack、GitHub 等數百個 MCP server"},
+    {"name": "Session 持久化", "desc": "跨多次查詢保留上下文，透過 session_id 恢復"},
+    {"name": "自動 Context 壓縮", "desc": "context window 滿載時自動摘要壓縮，釋放空間"},
+    {"name": "Context Usage 查詢", "desc": "get_context_usage() 按分類查詢 context window 使用量"},
+    {"name": "權限控制", "desc": "ToolPermissionContext 暴露 tool_use_id 和 agent_id"}
+  ],
+  "history": [
+    {"date": "2025-05", "event": "Claude Agent SDK 首次發布（Python）"},
+    {"date": "2025-07", "event": "TypeScript SDK 發布"},
+    {"date": "2025-09", "event": "Session 持久化和自動 context 壓縮上線"},
+    {"date": "2025-12", "event": "Lifecycle hook 系統擴展到 18 種事件"},
+    {"date": "2026-03", "event": "v0.2.92 發布：get_context_usage()、typing.Annotated 支援、自訂 session_id"}
+  ],
+  "pricing": "SDK 免費開源。使用時依 Claude API 定價計費：Opus 4.6 $5/$25、Sonnet 4.6 $3/$15、Haiku 4.5 $1/$5 per M tokens。不支援訂閱計費。",
+  "competitors": ["LangGraph", "CrewAI", "Google ADK", "Microsoft Agent Framework"],
+  "links": [
+    {"title": "Agent SDK 文件", "url": "https://platform.claude.com/docs/en/agent-sdk/overview"},
+    {"title": "GitHub (Python)", "url": "https://github.com/anthropics/claude-agent-sdk-python"},
+    {"title": "npm (TypeScript)", "url": "https://www.npmjs.com/package/@anthropic-ai/claude-agent-sdk"},
+    {"title": "建構指南", "url": "https://www.anthropic.com/engineering/building-agents-with-the-claude-agent-sdk"}
+  ]
+}

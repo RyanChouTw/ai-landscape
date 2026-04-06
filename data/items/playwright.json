@@ -1,0 +1,52 @@
+{
+  "id": "playwright",
+  "name": "Playwright",
+  "company": "Microsoft",
+  "category": "瀏覽器自動化",
+  "tags": ["open-source", "testing", "browser-automation"],
+  "oneLiner": "Microsoft 開發的跨瀏覽器自動化框架，支援 Chromium、Firefox 和 WebKit。75,000+ GitHub stars，是 2026 年 AI agent 瀏覽器操作的首選工具。",
+  "overview": "Playwright 是 Microsoft 開發的開源 Web 測試和自動化框架，允許透過單一 API 控制 Chromium、Firefox 和 WebKit 三大瀏覽器引擎。截至 2026 年，擁有超過 75,000 GitHub stars 和 2,000 萬次 npm 下載。\nPlaywright 在 2026 年不僅是測試工具，更成為 AI agent 操作瀏覽器的標準介面。Playwright MCP Server（@playwright/mcp）是 Microsoft 官方的 Model Context Protocol server，讓 AI 模型直接控制瀏覽器，透過 accessibility tree snapshot（2-5KB 的結構化資料）高效傳遞頁面資訊，目前已有 29,600+ GitHub stars。\nPlaywright CLI for AI Agents 提供比 MCP 更 token 高效的命令列介面，避免載入大型 tool schema 和 accessibility tree 到模型 context 中。\n2026 年新功能包括 AI 驅動的測試生成、self-healing test（自動修復壞掉的 locator）、以及 Microsoft Playwright Testing 雲端服務（最多 50 個瀏覽器平行測試）。",
+  "pros": [
+    "跨瀏覽器支援（Chromium/Firefox/WebKit），一套 API 搞定",
+    "Playwright MCP Server 是 AI agent 瀏覽器操作的標準",
+    "Accessibility tree snapshot 高效低 token，AI agent 友善",
+    "自動等待機制，測試穩定度高",
+    "支援多語言（JavaScript/TypeScript/Python/Java/.NET）",
+    "AI 驅動的測試生成和 self-healing test",
+    "Microsoft Playwright Testing 雲端平行測試"
+  ],
+  "cons": [
+    "相較 Puppeteer 學習曲線略陡",
+    "本地測試需下載瀏覽器 binary，佔用空間較大",
+    "部分進階功能（如 MCP Server）仍在快速迭代中",
+    "Webkit 支援偶爾不如 Chromium 完整",
+    "Docker 環境中配置較複雜"
+  ],
+  "features": [
+    {"name": "跨瀏覽器自動化", "desc": "單一 API 控制 Chromium、Firefox 和 WebKit"},
+    {"name": "Playwright MCP Server", "desc": "官方 MCP server，讓 AI agent 直接操作瀏覽器（29,600+ stars）"},
+    {"name": "CLI for AI Agents", "desc": "token 高效的命令列介面，專為 coding agent 設計"},
+    {"name": "自動等待", "desc": "智慧等待元素可操作，減少 flaky test"},
+    {"name": "AI 測試生成", "desc": "AI 輔助生成測試腳本和 self-healing locator"},
+    {"name": "Network Interception", "desc": "攔截和模擬網路請求"},
+    {"name": "雲端平行測試", "desc": "Microsoft Playwright Testing 最多 50 瀏覽器平行執行"}
+  ],
+  "history": [
+    {"date": "2020-01", "event": "Microsoft 發布 Playwright（由前 Puppeteer 團隊開發）"},
+    {"date": "2021-11", "event": "Playwright Test 測試框架發布"},
+    {"date": "2023-06", "event": "GitHub stars 突破 50,000"},
+    {"date": "2024-03", "event": "Playwright Python 和 Java 版成熟"},
+    {"date": "2025-03", "event": "Playwright MCP Server 發布，AI agent 瀏覽器操作標準確立"},
+    {"date": "2025-09", "event": "MCP Server 突破 20,000 GitHub stars"},
+    {"date": "2026-01", "event": "AI 驅動測試生成和 self-healing test 上線"},
+    {"date": "2026-03", "event": "MCP Server 達 29,600+ stars，CLI for AI Agents 發布"}
+  ],
+  "pricing": "完全免費開源（Apache 2.0）。Microsoft Playwright Testing 雲端服務依用量計費（Azure 定價）。",
+  "competitors": ["Puppeteer", "Selenium", "Cypress"],
+  "links": [
+    {"title": "Playwright 官網", "url": "https://playwright.dev"},
+    {"title": "GitHub", "url": "https://github.com/microsoft/playwright"},
+    {"title": "MCP Server", "url": "https://github.com/microsoft/playwright-mcp"},
+    {"title": "Microsoft Playwright Testing", "url": "https://azure.microsoft.com/en-us/products/playwright-testing"}
+  ]
+}

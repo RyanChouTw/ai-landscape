@@ -1,0 +1,50 @@
+{
+  "id": "veo-31",
+  "name": "Veo 3.1",
+  "company": "Google",
+  "category": "影片生成",
+  "tags": ["closed", "paid", "video-generation"],
+  "oneLiner": "Google DeepMind 的旗艦影片生成模型，首個支援原生 4K/60fps 輸出的 AI 影片模型，含 Scene Extension、原生音訊和 Ingredients to Video 功能。",
+  "overview": "Veo 3.1 是 Google DeepMind 於 2026 年 1 月發布的影片生成模型，標誌著 AI 影片進入專業製作等級。最大亮點是原生 4K（3840x2160）、60fps 輸出，是首個達到廣播電視和電影製作品質的主流 AI 影片模型。\n核心功能包括：Scene Extension 技術可生成超過 60 秒的連續敘事影片；原生 9:16 直式影片支援（YouTube Shorts/TikTok）；「Ingredients to Video」功能接受最多 4 張參考圖片，維持角色和場景一致性；原生音訊生成包含對話、音效和環境音。\n2026 年 3 月 31 日推出 Veo 3.1 Lite，為開發者提供更經濟的選擇。透過 Vertex AI API、Gemini API 和 Google AI Studio 提供服務。在 Sora 關閉後，Veo 3.1 已成為 AI 影片生成的標竿產品。",
+  "pros": [
+    "原生 4K/60fps——首個達到此規格的 AI 影片模型",
+    "Scene Extension 支援超過 60 秒連續影片",
+    "原生 9:16 直式影片，無需裁切",
+    "Ingredients to Video 維持角色/場景一致性",
+    "原生音訊生成（對話、音效、環境音）",
+    "Lite 版本提供經濟實惠的選擇",
+    "Sora 關閉後成為市場領導者"
+  ],
+  "cons": [
+    "不開源，僅透過 API 使用",
+    "4K 生成成本較高（API 按秒計費）",
+    "Ultra 方案 $249.99/月，門檻高",
+    "安全過濾嚴格，限制某些創意場景",
+    "需 Google Cloud 帳號使用 Vertex AI",
+    "生成速度較競品慢（尤其 4K）"
+  ],
+  "features": [
+    {"name": "原生 4K/60fps", "desc": "3840x2160 解析度、60fps，廣播級品質"},
+    {"name": "Scene Extension", "desc": "生成超過 60 秒的連續敘事影片"},
+    {"name": "Ingredients to Video", "desc": "最多 4 張參考圖片，維持角色和場景一致性"},
+    {"name": "原生 9:16 直式影片", "desc": "專為 YouTube Shorts、TikTok 等平台優化"},
+    {"name": "原生音訊生成", "desc": "同步生成對話、音效、環境音"},
+    {"name": "Veo 3.1 Lite", "desc": "成本優化版本，適合開發者和企業批量生成"}
+  ],
+  "history": [
+    {"date": "2024-05", "event": "Veo 1 在 Google I/O 2024 發布"},
+    {"date": "2024-12", "event": "Veo 2 發布，支援 4K upscale 和更長影片"},
+    {"date": "2025-05", "event": "Veo 3 在 Google I/O 2025 發布，引入原生音訊生成"},
+    {"date": "2025-10", "event": "Veo 3.1 發布，改善音訊品質和角色一致性"},
+    {"date": "2026-01", "event": "Veo 3.1 正式公開，支援原生 4K/60fps 和 Scene Extension"},
+    {"date": "2026-03", "event": "Veo 3.1 Lite 發布，提供經濟實惠的開發者選擇"}
+  ],
+  "pricing": "API 按秒計費：Veo 3.1 Fast（無音訊）$0.10/秒、Veo 3.1 標準價格更高。消費者方案：Google AI Pro $19.99/月（含 90 部 Fast 影片）、Google AI Ultra $249.99/月（完整 Veo 3.1 存取）。",
+  "competitors": ["Runway Gen-4", "Kling 3.0", "Seedance", "Pika", "Sora 2"],
+  "links": [
+    {"title": "Veo 官網", "url": "https://deepmind.google/models/veo/"},
+    {"title": "Veo 3.1 Vertex AI 文件", "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/veo/3-1-generate"},
+    {"title": "Veo 3.1 Lite 公告", "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/"},
+    {"title": "Google AI Studio", "url": "https://aistudio.google.com"}
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "notebooklm",
+  "name": "NotebookLM",
+  "company": "Google",
+  "category": "AI 筆記",
+  "tags": ["closed", "freemium"],
+  "oneLiner": "Google 的 AI 研究助手，可將文件來源轉為 AI 生成播客（Audio Overview）、影片和互動對話，支援 80+ 語言和 EPUB 上傳，總訪問量已超越 Perplexity。",
+  "overview": "NotebookLM 是 Google 推出的 AI 研究與筆記助手，核心概念是「基於你的來源材料」——用戶上傳文件、網頁、影片等來源，AI 基於這些材料回答問題、生成摘要和內容。\n最具特色的功能是 Audio Overview（AI 播客生成）：兩位 AI 主持人根據你的來源材料進行深度對話，自然且生動。支援 80+ 語言和多種格式（Deep Dive、Brief、Critique、Debate）。Interactive Mode 允許用戶在播客中「舉手」提問。\n2026 年 3 月新增 Cinematic Video Overviews——將來源材料轉為電影級敘事影片，包含 AI 生成的圖片和圖表。\n用戶現可上傳 EPUB 書籍，轉為 AI 播客、投影片和視覺摘要。\nNotebookLM 總訪問量已超越 Perplexity，成為 AI 研究工具的代表。免費版功能完整，Plus 版透過 Google One AI Premium 方案取得。",
+  "pros": [
+    "Audio Overview AI 播客極為自然生動",
+    "80+ 語言支援",
+    "基於用戶來源材料，減少幻覺",
+    "免費版功能已很完整",
+    "Cinematic Video Overviews 電影級影片生成",
+    "Interactive Mode 可在播客中即時提問",
+    "支援 EPUB、PDF、Google Docs 等多種來源格式",
+    "總訪問量已超越 Perplexity"
+  ],
+  "cons": [
+    "Plus 功能綁定 Google One AI Premium 訂閱（$19.99/月）",
+    "免費版日限：50 次對話、3 次音訊生成",
+    "來源材料限制——無法像 Perplexity 直接搜尋網路",
+    "Google 生態鎖定",
+    "匯出選項有限",
+    "多人協作功能不如 Notion"
+  ],
+  "features": [
+    {"name": "Audio Overview", "desc": "AI 生成播客——兩位主持人深度對話你的來源材料"},
+    {"name": "Video Overview", "desc": "將來源材料轉為敘事影片，含 AI 圖片和圖表"},
+    {"name": "Interactive Mode", "desc": "在播客中舉手提問，AI 即時回答後繼續播放"},
+    {"name": "多格式音訊", "desc": "Deep Dive、Brief、Critique、Debate 四種對話格式"},
+    {"name": "EPUB 支援", "desc": "上傳 EPUB 書籍，轉為播客、投影片、摘要"},
+    {"name": "自訂風格", "desc": "選擇 AI 人格（Guide、Analyst）或自訂風格"},
+    {"name": "80+ 語言", "desc": "Audio Overview 支援超過 80 種語言"}
+  ],
+  "history": [
+    {"date": "2023-07", "event": "Google 推出 NotebookLM（前身 Project Tailwind）"},
+    {"date": "2023-12", "event": "開放所有 Google 帳戶使用"},
+    {"date": "2024-09", "event": "推出 Audio Overview（AI 播客）功能，引爆話題"},
+    {"date": "2024-12", "event": "Audio Overview 支援互動和自訂"},
+    {"date": "2025-02", "event": "NotebookLM Plus 加入 Google One AI Premium 方案"},
+    {"date": "2025-06", "event": "加入 Video Overviews 影片生成"},
+    {"date": "2025-10", "event": "總訪問量超越 Perplexity"},
+    {"date": "2026-03", "event": "Cinematic Video Overviews 推出，80+ 語言支援"}
+  ],
+  "pricing": "Free $0（100 notebooks、50 sources/notebook、50 對話/日、3 音訊/日）/ Plus 含在 Google One AI Premium $19.99/月（500 notebooks、300 sources/notebook、500 對話/日、20 音訊/日）。Workspace 方案 $14/用戶/月起。",
+  "competitors": ["Perplexity", "Google AI Overview", "Notion AI", "Elicit", "Consensus"],
+  "links": [
+    {"title": "NotebookLM", "url": "https://notebooklm.google"},
+    {"title": "NotebookLM Plans", "url": "https://notebooklm.google/plans"},
+    {"title": "Audio Overview 公告", "url": "https://blog.google/technology/ai/notebooklm-audio-overviews/"},
+    {"title": "NotebookLM Wikipedia", "url": "https://en.wikipedia.org/wiki/NotebookLM"}
+  ]
+}

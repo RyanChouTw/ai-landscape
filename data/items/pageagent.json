@@ -1,0 +1,48 @@
+{
+  "id": "pageagent",
+  "name": "PageAgent",
+  "company": "Alibaba",
+  "category": "瀏覽器代理",
+  "tags": ["open", "free"],
+  "oneLiner": "阿里開源的純客戶端網頁 GUI Agent，透過 DOM 解析而非截圖控制網頁，一行 script 標籤即可嵌入，零後端基礎設施。",
+  "overview": "PageAgent 是阿里巴巴開源的 JavaScript in-page GUI Agent，直接在瀏覽器中運行，透過 DOM 解析而非截圖來理解和操作網頁。這代表 GUI Agent 從「外部控制瀏覽器」到「內部生長」的架構轉向。\nDOM 操作速度 20-100ms/action（截圖方式需 2-7 秒），快一個數量級。純客戶端架構意味著零後端基礎設施——一行 script 標籤即可嵌入任何網頁。\nPageAgent 支援 BYOLLM（Bring Your Own LLM），可連接 GPT-4、Claude、Qwen、Gemini、Grok，甚至透過 Ollama 離線運行。側面板 UI 讓用戶即時觀察代理行為並隨時介入。\n截至 2026 年 3 月，v1.5.4 版本已累積 683 次 commit、18 個 release，GitHub 2,900+ stars。",
+  "pros": [
+    "MIT 開源授權，完全免費",
+    "純客戶端架構，零後端基礎設施需求",
+    "DOM 解析速度比截圖方式快 10-100 倍",
+    "一行 script 標籤即可嵌入任何網頁",
+    "BYOLLM：支援所有主流 LLM，包含 Ollama 離線",
+    "隱私友善——資料不需離開瀏覽器",
+    "側面板 UI 可即時監控與介入"
+  ],
+  "cons": [
+    "安全模型是主要隱憂：Agent 與第三方 script 同等權限存取 session token",
+    "CSP（Content Security Policy）限制是企業級部署的真實阻礙",
+    "DOM 依賴方式在高度動態 SPA 上可能不穩定",
+    "社群規模較小（2,900 stars），生態尚在發展",
+    "僅限網頁場景，無法操作桌面應用"
+  ],
+  "features": [
+    {"name": "DOM 解析", "desc": "直接讀取 DOM 結構理解頁面，精確度高於截圖方式"},
+    {"name": "自然語言控制", "desc": "用自然語言描述任務，Agent 自動操作網頁元素"},
+    {"name": "BYOLLM", "desc": "支援 GPT-4、Claude、Qwen、Gemini、Grok、Ollama"},
+    {"name": "即時監控面板", "desc": "側面板 UI 即時顯示 Agent 行為，可隨時介入"},
+    {"name": "零基礎設施", "desc": "純客戶端運行，無需 Python、無需 headless browser"},
+    {"name": "嵌入式部署", "desc": "一行 script 標籤即可嵌入任何網頁應用"}
+  ],
+  "history": [
+    {"date": "2025-06", "event": "阿里巴巴開源 PageAgent，MIT 授權"},
+    {"date": "2025-10", "event": "加入 Ollama 離線模型支援"},
+    {"date": "2026-01", "event": "GitHub stars 突破 2,000"},
+    {"date": "2026-03", "event": "v1.5.4 發布，累積 683 commits、18 releases、2,900+ stars"},
+    {"date": "2026-03", "event": "Hacker News 上獲得 77 points、37 comments 的討論熱度"}
+  ],
+  "pricing": "完全免費開源（MIT 授權）。LLM 費用需自付。",
+  "competitors": ["Browser Use", "Stagehand", "Playwright MCP", "Skyvern"],
+  "links": [
+    {"title": "PageAgent 官方文件", "url": "https://alibaba.github.io/page-agent/"},
+    {"title": "GitHub", "url": "https://github.com/alibaba/page-agent"},
+    {"title": "PageAgent 官網", "url": "https://pageagent.net/"},
+    {"title": "Hacker News 討論", "url": "https://news.ycombinator.com/item?id=47264138"}
+  ]
+}

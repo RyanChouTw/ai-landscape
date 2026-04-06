@@ -1,0 +1,50 @@
+{
+  "id": "midjourney",
+  "name": "Midjourney",
+  "company": "Midjourney",
+  "category": "圖片生成",
+  "tags": ["closed", "paid", "image-generation"],
+  "oneLiner": "以極高美學品質著稱的 AI 圖片生成平台，最新 V8 Alpha 採全新 GPU 原生架構，速度提升 5 倍、原生 2K 解析度。",
+  "overview": "Midjourney 是由 David Holz（Leap Motion 共同創辦人）創立的 AI 圖片生成平台，以其卓越的美學品質和藝術風格聞名。最初透過 Discord bot 運作，現已推出獨立網頁版。\n最新的 V7 模型大幅改善複雜提示詞的遵循度，並引入個性化風格檔案（Personalization Profiles）。2026 年 3 月 17 日推出的 V8 Alpha 更是里程碑式的升級——基於全新 GPU 原生程式碼庫重寫（從 TPU 遷移至 PyTorch + GPU），帶來 5 倍生成速度、原生 2K 解析度（--hd 參數）、大幅改善的文字渲染能力，同時向後相容 V7 風格和 moodboard。\nMidjourney 採訂閱制，無永久免費方案。平台以圖片品質和創意表現力見長，是設計師和藝術家最常使用的 AI 圖片工具之一。",
+  "pros": [
+    "美學品質業界頂尖，風格多樣且細膩",
+    "V8 Alpha 生成速度提升 5 倍，10 秒內完成",
+    "原生 2K 解析度，無需 upscale",
+    "V7/V8 文字渲染能力大幅進步",
+    "個性化風格檔案，可學習使用者偏好",
+    "網頁版編輯器功能日趨完善"
+  ],
+  "cons": [
+    "無永久免費方案（2026 年起取消免費試用）",
+    "無公開 API，第三方整合受限",
+    "V8 仍為 Alpha 階段，僅在 alpha.midjourney.com 可用",
+    "不開源，無法本地部署",
+    "對真實人物照片的限制較嚴格",
+    "學習曲線較高，需掌握提示詞技巧"
+  ],
+  "features": [
+    {"name": "V8 Alpha 引擎", "desc": "全新 GPU 原生架構，速度提升 5 倍，原生 2K 解析度"},
+    {"name": "Personalization Profiles", "desc": "模型學習個人美學偏好，生成更符合個人風格的圖片"},
+    {"name": "文字渲染", "desc": "V8 大幅改善圖片中的文字渲染精準度"},
+    {"name": "多元風格", "desc": "支援從寫實攝影到抽象藝術的廣泛風格"},
+    {"name": "Moodboard / Style Reference", "desc": "透過參考圖片引導生成風格"},
+    {"name": "Vary / Zoom / Pan", "desc": "圖片變體、局部放大、畫面延伸等後製工具"}
+  ],
+  "history": [
+    {"date": "2022-02", "event": "Midjourney 由 David Holz 創立，進入封閉測試"},
+    {"date": "2022-07", "event": "公開 Beta，透過 Discord bot 提供服務"},
+    {"date": "2023-03", "event": "V5 發布，寫實品質大幅躍進"},
+    {"date": "2023-12", "event": "V6 發布，改善文字渲染和提示遵循"},
+    {"date": "2024-08", "event": "推出獨立網頁版編輯器"},
+    {"date": "2025-04", "event": "V7 發布，引入 Personalization Profiles"},
+    {"date": "2026-03", "event": "V8 Alpha 發布，全新 GPU 原生架構、原生 2K、5 倍速度"}
+  ],
+  "pricing": "純訂閱制，無免費方案。Basic $10/月、Standard $30/月、Pro $60/月、Mega $120/月。年付 8 折：Basic $8/月、Standard $24/月、Pro $48/月、Mega $96/月。",
+  "competitors": ["DALL-E 3", "Flux", "Imagen 4", "Stable Diffusion", "Adobe Firefly"],
+  "links": [
+    {"title": "Midjourney 官網", "url": "https://www.midjourney.com"},
+    {"title": "V8 Alpha", "url": "https://alpha.midjourney.com"},
+    {"title": "Midjourney 文件", "url": "https://docs.midjourney.com"},
+    {"title": "Midjourney 定價", "url": "https://docs.midjourney.com/hc/en-us/articles/27870484040333-Comparing-Midjourney-Plans"}
+  ]
+}

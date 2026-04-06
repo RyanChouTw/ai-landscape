@@ -1,0 +1,52 @@
+{
+  "id": "bolt",
+  "name": "Bolt",
+  "company": "StackBlitz",
+  "category": "AI 設計",
+  "tags": ["open", "freemium"],
+  "oneLiner": "StackBlitz 的 AI 全端應用建構平台，在瀏覽器中用 WebContainer 技術運行完整 Node.js 環境，$40M ARR，已產出超過 100 萬個網站。",
+  "overview": "Bolt.new 是 StackBlitz 推出的 AI 全端應用建構平台，核心技術是 WebContainer——一個在瀏覽器中運行的完整 Node.js 開發環境，無需本地安裝。\n與其他 AI 建構工具不同，Bolt 讓 AI 完全控制整個開發環境：檔案系統、Node.js 伺服器、套件管理器、終端和瀏覽器 console。這使得 AI 可以處理從建立到部署的完整應用生命週期。\n2025 年 3 月達到 $40M ARR，與 Netlify 合作已產出超過 100 萬個網站。Bolt V2 加入 Bolt Cloud（內建資料庫、主機、分析），主要使用 Claude Opus 4.6 並支援可調整推理深度。\nBolt.new 也是開源的（GitHub 可見完整原始碼），社群可自行部署或客製化。",
+  "pros": [
+    "WebContainer 技術——瀏覽器中完整 Node.js 環境，零本地安裝",
+    "AI 完全控制開發環境，從建立到部署一條龍",
+    "$40M ARR，100 萬+ 網站，商業驗證成功",
+    "開源（GitHub 原始碼公開）",
+    "Token rollover 機制——未用完的 token 可延至下月",
+    "Bolt Cloud 內建資料庫和主機",
+    "支援 Claude Opus 4.6，可調整推理深度"
+  ],
+  "cons": [
+    "Token 消耗快，複雜專案成本高",
+    "瀏覽器環境有性能上限",
+    "程式碼品質不穩定，需要除錯",
+    "企業級功能（SSO、audit logs）需要 Enterprise 方案",
+    "對非 Web 應用（如原生 App）支援有限",
+    "依賴 Netlify 部署，平台鎖定風險"
+  ],
+  "features": [
+    {"name": "WebContainer", "desc": "瀏覽器中完整 Node.js 環境，無需本地安裝"},
+    {"name": "AI 全環境控制", "desc": "AI 控制檔案系統、伺服器、套件管理器、終端"},
+    {"name": "Bolt Cloud", "desc": "內建資料庫、主機和分析功能"},
+    {"name": "自然語言建構", "desc": "用 prompt 描述需求，生成完整全端應用"},
+    {"name": "Token Rollover", "desc": "未用完的 token 可延至下月使用"},
+    {"name": "多模型支援", "desc": "Claude Opus 4.6 為主，可調整推理深度"},
+    {"name": "一鍵部署", "desc": "與 Netlify 整合，一鍵部署上線"}
+  ],
+  "history": [
+    {"date": "2024-06", "event": "StackBlitz 推出 Bolt.new"},
+    {"date": "2024-10", "event": "快速成長，成為最受歡迎的 AI 建構工具之一"},
+    {"date": "2025-01", "event": "開源 Bolt.new 原始碼"},
+    {"date": "2025-03", "event": "達到 $40M ARR，與 Netlify 合作產出 100 萬+ 網站"},
+    {"date": "2025-09", "event": "Bolt V2 發布，加入 Bolt Cloud"},
+    {"date": "2026-01", "event": "加入 Claude Opus 4.6 支援，40% 建構效能提升"},
+    {"date": "2026-03", "event": "持續優化企業功能和團隊協作"}
+  ],
+  "pricing": "Free（1M tokens/月，300K 日限）/ Pro $25/月（10M tokens，無日限）/ Teams $30/用戶/月（10M tokens/人）/ Enterprise 客製定價。Token Reload：$20/10M tokens。年付享 10% 折扣。",
+  "competitors": ["v0", "Lovable", "Replit", "Cursor", "Windsurf"],
+  "links": [
+    {"title": "Bolt 官網", "url": "https://bolt.new"},
+    {"title": "GitHub", "url": "https://github.com/stackblitz/bolt.new"},
+    {"title": "Bolt 定價", "url": "https://bolt.new/pricing"},
+    {"title": "Bolt 說明", "url": "https://support.bolt.new/building/intro-bolt"}
+  ]
+}

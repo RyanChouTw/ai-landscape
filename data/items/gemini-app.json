@@ -1,0 +1,60 @@
+{
+  "id": "gemini-app",
+  "name": "Gemini App",
+  "company": "Google",
+  "category": "聊天助手",
+  "tags": ["chat", "search", "workspace", "paid"],
+  "oneLiner": "Google 的 AI 助手平台，深度整合 Google 生態系（Gmail、Docs、Drive、YouTube、Maps），搭載 Gemini 3 模型家族和 Deep Research 功能。",
+  "overview": "Gemini App 是 Google 的旗艦 AI 助手，前身為 Google Bard，2024 年更名為 Gemini。它的最大差異化在於與 Google 生態系的深度整合——直接連接 Gmail、Google Docs、Drive、YouTube、Maps、Calendar、Keep 和 Tasks。\n\n2026 年的 Gemini 搭載 Gemini 3 模型家族，包含 Flash（快速預設）、Pro（強大推理）和 Deep Think（Ultra 專屬的深度推理模式）。Deep Research 是 Gemini 的知識工作殺手級功能，可深度搜尋網路並生成結構化研究報告。\n\nGoogle 於 2026 年大幅簡化定價，將 AI 能力直接整合到 Workspace 方案中，無需另購 add-on。個人方案分為 Free、AI Pro（$19.99/月）和 Ultra（$124.99/三個月）。NotebookLM 是另一個亮點，支援 Audio Overviews、Cinematic Video Overviews 和互動式學習工具。",
+  "pros": [
+    "Google 生態系深度整合——Gmail、Docs、Drive、YouTube、Maps 等",
+    "Gemini 3 模型家族——Flash / Pro / Deep Think 分層選擇",
+    "Deep Research 深度搜尋和報告生成能力優秀",
+    "NotebookLM 提供 Audio/Video Overviews、Flashcards 等創新功能",
+    "AI Pro $19.99/月含 2TB 儲存空間和 Workspace 整合",
+    "Workspace 方案 $14/用戶/月即含 Gemini AI（無需 add-on）",
+    "多模態原生設計——圖片、影片、音訊理解",
+    "API 免費額度慷慨，Flash-Lite 低至 $0.10/M tokens"
+  ],
+  "cons": [
+    "Ultra 方案 $124.99/三個月定價偏高",
+    "Deep Think 僅限 Ultra 用戶",
+    "程式碼能力不如 Claude 和 GPT-5.4",
+    "Workspace 方案加價約 17% 整合 AI",
+    "隱私疑慮——Google 可能使用對話資料改善服務",
+    "部分功能僅限特定地區",
+    "Agent/自動化能力落後 ChatGPT Agent Mode 和 Claude Cowork"
+  ],
+  "features": [
+    {"name": "Gemini 3 模型", "desc": "Flash（快速）/ Pro（推理）/ Deep Think（深度推理，Ultra 專屬）"},
+    {"name": "Deep Research", "desc": "深度搜尋網路，生成結構化研究報告"},
+    {"name": "Google 生態整合", "desc": "直接連接 Gmail、Docs、Drive、YouTube、Maps、Calendar 等"},
+    {"name": "NotebookLM", "desc": "AI 研究工具——Audio/Cinematic Video Overviews、Flashcards、Infographics"},
+    {"name": "Gemini in Workspace", "desc": "側邊欄整合於 Gmail、Docs、Sheets、Slides、Drive"},
+    {"name": "Help me write", "desc": "Gmail 和 Docs 中的 AI 寫作輔助"},
+    {"name": "Google Vids", "desc": "AI 影片生成，使用 Veo 3.1 和 AI 虛擬主播"},
+    {"name": "多模態理解", "desc": "原生支援圖片、影片、音訊和 PDF 輸入"},
+    {"name": "1M+ Context Window", "desc": "Pro 和 Ultra 方案支援超長上下文"}
+  ],
+  "history": [
+    {"date": "2023-03", "event": "Google Bard 發布"},
+    {"date": "2023-12", "event": "Gemini 1.0 模型發布"},
+    {"date": "2024-02", "event": "Bard 更名為 Gemini App，Gemini Advanced 上線"},
+    {"date": "2024-05", "event": "Gemini 1.5 Pro 發布，1M context window"},
+    {"date": "2024-12", "event": "Gemini 2.0 發布"},
+    {"date": "2025-03", "event": "Gemini 2.5 Pro 發布，Deep Think 模式"},
+    {"date": "2025-06", "event": "NotebookLM 加入 Audio Overviews 功能"},
+    {"date": "2025-09", "event": "Gemini 整合進 Workspace 所有方案（不再需要 add-on）"},
+    {"date": "2026-01", "event": "Gemini 3 模型家族發布（Flash / Pro / Deep Think）"},
+    {"date": "2026-03", "event": "NotebookLM 新增 Cinematic Video Overviews 和 Infographic Styles，AI Pro / Ultra 方案重新定價"}
+  ],
+  "pricing": "Free（Gemini 3 Flash 有限使用）/ AI Pro $19.99/月（Gemini 3 Pro、Deep Research、Workspace 整合、2TB 儲存）/ Ultra $124.99/三個月（Deep Think、Veo 3.1、最高用量）。Workspace：Business Standard $14/用戶/月含 Gemini AI。API：Flash-Lite $0.10/M tokens 起，Pro $4/M tokens（extended context）。",
+  "competitors": ["ChatGPT", "Claude Desktop", "Perplexity", "M365 Copilot"],
+  "links": [
+    {"title": "Gemini App", "url": "https://gemini.google.com"},
+    {"title": "Google AI 方案", "url": "https://one.google.com/about/google-ai-plans/"},
+    {"title": "NotebookLM", "url": "https://notebooklm.google/"},
+    {"title": "Gemini API 定價", "url": "https://ai.google.dev/gemini-api/docs/pricing"},
+    {"title": "Google Workspace", "url": "https://workspace.google.com/pricing"}
+  ]
+}

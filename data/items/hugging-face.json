@@ -1,0 +1,54 @@
+{
+  "id": "hugging-face",
+  "name": "Hugging Face",
+  "company": "Hugging Face, Inc.",
+  "category": "雲端平台",
+  "tags": ["open-source", "platform", "community"],
+  "oneLiner": "全球最大的 AI 開源社群和模型平台——200 萬+ 模型、50 萬+ 資料集、100 萬+ Spaces 應用。提供 Transformers 庫、Inference Endpoints 和 Enterprise Hub。",
+  "overview": "Hugging Face 是全球最大的 AI 開源社群和模型平台，截至 2026 年春季擁有超過 200 萬個模型、50 萬個資料集和 100 萬個 Spaces 示範應用。\n核心開源工具包括 Transformers（模型載入和推論）、Datasets（資料集管理）、Diffusers（影像生成）、PEFT（參數高效微調）、Accelerate（分散式訓練）、TRL（RLHF 訓練）、Optimum（硬體最佳化）和新興的 smolagents（輕量 agent 框架）。\n生產級工具包括 Inference Endpoints（專屬 AI 伺服器，$0.03/小時起）、Text Generation Inference（TGI）、Text Embeddings Inference（TEI）、vLLM 整合和 AutoTrain（自動微調）。\n2025 年推出的 Kernel Hub 提供針對 NVIDIA 和 AMD GPU 最佳化的運算核心。平台持續擴展到機器人和科學領域，不再僅限於語言和影像生成。\nEnterprise Hub 提供私有 hub、存取控制、SOC 2 合規和 AWS/Azure/GCP 整合，Enterprise 定價客製。",
+  "pros": [
+    "全球最大 AI 模型和資料集平台",
+    "開源生態系無可替代（Transformers、Diffusers 等）",
+    "Spaces 讓示範和分享極其簡單",
+    "Inference Endpoints 生產部署方便",
+    "Kernel Hub 支援 NVIDIA/AMD 跨硬體部署",
+    "Enterprise Hub 滿足企業合規需求",
+    "社群活躍，新模型和資料集持續增加"
+  ],
+  "cons": [
+    "Hub 上模型品質參差不齊",
+    "Inference Endpoints 大規模使用成本較高",
+    "搜尋和發現機制仍有改善空間（200 萬模型中找到合適的不易）",
+    "Enterprise 定價不透明",
+    "部分熱門模型下載時會遇到限速",
+    "Spaces 免費方案資源有限"
+  ],
+  "features": [
+    {"name": "Model Hub", "desc": "200 萬+ 模型的儲存、版本控制和分享平台"},
+    {"name": "Datasets Hub", "desc": "50 萬+ 資料集的管理和分享"},
+    {"name": "Spaces", "desc": "100 萬+ 互動式 AI 應用示範"},
+    {"name": "Transformers", "desc": "最流行的模型載入和推論函式庫"},
+    {"name": "Inference Endpoints", "desc": "專屬 AI 推論伺服器（$0.03/小時起）"},
+    {"name": "Kernel Hub", "desc": "NVIDIA/AMD GPU 最佳化運算核心"},
+    {"name": "AutoTrain", "desc": "自動化模型微調"}
+  ],
+  "history": [
+    {"date": "2016-01", "event": "Hugging Face 成立，最初為聊天機器人公司"},
+    {"date": "2019-11", "event": "Transformers 函式庫發布，轉型為 AI 平台"},
+    {"date": "2021-03", "event": "Model Hub 模型數突破 10,000"},
+    {"date": "2022-05", "event": "獲得 $100M B 輪融資，Spaces 上線"},
+    {"date": "2023-08", "event": "獲得 $235M D 輪融資，估值 $4.5B"},
+    {"date": "2024-04", "event": "模型數突破 50 萬"},
+    {"date": "2025-06", "event": "Kernel Hub 上線，跨硬體部署支援"},
+    {"date": "2026-03", "event": "模型突破 200 萬，資料集 50 萬，Spaces 100 萬"}
+  ],
+  "pricing": "Hub 基本使用免費。Pro $9/月（更多 Spaces 資源）。Enterprise Hub 客製定價（私有 hub、SSO、SOC 2）。Inference Endpoints $0.03/小時起，依硬體和用量計費。",
+  "competitors": ["AWS Bedrock", "Google Vertex AI", "Azure AI Foundry", "Replicate"],
+  "links": [
+    {"title": "Hugging Face 官網", "url": "https://huggingface.co"},
+    {"title": "Model Hub", "url": "https://huggingface.co/models"},
+    {"title": "定價", "url": "https://huggingface.co/pricing"},
+    {"title": "GitHub (Transformers)", "url": "https://github.com/huggingface/transformers"},
+    {"title": "文件", "url": "https://huggingface.co/docs"}
+  ]
+}

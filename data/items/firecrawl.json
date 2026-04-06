@@ -1,0 +1,51 @@
+{
+  "id": "firecrawl",
+  "name": "Firecrawl",
+  "company": "Mendable (Firecrawl)",
+  "category": "資料擷取",
+  "tags": ["api", "scraping", "paid"],
+  "oneLiner": "專為 AI 設計的 Web Data API，將任意 URL 轉為 LLM-ready 的 Markdown/JSON。可處理 JavaScript、代理輪換和 CAPTCHA，覆蓋 96% 的網頁。",
+  "overview": "Firecrawl 是專為 AI 應用設計的 Web Data API，核心功能是將任意 URL 轉換為 LLM-ready 的 Markdown 或結構化 JSON。它能處理 JavaScript 渲染、動態內容、代理輪換和 CAPTCHA 解決，號稱可靠存取 96% 的網頁。\n提供多個端點：/scrape（單頁抓取）、/crawl（全站爬取）、/map（站點地圖發現）和 /extract（AI 驅動的結構化資料提取，支援自然語言 prompt）。\n2026 年推出 Browser Sandbox——為 agent 提供隔離的 Chromium 環境，可遠端執行 Python、JavaScript 或 bash 命令。Webhook 支援已達生產等級，可配置 crawl.page、crawl.completed 和 crawl.failed 事件。\n採用 credit-based 計費模式，每頁 1 credit，JSON mode +4 credits，enhanced proxy +4 credits。定價從免費 500 credits 試用到 Standard $83/月（100,000 pages）。\n限制：在 advanced Cloudflare Turnstile 等企業級反爬蟲保護下表現不佳，明確限制抓取 Instagram、YouTube、TikTok 等社交平台。",
+  "pros": [
+    "專為 AI 設計——輸出直接可供 LLM 使用",
+    "96% 網頁覆蓋率，處理 JavaScript 和動態內容",
+    "/extract 支援自然語言 prompt 提取結構化資料",
+    "Browser Sandbox 為 agent 提供隔離執行環境",
+    "生產級 webhook 支援",
+    "代理輪換和 CAPTCHA 解決內建",
+    "免費 500 credits 試用，低門檻入門"
+  ],
+  "cons": [
+    "credit 計費容易超支（JSON mode + proxy 每頁 9 credits）",
+    "企業級反爬蟲（advanced Cloudflare Turnstile）突破困難",
+    "禁止抓取 Instagram、YouTube、TikTok 等社交平台",
+    "免費額度極少，商業使用成本較高",
+    "自架版本需較多配置",
+    "大量頁面爬取時 credit 消耗快速"
+  ],
+  "features": [
+    {"name": "/scrape", "desc": "單頁抓取，輸出 Markdown 或 JSON"},
+    {"name": "/crawl", "desc": "全站爬取，自動發現和抓取頁面"},
+    {"name": "/map", "desc": "站點地圖發現，列出所有可抓取 URL"},
+    {"name": "/extract", "desc": "AI 驅動結構化資料提取，支援自然語言 prompt"},
+    {"name": "Browser Sandbox", "desc": "隔離 Chromium 環境，遠端執行程式碼"},
+    {"name": "Webhook", "desc": "生產級事件通知（page/completed/failed）"},
+    {"name": "代理 & CAPTCHA", "desc": "內建代理輪換和 CAPTCHA 解決"}
+  ],
+  "history": [
+    {"date": "2024-04", "event": "Firecrawl 首次發布"},
+    {"date": "2024-07", "event": "/extract 端點和 AI 提取功能上線"},
+    {"date": "2024-11", "event": "/map 站點地圖發現功能發布"},
+    {"date": "2025-04", "event": "Browser Sandbox 上線"},
+    {"date": "2025-09", "event": "webhook 系統達生產等級"},
+    {"date": "2026-01", "event": "Standard 方案 $83/月上線"}
+  ],
+  "pricing": "Free 試用 500 credits / Hobby $16/月（3,000 credits）/ Standard $83/月（100,000 pages）/ Growth 和 Enterprise 客製定價。JSON mode +4 credits/頁，enhanced proxy +4 credits/頁。",
+  "competitors": ["Crawl4AI", "Cloudflare /crawl", "Jina Reader", "Apify", "ScrapingBee"],
+  "links": [
+    {"title": "Firecrawl 官網", "url": "https://www.firecrawl.dev"},
+    {"title": "定價", "url": "https://www.firecrawl.dev/pricing"},
+    {"title": "文件", "url": "https://docs.firecrawl.dev"},
+    {"title": "GitHub", "url": "https://github.com/mendableai/firecrawl"}
+  ]
+}

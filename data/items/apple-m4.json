@@ -1,0 +1,53 @@
+{
+  "id": "apple-m4",
+  "name": "Apple M4 / M5",
+  "company": "Apple",
+  "category": "硬體",
+  "tags": ["closed", "paid"],
+  "oneLiner": "Apple Silicon AI 晶片家族——M4 系列搭載最快 Neural Engine（38 TOPS），M5 Pro/Max GPU 內嵌 Neural Accelerator 實現 4x AI 效能提升，Apple 跳過 M4 Ultra 直上 M5 Ultra。",
+  "overview": "Apple M4 系列是 Apple Silicon 的第四代，2024 年推出，核心差異在 AI 能力：M4 的 Neural Engine 達 38 TOPS（兆次運算/秒），是當時最快的消費級 AI 處理器。M4 Max 最高 16 核 CPU + 40 核 GPU，比 M1 Max 快 1.9 倍。\n\n重要：Apple 跳過了 M4 Ultra，直接在 2025 年推出 M5 系列。M5 Pro 和 M5 Max 於 2026 年 3 月發布，最大突破是 GPU 核心內嵌 Neural Accelerator——峰值 AI 算力比 M4 Pro/Max 高 4 倍，LLM prompt 處理速度快 4 倍。\n\nM5 Ultra 預計 2026 年下半年發布，將是 Apple 有史以來最強 AI 晶片。M5 架構讓每個 GPU 核心同時處理圖形和 AI 任務。\n\n統一記憶體架構是 Apple Silicon 的核心優勢：CPU、GPU、Neural Engine 共享記憶體，M4 Max 最高 128GB，跑本地 LLM 時記憶體不需搬移。Mac Studio 2025 搭載 M4 Max（$1,999 起）和 M3 Ultra（$3,999 起）。",
+  "pros": [
+    "統一記憶體架構——CPU/GPU/NPU 共享，LLM 推論極高效",
+    "M5 GPU 內嵌 Neural Accelerator，4x AI 效能提升",
+    "能效比極高——筆電即可跑中型 LLM",
+    "M4 Max 128GB 統一記憶體可跑 70B 模型",
+    "Apple 生態整合——CoreML、Apple Intelligence",
+    "靜音設計，適合辦公和創作環境",
+    "M5 Ultra 即將推出，瞄準工作站 AI 市場"
+  ],
+  "cons": [
+    "價格昂貴——高配 Mac Studio $3,999+",
+    "不支援 CUDA——大量 AI 工具和框架需適配",
+    "記憶體頻寬遠不及 NVIDIA 資料中心 GPU",
+    "Apple 跳過 M4 Ultra 讓部分用戶等待落空",
+    "封閉生態——無法自行組裝或升級",
+    "訓練能力遠不及 NVIDIA GPU，主要適合推論",
+    "CoreML 生態規模遠小於 CUDA"
+  ],
+  "features": [
+    {"name": "M4 Neural Engine", "desc": "38 TOPS，最快消費級 AI 處理器"},
+    {"name": "M4 Max", "desc": "16 核 CPU + 40 核 GPU，最高 128GB 統一記憶體"},
+    {"name": "M5 Pro/Max", "desc": "GPU 內嵌 Neural Accelerator，4x AI 峰值算力提升"},
+    {"name": "統一記憶體", "desc": "CPU/GPU/NPU 共享記憶體，零搬移開銷"},
+    {"name": "Mac Studio", "desc": "桌面工作站——M4 Max $1,999 / M3 Ultra $3,999"},
+    {"name": "Apple Intelligence", "desc": "系統級 AI 功能整合——Siri、寫作、圖片等"},
+    {"name": "M5 Ultra（即將）", "desc": "2026 H2 預計推出，Apple 最強 AI 晶片"}
+  ],
+  "history": [
+    {"date": "2024-05", "event": "Apple 發布 M4 晶片（iPad Pro）"},
+    {"date": "2024-10", "event": "M4 Pro 和 M4 Max 發布（MacBook Pro）"},
+    {"date": "2025-03", "event": "Mac Studio 2025 搭載 M4 Max 和 M3 Ultra"},
+    {"date": "2025-06", "event": "Apple 宣布跳過 M4 Ultra，直上 M5 Ultra"},
+    {"date": "2025-10", "event": "M5 基礎版發布"},
+    {"date": "2026-03", "event": "M5 Pro 和 M5 Max 發布——GPU 內嵌 Neural Accelerator，MacBook Pro 更新"},
+    {"date": "2026-H2", "event": "M5 Ultra 預計發布——Mac Studio / Mac Pro 更新"}
+  ],
+  "pricing": "MacBook Pro M4 Pro $1,999 起 / MacBook Pro M4 Max $2,499 起 / Mac Studio M4 Max $1,999 起 / Mac Studio M3 Ultra $3,999 起。MacBook Pro M5 Pro/Max 2026 年 3 月起出貨。",
+  "competitors": ["NVIDIA GPUs", "Qualcomm Snapdragon X Elite", "AMD Ryzen AI", "Intel Core Ultra"],
+  "links": [
+    {"title": "Apple M4 介紹", "url": "https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/"},
+    {"title": "M5 Pro/Max 發布", "url": "https://www.apple.com/newsroom/2026/03/apple-debuts-m5-pro-and-m5-max-to-supercharge-the-most-demanding-pro-workflows/"},
+    {"title": "Mac Studio 規格", "url": "https://support.apple.com/en-us/122211"},
+    {"title": "M4 Wikipedia", "url": "https://en.wikipedia.org/wiki/Apple_M4"}
+  ]
+}

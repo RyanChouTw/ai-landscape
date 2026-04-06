@@ -1,0 +1,51 @@
+{
+  "id": "crawl4ai",
+  "name": "Crawl4AI",
+  "company": "開源社群（unclecode）",
+  "category": "資料擷取",
+  "tags": ["open-source", "scraping", "free"],
+  "oneLiner": "GitHub 上 star 數最多的爬蟲工具（62,300+ stars，超過 Scrapy 和 Playwright），專為 LLM 和 AI agent 設計。完全免費開源，Apache 2.0 授權。",
+  "overview": "Crawl4AI 是一個開源的 LLM 友善 Web 爬蟲和抓取工具，於 2024 年中發布，目標是為 LLM、AI agent 和資料 pipeline 提供即時、高效的網頁資料擷取。截至 2026 年已累積 62,300+ GitHub stars，超過 Scrapy 和 Playwright，成為 GitHub 上 star 數最多的爬蟲工具。\n核心功能是將任何網頁轉換為乾淨的 Markdown（而非 HTML soup），完美適合 RAG pipeline 或直接餵入 LLM。支援 CSS、XPath 和 LLM-based 三種結構化提取方式。\n自 v0.8 起內建 MCP server，將完整爬取能力直接暴露給 AI agent，無需額外配置。\n完全免費開源（Apache 2.0），無強制 API key 或付費牆。Python 原生實現，開發者可完全控制基礎設施。\n典型使用場景包括 RAG pipeline 資料準備、AI agent 的網頁存取、大規模資料蒐集和內容監控。",
+  "pros": [
+    "完全免費開源（Apache 2.0），無任何付費牆",
+    "62,300+ GitHub stars，社群最活躍",
+    "輸出乾淨 Markdown，LLM-ready",
+    "內建 MCP server（v0.8+），AI agent 直接使用",
+    "三種結構化提取（CSS/XPath/LLM-based）",
+    "Python 原生，開發者完全控制基礎設施",
+    "速度快，針對即時效能最佳化"
+  ],
+  "cons": [
+    "無商業支援和 SLA",
+    "缺少代理輪換和 CAPTCHA 解決（需自行實現）",
+    "無託管服務，需自行部署和維運",
+    "大規模爬取需自行管理並發和排程",
+    "反爬蟲能力不如 Firecrawl",
+    "文件相對簡單，進階功能需讀原始碼"
+  ],
+  "features": [
+    {"name": "Markdown 輸出", "desc": "將任何網頁轉為乾淨 Markdown，非 HTML soup"},
+    {"name": "結構化提取", "desc": "CSS selector、XPath 和 LLM-based 三種模式"},
+    {"name": "MCP Server", "desc": "v0.8 起內建，AI agent 可直接呼叫爬取功能"},
+    {"name": "JavaScript 渲染", "desc": "headless 瀏覽器渲染動態內容"},
+    {"name": "批次爬取", "desc": "支援多 URL 批次處理"},
+    {"name": "Docker 支援", "desc": "Docker 映像快速部署"},
+    {"name": "即時效能", "desc": "針對低延遲即時爬取最佳化"}
+  ],
+  "history": [
+    {"date": "2024-06", "event": "Crawl4AI 首次發布"},
+    {"date": "2024-10", "event": "GitHub stars 突破 10,000"},
+    {"date": "2025-03", "event": "v0.8 發布，內建 MCP server"},
+    {"date": "2025-07", "event": "GitHub stars 突破 30,000"},
+    {"date": "2025-12", "event": "GitHub stars 突破 50,000，超過 Scrapy"},
+    {"date": "2026-03", "event": "達 62,300+ GitHub stars"}
+  ],
+  "pricing": "完全免費開源（Apache 2.0）。無 API key、無付費牆、無使用限制。",
+  "competitors": ["Firecrawl", "Jina Reader", "Cloudflare /crawl", "Scrapy", "Apify"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/unclecode/crawl4ai"},
+    {"title": "文件", "url": "https://docs.crawl4ai.com"},
+    {"title": "PyPI", "url": "https://pypi.org/project/Crawl4AI/"},
+    {"title": "Docker Hub", "url": "https://hub.docker.com/r/unclecode/crawl4ai"}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "kolr",
+  "name": "Kolr",
+  "company": "iKala",
+  "category": "AI 行銷",
+  "tags": ["closed", "paid"],
+  "oneLiner": "iKala 旗下 AI 網紅行銷平台，擁有 3 億+ 網紅資料庫、60 億+ 即時社群數據，AI 分類 278 種網紅類型，覆蓋六大社群平台。",
+  "overview": "Kolr（前身 KOL Radar）是 iKala 旗下的 AI 網紅行銷數據平台，專注於用 AI 技術驅動精準的網紅行銷。平台擁有超過 3 億國際網紅資料庫、60 億+ 即時社群數據，覆蓋 Facebook、Instagram、YouTube、TikTok、X（Twitter）和 Threads 六大社群平台。\nKolr 的核心差異化在於 AI 驅動的精準匹配：自有 AI 模型將網紅精細分類為 278 種類型，根據品牌需求推薦最佳合作對象。平台提供一站式服務，從網紅搜尋、內容行銷分析、社群成效分析，到合約管理、付款管理、廣告授權、媒體購買都涵蓋。\n2026 年最新動態包括整合全球 Threads 社群數據，以及推出 AI 人格測驗等互動行銷工具。iKala 總部位於台灣，Kolr 在亞太市場有強勢地位。",
+  "pros": [
+    "3 億+ 網紅資料庫，覆蓋六大社群平台",
+    "AI 精準分類 278 種網紅類型",
+    "60 億+ 即時社群數據，分析維度豐富",
+    "一站式服務：從搜尋到報告全流程覆蓋",
+    "亞太市場領先地位，總部台灣",
+    "IRM（Influencer Relationship Management）功能完整",
+    "持續整合新平台（如 Threads）"
+  ],
+  "cons": [
+    "定價較高，不適合小型企業或個人",
+    "以亞太市場為主，歐美市場數據覆蓋度待確認",
+    "學習曲線較陡——功能豐富但需要時間上手",
+    "API 整合選項有限",
+    "與國際競品（如 CreatorIQ）相比品牌知名度較低"
+  ],
+  "features": [
+    {"name": "AI 網紅搜尋", "desc": "AI 驅動的精準網紅推薦，278 種分類模型"},
+    {"name": "六大平台覆蓋", "desc": "Facebook、Instagram、YouTube、TikTok、X、Threads"},
+    {"name": "IRM 平台", "desc": "網紅關係管理，從邀請到合約到付款一站式處理"},
+    {"name": "社群成效分析", "desc": "即時追蹤社群互動數據與行銷成效"},
+    {"name": "內容行銷分析", "desc": "分析內容表現，優化行銷策略"},
+    {"name": "AI 人格測驗", "desc": "互動式行銷工具，提升社群參與度"},
+    {"name": "數據驅動報告", "desc": "自動生成行銷效果報告與優化建議"}
+  ],
+  "history": [
+    {"date": "2018", "event": "iKala 推出 KOL Radar 網紅行銷平台"},
+    {"date": "2020", "event": "資料庫突破 1 億網紅"},
+    {"date": "2022", "event": "品牌更名為 Kolr，擴展國際市場"},
+    {"date": "2024", "event": "加入 TikTok 和 X 平台數據"},
+    {"date": "2025", "event": "整合 Threads 社群數據，平台覆蓋六大社群"},
+    {"date": "2026-01", "event": "推出 AI 人格測驗互動行銷工具"},
+    {"date": "2026-03", "event": "資料庫突破 3 億網紅，60 億+ 即時數據"}
+  ],
+  "pricing": "提供 3 天免費試用。三個方案等級（具體價格需洽詢）：入門方案適合新創預算、進階方案含完整功能、客製方案含個人化服務。Enterprise 需聯繫 kolrus@ikala.ai。",
+  "competitors": ["CreatorIQ", "Upfluence", "Traackr", "HypeAuditor", "Aspire"],
+  "links": [
+    {"title": "Kolr 官網", "url": "https://www.kolr.ai"},
+    {"title": "Kolr 定價", "url": "https://www.kolr.ai/en/pricing/"},
+    {"title": "iKala 官網", "url": "https://ikala.ai"},
+    {"title": "網紅搜尋功能", "url": "https://www.kolr.ai/en/influencer-discover/"}
+  ]
+}

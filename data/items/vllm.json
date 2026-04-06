@@ -1,0 +1,52 @@
+{
+  "id": "vllm",
+  "name": "vLLM",
+  "company": "vLLM Project（UC Berkeley 起源）",
+  "category": "模型推論",
+  "tags": ["open-source", "inference", "server"],
+  "oneLiner": "2026 年最主流的開源 LLM 推論引擎，透過 PagedAttention 實現比 HuggingFace Transformers 快 24 倍的吞吐量。支援 NVIDIA Blackwell、AMD、TPU 等多平台。",
+  "overview": "vLLM 是 2026 年最主流的開源 LLM 推論和服務引擎，由 UC Berkeley 研究人員開發。其核心創新 PagedAttention 將 KV cache 分割為小型可重用頁面，消除 GPU 記憶體碎片化，使吞吐量比 naive HuggingFace Transformers 推論高出 24 倍。\n關鍵技術包括：Continuous Batching（持續批次處理，新請求動態插入，GPU 利用率接近 100%）、Speculative Decoding（P-EAGLE 平行推測解碼，用 draft model 預測多 token 後平行驗證）、以及 tensor/pipeline/data/expert parallelism 分散式推論。\nv0.15.1（2026 年 2 月）加入完整的 NVIDIA Blackwell SM120 支援和 H200 最佳化。支援的硬體平台涵蓋 NVIDIA GPU、AMD CPU/GPU、Intel CPU/GPU、PowerPC CPU、Arm CPU、TPU、以及 Intel Gaudi、IBM Spyre 和 Huawei Ascend 等插件。\nvLLM 是大規模生產環境中部署開源 LLM 的標準選擇，被 Red Hat、NVIDIA 等公司推薦。",
+  "pros": [
+    "PagedAttention 記憶體管理，吞吐量業界領先",
+    "Continuous Batching 保持 GPU 利用率接近 100%",
+    "支援最廣泛的硬體平台（NVIDIA/AMD/Intel/TPU/Arm 等）",
+    "OpenAI API 相容 server，無縫替換",
+    "Speculative Decoding 進一步加速推論",
+    "分散式推論支援（tensor/pipeline/data/expert parallelism）",
+    "NVIDIA Blackwell 和 H200 最新最佳化"
+  ],
+  "cons": [
+    "部署和配置較 Ollama 複雜",
+    "需要較好的 GPU 硬體",
+    "記憶體需求較高，小型設備不適合",
+    "模型量化選項不如 llama.cpp 豐富",
+    "CPU 推論效能不如 llama.cpp",
+    "文件偏向進階使用者"
+  ],
+  "features": [
+    {"name": "PagedAttention", "desc": "KV cache 分頁管理，消除 GPU 記憶體碎片化"},
+    {"name": "Continuous Batching", "desc": "動態批次處理，GPU 利用率接近 100%"},
+    {"name": "Speculative Decoding", "desc": "P-EAGLE 平行推測解碼加速推論"},
+    {"name": "分散式推論", "desc": "tensor、pipeline、data 和 expert parallelism"},
+    {"name": "OpenAI API Server", "desc": "相容 OpenAI API 格式的推論 server"},
+    {"name": "多硬體支援", "desc": "NVIDIA/AMD/Intel/TPU/Arm 等平台"},
+    {"name": "Blackwell 支援", "desc": "v0.15.1 完整支援 NVIDIA Blackwell SM120 和 H200"}
+  ],
+  "history": [
+    {"date": "2023-06", "event": "vLLM 由 UC Berkeley 團隊開源發布，PagedAttention 論文發表"},
+    {"date": "2023-10", "event": "vLLM 成為最受歡迎的 LLM serving 引擎"},
+    {"date": "2024-03", "event": "加入 AWQ/GPTQ 量化支援"},
+    {"date": "2024-08", "event": "Speculative Decoding 和多 GPU 分散式支援"},
+    {"date": "2025-02", "event": "AMD GPU 和 Intel 平台支援"},
+    {"date": "2025-07", "event": "TPU 支援和 expert parallelism"},
+    {"date": "2026-02", "event": "v0.15.1 發布：完整 NVIDIA Blackwell SM120 和 H200 最佳化"}
+  ],
+  "pricing": "完全免費開源（Apache 2.0）。",
+  "competitors": ["TensorRT-LLM", "TGI", "SGLang", "llama.cpp", "Ollama"],
+  "links": [
+    {"title": "vLLM 官網", "url": "https://vllm.ai"},
+    {"title": "GitHub", "url": "https://github.com/vllm-project/vllm"},
+    {"title": "文件", "url": "https://docs.vllm.ai"},
+    {"title": "PagedAttention 論文", "url": "https://arxiv.org/abs/2309.06180"}
+  ]
+}

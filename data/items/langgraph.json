@@ -1,0 +1,50 @@
+{
+  "id": "langgraph",
+  "name": "LangGraph",
+  "company": "LangChain, Inc.",
+  "category": "Agent 框架",
+  "tags": ["open-source", "framework", "agent"],
+  "oneLiner": "LangChain 旗下的圖結構 agent 編排框架，專為有狀態、多步驟、human-in-the-loop 的複雜 agent 工作流設計。Klarna、Replit、Elastic 等企業採用。",
+  "overview": "LangGraph 是 LangChain 公司推出的低階 agent 編排框架，採用圖結構（graph-based）執行模型——節點是函式、邊是條件轉換——讓開發者能精確控制 agent 的執行流程。\n不同於簡單的 chain 串聯，LangGraph 支援條件分支、迴圈、human-in-the-loop checkpoint、以及 durable execution（故障恢復後從斷點繼續）。這使其成為 2026 年建構生產級 multi-agent 系統的首選框架之一。\nLangGraph 提供短期工作記憶和跨 session 長期記憶，支援 agent 在多次對話間維持上下文。LangGraph Cloud 提供託管執行和內建監控。\n典型使用場景包括需要迴圈邏輯的複雜推理、需要人工審核的工作流、需要故障恢復的長時間任務、以及多個 agent 協作的系統。Klarna、Replit 和 Elastic 等公司使用 LangGraph 建構生產系統。",
+  "pros": [
+    "圖結構模型直覺映射複雜業務邏輯，工程師易理解",
+    "Durable execution——agent 可從故障中恢復，從斷點繼續",
+    "Human-in-the-loop 原生支援，適合需要人工審核的場景",
+    "短期 + 長期記憶管理，跨 session 維持上下文",
+    "LangGraph Cloud 提供託管執行，降低維運負擔",
+    "與 LangChain / LangSmith 生態系深度整合",
+    "可動態 spawn sub-agent，適合多 agent 協作"
+  ],
+  "cons": [
+    "學習曲線較陡，圖結構概念需要時間適應",
+    "與 LangChain 生態綁定，獨立使用較不方便",
+    "相較 CrewAI 等高階框架，需要更多 boilerplate 程式碼",
+    "Cloud 版本定價對小團隊偏高",
+    "偵錯複雜圖結構的工作流有一定難度"
+  ],
+  "features": [
+    {"name": "圖結構執行", "desc": "節點（函式）+ 邊（條件轉換）的執行模型，支援分支、迴圈和並行"},
+    {"name": "Durable Execution", "desc": "agent 可在故障後恢復，從 checkpoint 繼續執行"},
+    {"name": "Human-in-the-Loop", "desc": "原生支援人工審核節點，可暫停等待人類輸入後繼續"},
+    {"name": "狀態管理", "desc": "短期工作記憶 + 跨 session 長期持久記憶"},
+    {"name": "Multi-Agent 協作", "desc": "agent 可動態 spawn sub-agent，多 agent 協同工作"},
+    {"name": "LangGraph Cloud", "desc": "託管執行環境，內建監控和部署管理"},
+    {"name": "Checkpoint 機制", "desc": "自動保存執行狀態，支援 pause/resume 長時間任務"}
+  ],
+  "history": [
+    {"date": "2024-01", "event": "LangGraph 作為 LangChain 子專案首次發布"},
+    {"date": "2024-06", "event": "LangGraph 獨立為子產品，推出 Cloud 託管版本"},
+    {"date": "2024-08", "event": "LangGraph v0.1 正式版發布，支援 human-in-the-loop"},
+    {"date": "2025-03", "event": "LangGraph Cloud GA，企業級 Klarna/Replit 採用"},
+    {"date": "2025-09", "event": "加入長期記憶和跨 session 狀態持久化"},
+    {"date": "2026-01", "event": "支援動態 sub-agent spawning，multi-agent 協作增強"}
+  ],
+  "pricing": "LangGraph 框架免費開源。LangGraph Cloud 定價包含在 LangSmith 計畫中：Developer 免費 / Plus $39/seat/月 / Enterprise 客製定價。Cloud 部署依用量另計費。",
+  "competitors": ["CrewAI", "Microsoft Agent Framework", "Google ADK", "Claude Agent SDK"],
+  "links": [
+    {"title": "LangGraph 官網", "url": "https://www.langchain.com/langgraph"},
+    {"title": "GitHub", "url": "https://github.com/langchain-ai/langgraph"},
+    {"title": "文件", "url": "https://docs.langchain.com/oss/python/langgraph/overview"},
+    {"title": "LangGraph Cloud", "url": "https://www.langchain.com/langgraph-cloud"}
+  ]
+}

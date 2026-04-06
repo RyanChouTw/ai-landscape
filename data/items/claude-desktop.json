@@ -1,0 +1,59 @@
+{
+  "id": "claude-desktop",
+  "name": "Claude Desktop",
+  "company": "Anthropic",
+  "category": "聊天助手",
+  "tags": ["chat", "agent", "mcp", "paid"],
+  "oneLiner": "Anthropic 的桌面端 AI 助手，整合 Chat、Cowork、Code 三大模式，支援 MCP 插件生態、Projects 知識庫和排程任務。",
+  "overview": "Claude Desktop 是 Anthropic 的桌面應用程式，提供三大核心模式：Chat（對話生成）、Cowork（知識工作代理）和 Code（程式碼撰寫）。2026 年 1 月推出的 Cowork 模式是最大亮點，它讓 Claude 從純對話 AI 升級為可操作檔案、執行工作流程的自主代理。\n\nProjects 功能讓使用者將任務、檔案和指令集中在一個工作區，避免每次開新對話都要重新建立上下文。MCP（Model Context Protocol）生態已連接超過 6,000 個應用，包括 Google Drive、Slack、GitHub、Notion、Figma 等。2026 年 2 月 Anthropic 推出企業級插件支援，將 skills、connectors、slash commands 和 sub-agents 打包成統一套件。\n\n2026 年 3 月新增 Computer Use（研究預覽），讓 Claude 可以自主操作桌面應用程式。同月推出 Customize 區域，統一管理 skills、plugins 和 connectors。Memory 功能於 2026 年 3 月對所有使用者免費開放。",
+  "pros": [
+    "Chat + Cowork + Code 三模式整合，覆蓋對話、知識工作和程式碼場景",
+    "MCP 生態成熟——連接 6,000+ 應用，97M 月 SDK 下載",
+    "Projects 功能保留工作區上下文，避免重複設定",
+    "Cowork 可排程執行定期和隨需任務",
+    "Computer Use 可自主操作桌面應用（2026/3 研究預覽）",
+    "Memory 跨對話記憶，2026/3 起免費開放",
+    "Desktop Extensions 一鍵安裝 MCP server",
+    "Pro 方案 $20/月即可使用 Cowork 和 Projects"
+  ],
+  "cons": [
+    "Cowork 仍為研究預覽階段，穩定性有待驗證",
+    "Computer Use 功能較 GPT-5.4（OSWorld 75%）表現略遜",
+    "Pro 方案有每日使用量限制，高頻使用者需升級 Max",
+    "Max 方案定價偏高（$100-200/月）",
+    "2026/4 起封鎖第三方工具使用訂閱 OAuth，影響部分生態",
+    "插件生態尚在早期，部分連接器品質參差不齊",
+    "目前 Computer Use 僅支援 Mac 和 Windows（2026/4 擴展）"
+  ],
+  "features": [
+    {"name": "Chat 模式", "desc": "傳統對話模式，支援文字、圖片、PDF 輸入，web search"},
+    {"name": "Cowork 模式", "desc": "知識工作代理，可操作本地檔案、執行多步驟工作流程"},
+    {"name": "Projects", "desc": "建立專案工作區，集中檔案、指令和任務歷史"},
+    {"name": "MCP 整合", "desc": "透過 Model Context Protocol 連接 6,000+ 外部應用"},
+    {"name": "Desktop Extensions", "desc": "一鍵安裝 MCP server，簡化插件配置"},
+    {"name": "排程任務", "desc": "建立定期和隨需執行的自動化任務"},
+    {"name": "Computer Use", "desc": "自主操作桌面應用程式（研究預覽）"},
+    {"name": "Memory", "desc": "跨對話持久記憶，2026/3 起免費"},
+    {"name": "Customize", "desc": "統一管理 skills、plugins、connectors 的設定區域"}
+  ],
+  "history": [
+    {"date": "2024-03", "event": "Claude Desktop 應用程式首次發布（Mac）"},
+    {"date": "2024-11", "event": "MCP（Model Context Protocol）開源發布"},
+    {"date": "2025-01", "event": "Claude Desktop 加入 Claude Code 模式"},
+    {"date": "2025-09", "event": "Cowork 模式首次內部測試"},
+    {"date": "2025-12", "event": "MCP 捐贈給 Linux Foundation AAIF"},
+    {"date": "2026-01", "event": "Cowork 正式上線，先開放 Pro 用戶，隨後擴展至 Team/Enterprise"},
+    {"date": "2026-02", "event": "企業級插件支援上線，Desktop Extensions 一鍵安裝"},
+    {"date": "2026-03", "event": "Projects 功能上線、Computer Use 研究預覽（Mac）、Memory 免費開放、Customize 區域新增"},
+    {"date": "2026-04", "event": "Computer Use 擴展至 Windows"}
+  ],
+  "pricing": "Free（免費，用量有限）/ Pro $20/月（年付 $17/月）/ Max 5x $100/月 / Max 20x $200/月 / Team $30/用戶/月 / Enterprise 洽談。Cowork 和 Projects 包含在所有付費方案中。",
+  "competitors": ["ChatGPT", "Gemini App", "Perplexity", "M365 Copilot"],
+  "links": [
+    {"title": "Claude 官網", "url": "https://claude.ai"},
+    {"title": "Claude 定價", "url": "https://claude.com/pricing"},
+    {"title": "Cowork 說明", "url": "https://support.claude.com/en/articles/13345190-get-started-with-cowork"},
+    {"title": "Desktop Extensions", "url": "https://www.anthropic.com/engineering/desktop-extensions"},
+    {"title": "MCP 官網", "url": "https://modelcontextprotocol.io"}
+  ]
+}

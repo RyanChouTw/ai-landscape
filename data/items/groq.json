@@ -1,0 +1,53 @@
+{
+  "id": "groq",
+  "name": "Groq",
+  "company": "Groq, Inc.（2025/12 被 NVIDIA 收購）",
+  "category": "雲端平台",
+  "tags": ["cloud", "inference", "hardware"],
+  "oneLiner": "以 LPU（Language Processing Unit）為核心的超高速推論平台。SRAM 記憶體達 150 TB/s 頻寬，比 NVIDIA Rubin GPU 快 7 倍。2025 年底被 NVIDIA $20B 收購，Groq 3 LPU 預計 2026 年底出貨。",
+  "overview": "Groq 是以自研 LPU（Language Processing Unit）為核心的 AI 推論平台，以極致速度著稱——輕量模型可達 1,200 tokens/sec。2025 年聖誕夜被 NVIDIA 以 $200 億收購，成為 NVIDIA 推論產品線的核心。\n2026 年 3 月 GTC 大會上，NVIDIA 發布 Groq 3 LPU——首款基於收購 Groq IP 打造的晶片。LP30 晶片使用 SRAM 記憶體達 150 TB/s 頻寬，比 NVIDIA Rubin GPU 快 7 倍；每瓦吞吐量高出 35 倍。每顆 LP30 提供 1.2 PFLOPS FP8 運算力，LPX 機架（256 顆 LPU）配合 Vera Rubin NVL72 形成完整的訓練-推論平台。\nGroq Cloud API 目前仍獨立運營，提供按量計費的推論服務。定價範圍從 $0.05/M tokens（Llama 3.1 8B）到 $1.50/M tokens（Kimi K2），支援 DeepSeek R1（$0.75/$0.99）等熱門模型。\n免費 Developer Tier 可試用，Batch API 提供 25-50% 折扣。Groq 3 LPU 預計 2026 年底出貨。",
+  "pros": [
+    "推論速度業界最快——SRAM 150 TB/s 頻寬",
+    "輕量模型 1,200 tokens/sec，體驗極佳",
+    "NVIDIA 收購後資源和整合大幅增強",
+    "Groq 3 LPU 每瓦吞吐量高出 GPU 35 倍",
+    "定價具競爭力（Llama 3.1 8B 僅 $0.05/M tokens）",
+    "免費 Developer Tier 可試用",
+    "Batch API 25-50% 折扣"
+  ],
+  "cons": [
+    "模型選擇不如 Bedrock/Vertex AI 豐富",
+    "Groq 3 LPU 尚未出貨（預計 2026 年底）",
+    "NVIDIA 收購後獨立性存疑",
+    "大模型定價不算便宜（Kimi K2 $1.50/M tokens）",
+    "不支援模型微調",
+    "LPU 硬體不可自行購買，只能用 API"
+  ],
+  "features": [
+    {"name": "LPU 推論", "desc": "SRAM 記憶體 150 TB/s 頻寬，比 GPU 快 7 倍"},
+    {"name": "Groq 3 LPU", "desc": "LP30 晶片 1.2 PFLOPS FP8，LPX 機架 256 顆"},
+    {"name": "Groq Cloud API", "desc": "按量計費推論服務，OpenAI 相容 API"},
+    {"name": "多模型支援", "desc": "DeepSeek R1、Llama、Mistral、Kimi 等"},
+    {"name": "Batch API", "desc": "批次處理 25-50% 折扣"},
+    {"name": "超低延遲", "desc": "輕量模型可達 1,200 tokens/sec"},
+    {"name": "免費 Developer Tier", "desc": "免費試用，$0.05/M tokens 起"}
+  ],
+  "history": [
+    {"date": "2016-01", "event": "Groq, Inc. 由前 Google TPU 工程師 Jonathan Ross 創立"},
+    {"date": "2022-04", "event": "Groq LPU v1 發布"},
+    {"date": "2024-02", "event": "Groq Cloud API 上線，LPU 推論速度引發關注"},
+    {"date": "2024-08", "event": "獲得 $640M 融資"},
+    {"date": "2025-06", "event": "支援 DeepSeek R1 和 Llama 4 等最新模型"},
+    {"date": "2025-12", "event": "NVIDIA 以 $200 億收購 Groq"},
+    {"date": "2026-03", "event": "GTC 2026 發布 Groq 3 LPU（LP30）和 LPX 機架系統"},
+    {"date": "2026-Q4", "event": "Groq 3 LPU 預計出貨"}
+  ],
+  "pricing": "按用量計費。Llama 3.1 8B $0.05/M tokens、DeepSeek R1 $0.75/$0.99/M tokens、Kimi K2 $1.50/M tokens。免費 Developer Tier 可用。Batch API 25-50% 折扣。",
+  "competitors": ["AWS Bedrock", "Google Vertex AI", "Azure AI Foundry", "Cerebras"],
+  "links": [
+    {"title": "Groq 官網", "url": "https://groq.com"},
+    {"title": "定價", "url": "https://groq.com/pricing"},
+    {"title": "Groq Cloud Console", "url": "https://console.groq.com"},
+    {"title": "模型列表", "url": "https://console.groq.com/docs/models"}
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "perplexity-computer",
+  "name": "Perplexity Computer",
+  "company": "Perplexity AI",
+  "category": "電腦操控",
+  "tags": ["computer-use", "agent", "multi-model", "paid"],
+  "oneLiner": "Perplexity 的雲端 AI 代理，協調 19 個 AI 模型自主執行複雜多步驟工作流程，支援 400+ 應用整合和 Personal Computer 本地操控。",
+  "overview": "Perplexity Computer 於 2026 年 2 月 25 日上線，是 Perplexity 三年歷史中最具企圖心的產品。它是一個雲端通用數位工作者，協調 19 個不同的 AI 模型——Claude Opus 4.6 負責核心推理、Gemini 處理深度研究、Nano Banana 生成圖片、Veo 3.1 製作影片、Grok 處理快速輕量任務、GPT-5.2 管理長上下文。\n\n每個任務在隔離的雲端環境中執行，配有真實檔案系統、瀏覽器和 400+ 應用整合（Slack、Gmail、GitHub、Notion）。當遇到問題時，Computer 會自動建立 sub-agents 來解決——尋找 API 金鑰、研究補充資訊、必要時寫程式，真正需要時才向使用者確認。\n\n工作完全非同步——使用者可專注其他事，或同時平行執行數十個 Computer 任務。最新更新加入 Skills、Model Council、Voice Mode 和 GPT-5.3-Codex 程式碼子代理。Personal Computer 版本可在 Mac mini 等專用裝置上運行，擁有完整本地檔案和應用存取權限。",
+  "pros": [
+    "19 模型協調——每個子任務自動路由到最適合的模型",
+    "400+ 應用整合（Slack、Gmail、GitHub、Notion 等）",
+    "完全非同步——可平行執行數十個任務",
+    "Sub-agent 自動建立——遇到問題自動解決",
+    "隔離雲端環境——每個任務獨立沙箱",
+    "Personal Computer 版本提供本地檔案和應用存取",
+    "Skills 系統可擴展能力",
+    "Model Council 可比較多模型輸出"
+  ],
+  "cons": [
+    "僅限 Max 訂閱用戶（$200/月），門檻極高",
+    "信用點數制——10,000 點/月，複雜任務消耗快",
+    "Personal Computer 目前僅支援 Mac",
+    "雲端執行有延遲，非即時回應",
+    "19 模型協調增加結果不一致的風險",
+    "相對較新（2026/2 上線），生態成熟度低",
+    "複雜任務費用難以預估"
+  ],
+  "features": [
+    {"name": "Multi-Model Orchestration", "desc": "19 個 AI 模型自動路由——Claude Opus 4.6、Gemini、GPT-5.2、Grok 等"},
+    {"name": "400+ App Integrations", "desc": "整合 Slack、Gmail、GitHub、Notion 等 400+ 應用"},
+    {"name": "Sub-Agent Creation", "desc": "遇到問題自動建立子代理解決"},
+    {"name": "隔離雲端環境", "desc": "每個任務在獨立沙箱中執行，含檔案系統和瀏覽器"},
+    {"name": "Personal Computer", "desc": "Mac 專用裝置版本，完整本地檔案和應用存取"},
+    {"name": "Skills", "desc": "可擴展的技能系統"},
+    {"name": "Model Council", "desc": "同時比較多個 LLM 輸出"},
+    {"name": "Voice Mode", "desc": "語音控制和互動"},
+    {"name": "GPT-5.3-Codex 子代理", "desc": "專用程式碼生成子代理"}
+  ],
+  "history": [
+    {"date": "2022-08", "event": "Perplexity AI 創立"},
+    {"date": "2022-12", "event": "Perplexity 搜尋引擎上線"},
+    {"date": "2025-12", "event": "Perplexity 估值達 $20B"},
+    {"date": "2026-01", "event": "與 Microsoft Azure 簽訂三年 $750M GPU 合約"},
+    {"date": "2026-02", "event": "Perplexity Computer 上線，專供 Max 訂閱用戶"},
+    {"date": "2026-03", "event": "新增 Skills、Model Council、Voice Mode、GPT-5.3-Codex 子代理，Personal Computer 版本上線（Mac 優先）"}
+  ],
+  "pricing": "僅限 Max 訂閱用戶：$200/月（$2,000/年）。Max 方案含 10,000 點/月，任務依複雜度消耗點數。Enterprise Max $325/用戶/月。",
+  "competitors": ["Claude Computer Use", "GPT-5.4 Computer Use API", "Manus My Computer"],
+  "links": [
+    {"title": "Perplexity Computer 介紹", "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-computer"},
+    {"title": "Perplexity 官網", "url": "https://www.perplexity.ai"},
+    {"title": "Perplexity Changelog", "url": "https://www.perplexity.ai/changelog"}
+  ]
+}

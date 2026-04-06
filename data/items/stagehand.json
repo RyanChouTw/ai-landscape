@@ -1,0 +1,49 @@
+{
+  "id": "stagehand",
+  "name": "Stagehand",
+  "company": "Browserbase",
+  "category": "瀏覽器代理",
+  "tags": ["open", "freemium"],
+  "oneLiner": "在 Playwright 之上加入 AI 原語（act/extract/observe）的混合瀏覽器自動化框架，10,000+ GitHub stars，結構化資料擷取能力突出。",
+  "overview": "Stagehand 是由 Browserbase 開發的 AI 瀏覽器自動化框架，在 Playwright 之上加入三個 AI 原語：act()（執行動作）、extract()（擷取結構化資料）、observe()（理解頁面狀態），實現 AI 與程式碼的混合自動化工作流。\n其最大特色是結構化擷取能力：extract() 搭配 Zod schema 可將混亂的網頁內容轉換為型別化 JSON，在 AI 網頁爬蟲領域表現最佳。\nStagehand 正從 Playwright 的測試架構逐步演進為 CDP（Chrome DevTools Protocol）層級控制。目前 10,000+ GitHub stars，支援多語言（Node.js、Go、Ruby），並提供 MCP 整合。\n2026 年的最佳實踐：用 Stagehand 做原型和內部工具，用 Playwright + AI 做需要高可靠性的生產環境自動化。",
+  "pros": [
+    "MIT 開源授權",
+    "在 Playwright 基礎上增加 AI 能力，學習曲線低",
+    "extract() + Zod schema 結構化擷取能力業界最強",
+    "混合模式：AI 處理動態內容，程式碼處理確定性操作",
+    "支援多語言：Node.js、Go、Ruby",
+    "MCP 整合，可被 AI 助手直接呼叫",
+    "10,000+ GitHub stars，社群持續成長"
+  ],
+  "cons": [
+    "無 licensing 費但需支付 LLM API 和 Browserbase 費用",
+    "GPT-4 token 成本在複雜頁面上可能很高",
+    "對非技術用戶門檻較高（需要寫程式碼）",
+    "仍在從 Playwright 架構演進中，API 可能變動",
+    "生產環境可靠性不如純 Playwright 腳本"
+  ],
+  "features": [
+    {"name": "act()", "desc": "用自然語言描述動作，AI 自動在頁面上執行對應操作"},
+    {"name": "extract()", "desc": "搭配 Zod schema 從網頁擷取結構化型別資料"},
+    {"name": "observe()", "desc": "讓 AI 觀察並理解當前頁面狀態"},
+    {"name": "Playwright 整合", "desc": "完整保留 Playwright 的精確控制能力"},
+    {"name": "多語言支援", "desc": "Node.js、Go、Ruby 客戶端"},
+    {"name": "MCP Server", "desc": "提供 MCP 整合，可被 Claude Code 等 AI 助手呼叫"}
+  ],
+  "history": [
+    {"date": "2024-09", "event": "Browserbase 開源 Stagehand，MIT 授權"},
+    {"date": "2025-03", "event": "加入 extract() 和 observe() AI 原語"},
+    {"date": "2025-06", "event": "GitHub stars 突破 5,000"},
+    {"date": "2025-10", "event": "發布 Go 和 Ruby 客戶端"},
+    {"date": "2026-01", "event": "推出 MCP Server 整合"},
+    {"date": "2026-03", "event": "GitHub stars 突破 10,000，開始從 Playwright 架構向 CDP 層級演進"}
+  ],
+  "pricing": "開源免費（MIT 授權）。Browserbase 託管：Free（1 hr）/ Developer $20/月（100 hrs）/ Startup $99/月（500 hrs）/ Enterprise 洽詢。另需自付 LLM API 費用。",
+  "competitors": ["Browser Use", "PageAgent", "Playwright MCP", "Skyvern"],
+  "links": [
+    {"title": "Stagehand 官網", "url": "https://www.stagehand.dev"},
+    {"title": "GitHub", "url": "https://github.com/browserbase/stagehand"},
+    {"title": "Browserbase", "url": "https://www.browserbase.com"},
+    {"title": "Stagehand MCP", "url": "https://www.morphllm.com/stagehand-mcp"}
+  ]
+}

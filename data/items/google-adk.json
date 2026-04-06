@@ -1,0 +1,50 @@
+{
+  "id": "google-adk",
+  "name": "Google ADK",
+  "company": "Google",
+  "category": "Agent 框架",
+  "tags": ["open-source", "framework", "agent", "google"],
+  "oneLiner": "Google 開源的 Agent Development Kit，code-first 的多語言 agent 開發框架。針對 Gemini 最佳化但模型不綁定，支援 Python、TypeScript、Java、Go 四種語言。",
+  "overview": "Google Agent Development Kit（ADK）是 Google 推出的開源 agent 開發框架，設計理念是讓 agent 開發像傳統軟體開發一樣直覺。雖然針對 Gemini 模型和 Google 生態系最佳化，但 ADK 是模型不綁定（model-agnostic）和部署不綁定（deployment-agnostic）的。\nADK 從最初的 Python SDK 擴展為多語言生態系，2026 年已支援 Python、TypeScript、Java 和 Go 四種語言，全部達到 1.0.0 版本。\n核心功能包括 multi-agent 編排、Human-in-the-Loop（HITL）工作流、grounding 工具（GoogleMapsTool、UrlContextTool）、event compaction 強化的 context engineering、以及 session/memory 服務。\nADK Go 1.0.0 特別加入 OpenTelemetry 整合、self-healing 邏輯插件和改進的人機互動支援。Java 版本則引入集中式 plugin 架構。\n可直接部署到 Vertex AI Agent Engine，也可自行託管。",
+  "pros": [
+    "Google 官方支援，與 Gemini 和 Vertex AI 深度整合",
+    "四種語言（Python/TS/Java/Go）全部 1.0 GA",
+    "Code-first 設計，軟體工程師易上手",
+    "模型不綁定，可搭配非 Google 模型使用",
+    "內建 grounding 工具（Maps、URL context）",
+    "OpenTelemetry 整合，觀測性佳",
+    "集中式 plugin 架構，擴展性強"
+  ],
+  "cons": [
+    "Google 生態系外使用體驗較差",
+    "相較 LangChain 社群較小，第三方整合較少",
+    "2025 年 4 月才首次發布，生態系仍在成長期",
+    "文件品質不如 LangChain 完善",
+    "非 Gemini 模型的整合需額外配置"
+  ],
+  "features": [
+    {"name": "多語言支援", "desc": "Python、TypeScript、Java、Go 四種語言，全部 1.0.0 GA"},
+    {"name": "Multi-Agent 編排", "desc": "支援多 agent 協作和任務分配"},
+    {"name": "Human-in-the-Loop", "desc": "ToolConfirmation 工作流，人工確認後才執行工具"},
+    {"name": "Grounding 工具", "desc": "GoogleMapsTool、UrlContextTool 等內建工具"},
+    {"name": "Context Engineering", "desc": "Event compaction 壓縮上下文，高效管理記憶"},
+    {"name": "Session & Memory", "desc": "session 管理和跨對話記憶持久化"},
+    {"name": "Plugin 架構", "desc": "集中式 plugin 系統，易於擴展功能"}
+  ],
+  "history": [
+    {"date": "2025-04", "event": "Google 在 Cloud Next 2025 發布 ADK Python SDK"},
+    {"date": "2025-08", "event": "ADK TypeScript SDK 發布"},
+    {"date": "2025-12", "event": "ADK Java SDK 發布"},
+    {"date": "2026-01", "event": "ADK Go 1.0.0 發布，加入 OpenTelemetry 和 self-healing"},
+    {"date": "2026-02", "event": "ADK Java 1.0.0 發布，集中式 plugin 架構"},
+    {"date": "2026-03", "event": "ADK TypeScript 正式 GA，四語言全部 1.0"}
+  ],
+  "pricing": "完全免費開源（Apache 2.0）。部署到 Vertex AI Agent Engine 時依 Google Cloud 定價計費。",
+  "competitors": ["LangGraph", "CrewAI", "Microsoft Agent Framework", "Claude Agent SDK"],
+  "links": [
+    {"title": "ADK 文件", "url": "https://google.github.io/adk-docs/"},
+    {"title": "GitHub (Python)", "url": "https://github.com/google/adk-python"},
+    {"title": "Vertex AI 整合", "url": "https://docs.cloud.google.com/agent-builder/agent-development-kit/overview"},
+    {"title": "PyPI", "url": "https://pypi.org/project/google-adk/"}
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "google-workspace-ai",
+  "name": "Google Workspace AI",
+  "company": "Google",
+  "category": "聊天助手",
+  "tags": ["workspace", "gemini", "enterprise", "paid"],
+  "oneLiner": "Google 將 Gemini AI 深度整合到 Workspace 全套件（Gmail、Docs、Sheets、Slides、Drive、Meet），2026 年直接內建於所有方案無需 add-on。",
+  "overview": "Google Workspace AI 是 Google 將 Gemini AI 能力整合到 Workspace 生產力套件中的產品策略。2025 年 9 月起，Google 決定將 Gemini AI 直接整合到所有 Business 和 Enterprise 方案中，不再需要另購 $30/用戶/月的 add-on，但基礎方案價格調漲約 17%。\n\n核心功能包括 Gemini 側邊欄（出現在 Gmail、Docs、Sheets、Slides、Drive 和 Chat 中）、「Help me write」寫作輔助（Gmail 和 Docs）、以及跨 Drive 檔案的 AI 分析和洞察生成。\n\n2026 年的重要更新包括：NotebookLM 推出 Cinematic Video Overviews 和 10 種 Infographic Styles；Google Vids 使用 Veo 3.1 和 AI 虛擬主播生成影片；Gemini 可分析 Drive 中的檔案和 Gmail 中的郵件模式。\n\n對於需要更多 AI 用量的組織，Google 提供 AI Expanded Access add-on，提升 Workspace 應用、Gemini App、NotebookLM 和 Flow 中的 AI 使用上限。Business Standard 方案含 Gemini 的價格為 $14/用戶/月起（舊方案 $12 + $30 add-on = $42 → 現在只要 $14），是目前成本效益最高的企業 AI 方案之一。",
+  "pros": [
+    "Gemini AI 直接內建——不再需要 $30/月 add-on",
+    "Business Standard $14/用戶/月含 AI——企業 AI 最高 CP 值之一",
+    "深度整合 Gmail、Docs、Sheets、Slides、Drive、Meet、Chat",
+    "NotebookLM 免費提供 Audio/Video Overviews、Flashcards 等創新功能",
+    "Google Vids 使用 Veo 3.1 生成影片",
+    "跨 Drive 檔案和 Gmail 郵件的 AI 分析能力",
+    "Gemini 側邊欄統一各應用的 AI 體驗",
+    "Help me write 加速 Gmail 和 Docs 寫作"
+  ],
+  "cons": [
+    "基礎 Workspace 方案調漲約 17%",
+    "AI 能力依賴 Google 生態——跨平台整合有限",
+    "Enterprise 方案需洽談定價，透明度低",
+    "進階 AI 功能（如 Deep Think）需要個人 AI Ultra 方案",
+    "AI Expanded Access add-on 增加額外成本",
+    "與 M365 相比，企業部署和管理工具較不成熟",
+    "部分進階功能僅限特定地區或方案"
+  ],
+  "features": [
+    {"name": "Gemini 側邊欄", "desc": "出現在 Gmail、Docs、Sheets、Slides、Drive、Chat 中的 AI 助手"},
+    {"name": "Help me write", "desc": "Gmail 和 Docs 中的 AI 寫作輔助"},
+    {"name": "跨檔案分析", "desc": "分析 Drive 檔案內容和 Gmail 郵件模式"},
+    {"name": "NotebookLM", "desc": "Audio Overviews、Cinematic Video Overviews、Flashcards、Infographics"},
+    {"name": "Google Vids", "desc": "AI 影片生成，使用 Veo 3.1 和 AI 虛擬主播"},
+    {"name": "Sheets AI", "desc": "試算表中的 AI 資料分析和公式建議"},
+    {"name": "Slides AI", "desc": "簡報中的 AI 圖片生成和版面建議"},
+    {"name": "Meet AI", "desc": "會議摘要、即時字幕和翻譯"},
+    {"name": "AI Expanded Access", "desc": "add-on 提升 Workspace、Gemini App、NotebookLM 的 AI 用量上限"}
+  ],
+  "history": [
+    {"date": "2023-03", "event": "Google 開始在 Workspace 中整合 AI 功能（Duet AI）"},
+    {"date": "2024-02", "event": "Duet AI 更名為 Gemini for Workspace"},
+    {"date": "2024-06", "event": "Gemini 側邊欄在 Gmail、Docs、Sheets、Slides 中上線"},
+    {"date": "2025-01", "event": "開始將 AI 功能內建到 Business 和 Enterprise 方案"},
+    {"date": "2025-06", "event": "NotebookLM Audio Overviews 上線"},
+    {"date": "2025-09", "event": "Gemini AI 正式整合到所有 Workspace 方案（取消 add-on）"},
+    {"date": "2026-02", "event": "AI Expanded Access add-on 上線，提升進階 AI 用量"},
+    {"date": "2026-03", "event": "NotebookLM 新增 Cinematic Video Overviews 和 Infographic Styles、Google Vids 加入 Veo 3.1"}
+  ],
+  "pricing": "Business Starter $7.20/用戶/月 / Business Standard $14/用戶/月 / Business Plus $18/用戶/月 / Enterprise 洽談。所有方案皆含 Gemini AI。AI Expanded Access add-on 另計。個人版可用 Google AI Pro $19.99/月。",
+  "competitors": ["M365 Copilot", "Notion AI", "Claude Desktop", "ChatGPT Business"],
+  "links": [
+    {"title": "Google Workspace 定價", "url": "https://workspace.google.com/pricing"},
+    {"title": "Workspace AI 功能", "url": "https://knowledge.workspace.google.com/admin/getting-started/editions/compare-google-ai-expansion-add-ons"},
+    {"title": "Workspace Blog", "url": "https://workspace.google.com/blog/product-announcements/empowering-businesses-with-AI"},
+    {"title": "NotebookLM", "url": "https://notebooklm.google/"},
+    {"title": "Google AI 方案", "url": "https://one.google.com/about/google-ai-plans/"}
+  ]
+}

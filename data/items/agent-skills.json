@@ -1,0 +1,53 @@
+{
+  "id": "agent-skills",
+  "name": "Agent Skills",
+  "company": "Manus / 社群",
+  "category": "整合協議",
+  "tags": ["open", "free"],
+  "oneLiner": "檔案系統導向的 AI Agent 能力擴充機制——將專業知識、工作流和 SOP 打包為可重用的 SKILL.md 檔案，按需載入不佔上下文。Manus 和 Claude Code 已支援。",
+  "overview": "Agent Skills 是一種檔案系統導向的 AI Agent 能力擴充機制，核心概念是將專業知識、工作流程和最佳實踐打包成可重用的檔案資源（SKILL.md），AI Agent 可按需發現和載入這些 Skills，將通用 Agent 轉變為特定領域的專家。\n\n類比來說，Skills 就像「新員工入職手冊」或「標準作業流程（SOP）」——不需要每次口頭說明，Agent 隨時可以查閱。\n\n三階段載入機制最大化效率：啟動時只載入 metadata（~100 tokens），觸發時載入詳細指令（<5K tokens），資源按需載入。這意味著可以打包無限知識而不浪費上下文窗口。\n\n使用方式：輸入 /SKILL_NAME 即可觸發 Agent 載入對應 Skill。Skills 可深度客製化，搭配 Connectors 建立高度自動化的工作流。\n\nManus AI 於 2026 年 1 月 27 日正式宣布全面整合 Agent Skills 開放標準。Claude Code 也內建 Skill 系統支援（/slash commands）。社群已發展出 296+ Skills 市場（LobeHub 等平台），以及 awesome-agent-skills 等資源庫。",
+  "pros": [
+    "檔案系統導向——簡單、透明、易於版本控制",
+    "三階段載入不浪費上下文窗口",
+    "SOP 化——將專業知識編碼為可重用資源",
+    "平台中立——Manus、Claude Code 等已支援",
+    "社群生態成長中——296+ Skills 市場",
+    "可搭配 Connectors 建立自動化工作流",
+    "完全開放，任何人都能建立和分享 Skills"
+  ],
+  "cons": [
+    "生態規模遠不及 MCP（10,000+ servers vs 數百 Skills）",
+    "缺乏統一的品質審核機制",
+    "Skill 品質參差不齊",
+    "沒有像 MCP 那樣的正式標準組織管理",
+    "主要由 Manus 推動，其他平台支援程度不一",
+    "調試和測試 Skills 的工具不夠成熟",
+    "與 MCP 的定位有部分重疊"
+  ],
+  "features": [
+    {"name": "SKILL.md", "desc": "以 Markdown 檔案定義 Agent 能力——指令、上下文、觸發條件"},
+    {"name": "三階段載入", "desc": "Metadata（~100 tokens）→ 指令（<5K tokens）→ 資源（按需）"},
+    {"name": "/SKILL_NAME 觸發", "desc": "輸入斜線命令即可觸發 Agent 載入特定 Skill"},
+    {"name": "Connectors", "desc": "搭配外部服務建立自動化工作流"},
+    {"name": "Skills 市場", "desc": "LobeHub 等平台提供 296+ 可用 Skills"},
+    {"name": "SOP 編碼", "desc": "將標準作業流程轉為 Agent 可執行的指令"},
+    {"name": "版本控制友善", "desc": "純檔案格式，可用 Git 管理版本"}
+  ],
+  "history": [
+    {"date": "2025-03", "event": "Agent Skills 概念在社群中開始發展"},
+    {"date": "2025-06", "event": "Claude Code 加入 Skill 系統（/slash commands）"},
+    {"date": "2025-09", "event": "awesome-agent-skills 等社群資源庫出現"},
+    {"date": "2025-12", "event": "LobeHub 等平台建立 Skills 市場"},
+    {"date": "2026-01-27", "event": "Manus AI 正式宣布全面整合 Agent Skills 開放標準"},
+    {"date": "2026-03", "event": "Skills 市場成長至 296+，多平台支援持續擴展"}
+  ],
+  "pricing": "完全免費開放",
+  "competitors": ["MCP", "A2A Protocol", "OpenAPI", "Tool Use / Function Calling"],
+  "links": [
+    {"title": "Manus Skills 公告", "url": "https://manus.im/blog/manus-skills"},
+    {"title": "Manus Skills 功能", "url": "https://manus.im/features/agent-skills"},
+    {"title": "LobeHub Skills 市場", "url": "https://lobehub.com/skills"},
+    {"title": "awesome-agent-skills", "url": "https://github.com/skillmatic-ai/awesome-agent-skills"},
+    {"title": "Manus Academy", "url": "https://academy.manus.im/"}
+  ]
+}

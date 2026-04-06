@@ -1,0 +1,52 @@
+{
+  "id": "notion-ai",
+  "name": "Notion AI",
+  "company": "Notion Labs",
+  "category": "AI 筆記",
+  "tags": ["closed", "freemium"],
+  "oneLiner": "Notion 工作區的 AI 層，整合 GPT-5、Claude Opus 4.1、o3 多模型，提供 AI 會議紀錄、Ask Notion 全域搜尋、Custom Agents 自訂工作流。",
+  "overview": "Notion AI 是整合在 Notion 工作區中的 AI 功能層，讓 AI 能力貫穿筆記、資料庫、Wiki、專案管理等所有 Notion 功能。\n核心功能包括：AI 會議紀錄（自動轉錄、摘要、提取重點）、Ask Notion（查詢整個工作區和連結的 Google Drive、Slack 等整合，並附來源連結）、AI 寫作助手（總結、改寫、翻譯、腦力激盪）。\n底層支援多個 premium AI 模型，包括 GPT-5、Claude Opus 4.1 和 o3，用戶可根據任務需求切換模型。\n2026 年 2 月 Notion 3.3 推出 Custom Agents——團隊可建立專屬 AI 工作流，例如自動分類支援請求、生成週報等。管理員可購買 Notion credits 擴展 AI 使用量。\nNotion AI 包含在 Business 和 Enterprise 方案中，其他方案有有限的試用額度。",
+  "pros": [
+    "深度整合 Notion 工作區——AI 可存取所有頁面、資料庫、Wiki",
+    "多模型支援：GPT-5、Claude Opus 4.1、o3",
+    "Ask Notion 跨工作區搜尋，附來源連結",
+    "AI 會議紀錄自動轉錄和摘要",
+    "Custom Agents 可建立專屬 AI 工作流",
+    "整合第三方：Google Drive、Slack 等",
+    "90 天頁面歷史紀錄"
+  ],
+  "cons": [
+    "AI 功能需要 Business 或 Enterprise 方案才完整使用",
+    "AI credits 消耗快，大量使用需加購",
+    "效能有時較慢，特別是大型工作區",
+    "AI 回應品質取決於工作區內容的品質和組織",
+    "Custom Agents 設定有學習曲線",
+    "與 Notion 平台深度鎖定"
+  ],
+  "features": [
+    {"name": "Ask Notion", "desc": "查詢整個工作區，回答附來源連結"},
+    {"name": "AI 會議紀錄", "desc": "自動轉錄、摘要、提取行動項目"},
+    {"name": "Custom Agents", "desc": "建立專屬 AI 工作流——自動分類、生成報告等"},
+    {"name": "多模型切換", "desc": "GPT-5、Claude Opus 4.1、o3 按需切換"},
+    {"name": "AI 寫作", "desc": "總結、改寫、翻譯、腦力激盪、語調調整"},
+    {"name": "第三方整合", "desc": "Google Drive、Slack 等資料納入 AI 搜尋範圍"},
+    {"name": "Notion Credits", "desc": "管理員可加購 credits 擴展團隊 AI 使用量"}
+  ],
+  "history": [
+    {"date": "2022-11", "event": "Notion AI Alpha 開放等候名單"},
+    {"date": "2023-02", "event": "Notion AI 正式上線，整合 AI 寫作功能"},
+    {"date": "2023-11", "event": "推出 Q&A 功能（後來的 Ask Notion）"},
+    {"date": "2024-06", "event": "加入 AI 會議紀錄功能"},
+    {"date": "2024-10", "event": "整合第三方資料來源（Google Drive、Slack）"},
+    {"date": "2025-06", "event": "多模型支援：GPT-5、Claude、o3"},
+    {"date": "2025-10", "event": "AI 功能納入 Business/Enterprise 方案"},
+    {"date": "2026-02", "event": "Notion 3.3 推出 Custom Agents，Notion credits 系統上線"}
+  ],
+  "pricing": "Free（有限 AI 試用）/ Plus $10/用戶/月（有限 AI 試用）/ Business $20/用戶/月（完整 AI 功能，含 Notion Agent、AI 會議紀錄、Enterprise Search）/ Enterprise 客製定價。AI credits 可另行加購。",
+  "competitors": ["NotebookLM", "Obsidian + AI", "Coda AI", "Slite", "Mem"],
+  "links": [
+    {"title": "Notion AI", "url": "https://www.notion.com/product/ai"},
+    {"title": "Notion 定價", "url": "https://www.notion.com/pricing"},
+    {"title": "Notion AI Review 2026", "url": "https://max-productive.ai/ai-tools/notion-ai/"}
+  ]
+}

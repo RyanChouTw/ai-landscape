@@ -1,0 +1,48 @@
+{
+  "id": "dall-e-3",
+  "name": "DALL-E 3",
+  "company": "OpenAI",
+  "category": "圖片生成",
+  "tags": ["closed", "paid", "image-generation"],
+  "oneLiner": "OpenAI 的圖片生成模型，深度整合 ChatGPT 對話式生成體驗。已於 2025 年 12 月被 GPT Image 1.5 取代，API 將於 2026 年 5 月停用。",
+  "overview": "DALL-E 3 是 OpenAI 開發的第三代圖片生成模型，最大特色是與 ChatGPT 深度整合——使用者只需用自然語言描述想法，ChatGPT 會自動生成詳細提示詞交由 DALL-E 3 產出圖片。支援最高 1792x1024 解析度，文字、手部、臉部等細節渲染大幅改善。\n然而，OpenAI 已於 2025 年 11 月宣布 DALL-E 3 API 將於 2026 年 5 月 12 日正式停用（deprecated）。ChatGPT Plus 用戶自 2025 年 12 月起已自動切換至 GPT Image 1.5（基於 GPT-4o 的原生圖片生成能力）。DALL-E 3 作為獨立模型的使命即將結束，但其技術精神延續在 OpenAI 的新一代圖片生成中。\n所有 DALL-E 3 輸出均嵌入 C2PA metadata 浮水印，支援內容溯源。",
+  "pros": [
+    "與 ChatGPT 深度整合，對話式生成體驗直覺",
+    "提示詞遵循度高，能處理複雜多元素描述",
+    "文字渲染、手部、臉部細節明顯改善",
+    "C2PA 浮水印支援內容溯源",
+    "透過 ChatGPT Plus 即可使用，無需額外設定"
+  ],
+  "cons": [
+    "API 將於 2026 年 5 月 12 日停用",
+    "ChatGPT 中已被 GPT Image 1.5 取代",
+    "最高解析度 1792x1024，不如 Midjourney V8 的原生 2K",
+    "不開源，無法本地部署",
+    "生成速度相對較慢",
+    "風格多樣性不如 Midjourney"
+  ],
+  "features": [
+    {"name": "ChatGPT 整合", "desc": "自然語言對話自動生成精確提示詞"},
+    {"name": "高精度文字渲染", "desc": "可在圖片中準確渲染文字"},
+    {"name": "多元解析度", "desc": "支援 1024x1024、1024x1792、1792x1024 等比例"},
+    {"name": "C2PA 浮水印", "desc": "所有輸出嵌入不可見浮水印，支援內容溯源"},
+    {"name": "安全過濾", "desc": "內建多層安全系統，限制有害內容生成"}
+  ],
+  "history": [
+    {"date": "2021-01", "event": "DALL-E 1 發布，首次展示文字到圖片生成能力"},
+    {"date": "2022-04", "event": "DALL-E 2 發布，大幅提升品質和解析度"},
+    {"date": "2023-09", "event": "DALL-E 3 發布，與 ChatGPT 深度整合"},
+    {"date": "2023-10", "event": "DALL-E 3 開放給 ChatGPT Plus 和 Enterprise 用戶"},
+    {"date": "2025-03", "event": "OpenAI 推出基於 GPT-4o 的原生圖片生成（GPT Image 1.5）"},
+    {"date": "2025-11", "event": "OpenAI 宣布 DALL-E 3 API 將於 2026 年 5 月 12 日停用"},
+    {"date": "2025-12", "event": "ChatGPT Plus 自動切換至 GPT Image 1.5"}
+  ],
+  "pricing": "透過 ChatGPT Plus（$20/月）或 ChatGPT Pro（$200/月）使用。API 定價：Standard 1024x1024 $0.040/張、HD 1024x1024 $0.080/張、HD 1792x1024 $0.120/張。API 將於 2026/5/12 停用。",
+  "competitors": ["Midjourney", "Flux", "Imagen 4", "Stable Diffusion"],
+  "links": [
+    {"title": "DALL-E 3 官方頁面", "url": "https://openai.com/index/dall-e-3/"},
+    {"title": "GPT Image 1.5 介紹", "url": "https://openai.com/index/introducing-4o-image-generation/"},
+    {"title": "OpenAI API 文件", "url": "https://platform.openai.com/docs"},
+    {"title": "ChatGPT", "url": "https://chat.openai.com"}
+  ]
+}

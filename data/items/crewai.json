@@ -1,0 +1,51 @@
+{
+  "id": "crewai",
+  "name": "CrewAI",
+  "company": "CrewAI, Inc.",
+  "category": "Agent 框架",
+  "tags": ["open-source", "framework", "agent", "enterprise"],
+  "oneLiner": "60% Fortune 500 企業採用的多 agent 編排平台，支援 Crews（自主 agent 團隊）和 Flows（事件驅動工作流）雙模架構，已處理 14 億次 agentic 自動化。",
+  "overview": "CrewAI 是一個開源的多 agent 編排平台，讓企業能建構、部署和管理自主 AI agent 團隊。截至 2026 年，CrewAI 被 60% 的 Fortune 500 企業採用，包括 PwC、IBM、Capgemini 和 NVIDIA，累計處理超過 14 億次 agentic 自動化。\nCrewAI 採用雙模架構：Crews 代表具有真正自主性的 AI agent 團隊，Flows 提供企業級事件驅動工作流編排。開發者可使用視覺化編輯器 + AI copilot 或 API 兩種方式建構。\n2026 年推出的 Agent Management Platform（AMP）是業界首個 agent 管理平台，支援企業跨部門建構、優化、部署和擴展 agent 工作流，提供完整的控制、信任和治理機制。\n同年 CrewAI 與 NVIDIA NemoClaw 整合，為企業部署提供安全的基礎設施。CrewAI 的調查顯示 100% 受訪企業計劃在 2026 年擴大 agentic AI 投入。",
+  "pros": [
+    "60% Fortune 500 採用，企業級成熟度最高",
+    "Crews + Flows 雙模架構兼顧自主性和可控性",
+    "AMP（Agent Management Platform）提供企業級 agent 治理",
+    "視覺化編輯器 + AI copilot 降低開發門檻",
+    "NVIDIA NemoClaw 整合，支援安全企業部署",
+    "開源核心，社群活躍",
+    "14 億次自動化驗證的穩定性"
+  ],
+  "cons": [
+    "企業功能（AMP）需付費",
+    "相較 LangGraph 較不靈活，自訂程度較低",
+    "大量 agent 併行時效能需注意",
+    "與 LangChain 生態系的整合不如 LangGraph 緊密",
+    "文件和範例偏重企業場景，個人開發者資源較少"
+  ],
+  "features": [
+    {"name": "Crews", "desc": "AI agent 團隊，具有真正自主性和角色分工"},
+    {"name": "Flows", "desc": "企業級事件驅動工作流編排"},
+    {"name": "Agent Management Platform", "desc": "業界首個 agent 管理平台，跨部門治理和監控"},
+    {"name": "視覺化編輯器", "desc": "拖拉式 UI + AI copilot 快速建構 agent 工作流"},
+    {"name": "NVIDIA NemoClaw", "desc": "與 NVIDIA 整合的安全企業部署方案"},
+    {"name": "角色定義", "desc": "每個 agent 有明確角色、目標和背景設定"},
+    {"name": "任務委派", "desc": "agent 間可自動委派任務，協作完成複雜流程"}
+  ],
+  "history": [
+    {"date": "2023-12", "event": "CrewAI 開源發布"},
+    {"date": "2024-05", "event": "獲得首輪融資，企業版開始開發"},
+    {"date": "2024-10", "event": "Flows 事件驅動架構上線"},
+    {"date": "2025-03", "event": "Fortune 500 採用率突破 50%"},
+    {"date": "2025-08", "event": "Agent Management Platform（AMP）發布"},
+    {"date": "2026-02", "event": "與 NVIDIA NemoClaw 整合。調查報告：100% 企業計劃擴大 agentic AI"},
+    {"date": "2026-03", "event": "累計處理 14 億次 agentic 自動化"}
+  ],
+  "pricing": "開源框架免費。CrewAI Enterprise（含 AMP）客製定價，需聯繫業務團隊。",
+  "competitors": ["LangGraph", "Microsoft Agent Framework", "Google ADK", "Claude Agent SDK", "Dify"],
+  "links": [
+    {"title": "CrewAI 官網", "url": "https://crewai.com"},
+    {"title": "GitHub", "url": "https://github.com/crewAIInc/crewAI"},
+    {"title": "文件", "url": "https://docs.crewai.com"},
+    {"title": "Insight Partners 報導", "url": "https://www.insightpartners.com/ideas/crewai-scaleup-ai-story/"}
+  ]
+}

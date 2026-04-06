@@ -1,0 +1,49 @@
+{
+  "id": "stable-diffusion",
+  "name": "Stable Diffusion",
+  "company": "Stability AI",
+  "category": "圖片生成",
+  "tags": ["open-source", "freemium", "image-generation"],
+  "oneLiner": "最廣泛使用的開源圖片生成模型，SD 3.5 採用 MMDiT 架構，提供從消費級硬體到專業級的多種版本。",
+  "overview": "Stable Diffusion 是由 Stability AI 開發的開源圖片生成模型，是目前使用最廣泛的開源圖片生成方案。最新版本 SD 3.5 採用 MMDiT（Multi-Modal Diffusion Transformer）架構，大幅改善文字渲染和提示遵循度。\nSD 3.5 提供三個版本：Large（最強品質和提示遵循，1 megapixel）、Medium（速度和品質平衡，4 步快速生成）、Small（適合消費級硬體，可高度客製化）。Stability AI 同時提供商業 API 產品：Stable Image Core（快速實惠，SDXL 後繼）和 Stable Image Ultra（基於 SD 3.5 的頂級品質）。\n2025 年 4 月已棄用 SD 3.0 API，自動升級至 SD 3.5。開源社群生態極為豐富，ComfyUI、Automatic1111 等前端工具和大量 LoRA 微調模型可用。",
+  "pros": [
+    "完全開源，可本地部署和自由修改",
+    "SD 3.5 Small 可在消費級 GPU（8GB VRAM）上運行",
+    "社群生態最豐富——數千個 LoRA、ControlNet 等擴展",
+    "ComfyUI / Automatic1111 等成熟的圖形介面",
+    "可高度客製化和微調",
+    "MMDiT 架構在文字渲染上大幅進步"
+  ],
+  "cons": [
+    "SD 3.5 品質不及 Midjourney V7/V8 或 FLUX.2 Pro",
+    "Stability AI 公司財務狀況不穩定",
+    "本地部署需要一定技術門檻",
+    "SD 3.5 Large 需 24GB+ VRAM",
+    "開源授權條款較複雜（非完全 Apache 2.0）",
+    "模型更新速度落後 Flux 和 Midjourney"
+  ],
+  "features": [
+    {"name": "SD 3.5 Large", "desc": "最強品質，1MP 解析度，專業級提示遵循"},
+    {"name": "SD 3.5 Medium", "desc": "速度與品質平衡，4 步快速生成"},
+    {"name": "SD 3.5 Small", "desc": "消費級硬體可用，高度可客製化"},
+    {"name": "MMDiT 架構", "desc": "Multi-Modal Diffusion Transformer，改善文字和提示處理"},
+    {"name": "ControlNet / LoRA", "desc": "豐富的社群擴展和微調模型生態"},
+    {"name": "Stable Image Ultra API", "desc": "基於 SD 3.5 的商業級 API 服務"}
+  ],
+  "history": [
+    {"date": "2022-08", "event": "Stable Diffusion 1.0 開源發布，掀起 AI 圖片生成開源浪潮"},
+    {"date": "2022-11", "event": "SD 2.0 發布，架構改良"},
+    {"date": "2023-07", "event": "SDXL 發布，品質大幅提升"},
+    {"date": "2024-02", "event": "SD 3.0 發布，首次採用 MMDiT 架構"},
+    {"date": "2024-10", "event": "SD 3.5 系列發布（Large/Medium/Small）"},
+    {"date": "2025-04", "event": "SD 3.0 API 棄用，自動升級至 SD 3.5"}
+  ],
+  "pricing": "開源模型免費下載使用。Stability AI API：Stable Image Core $0.03/張、Stable Image Ultra $0.08/張。Stability AI Platform 提供信用額度制。",
+  "competitors": ["Flux", "Midjourney", "DALL-E 3", "Imagen 4"],
+  "links": [
+    {"title": "Stability AI 官網", "url": "https://stability.ai"},
+    {"title": "Stable Diffusion 模型", "url": "https://stability.ai/stable-image"},
+    {"title": "Stability AI 開發者平台", "url": "https://platform.stability.ai"},
+    {"title": "Hugging Face SD 3.5", "url": "https://huggingface.co/stabilityai"}
+  ]
+}

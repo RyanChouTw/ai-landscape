@@ -1,0 +1,51 @@
+{
+  "id": "suno",
+  "name": "Suno",
+  "company": "Suno",
+  "category": "音樂生成",
+  "tags": ["closed", "freemium", "music-generation"],
+  "oneLiner": "AI 音樂生成平台，V5 模型可在 30-60 秒內生成完整歌曲（含人聲、歌詞、配器），Premier 方案含 Suno Studio AI 原生 DAW。",
+  "overview": "Suno 是目前最受歡迎的 AI 音樂生成平台，由前 Kensho AI 團隊於 2021 年在劍橋（麻州）創立。只需文字提示或歌詞，就能在 30-60 秒內生成包含人聲、歌詞、完整配器和曲目結構的原創歌曲。\n最新的 V5 模型在音質保真度、音樂結構和人聲真實感上達到 1,293 Elo 評分，超越所有前代和競品。Pro 和 Premier 用戶可使用 V5，免費用戶使用 V4.5-All。\nSuno Studio（Premier 專屬）是 AI 原生的數位音訊工作站（DAW），提供多軌編輯、MIDI 匯出、stem 分離和批量生成。2025 年 6 月 Suno 收購了 WavTool，進一步強化編輯能力。Suno 已吸引 YouTube 創作者、社群媒體達人和獨立音樂人等專業用戶群。",
+  "pros": [
+    "V5 模型品質領先——1,293 Elo，人聲極度真實",
+    "30-60 秒生成完整歌曲，含人聲、歌詞、配器",
+    "Suno Studio AI 原生 DAW，多軌編輯和 MIDI 匯出",
+    "支援 Pop、EDM、Rock 等多元曲風",
+    "Pro 方案含商業使用權",
+    "免費方案每日 50 credits 可體驗",
+    "Song Editor 可後期修改特定段落"
+  ],
+  "cons": [
+    "免費方案不含商業使用權",
+    "AI 生成音樂的版權歸屬仍有法律灰色地帶",
+    "V5 僅 Pro/Premier 用戶可用",
+    "Suno Studio 僅 Premier（$30/月）用戶可用",
+    "生成結果品質不穩定，可能需多次嘗試",
+    "對已有旋律的客製化控制有限"
+  ],
+  "features": [
+    {"name": "V5 模型", "desc": "1,293 Elo，音質、結構和人聲真實感業界頂尖"},
+    {"name": "文字到歌曲", "desc": "文字提示或歌詞 30-60 秒生成完整歌曲"},
+    {"name": "Suno Studio", "desc": "AI 原生 DAW——多軌編輯、MIDI 匯出、批量生成"},
+    {"name": "Stem 分離", "desc": "下載歌曲的獨立音軌（人聲、鼓、貝斯等）"},
+    {"name": "Song Editor", "desc": "後期修改歌曲特定段落"},
+    {"name": "多曲風支援", "desc": "Pop、EDM、Rock、Jazz、古典等多元風格"}
+  ],
+  "history": [
+    {"date": "2021-01", "event": "Suno 由前 Kensho 團隊在劍橋創立"},
+    {"date": "2023-04", "event": "開源 Bark 文字轉語音模型"},
+    {"date": "2023-12", "event": "Suno 公開上線，與 Microsoft Copilot 合作"},
+    {"date": "2024-03", "event": "V3 發布，支援 4 分鐘歌曲"},
+    {"date": "2024-11", "event": "V4 發布"},
+    {"date": "2025-06", "event": "收購 WavTool，推出進階編輯介面和 Suno Studio"},
+    {"date": "2025-11", "event": "Series C 融資"},
+    {"date": "2026-01", "event": "V5 發布，1,293 Elo 評分"}
+  ],
+  "pricing": "Free（每日 50 credits，約 10 首歌）、Pro $10/月（2,500 credits/月，約 500 首歌，含商業權、Song Editor、stem）、Premier $30/月（10,000 credits/月，約 2,000 首歌，含 Suno Studio、MIDI 匯出、批量生成）。年付 8 折。",
+  "competitors": ["Udio", "AIVA", "Soundraw", "Boomy"],
+  "links": [
+    {"title": "Suno 官網", "url": "https://suno.com"},
+    {"title": "Suno 定價", "url": "https://suno.com/pricing"},
+    {"title": "Suno 模型時間線", "url": "https://help.suno.com/en/articles/5782721"}
+  ]
+}

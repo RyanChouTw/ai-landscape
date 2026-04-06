@@ -1,0 +1,53 @@
+{
+  "id": "kagi",
+  "name": "Kagi",
+  "company": "Kagi Inc.",
+  "category": "AI 搜尋",
+  "tags": ["closed", "paid"],
+  "oneLiner": "用戶付費、零廣告、零追蹤的隱私搜尋引擎，混合自有索引與多個搜尋引擎，內建 AI 助手、Universal Summarizer 和 Kagi Translate。",
+  "overview": "Kagi 是一個以用戶付費模式運作的搜尋引擎，完全沒有廣告和追蹤。其混合架構結合 Kagi 自家爬取的索引，加上匿名化的 Google、Bing、Brave API 呼叫，提供高品質且低垃圾資訊的搜尋結果。\nKagi 的核心理念是：搜尋引擎的客戶應該是使用者而非廣告主。這使得搜尋結果排序純粹基於相關性和品質，而非廣告出價。\n內建功能包括 Lenses（自訂搜尋範圍）、個人化結果排序、Universal Summarizer（一鍵摘要任何網頁或文件）、Kagi Translate（翻譯服務）、Kagi Assistant（AI 助手，Ultimate 方案支援 premium 模型）。\n介面極簡、專注生產力，適合對搜尋品質有高要求且重視隱私的專業用戶。",
+  "pros": [
+    "零廣告、零追蹤、零噪音",
+    "搜尋品質高——結合多個索引來源，降低垃圾資訊",
+    "Lenses 可自訂搜尋範圍（如只搜技術部落格）",
+    "Universal Summarizer 一鍵摘要任何網頁",
+    "Kagi Assistant AI 助手內建",
+    "個人化結果排序——可手動提升或降低特定網站權重",
+    "隱私導向，用戶才是客戶"
+  ],
+  "cons": [
+    "需要付費（$5-25/月），大多數人習慣免費搜尋",
+    "Starter 方案有搜尋次數限制（300 次/月）",
+    "索引規模仍不及 Google",
+    "部分地區搜尋結果品質不穩定",
+    "生態系統封閉，瀏覽器整合不如 Google 無縫",
+    "用戶基數小，社群和支援資源較少"
+  ],
+  "features": [
+    {"name": "混合搜尋索引", "desc": "結合自有爬取索引與 Google、Bing、Brave 的匿名化 API"},
+    {"name": "Lenses", "desc": "自訂搜尋範圍，只看特定類型的網站"},
+    {"name": "Universal Summarizer", "desc": "一鍵摘要任何網頁、PDF 或文件"},
+    {"name": "Kagi Assistant", "desc": "AI 助手，Ultimate 方案支援 premium 模型"},
+    {"name": "Kagi Translate", "desc": "內建翻譯服務"},
+    {"name": "個人化排序", "desc": "手動提升或降低特定網站在搜尋結果中的權重"},
+    {"name": "零追蹤架構", "desc": "不收集用戶資料，不賣廣告"}
+  ],
+  "history": [
+    {"date": "2022-06", "event": "Kagi Search 公開 Beta"},
+    {"date": "2023-03", "event": "正式推出付費方案"},
+    {"date": "2023-09", "event": "推出 Universal Summarizer"},
+    {"date": "2024-03", "event": "加入 Kagi Assistant AI 助手"},
+    {"date": "2024-06", "event": "推出 Kagi Translate"},
+    {"date": "2025-01", "event": "Ultimate 方案加入 premium AI 模型"},
+    {"date": "2025-06", "event": "Family Plan 推出"},
+    {"date": "2026-01", "event": "持續優化搜尋品質與 AI 功能"}
+  ],
+  "pricing": "Starter $5/月（300 次搜尋、300 次 AI 互動）/ Professional $10/月（無限搜尋、standard AI 模型）/ Ultimate $25/月（無限搜尋、premium AI 模型）。Family Plan 可升級成員 +$15/月/人。",
+  "competitors": ["Google AI Overview", "Perplexity", "DuckDuckGo", "Brave Search", "You.com"],
+  "links": [
+    {"title": "Kagi 官網", "url": "https://kagi.com"},
+    {"title": "Kagi 定價", "url": "https://kagi.com/pricing"},
+    {"title": "Kagi 文件", "url": "https://help.kagi.com"},
+    {"title": "Kagi Blog", "url": "https://blog.kagi.com"}
+  ]
+}

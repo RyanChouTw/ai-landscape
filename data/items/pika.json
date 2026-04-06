@@ -1,0 +1,49 @@
+{
+  "id": "pika",
+  "name": "Pika",
+  "company": "Pika",
+  "category": "影片生成",
+  "tags": ["closed", "freemium", "video-generation"],
+  "oneLiner": "專注創意影片特效的 AI 影片生成平台，Pika 2.5 引擎提供 Pikaffects 物理模擬、自動音效同步和 PikaStream 即時影片。",
+  "overview": "Pika 是專注於創意影片生成的 AI 平台，由史丹佛大學 AI 實驗室研究人員創立。與其他影片生成工具不同，Pika 更強調創意特效和趣味性，而非純粹的寫實影片生成。\n最新的 Pika 2.5 引擎帶來多項特色功能：Pikaffects 預設物理模擬效果可套用到任何物件（如車輛碰撞自動產生金屬碰撞聲）；升級的 Lipsync 處理複雜表情；自動音效生成匹配畫面動作。\n新產品線包括：PikaStream 1.0 即時模型為 AI Agent 提供視覺、語音和即時影像；以及一款 AI 社交影片 App（早期存取中），專為 AI 原生社交內容設計。Pika 定位介於專業工具和社交娛樂之間，以創意表達力為核心差異化。",
+  "pros": [
+    "Pikaffects 物理模擬特效獨特且有趣",
+    "自動音效同步，匹配畫面動作",
+    "Lipsync 升級處理複雜表情",
+    "PikaStream 即時模型適合 AI Agent 場景",
+    "免費方案 80 credits 可體驗基本功能",
+    "創意特效導向，與其他工具差異化明顯",
+    "年付 Standard 僅 $8/月，入門門檻低"
+  ],
+  "cons": [
+    "免費方案僅 480p、有浮水印",
+    "信用額度制，成本不易預測",
+    "影片品質（寫實度）不及 Veo 3.1 或 Kling 3.0",
+    "最高解析度和影片長度較競品受限",
+    "專注創意特效，專業影片製作能力不足",
+    "API 存取較受限制"
+  ],
+  "features": [
+    {"name": "Pikaffects", "desc": "預設物理模擬效果套件，套用到任何物件"},
+    {"name": "自動音效同步", "desc": "根據畫面動作自動生成匹配音效"},
+    {"name": "Lipsync 升級", "desc": "處理複雜臉部表情和口型同步"},
+    {"name": "PikaStream 1.0", "desc": "即時模型，為 AI Agent 提供影像和語音"},
+    {"name": "Pikascenes", "desc": "Pika 2.2 場景生成功能"},
+    {"name": "Pikaswaps / Pikatwists", "desc": "物件替換和風格轉換工具"}
+  ],
+  "history": [
+    {"date": "2023-06", "event": "Pika 由史丹佛 AI 實驗室成員創立"},
+    {"date": "2023-11", "event": "Pika 1.0 公開發布"},
+    {"date": "2024-06", "event": "Pika 1.5 發布，引入 Pikaffects"},
+    {"date": "2024-11", "event": "Pika 2.0 發布，品質大幅提升"},
+    {"date": "2025-05", "event": "Pika 2.2 發布（Pikascenes）"},
+    {"date": "2025-10", "event": "Pika 2.5 發布，物理模擬和音效同步"},
+    {"date": "2026-01", "event": "PikaStream 1.0 和 AI 社交影片 App 早期存取"}
+  ],
+  "pricing": "Free（80 credits/月、480p、浮水印）、Standard $8/月年付（700 credits/月、無浮水印、可商用）、Pro $28/月年付（2,300 credits/月）、Fancy $76/月年付（6,000 credits/月、最快速度）。",
+  "competitors": ["Runway Gen-4", "Veo 3.1", "Kling 3.0", "Seedance", "Sora 2"],
+  "links": [
+    {"title": "Pika 官網", "url": "https://pika.art"},
+    {"title": "Pika 定價", "url": "https://pika.art/pricing"}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "dify",
+  "name": "Dify",
+  "company": "LangGenius, Inc.",
+  "category": "Agent 框架",
+  "tags": ["open-source", "framework", "low-code", "rag"],
+  "oneLiner": "開源的 LLM 應用開發平台，提供視覺化 workflow、RAG pipeline、agent 工具和模型管理。18 萬開發者使用，從想法到上線最快的 AI 應用平台。",
+  "overview": "Dify 是一個開源的 LLM 應用建構平台，以直覺的視覺化介面整合了 AI workflow、RAG pipeline、agent 能力、模型管理和觀測性功能，讓開發者能快速從原型到生產。\n平台支援數百種 LLM（GPT、Claude、Mistral、Llama 等），提供 50+ 內建 agent 工具（Google Search、DALL-E、Stable Diffusion、WolframAlpha 等），以及完整的 RAG pipeline（從文件 ingestion 到 retrieval，支援 PDF、PPT 等格式）。\nDify 的視覺化 workflow 編輯器讓非工程師也能建構複雜的 AI 工作流。Agent 可基於 Function Calling 或 ReAct 模式定義，並搭配預建或自訂工具。\n截至 2026 年，超過 18 萬開發者在 Dify 上建構了 AI 應用，社群持續快速成長。Dify 可自架（Docker Compose 一鍵部署）或使用雲端託管版本。\n典型使用場景包括 chatbot、文件 Q&A、內容生成和工作流自動化。",
+  "pros": [
+    "視覺化 workflow 編輯器，低程式碼門檻，非工程師也能使用",
+    "開源可自架，資料完全掌控",
+    "支援數百種 LLM，模型切換零成本",
+    "完整 RAG pipeline 內建，無需額外工具",
+    "50+ 內建 agent 工具",
+    "Docker Compose 一鍵部署，上手極快",
+    "18 萬開發者社群，生態活躍"
+  ],
+  "cons": [
+    "複雜 agent 場景不如 LangGraph/CrewAI 靈活",
+    "視覺化編輯器在超大 workflow 時效能下降",
+    "雲端版 message credit 限制較嚴",
+    "自架版本需自行維護基礎設施",
+    "程式化 API 的彈性不如純 code 框架"
+  ],
+  "features": [
+    {"name": "視覺化 Workflow", "desc": "拖拉式 canvas 建構和測試 AI 工作流"},
+    {"name": "RAG Pipeline", "desc": "文件 ingestion 到 retrieval 全流程，支援 PDF/PPT 等格式"},
+    {"name": "模型管理", "desc": "整合數百種 LLM，統一介面切換和管理"},
+    {"name": "Agent 工具", "desc": "50+ 內建工具，支援 Function Calling 和 ReAct 模式"},
+    {"name": "Plugin 系統", "desc": "官方 plugin 庫和自訂 plugin 支援"},
+    {"name": "觀測性", "desc": "內建 trace 記錄和效能監控"},
+    {"name": "一鍵部署", "desc": "Docker Compose 快速自架部署"}
+  ],
+  "history": [
+    {"date": "2023-05", "event": "Dify.ai 開源發布"},
+    {"date": "2023-12", "event": "Workflow 視覺化編輯器上線"},
+    {"date": "2024-04", "event": "Plugin 系統發布"},
+    {"date": "2024-09", "event": "RAG Pipeline 大幅強化"},
+    {"date": "2025-03", "event": "社群突破 10 萬開發者"},
+    {"date": "2025-08", "event": "Agent 能力強化，支援 ReAct 和 Function Calling"},
+    {"date": "2026-01", "event": "社群達到 18 萬開發者，官方 plugin 庫上線"}
+  ],
+  "pricing": "開源自架免費。Dify Cloud：Sandbox 免費（200 message credits）/ Professional $59/月（5,000 credits，3 人）/ Team $159/月（10,000 credits，50 人）/ Enterprise 客製定價。年繳送 2 個月。",
+  "competitors": ["LangChain", "Flowise", "n8n", "Coze", "Botpress"],
+  "links": [
+    {"title": "Dify 官網", "url": "https://dify.ai"},
+    {"title": "GitHub", "url": "https://github.com/langgenius/dify"},
+    {"title": "文件", "url": "https://docs.dify.ai"},
+    {"title": "定價", "url": "https://dify.ai/pricing"}
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "imagen-4",
+  "name": "Imagen 4",
+  "company": "Google",
+  "category": "圖片生成",
+  "tags": ["closed", "paid", "image-generation"],
+  "oneLiner": "Google DeepMind 開發的圖片生成模型家族，提供 Fast / 標準 / Ultra 三種版本，支援原生 2K 解析度和精確文字渲染。",
+  "overview": "Imagen 4 是 Google DeepMind 開發的最新圖片生成模型家族，包含三個版本：Imagen 4 Fast（快速生成，約 2.7 秒/張）、Imagen 4（旗艦版，平衡品質與速度）和 Imagen 4 Ultra（最高保真度，照片級真實感）。\nImagen 4 在文字渲染上有重大突破，能精確處理長而複雜的提示詞。支援最高 2K 解析度輸出，可渲染從寫實攝影、印象派到抽象藝術等多種風格。Fast 版本比前代快 10 倍。\n所有輸出均嵌入 SynthID 不可見數位浮水印，支援 AI 生成內容識別。透過 Gemini API、Vertex AI 和 Google AI Studio 提供服務。",
+  "pros": [
+    "Ultra 版本照片級真實感業界頂尖",
+    "文字渲染精準度大幅超越前代",
+    "支援原生 2K 解析度輸出",
+    "Fast 版本僅需 2.7 秒，適合高量產場景",
+    "SynthID 浮水印支援 AI 內容溯源",
+    "與 Google 生態系（Gemini、Vertex AI）深度整合",
+    "長且複雜的提示詞處理能力強"
+  ],
+  "cons": [
+    "不開源，僅透過 API 使用",
+    "定價以 API 使用量計費，大量使用成本可觀",
+    "Ultra 版本成本較高",
+    "安全過濾較嚴格，某些創意場景受限",
+    "不如 Midjourney 的藝術風格多樣性",
+    "需要 Google Cloud 帳號才能使用 Vertex AI API"
+  ],
+  "features": [
+    {"name": "Imagen 4 Fast", "desc": "約 2.7 秒/張，適合快速生成和大量任務"},
+    {"name": "Imagen 4 Ultra", "desc": "最高保真度，照片級真實感和極精確提示遵循"},
+    {"name": "2K 解析度", "desc": "Imagen 4 和 Ultra 均支援原生 2K 解析度輸出"},
+    {"name": "精確文字渲染", "desc": "圖片內文字渲染精準度大幅提升"},
+    {"name": "SynthID 浮水印", "desc": "嵌入不可見數位浮水印，識別 AI 生成內容"},
+    {"name": "多風格支援", "desc": "寫實攝影、印象派、抽象、插畫等風格精確渲染"}
+  ],
+  "history": [
+    {"date": "2022-05", "event": "Imagen 1 由 Google Brain 發布（僅論文）"},
+    {"date": "2023-12", "event": "Imagen 2 發布，首次透過 Vertex AI 提供 API"},
+    {"date": "2024-12", "event": "Imagen 3 發布，品質大幅提升"},
+    {"date": "2025-05", "event": "Imagen 4 在 Google I/O 2025 發布，包含 Fast 和 Ultra 版本"},
+    {"date": "2026-01", "event": "Imagen 4 Fast 上線 Gemini API，GA（正式上線）"}
+  ],
+  "pricing": "Imagen 4 Fast $0.02/張、Imagen 4 標準版定價較高、Imagen 4 Ultra 最高。透過 Vertex AI API 或 Gemini API 使用，按量計費。Google AI Pro 方案（$19.99/月）可透過 Gemini 應用程式使用。",
+  "competitors": ["Midjourney", "DALL-E 3", "Flux", "Stable Diffusion"],
+  "links": [
+    {"title": "Imagen 官網", "url": "https://deepmind.google/models/imagen/"},
+    {"title": "Gemini API Imagen 文件", "url": "https://ai.google.dev/gemini-api/docs/models/imagen"},
+    {"title": "Vertex AI Imagen 文件", "url": "https://docs.cloud.google.com/vertex-ai/generative-ai/docs/models/imagen/4-0-generate"},
+    {"title": "Google AI Studio", "url": "https://aistudio.google.com"}
+  ]
+}

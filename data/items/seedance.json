@@ -1,0 +1,48 @@
+{
+  "id": "seedance",
+  "name": "Seedance",
+  "company": "ByteDance",
+  "category": "影片生成",
+  "tags": ["closed", "freemium", "video-generation"],
+  "oneLiner": "字節跳動開發的影片生成模型，Seedance 2.0 採統一多模態音視訊架構，支援導演級控制、9 張參考圖 + 3 段影片 + 3 段音訊輸入。",
+  "overview": "Seedance 是字節跳動（ByteDance）開發的 AI 影片生成模型，Seedance 2.0 於 2026 年 2 月 12 日發布，是目前最先進的多模態影片生成系統之一。透過 Dreamina 平台國際化運營，2026 年 3 月整合進 CapCut。\nSeedance 2.0 的核心創新是「導演級控制」——不只描述場景，還能指定鏡頭運動、燈光、陰影、角色動作和音訊提示。支援單次生成最多 9 張參考圖片、3 段影片和 3 段音訊的混合輸入。\n影片最長 15 秒、最高 1080p，原生音訊生成包含清晰對話（精確口型同步）和精準同步音效。複雜鏡頭技術如推軌變焦（dolly zoom）、跟蹤鏡頭、手持搖晃等均有良好支持。所有輸出嵌入不可見浮水印。",
+  "pros": [
+    "導演級控制——鏡頭、燈光、動作精細指定",
+    "單次可輸入 9 圖 + 3 影片 + 3 音訊的豐富參考",
+    "原生音視訊聯合生成，口型同步精確",
+    "複雜鏡頭技術（dolly zoom、rack focus、tracking）",
+    "整合 CapCut，觸及龐大創作者社群",
+    "免費方案提供每日 225 tokens 體驗",
+    "物理模擬和動作真實感出色"
+  ],
+  "cons": [
+    "最高僅 1080p，不如 Veo 3.1 和 Kling 3.0 的 4K",
+    "最長 15 秒，長影片能力受限",
+    "免費 tokens 跨所有 Dreamina 工具共享",
+    "中國公司開發，部分地區可能有隱私顧慮",
+    "國際版（Dreamina）定價高於中國版（即夢）",
+    "不開源，無 API 文件公開"
+  ],
+  "features": [
+    {"name": "導演級控制", "desc": "指定鏡頭運動、燈光、陰影、角色動作和音訊提示"},
+    {"name": "多參考輸入", "desc": "單次最多 9 圖 + 3 影片 + 3 音訊混合輸入"},
+    {"name": "原生音視訊生成", "desc": "同步生成影片和音訊，對話口型精確同步"},
+    {"name": "複雜鏡頭技術", "desc": "dolly zoom、rack focus、tracking shot、POV 切換"},
+    {"name": "CapCut 整合", "desc": "直接在 CapCut 中使用 Seedance 2.0"},
+    {"name": "安全浮水印", "desc": "所有輸出嵌入不可見浮水印，臉部和 IP 保護"}
+  ],
+  "history": [
+    {"date": "2024-09", "event": "Seedance 1.0 首次發布"},
+    {"date": "2025-06", "event": "Seedance 1.5 發布，改善動作和一致性"},
+    {"date": "2026-02", "event": "Seedance 2.0 發布，統一多模態音視訊架構"},
+    {"date": "2026-02", "event": "Dreamina 國際版上線"},
+    {"date": "2026-03", "event": "Seedance 2.0 整合進 CapCut"}
+  ],
+  "pricing": "免費方案：新帳號約 800 秒免費額度 + 每日 225 tokens（跨工具共享）。付費方案：Basic $18/月、Standard $42/月、Advanced $84/月。中國版（即夢）：69 RMB/月起（約 $9.60）。",
+  "competitors": ["Veo 3.1", "Runway Gen-4", "Kling 3.0", "Pika", "Sora 2"],
+  "links": [
+    {"title": "Seedance 2.0 官網", "url": "https://seed.bytedance.com/en/seedance2_0"},
+    {"title": "Dreamina 平台", "url": "https://dreamina.com"},
+    {"title": "TechCrunch 報導", "url": "https://techcrunch.com/2026/03/26/bytedances-new-ai-video-generation-model-dreamina-seedance-2-0-comes-to-capcut/"}
+  ]
+}

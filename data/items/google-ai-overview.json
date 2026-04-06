@@ -1,0 +1,52 @@
+{
+  "id": "google-ai-overview",
+  "name": "Google AI Overview",
+  "company": "Google",
+  "category": "AI 搜尋",
+  "tags": ["closed", "free"],
+  "oneLiner": "Google 搜尋結果頁的 AI 摘要功能，由 Gemini 3 驅動，出現在 30-45% 資訊型搜尋中，43% 零點擊率，並進化為對話式 AI Mode。",
+  "overview": "Google AI Overview 是 Google 搜尋結果頁上的 AI 生成摘要功能，由 Gemini 3 模型驅動。目前出現在約 30-45% 的資訊型搜尋結果中，特別是健康、金融、SaaS、電商和 B2B 領域。\nAI Overview 提供搜尋問題的快速 AI 摘要，平均閱讀時間 21 秒，43% 的使用者不再點擊任何網頁（零點擊率）。用戶可直接從 AI Overview 提出追問，進入 AI Mode 進行對話式搜尋。\nAI Mode 是更深度的對話搜尋體驗，支援多模態輸入（語音、文字、圖片、文件）、上下文記憶、主題深入探索、來源引用。進階功能包括 Agent 式規劃與預訂協助、Canvas 工作區、自動化追蹤（價格監控、事件提醒）。\n2026 年 3 月，Search Live（即時搜尋）已擴展至 200+ 國家。",
+  "pros": [
+    "完全免費，無需額外訂閱",
+    "由最新 Gemini 3 模型驅動",
+    "30-45% 搜尋結果自動觸發，覆蓋面廣",
+    "AI Mode 支援對話式深度搜尋",
+    "多模態輸入：語音、文字、圖片、文件",
+    "Agent 式功能：規劃、預訂、價格追蹤",
+    "Search Live 已擴展至 200+ 國家"
+  ],
+  "cons": [
+    "43% 零點擊率嚴重衝擊內容創作者和 SEO 生態",
+    "AI 摘要可能包含不準確資訊",
+    "無法關閉或自訂 AI Overview 顯示偏好",
+    "資料來源透明度不足",
+    "對 Google 搜尋生態的壟斷性加劇",
+    "廣告與 AI 內容的界線日漸模糊"
+  ],
+  "features": [
+    {"name": "AI Overview", "desc": "搜尋結果頁自動顯示 AI 生成摘要"},
+    {"name": "AI Mode", "desc": "對話式搜尋體驗，支援多輪對話與上下文記憶"},
+    {"name": "多模態搜尋", "desc": "支援語音、文字、圖片、文件輸入"},
+    {"name": "Search Live", "desc": "即時搜尋，已擴展至 200+ 國家"},
+    {"name": "Agent 功能", "desc": "規劃、預訂協助、價格追蹤、事件監控"},
+    {"name": "Canvas 工作區", "desc": "在搜尋中儲存和整理資訊的專屬空間"},
+    {"name": "來源引用", "desc": "AI 回應附帶可點擊的來源連結"}
+  ],
+  "history": [
+    {"date": "2023-05", "event": "Google I/O 發布 SGE（Search Generative Experience）實驗"},
+    {"date": "2024-05", "event": "Google I/O 正式推出 AI Overviews，取代 SGE"},
+    {"date": "2024-10", "event": "AI Overviews 擴展至更多國家和語言"},
+    {"date": "2025-03", "event": "推出 AI Mode，支援對話式搜尋"},
+    {"date": "2025-06", "event": "加入 Agent 式功能：規劃、預訂、追蹤"},
+    {"date": "2025-10", "event": "Gemini 3 成為 AI Overviews 預設模型"},
+    {"date": "2026-01", "event": "Canvas 工作區上線"},
+    {"date": "2026-03", "event": "Search Live 擴展至 200+ 國家"}
+  ],
+  "pricing": "完全免費，整合在 Google 搜尋中。Google One AI Premium（$19.99/月）可獲得更進階的 AI 功能。",
+  "competitors": ["Perplexity", "Kagi", "ChatGPT Search", "Bing Copilot", "Arc Search"],
+  "links": [
+    {"title": "Google AI Features 文件", "url": "https://developers.google.com/search/docs/appearance/ai-features"},
+    {"title": "Google AI 更新", "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-march-2026/"},
+    {"title": "AI Mode 說明", "url": "https://www.promodo.com/blog/google-ai-mode"}
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "whisper",
+  "name": "Whisper",
+  "company": "OpenAI",
+  "category": "語音辨識",
+  "tags": ["open-source", "free", "asr"],
+  "oneLiner": "OpenAI 開源的通用語音辨識模型，支援 99 種語言轉錄和翻譯，Large-v3 是部署最廣泛的開源 ASR 模型。Turbo 版本達 216x 即時速度。",
+  "overview": "Whisper 是 OpenAI 於 2022 年開源的通用語音辨識模型，透過大規模弱監督學習訓練而成。支援 99 種語言的轉錄、翻譯（至英文）、語言識別和時間戳預測，全部在單一統一模型中完成。\nWhisper Large-v3 是最新的開源版本（2023/11 發布），使用 128 Mel 頻率 bin（前代為 80），提升音訊細節捕捉。比 v2 在多語言上降低 10-20% 錯誤率。Large-v3-turbo 則提供 216x 即時速度因子，在維持接近的準確度下大幅加速。\nWhisper 是目前部署最廣泛的開源 ASR 模型，被 faster-whisper、WhisperX、Handy 等大量下游工具採用。OpenAI 也透過 API 提供基於 Whisper 的轉錄服務。\n注意：OpenAI 於 2025 年 3 月推出基於 GPT-4o 的新轉錄模型，錯誤率低於所有 Whisper 版本，但 Whisper Large-v3 仍是最廣泛使用的開源方案。",
+  "pros": [
+    "完全開源（MIT 授權），可自由商用和修改",
+    "99 種語言支援，多語言能力強",
+    "Turbo 版本 216x 即時速度，推理極快",
+    "生態系極豐富——faster-whisper、WhisperX 等",
+    "可完全離線運行，無需網路",
+    "多種模型大小（tiny 到 large），適配不同硬體",
+    "社群活躍，持續有第三方改良版本"
+  ],
+  "cons": [
+    "Large-v3 開源版已停止更新（2023/11）",
+    "GPT-4o 基轉錄模型品質已超越（但非開源）",
+    "不如 Parakeet v2 在英文 ASR 的 WER 低",
+    "不支援即時串流轉錄（需第三方封裝）",
+    "Large-v3 需較高 VRAM（約 10GB）",
+    "長音訊處理需分段，可能有邊界問題",
+    "不含 diarization（說話者分辨）功能"
+  ],
+  "features": [
+    {"name": "99 語言轉錄", "desc": "支援 99 種語言的語音轉文字"},
+    {"name": "翻譯至英文", "desc": "將任何語言的語音直接翻譯為英文文字"},
+    {"name": "時間戳預測", "desc": "精確的 word-level 和 segment-level 時間戳"},
+    {"name": "128 Mel 頻率", "desc": "Large-v3 使用 128 Mel bin 提升音訊細節捕捉"},
+    {"name": "多模型大小", "desc": "tiny/base/small/medium/large，適配不同硬體"},
+    {"name": "Turbo 模式", "desc": "Large-v3-turbo 達 216x 即時速度因子"}
+  ],
+  "history": [
+    {"date": "2022-09", "event": "Whisper 開源發布，支援多語言語音辨識"},
+    {"date": "2022-12", "event": "Whisper Large-v2 發布"},
+    {"date": "2023-11", "event": "Whisper Large-v3 發布（128 Mel bin）"},
+    {"date": "2024-03", "event": "Whisper Large-v3-turbo 發布，216x 即時速度"},
+    {"date": "2025-03", "event": "OpenAI 推出基於 GPT-4o 的轉錄 API（非開源，品質更高）"}
+  ],
+  "pricing": "開源模型完全免費。OpenAI API：Whisper $0.006/分鐘。GPT-4o audio transcription $0.006/分鐘（品質更高但非開源）。",
+  "competitors": ["VibeVoice", "Parakeet", "FunASR", "Google Cloud STT", "Azure Speech"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/openai/whisper"},
+    {"title": "Whisper Large-v3（Hugging Face）", "url": "https://huggingface.co/openai/whisper-large-v3"},
+    {"title": "OpenAI Whisper 介紹", "url": "https://openai.com/index/whisper/"},
+    {"title": "OpenAI API", "url": "https://platform.openai.com/docs"}
+  ]
+}

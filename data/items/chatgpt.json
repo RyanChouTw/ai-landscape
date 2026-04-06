@@ -1,0 +1,61 @@
+{
+  "id": "chatgpt",
+  "name": "ChatGPT",
+  "company": "OpenAI",
+  "category": "聊天助手",
+  "tags": ["chat", "agent", "search", "paid"],
+  "oneLiner": "OpenAI 的旗艦 AI 助手，搭載 GPT-5.4 模型，支援搜尋、Agent Mode、Advanced Voice、Deep Research 和 Computer Use API。2026 年擁有六種訂閱方案。",
+  "overview": "ChatGPT 是 OpenAI 開發的 AI 助手，目前搭載最新的 GPT-5.4 模型（2026 年 3 月 5 日發布）。GPT-5.4 是一個統一的前沿模型，將進階推理、程式碼撰寫和原生 Computer Use 能力整合到單一系統中，支援 1M+ token context window 和五級可調推理深度。\n\nChatGPT 已從聊天機器人演進為 AI 工作空間。Agent Mode（前身為 Operator）讓使用者透過網頁瀏覽器自動化任務——訂機票、填表單、線上購物等。Advanced Voice Mode 對所有用戶開放，Free 用戶每日數小時、Plus 近乎無限。Deep Research 可深度搜尋並彙整研究報告。\n\nMemory 功能跨對話記憶使用者偏好，支援專案專用記憶和搜尋/排序功能。2026 年提供 Free、Go、Plus、Pro、Business、Enterprise 六種方案，其中 Go 方案（$8/月含廣告）是新增的低價入門選項。",
+  "pros": [
+    "GPT-5.4 統一模型——推理、程式碼、Computer Use 一體化",
+    "Computer Use API 在 OSWorld 得分 75%，業界領先",
+    "1M+ token context window",
+    "Agent Mode 可自動化網頁任務（訂票、購物、填表等）",
+    "Advanced Voice Mode 全用戶開放，支援語調和風格調整",
+    "Deep Research 深度搜尋與報告生成",
+    "六種方案覆蓋從免費到企業的所有需求",
+    "Go 方案 $8/月提供低門檻入門（含廣告）",
+    "Memory 跨對話記憶，支援專案分類和搜尋"
+  ],
+  "cons": [
+    "Go 方案含廣告，體驗打折",
+    "Pro 方案 $200/月定價昂貴",
+    "Agent Mode 僅限網頁操作，無法控制桌面或本地應用",
+    "API 定價偏高（GPT-5.4 $2.50/$15 per M tokens）",
+    "Free 方案 GPT-5.4 使用量有限",
+    "隱私爭議——預設使用對話資料訓練模型（可關閉）",
+    "macOS Voice 功能於 2026/1 退役，整合至其他平台"
+  ],
+  "features": [
+    {"name": "GPT-5.4 模型", "desc": "統一前沿模型，五級推理深度控制，1M+ context window"},
+    {"name": "Agent Mode", "desc": "自動化網頁任務——訂機票、填表、購物等"},
+    {"name": "Computer Use API", "desc": "原生螢幕操控能力，OSWorld 75% 得分"},
+    {"name": "Deep Research", "desc": "深度搜尋網路並彙整研究報告"},
+    {"name": "Advanced Voice Mode", "desc": "語音對話，可調整語速、語調和風格"},
+    {"name": "Memory", "desc": "跨對話記憶偏好，支援專案分類和搜尋"},
+    {"name": "Web Search", "desc": "即時網路搜尋並附帶引用來源"},
+    {"name": "多模態", "desc": "支援圖片、檔案上傳和資料分析"},
+    {"name": "GPTs / Custom GPTs", "desc": "使用者可建立和分享自訂 GPT 應用"}
+  ],
+  "history": [
+    {"date": "2022-11", "event": "ChatGPT 發布（基於 GPT-3.5）"},
+    {"date": "2023-03", "event": "GPT-4 發布，ChatGPT Plus 方案上線"},
+    {"date": "2023-11", "event": "GPTs（Custom GPTs）和 GPT Store 發布"},
+    {"date": "2024-05", "event": "GPT-4o 發布，Advanced Voice Mode 預覽"},
+    {"date": "2024-12", "event": "o1 推理模型發布，ChatGPT Pro $200/月方案上線"},
+    {"date": "2025-01", "event": "Operator（網頁自動化代理）以 Pro-only 推出"},
+    {"date": "2025-06", "event": "GPT-5 發布"},
+    {"date": "2025-07", "event": "Operator 整合為 Agent Mode，開放 Plus 和 Pro 使用"},
+    {"date": "2025-12", "event": "GPT-5.2 發布"},
+    {"date": "2026-01", "event": "Go 方案（$8/月含廣告）上線，macOS Voice 退役"},
+    {"date": "2026-03", "event": "GPT-5.4 發布——五級推理、原生 Computer Use API、1M+ context"}
+  ],
+  "pricing": "Free（免費，有限 GPT-5.4）/ Go $8/月（含廣告）/ Plus $20/月 / Pro $200/月 / Business $25-30/用戶/月 / Enterprise 洽談。API：GPT-5.4 $2.50/$15、GPT-5.4 Pro $30/$180 per M tokens。",
+  "competitors": ["Claude Desktop", "Gemini App", "Perplexity", "Grok"],
+  "links": [
+    {"title": "ChatGPT", "url": "https://chatgpt.com"},
+    {"title": "ChatGPT 定價", "url": "https://chatgpt.com/pricing/"},
+    {"title": "OpenAI API 定價", "url": "https://openai.com/api/pricing/"},
+    {"title": "OpenAI 官網", "url": "https://openai.com"}
+  ]
+}

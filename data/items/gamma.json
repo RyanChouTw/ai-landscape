@@ -1,0 +1,51 @@
+{
+  "id": "gamma",
+  "name": "Gamma",
+  "company": "Gamma Tech, Inc.",
+  "category": "AI 設計",
+  "tags": ["closed", "freemium"],
+  "oneLiner": "AI 簡報與網站生成器，60 秒內從文字生成完整簡報，支援 20+ AI 模型、互動元素嵌入、Generate API，四層定價從免費到 Ultra。",
+  "overview": "Gamma 是 AI 驅動的簡報與網站生成工具，用戶輸入主題或大綱，60 秒內即可生成包含文字、圖片和專業排版的完整簡報。\n支援 20+ AI 模型進行文字和圖片生成。內建 Agent 功能可搜尋網路、精煉內容、重新設計整副簡報，全部透過自然語言對話完成。\n互動元素支援嵌入 YouTube/Vimeo/Loom 影片、GIF、即時圖表、表單（Typeform、Google Forms、Calendly）和網頁應用。\n2026 年新功能包括：Remix（快速改編簡報適應不同受眾）、Workspace Templates（團隊可重複使用的模板）、Nano-Banana Pro & HD 電影級視覺（Studio Mode）、Generate API（程式化大規模內容生成）、Make 整合（工作流程自動化）。\n定位介於 PowerPoint 和傳統簡報工具之間，特別適合快速內容產出。",
+  "pros": [
+    "60 秒生成完整簡報，速度極快",
+    "支援 20+ AI 模型，文字和圖片生成選擇多",
+    "免費方案即可使用（400 AI credits）",
+    "互動元素豐富——嵌入影片、表單、圖表",
+    "Agent 功能可用自然語言重新設計整副簡報",
+    "Generate API 支援程式化大規模內容生成",
+    "既是簡報也是網站，分享方式多元"
+  ],
+  "cons": [
+    "AI 生成內容品質不穩定，常需手動修改",
+    "免費方案有 Gamma branding 浮水印",
+    "設計自由度不如 PowerPoint 或 Keynote",
+    "匯出為 PowerPoint 格式時排版可能跑掉",
+    "企業級功能（自訂品牌、分析、API）需要 Pro 或以上",
+    "模板風格偏單一"
+  ],
+  "features": [
+    {"name": "AI 簡報生成", "desc": "輸入主題或大綱，60 秒生成完整簡報"},
+    {"name": "AI Agent", "desc": "搜尋網路、精煉內容、重新設計簡報，全部自然語言操作"},
+    {"name": "Remix", "desc": "快速改編簡報適應不同受眾"},
+    {"name": "互動元素", "desc": "嵌入影片、GIF、即時圖表、表單、網頁應用"},
+    {"name": "Generate API", "desc": "程式化內容生成，適合大規模自動化"},
+    {"name": "Studio Mode", "desc": "Nano-Banana Pro & HD 電影級視覺效果"},
+    {"name": "Workspace Templates", "desc": "團隊可重複使用的模板系統"}
+  ],
+  "history": [
+    {"date": "2022-08", "event": "Gamma 公開 Beta，AI 簡報生成工具"},
+    {"date": "2023-03", "event": "正式上線，免費方案吸引大量用戶"},
+    {"date": "2023-09", "event": "加入 AI 圖片生成功能"},
+    {"date": "2024-06", "event": "推出 Agent 功能——自然語言操控簡報"},
+    {"date": "2025-01", "event": "推出 Generate API，支援程式化內容生成"},
+    {"date": "2025-06", "event": "加入 Remix 和 Workspace Templates"},
+    {"date": "2025-10", "event": "整合 Nano-Banana Pro & HD Studio Mode"},
+    {"date": "2026-01", "event": "Generate API GA，Make 整合上線"}
+  ],
+  "pricing": "Free $0（400 AI credits，有 Gamma branding）/ Plus $8/月（年付）或 $10/月（無限 AI、無 branding）/ Pro $15/月（年付）或 $20/月（premium AI、自訂品牌、分析、API）/ Ultra 新推出（最進階 AI、100 自訂域名、搶先體驗新功能）。",
+  "competitors": ["Canva AI", "Beautiful.ai", "Tome", "Microsoft PowerPoint Copilot", "Google Slides AI"],
+  "links": [
+    {"title": "Gamma 官網", "url": "https://gamma.app"},
+    {"title": "Gamma 定價", "url": "https://gamma.app/pricing"}
+  ]
+}

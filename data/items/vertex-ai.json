@@ -1,0 +1,53 @@
+{
+  "id": "vertex-ai",
+  "name": "Google Vertex AI",
+  "company": "Google Cloud",
+  "category": "雲端平台",
+  "tags": ["cloud", "paid", "enterprise"],
+  "oneLiner": "Google Cloud 的 AI 平台，提供 Gemini 模型家族、Agent Builder、Model Garden 和完整的 MLOps 工具鏈。2026 年推出 Gemini 3 Flash/3.1 Pro 和 Veo 3.1 影片生成。",
+  "overview": "Google Vertex AI 是 Google Cloud 的統一 AI 平台，提供從模型訓練、推論到部署的完整 MLOps 工具鏈。平台以 Gemini 模型家族為核心，同時透過 Model Garden 提供第三方和開源模型。\n2026 年重大更新包括：Gemini 3 Flash（公開預覽，專攻 agentic 問題和程式碼能力）、Gemini 3.1 Pro（最先進推理模型，1M token context window，支援文字/音訊/圖片/影片/PDF/程式碼庫）、Veo 3.1 Lite（成本降低 50% 的影片生成）、以及 Lyria 音樂生成。\nAgent Builder 提供低程式碼視覺化設計器、Agent Engine Sessions 和 Memory Bank（GA），以及 Tool Governance 工具治理功能。Agent 身分驗證透過 Google-managed Context-Aware Access 政策預設保護。\n基礎設施方面，支援 A4X VM（NVIDIA GB200 NVL72 機架系統）進行大規模訓練，計劃於 2026 下半年提供 NVIDIA Vera Rubin NVL72。\n新客戶可獲得 $300 免費額度。定價採用按量計費模式，可透過 Committed Use Discounts（CUD）最多節省 55%。",
+  "pros": [
+    "Gemini 模型家族直接整合，效能最佳",
+    "Agent Builder 低程式碼 + Agent Engine 全託管",
+    "Model Garden 提供豐富的第三方和開源模型",
+    "完整 MLOps 工具鏈（訓練、評估、部署、監控）",
+    "Veo 影片生成和 Lyria 音樂生成等多模態能力",
+    "NVIDIA 最新硬體支援（GB200 NVL72、Vera Rubin）",
+    "CUD 最多省 55%，Search/Grounding 功能強"
+  ],
+  "cons": [
+    "Google Cloud 生態系綁定",
+    "定價複雜，無硬性支出上限",
+    "部分功能仍在 Preview，API 可能變動",
+    "學習曲線較陡（GCP 概念多）",
+    "非 Gemini 模型的整合體驗較差",
+    "閒置 endpoint 仍會計費"
+  ],
+  "features": [
+    {"name": "Gemini 模型", "desc": "Gemini 3 Flash、3.1 Pro 等最新模型直接可用"},
+    {"name": "Agent Builder", "desc": "低程式碼視覺化 agent 設計器 + Tool Governance"},
+    {"name": "Agent Engine", "desc": "全託管 agent 執行環境，Sessions 和 Memory Bank GA"},
+    {"name": "Model Garden", "desc": "第三方和開源模型市集"},
+    {"name": "Veo 影片生成", "desc": "Veo 3.1 Lite 低成本影片生成"},
+    {"name": "Lyria 音樂生成", "desc": "AI 音樂生成（公開預覽）"},
+    {"name": "Gemini Live API", "desc": "Native Audio 即時語音互動（GA）"}
+  ],
+  "history": [
+    {"date": "2021-05", "event": "Vertex AI 在 Google I/O 發布"},
+    {"date": "2023-06", "event": "Generative AI Studio 加入 Vertex AI"},
+    {"date": "2024-02", "event": "Gemini 模型上線 Vertex AI"},
+    {"date": "2024-08", "event": "Agent Builder 發布"},
+    {"date": "2025-03", "event": "Model Garden 和 Grounding 功能成熟"},
+    {"date": "2025-09", "event": "Veo 影片生成上線"},
+    {"date": "2026-01", "event": "Agent Engine Sessions/Memory Bank GA，Gemini Live API GA"},
+    {"date": "2026-03", "event": "Gemini 3 Flash 和 3.1 Pro 預覽，Veo 3.1 Lite 和 Lyria 上線"}
+  ],
+  "pricing": "按量計費。Gemini 模型依 token 計費（如 Gemini 3.1 Pro 依 M tokens 計價）。新客戶 $300 免費額度。Committed Use Discounts 最多省 55%。自訂訓練按 node-hour 計費，線上預測按 1,000 次計費。",
+  "competitors": ["AWS Bedrock", "Azure AI Foundry", "Hugging Face"],
+  "links": [
+    {"title": "Vertex AI 官網", "url": "https://cloud.google.com/vertex-ai"},
+    {"title": "定價", "url": "https://cloud.google.com/vertex-ai/generative-ai/pricing"},
+    {"title": "文件", "url": "https://docs.cloud.google.com/vertex-ai/docs"},
+    {"title": "Agent Builder", "url": "https://cloud.google.com/agent-builder"}
+  ]
+}

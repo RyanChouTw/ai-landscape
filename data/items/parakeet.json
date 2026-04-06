@@ -1,0 +1,48 @@
+{
+  "id": "parakeet",
+  "name": "Parakeet",
+  "company": "NVIDIA",
+  "category": "語音辨識",
+  "tags": ["open-source", "free", "asr"],
+  "oneLiner": "NVIDIA 開發的高效能 ASR 模型，0.6B 參數達 6.05% WER（Hugging Face 開源排行榜第一）、RTFx 3,386，v3 支援 25 種歐洲語言。",
+  "overview": "Parakeet 是 NVIDIA 基於 NeMo 框架開發的自動語音辨識（ASR）模型系列。最新的 Parakeet-TDT-0.6B-v2 以僅 6 億參數在 Hugging Face Open ASR Leaderboard 取得 6.05% 平均 WER 的第一名成績。\n核心架構採用 FastConformer XL + TDT（Token-and-Duration Transducer）解碼器，以完整注意力機制訓練，支援單次最長 24 分鐘音訊處理。最令人印象深刻的是 RTFx（Real-Time Factor）達 3,386——batch size 128 時可在 1 秒內轉錄約 56 分鐘音訊。\n2025 年發布的 v3 版本（Parakeet-TDT-0.6B-v3）將語言支援從英文擴展至 25 種歐洲語言，成為多語言高效能 ASR 的開源首選。模型完全開源，可透過 Hugging Face 和 NVIDIA NGC 下載。",
+  "pros": [
+    "Hugging Face Open ASR 排行榜第一（6.05% WER）",
+    "RTFx 3,386——極致推理速度",
+    "僅 0.6B 參數，模型輕量高效",
+    "完全開源，可自由商用",
+    "v3 支援 25 種歐洲語言",
+    "精確的標點、大小寫和時間戳預測",
+    "NeMo 框架生態支援豐富"
+  ],
+  "cons": [
+    "v2 僅支援英文",
+    "v3 僅覆蓋歐洲語言，不支援中日韓等亞洲語言",
+    "需要 NVIDIA GPU 才能充分發揮效能",
+    "NeMo 框架學習曲線較高",
+    "社群生態不如 Whisper 廣泛",
+    "缺乏內建的說話者分辨功能"
+  ],
+  "features": [
+    {"name": "6.05% WER", "desc": "Open ASR Leaderboard 第一名的業界最低字元錯誤率"},
+    {"name": "RTFx 3,386", "desc": "batch 128 下 1 秒轉錄 56 分鐘音訊"},
+    {"name": "TDT 解碼器", "desc": "Token-and-Duration Transducer，精確時間戳預測"},
+    {"name": "24 分鐘單次處理", "desc": "FastConformer XL 完整注意力，單次處理長音訊"},
+    {"name": "v3 多語言", "desc": "支援 25 種歐洲語言"},
+    {"name": "標點和大小寫", "desc": "自動預測標點符號和大小寫"}
+  ],
+  "history": [
+    {"date": "2024-04", "event": "Parakeet 1.1B CTC 系列首發"},
+    {"date": "2025-01", "event": "Parakeet-TDT-0.6B-v1 發布"},
+    {"date": "2025-05", "event": "Parakeet-TDT-0.6B-v2 發布，取得 Open ASR 排行榜第一"},
+    {"date": "2025-10", "event": "Parakeet-TDT-0.6B-v3 發布，支援 25 種歐洲語言"}
+  ],
+  "pricing": "完全免費開源。模型可從 Hugging Face（nvidia/parakeet-tdt-0.6b-v2）和 NVIDIA NGC 下載。需要 NVIDIA GPU 進行推理。",
+  "competitors": ["Whisper", "VibeVoice", "FunASR", "Google Cloud STT"],
+  "links": [
+    {"title": "Parakeet-TDT-0.6B-v2（Hugging Face）", "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v2"},
+    {"title": "Parakeet-TDT-0.6B-v3（Hugging Face）", "url": "https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3"},
+    {"title": "NVIDIA NGC 目錄", "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/collections/parakeet-tdt-0.6b-v2"},
+    {"title": "NVIDIA Speech AI 部落格", "url": "https://developer.nvidia.com/blog/nvidia-speech-ai-models-deliver-industry-leading-accuracy-and-performance/"}
+  ]
+}

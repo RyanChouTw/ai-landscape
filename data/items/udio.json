@@ -1,0 +1,48 @@
+{
+  "id": "udio",
+  "name": "Udio",
+  "company": "Udio",
+  "category": "音樂生成",
+  "tags": ["closed", "freemium", "music-generation"],
+  "oneLiner": "前 Google DeepMind 研究員創立的 AI 音樂生成平台，支援 stem 分離、inpainting 修復和風格 remix，已與 UMG/Warner 達成版權和解。",
+  "overview": "Udio 是由前 Google DeepMind 研究員創立的 AI 音樂生成平台，2024 年 4 月公開上線，獲得 a16z、will.i.am、Instagram 共同創辦人 Mike Krieger 等投資。支援文字到音樂和音訊到音樂生成，可創作歌曲和純器樂曲目。\n核心功能包括：Inpainting（重新生成歌曲特定段落）、Remix（保留旋律改變曲風）、Style 功能（參考音訊生成類似風格）、Stem Download（下載獨立音軌）和 30 秒延伸（逐步構建完整曲目）。\n2025-2026 年 Udio 經歷重大轉折：先遭 RIAA 代表三大唱片公司提起版權訴訟，隨後在 2026 年與 Universal Music Group 和 Warner Music Group 分別達成和解。作為和解條件，Udio 將轉型為授權音樂 remix 和 mashup 平台（「walled garden」模式），不允許下載或外部發布 AI 創作。",
+  "pros": [
+    "Inpainting 可精確修復歌曲特定段落",
+    "Remix 功能保留旋律改變曲風",
+    "Stem 分離下載獨立音軌",
+    "與 UMG/Warner 達成和解，版權問題獲得解決",
+    "前 Google DeepMind 團隊技術實力強",
+    "免費方案每日 10 credits + 每月 100 credits"
+  ],
+  "cons": [
+    "版權和解後轉型為 walled garden，AI 創作不可下載或外部發布",
+    "2025-2026 過渡期間暫停所有下載（含音訊、影片、stems）",
+    "Pro 方案 6,000 credits 不及 Suno Premier 的 10,000 credits",
+    "免費方案額度較少（每日 10 + 每月 100）",
+    "轉型後的商業模式尚未明朗",
+    "生成品質穩定性不如 Suno V5"
+  ],
+  "features": [
+    {"name": "Inpainting", "desc": "重新生成歌曲特定段落，修復錯誤或改變元素"},
+    {"name": "Remix", "desc": "保留旋律改變曲風"},
+    {"name": "Style 功能", "desc": "參考音訊生成類似風格的新作品"},
+    {"name": "Stem Download", "desc": "下載人聲、鼓、貝斯等獨立音軌"},
+    {"name": "30 秒延伸", "desc": "逐步構建完整曲目"},
+    {"name": "授權音樂平台", "desc": "與 UMG/Warner 合作的授權 remix/mashup 平台（即將上線）"}
+  ],
+  "history": [
+    {"date": "2024-04", "event": "Udio 公開上線，獲 a16z 等投資"},
+    {"date": "2024-06", "event": "RIAA 代表三大唱片公司對 Udio 和 Suno 提起版權訴訟"},
+    {"date": "2025-10", "event": "與 Universal Music Group 達成版權和解"},
+    {"date": "2025-11", "event": "與 Warner Music Group 達成版權和解"},
+    {"date": "2026-01", "event": "宣布轉型為授權音樂 remix/mashup 平台"},
+    {"date": "2026-Q2", "event": "與 UMG 合作的授權平台預計上線"}
+  ],
+  "pricing": "Free（每日 10 credits + 每月 100 credits）、Standard $10/月（2,400 credits/月）、Pro $30/月（6,000 credits/月）。注意：下載功能在授權過渡期間可能受限。",
+  "competitors": ["Suno", "AIVA", "Soundraw", "Boomy"],
+  "links": [
+    {"title": "Udio 官網", "url": "https://www.udio.com"},
+    {"title": "Udio 定價", "url": "https://www.udio.com/pricing"},
+    {"title": "Rolling Stone 報導（UMG 和解）", "url": "https://www.rollingstone.com/music/music-features/ai-music-universal-music-group-settlement-udio-1235457945/"}
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "lovable",
+  "name": "Lovable",
+  "company": "Lovable",
+  "category": "AI 設計",
+  "tags": ["closed", "freemium"],
+  "oneLiner": "全端 AI 應用建構平台，從 prompt 到部署完整應用，生成 React + Supabase 架構，內建認證、GitHub 同步和自訂域名。",
+  "overview": "Lovable 是成長最快的 AI 應用建構平台之一，讓非技術用戶也能透過自然語言描述來建構完整的 Web 應用。用戶寫一段 prompt 描述想要的應用，Lovable 即生成包含前端（React）、後端（Supabase）、認證和資料庫的完整應用。\n開發流程類似與開發者聊天：用 prompt 描述需求，AI 生成程式碼，用戶在即時預覽中確認效果，再透過對話修改和迭代。\n內建 GitHub 同步、自訂域名、一鍵部署等功能，降低了從原型到上線的門檻。\n不過需注意：Lovable 使用 credit-based 計費，每次 AI 互動消耗 credits，而除錯過程也會消耗大量 credits。複雜應用仍需要有經驗的開發者介入。",
+  "pros": [
+    "非技術用戶也能建構完整 Web 應用",
+    "全端生成：React 前端 + Supabase 後端 + 認證",
+    "即時預覽——每次修改都能立即看到效果",
+    "GitHub 同步——程式碼可導出管理",
+    "一鍵部署和自訂域名",
+    "Prompt-driven 開發流程直覺易用",
+    "免費方案可試用"
+  ],
+  "cons": [
+    "Credit-based 計費，除錯消耗大量 credits",
+    "複雜應用仍需有經驗的開發者介入",
+    "鎖定 React + Supabase 技術棧",
+    "AI 生成的程式碼品質不穩定",
+    "免費方案每日訊息數極少",
+    "對複雜業務邏輯的處理能力有限",
+    "長期維護性不如手寫程式碼"
+  ],
+  "features": [
+    {"name": "Prompt-driven 開發", "desc": "用自然語言描述需求，AI 生成完整應用"},
+    {"name": "全端生成", "desc": "前端 React + 後端 Supabase + 認證 + 資料庫"},
+    {"name": "即時預覽", "desc": "每次修改即時在預覽中看到效果"},
+    {"name": "GitHub 同步", "desc": "程式碼自動同步到 GitHub repository"},
+    {"name": "一鍵部署", "desc": "內建部署功能，一鍵上線"},
+    {"name": "自訂域名", "desc": "付費方案支援自訂域名"},
+    {"name": "對話式迭代", "desc": "像與開發者聊天一樣修改和迭代應用"}
+  ],
+  "history": [
+    {"date": "2024-01", "event": "Lovable 推出 Beta"},
+    {"date": "2024-06", "event": "正式上線，快速吸引非技術創業者用戶"},
+    {"date": "2024-10", "event": "加入 Supabase 整合和認證功能"},
+    {"date": "2025-03", "event": "加入 GitHub 同步和自訂域名"},
+    {"date": "2025-06", "event": "推出 Team 方案"},
+    {"date": "2025-10", "event": "成為 AI 應用建構平台成長最快之一"},
+    {"date": "2026-01", "event": "持續優化 AI 生成品質和除錯效率"}
+  ],
+  "pricing": "Free $0（每日有限訊息）/ Starter $20/月（適合個人專案）/ Pro ~$25/月（更多 credits、私人專案、自訂域名）/ Team 方案可擴展。Credit-based 計費——每次 AI 互動消耗 credits。",
+  "competitors": ["Bolt", "v0", "Replit", "Bubble", "Webflow"],
+  "links": [
+    {"title": "Lovable 官網", "url": "https://lovable.dev"},
+    {"title": "Lovable 定價", "url": "https://lovable.dev/pricing"},
+    {"title": "Lovable 文件", "url": "https://docs.lovable.dev"},
+    {"title": "AI 應用建構指南", "url": "https://lovable.dev/guides/best-ai-app-builders"}
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "id": "browser-use",
+  "name": "Browser Use",
+  "company": "Browser Use (Open Source)",
+  "category": "瀏覽器代理",
+  "tags": ["open", "freemium"],
+  "oneLiner": "最受歡迎的開源 AI 瀏覽器自動化框架，WebVoyager 基準測試 89.1% 成功率，78,000+ GitHub stars，支援多模型與反偵測。",
+  "overview": "Browser Use 是目前最受歡迎的開源 AI 瀏覽器代理框架，讓開發者用自然語言控制瀏覽器完成任務。在 WebVoyager 基準測試中達到 89.1% 成功率（涵蓋 586 項網頁任務），GitHub 星數超過 78,000。\n框架支援多種 LLM（包括自家開源的 bu-30b-a3b-preview 模型），內建反偵測、CAPTCHA 解決、195+ 國家代理等功能。開發者可透過 Tools class 自訂工具擴充功能。\n2026 年初與 Parallel AI 達成策略整合，支援多執行緒搜尋，每分鐘可執行最多 20 個瀏覽器步驟。除了開源版本外，也推出 Browser Use Cloud 雲端託管服務。",
+  "pros": [
+    "MIT 開源授權，完全免費使用",
+    "78,000+ GitHub stars，社群活躍",
+    "WebVoyager 基準 89.1% 成功率，業界領先",
+    "支援多種 LLM：GPT、Claude、Gemini、開源模型",
+    "內建反偵測、CAPTCHA 解決、195+ 國家代理",
+    "自家開源模型 bu-30b-a3b-preview 可替代商用 LLM",
+    "Cloud 版本提供託管服務，無需自行架設基礎設施"
+  ],
+  "cons": [
+    "複雜網頁操作仍需手動調整與除錯",
+    "LLM API 費用隨任務複雜度增加",
+    "Cloud 版本收費較高（$100/月起）",
+    "對非技術用戶有一定學習門檻",
+    "視覺理解依賴 LLM 多模態能力，非所有模型都支援"
+  ],
+  "features": [
+    {"name": "自然語言控制", "desc": "用文字描述任務，AI 自動操作瀏覽器完成"},
+    {"name": "多模型支援", "desc": "支援 GPT、Claude、Gemini 及開源模型，可自由切換"},
+    {"name": "反偵測模式", "desc": "內建 Stealth Mode，繞過機器人偵測機制"},
+    {"name": "CAPTCHA 解決", "desc": "自動處理驗證碼，減少人工介入"},
+    {"name": "自訂工具", "desc": "透過 Tools class 和 action decorators 擴充代理功能"},
+    {"name": "Parallel AI 整合", "desc": "支援多執行緒平行操作，每分鐘 20 步驟"},
+    {"name": "Cloud 託管", "desc": "Browser Use Cloud 提供託管服務，含 session 錄影與分析"}
+  ],
+  "history": [
+    {"date": "2024-11", "event": "Browser Use 開源發布，MIT 授權"},
+    {"date": "2025-03", "event": "GitHub stars 快速突破 50,000"},
+    {"date": "2025-06", "event": "推出 Browser Use Cloud 雲端託管服務"},
+    {"date": "2025-09", "event": "發布自家開源模型 bu-30b-a3b-preview"},
+    {"date": "2026-01", "event": "與 Parallel AI 達成策略整合，支援多執行緒操作"},
+    {"date": "2026-03", "event": "GitHub stars 突破 78,000，WebVoyager 基準 89.1%"}
+  ],
+  "pricing": "開源免費（MIT 授權）。Cloud 版：Free（3 concurrent agents）/ Paid $75-100/月（100 concurrent sessions）/ Business $400/月 / Scaleup $2,000/月 / Enterprise 洽詢。",
+  "competitors": ["Stagehand", "PageAgent", "Playwright MCP", "Skyvern", "BrowserOS"],
+  "links": [
+    {"title": "Browser Use 官網", "url": "https://browser-use.com"},
+    {"title": "GitHub", "url": "https://github.com/browser-use/browser-use"},
+    {"title": "Browser Use Cloud", "url": "https://cloud.browser-use.com"},
+    {"title": "文件", "url": "https://docs.browser-use.com"}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "google-tpu",
+  "name": "Google TPU v6 (Trillium)",
+  "company": "Google",
+  "category": "硬體",
+  "tags": ["closed", "paid"],
+  "oneLiner": "Google 第六代 TPU「Trillium」——比 v5e 算力高 4.7 倍、能效高 67%、記憶體和頻寬翻倍，單叢集 91 ExaFLOPS，2026 年 1 月 GA。",
+  "overview": "Trillium 是 Google 第六代 Tensor Processing Unit（TPU），也是目前效能最強的 TPU。2026 年 1 月正式 GA（General Availability），開放給 Google Cloud 客戶使用。\n\n效能方面，Trillium 比 TPU v5e 的每晶片峰值算力高 4.7 倍。訓練基準測試中，Gemma 2-27B、MaxText Default-32B、Llama 2-70B 等模型達到 4 倍以上加速；推論方面，Stable Diffusion XL 吞吐量提升 3 倍。\n\n記憶體和頻寬方面，HBM3 容量翻倍至最高 144 GB/晶片，頻寬翻倍。晶片間互聯（ICI）頻寬也翻倍，達 4.8 Tbps/晶片——比 NVIDIA NVLink（900 Gbps）快 5 倍以上。\n\n能效方面，Trillium 比 TPU v5e 節能 67%+。\n\n規模方面，單 pod 可擴展至 256 TPU，單叢集達 91 ExaFLOPS——目前最高密度的 TPU 部署。\n\nTrillium 是 Google 訓練 Gemini 等內部模型的核心硬體，也是 Google Cloud 對抗 NVIDIA GPU 壟斷的關鍵武器。",
+  "pros": [
+    "每晶片算力比 v5e 高 4.7 倍",
+    "能效比 v5e 高 67%+",
+    "ICI 頻寬 4.8 Tbps——比 NVLink 快 5 倍+",
+    "HBM3 容量和頻寬翻倍",
+    "單叢集 91 ExaFLOPS，密度最高",
+    "深度整合 Google Cloud 和 JAX/XLA 生態",
+    "訓練 Gemini 的實戰驗證硬體"
+  ],
+  "cons": [
+    "僅在 Google Cloud 上可用——無法購買實體硬體",
+    "軟體生態以 JAX/XLA 為主，PyTorch 支援不如 NVIDIA 完善",
+    "價格不透明——按需求和合約定價",
+    "與 NVIDIA CUDA 生態不相容，遷移成本高",
+    "可用性受配額限制——熱門區域排隊等候",
+    "調試和優化工具不如 NVIDIA 成熟"
+  ],
+  "features": [
+    {"name": "4.7x 算力", "desc": "比 TPU v5e 每晶片峰值算力高 4.7 倍"},
+    {"name": "144GB HBM3", "desc": "高頻寬記憶體容量和頻寬翻倍"},
+    {"name": "4.8 Tbps ICI", "desc": "晶片間互聯頻寬比 NVLink 快 5 倍+"},
+    {"name": "67%+ 能效", "desc": "每瓦算力比 TPU v5e 高 67%"},
+    {"name": "256 TPU Pod", "desc": "單 Pod 最多 256 顆 TPU"},
+    {"name": "91 ExaFLOPS", "desc": "單叢集最高密度 AI 部署"},
+    {"name": "JAX/XLA 整合", "desc": "Google 自有 AI 框架深度優化"}
+  ],
+  "history": [
+    {"date": "2016-05", "event": "Google 發布第一代 TPU"},
+    {"date": "2018-05", "event": "TPU v3 發布，開放 Google Cloud 使用"},
+    {"date": "2023-12", "event": "TPU v5p 發布"},
+    {"date": "2024-05", "event": "Google I/O 發布 Trillium（TPU v6）"},
+    {"date": "2024-10", "event": "Trillium 進入 Preview 階段"},
+    {"date": "2025-06", "event": "Trillium 開始限定客戶使用"},
+    {"date": "2026-01", "event": "Trillium 正式 GA，開放所有 Google Cloud 客戶"}
+  ],
+  "pricing": "僅透過 Google Cloud 提供，按需計費。具體價格依區域、配置和合約而異。TPU v5e 參考價約 $1.20-3.22/hr，Trillium 預計更高。長期合約有折扣。",
+  "competitors": ["NVIDIA GPUs (H200/B200)", "AMD Instinct MI300X", "AWS Trainium/Inferentia", "Groq LPU"],
+  "links": [
+    {"title": "Trillium 介紹", "url": "https://cloud.google.com/blog/products/compute/introducing-trillium-6th-gen-tpus"},
+    {"title": "TPU v6e 文件", "url": "https://docs.cloud.google.com/tpu/docs/v6e"},
+    {"title": "Trillium GA 公告", "url": "https://cloud.google.com/blog/products/compute/trillium-tpu-is-ga"}
+  ]
+}
