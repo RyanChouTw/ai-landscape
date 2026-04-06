@@ -1,0 +1,113 @@
+{
+  "id": "kimi",
+  "name": "Kimi",
+  "company": "Moonshot AI",
+  "category": "開源模型",
+  "tags": [
+    "open",
+    "free"
+  ],
+  "oneLiner": "Moonshot AI 的開源多模態模型。1T MoE（32B 活躍），核心功能 Agent Swarm 可同時指揮 100 個子 agent 平行工作，1,500 次工具呼叫。",
+  "overview": "Kimi K2.5 由中國公司 Moonshot AI 於 2026 年 1 月 27 日發布，是基於 Kimi K2 的多模態升級版。架構為 1 兆 MoE 參數（32B 活躍），透過在約 15 兆混合視覺和文字 token 上持續預訓練而成。\n核心創新是 Agent Swarm——模型原生支援自動拆解複雜任務，同時指揮最多 100 個子 agent 平行工作，每個子 agent 可獨立使用工具（搜尋、生成、分析等），單次最多 1,500 次工具呼叫。訓練使用新開發的 Parallel Agent Reinforcement Learning（PARL）技術。\nAgent Swarm 將執行時間縮短最多 4.5 倍、端到端運行時間減少 80%。在 BrowseComp 上超越 GPT-5.2 Pro，在 WideSearch 上超越 Claude Opus 4.5。\nMoonshot AI 以約兩年時間達到 $100 億估值（中國最快的十角獸）。K2.5 上線不到 20 天營收即超過 2025 全年。",
+  "pros": [
+    "Agent Swarm：100 個子 agent 平行工作，1,500 次工具呼叫",
+    "開源（權重公開）",
+    "1T MoE 但只激活 32B，本地可跑",
+    "原生多模態（視覺 + MoonViT 400M 視覺編碼器）",
+    "PARL 訓練技術：只訓練 orchestrator，子 agent 凍結",
+    "BrowseComp 超越 GPT-5.2 Pro",
+    "Humanity's Last Exam 50.2%，成本比 Claude Opus 4.5 低 76%"
+  ],
+  "cons": [
+    "中國公司，部分地區有地緣政治疑慮",
+    "Agent Swarm 仍在 Beta",
+    "英文能力可能不如西方模型",
+    "Agent Swarm 消耗大量 token（100 個子 agent 同時跑）",
+    "社群和生態系不如 Llama 和 Qwen 成熟"
+  ],
+  "features": [
+    {
+      "name": "Agent Swarm",
+      "desc": "100 個子 agent 平行工作，1,500 次工具呼叫，4.5x 加速"
+    },
+    {
+      "name": "原生多模態",
+      "desc": "MoonViT 400M 視覺編碼器，處理圖片和影片"
+    },
+    {
+      "name": "1T MoE",
+      "desc": "1 兆總參數，32B 活躍，效率高"
+    },
+    {
+      "name": "PARL 訓練",
+      "desc": "Parallel Agent Reinforcement Learning，只訓練 orchestrator"
+    },
+    {
+      "name": "4 種模式",
+      "desc": "Instant（快速）、Thinking（深度）、Agent（研究）、Agent Swarm（大規模）"
+    },
+    {
+      "name": "15T 混合訓練",
+      "desc": "15 兆混合視覺和文字 token 持續預訓練"
+    }
+  ],
+  "history": [
+    {
+      "date": "2023-10",
+      "event": "Moonshot AI 推出 Kimi 聊天機器人"
+    },
+    {
+      "date": "2025-01",
+      "event": "Kimi K1.5 發布，數學/程式碼/多模態推理達 o1 水準"
+    },
+    {
+      "date": "2025-07",
+      "event": "Kimi K2 發布（1T MoE，32B 活躍）"
+    },
+    {
+      "date": "2025-11",
+      "event": "Kimi K2 Thinking 發布（推理和 agentic 強化版）"
+    },
+    {
+      "date": "2025-12",
+      "event": "Meta 宣布以 $20-30 億收購 Manus（同為中國 AI 公司）"
+    },
+    {
+      "date": "2026-01-27",
+      "event": "Kimi K2.5 發布：Agent Swarm、多模態升級、開源權重"
+    },
+    {
+      "date": "2026-02",
+      "event": "Moonshot AI 成為中國最快十角獸（$100 億估值）。K2.5 上線 20 天營收超 2025 全年"
+    }
+  ],
+  "pricing": "開源（權重公開）。Kimi API 按量計費。Kimi Web/App 有免費和付費方案。",
+  "competitors": [
+    "DeepSeek V3/R1",
+    "Llama 4",
+    "Qwen 3",
+    "GPT"
+  ],
+  "links": [
+    {
+      "title": "Kimi K2.5 官網",
+      "url": "https://www.kimi.com/ai-models/kimi-k2-5"
+    },
+    {
+      "title": "Kimi K2.5 GitHub",
+      "url": "https://github.com/MoonshotAI/Kimi-K2.5"
+    },
+    {
+      "title": "Kimi K2.5 Hugging Face",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2.5"
+    },
+    {
+      "title": "Kimi K2.5 技術部落格",
+      "url": "https://www.kimi.com/blog/kimi-k2-5"
+    },
+    {
+      "title": "Moonshot AI 官網",
+      "url": "https://www.moonshot.ai"
+    }
+  ]
+}

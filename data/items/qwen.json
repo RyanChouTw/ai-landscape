@@ -1,0 +1,105 @@
+{
+  "id": "qwen",
+  "name": "Qwen",
+  "company": "Alibaba",
+  "category": "開源模型",
+  "tags": [
+    "open",
+    "free"
+  ],
+  "oneLiner": "阿里巴巴的開源模型家族。Qwen 3 支援 119 語言、36T token 訓練。後續 Qwen 3.5（397B）和 3.6 Plus Preview（1M context）持續迭代。",
+  "overview": "Qwen 3 是阿里巴巴通義千問團隊開發的開源大型語言模型家族，2025 年 4 月發布。包含 Dense 模型（0.6B-32B）和 MoE 模型（30B/3B 活躍、235B/22B 活躍），訓練資料量 36 兆 token（Qwen 2.5 的兩倍）。\n核心特點：支援 119 種語言和方言（多語言能力開源最強）、原生支援 MCP 和 function calling、hybrid reasoning（可在思考和非思考模式間切換）。\n後續版本持續迭代：Qwen 3.5（397B/17B 活躍，201 語言，原生視覺）和 Qwen 3.6 Plus Preview（2026/3/30，1M context，新 hybrid 架構）。",
+  "pros": [
+    "多語言能力開源最強——Qwen 3 支援 119 語言，Qwen 3.5 支援 201 語言",
+    "36T token 訓練資料（Qwen 2.5 的兩倍）",
+    "原生支援 MCP 和 function calling，Agent 任務領先開源",
+    "Hybrid reasoning——可在思考和非思考模式間切換",
+    "模型尺寸覆蓋廣（0.6B-235B），適合各種部署場景",
+    "Apache 2.0 授權",
+    "Qwen 3.6 Plus Preview 支援 1M context"
+  ],
+  "cons": [
+    "阿里巴巴背景，部分地區可能有地緣政治疑慮",
+    "英文能力略遜於 DeepSeek 和 Llama",
+    "235B MoE 部署需要大量 GPU 資源",
+    "版本迭代非常快（3 → 3.5 → 3.6），API 相容性需注意"
+  ],
+  "features": [
+    {
+      "name": "119+ 語言",
+      "desc": "多語言翻譯和指令遵循能力開源最強"
+    },
+    {
+      "name": "Hybrid Reasoning",
+      "desc": "可在深度思考和快速回覆模式間切換"
+    },
+    {
+      "name": "原生 MCP/Function Calling",
+      "desc": "複雜 Agent 任務領先開源"
+    },
+    {
+      "name": "多尺寸",
+      "desc": "Dense 0.6B-32B、MoE 30B-235B，覆蓋邊緣到雲端"
+    },
+    {
+      "name": "36T Token 訓練",
+      "desc": "訓練資料量業界最大之一"
+    },
+    {
+      "name": "1M Context（3.6）",
+      "desc": "Qwen 3.6 Plus Preview 支援百萬 token"
+    }
+  ],
+  "history": [
+    {
+      "date": "2023-08",
+      "event": "Qwen 1.0 發布"
+    },
+    {
+      "date": "2024-06",
+      "event": "Qwen 2 發布"
+    },
+    {
+      "date": "2024-09",
+      "event": "Qwen 2.5 發布（18T token 訓練）"
+    },
+    {
+      "date": "2025-04",
+      "event": "Qwen 3 發布（36T token、119 語言、hybrid reasoning）"
+    },
+    {
+      "date": "2025-10",
+      "event": "Qwen 3.5 發布（397B/17B 活躍，201 語言，原生視覺）"
+    },
+    {
+      "date": "2026-03-30",
+      "event": "Qwen 3.6 Plus Preview 發布（1M context，新 hybrid 架構）"
+    }
+  ],
+  "pricing": "開源免費（Apache 2.0）。阿里雲 API 按量計費。",
+  "competitors": [
+    "DeepSeek V3/R1",
+    "Llama 4",
+    "Mistral Large 2",
+    "Gemma 4",
+    "Kimi K2.5"
+  ],
+  "links": [
+    {
+      "title": "Qwen 官方部落格",
+      "url": "https://qwenlm.github.io/blog/qwen3/"
+    },
+    {
+      "title": "Qwen GitHub",
+      "url": "https://github.com/QwenLM/Qwen3"
+    },
+    {
+      "title": "Qwen 3 Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-8B"
+    },
+    {
+      "title": "Qwen 3.5 Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B"
+    }
+  ]
+}
