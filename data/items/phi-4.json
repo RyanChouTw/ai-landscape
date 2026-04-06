@@ -1,0 +1,40 @@
+{
+  "id": "phi-4",
+  "name": "Phi-4",
+  "company": "Microsoft",
+  "category": "開源模型",
+  "tags": ["open", "free"],
+  "oneLiner": "Microsoft 的小型高效模型。14B 參數但在多項 benchmark 上超越更大的模型，適合邊緣裝置和成本敏感場景。",
+  "overview": "Phi-4 是 Microsoft Research 開發的小型高效語言模型系列，核心理念是「小模型也能很強」。14B 參數的 Phi-4 在多項 benchmark 上超越 70B+ 的模型，證明了高品質訓練資料和精巧架構設計的重要性。\nPhi 系列的訓練策略獨特——大量使用合成資料（由更大的模型生成的高品質訓練資料），這使得小模型能學到大模型的推理模式。\n適合邊緣裝置部署、成本敏感的 API 呼叫、以及需要低延遲的場景。MIT 授權。",
+  "pros": [
+    "14B 參數但表現超越更大模型",
+    "MIT 授權，完全自由商用",
+    "適合邊緣裝置和低成本部署",
+    "延遲低、推論速度快",
+    "合成資料訓練策略效果好"
+  ],
+  "cons": [
+    "14B 在複雜推理和長文本上仍不如大模型",
+    "多語言能力有限（以英文為主）",
+    "Context window 較短",
+    "生態系不如 Llama 和 Qwen"
+  ],
+  "features": [
+    {"name": "14B 高效", "desc": "小參數量但 benchmark 表現超越更大模型"},
+    {"name": "合成資料訓練", "desc": "使用大模型生成的高品質訓練資料"},
+    {"name": "邊緣部署", "desc": "適合手機、IoT 和低資源環境"},
+    {"name": "低延遲", "desc": "推論速度快，適合即時應用"}
+  ],
+  "history": [
+    {"date": "2023-12", "event": "Phi-2 發布（2.7B）"},
+    {"date": "2024-04", "event": "Phi-3 發布（3.8B/7B/14B）"},
+    {"date": "2024-12", "event": "Phi-4 發布（14B）"}
+  ],
+  "pricing": "開源免費（MIT 授權）。可透過 Azure AI、Ollama、Hugging Face 使用。",
+  "competitors": ["Gemma 4 E4B", "Qwen 3 14B", "Llama 4 Scout"],
+  "links": [
+    {"title": "Phi-4 Hugging Face", "url": "https://huggingface.co/microsoft/phi-4"},
+    {"title": "Microsoft Research", "url": "https://www.microsoft.com/en-us/research/"},
+    {"title": "Azure AI", "url": "https://azure.microsoft.com/en-us/products/ai-studio/"}
+  ]
+}

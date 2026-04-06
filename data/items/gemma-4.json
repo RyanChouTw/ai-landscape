@@ -1,0 +1,48 @@
+{
+  "id": "gemma-4",
+  "name": "Gemma 4",
+  "company": "Google",
+  "category": "開源模型",
+  "tags": ["open", "free"],
+  "oneLiner": "Google DeepMind 的開源模型家族。首次採用 Apache 2.0 授權。31B Dense 在 Arena 排名全球第 3，E2B/E4B 可跑在邊緣裝置。",
+  "overview": "Gemma 4 於 2026 年 4 月 3 日由 Google DeepMind 發布，是 Google 開源模型家族的最新一代。最大的變化是首次採用 Apache 2.0 授權——真正的開源，可自由商用，消除了前幾代 Gemma 的授權模糊性。\n包含四個變體：31B Dense（品質最高，Arena 排名全球第 3）、26B MoE（4B 活躍，速度快）、E4B（4.5B 等效，T4 GPU 可跑）、E2B（2.3B 等效，邊緣裝置用）。\n所有模型原生支援影片和圖片處理、140+ 語言。E2B/E4B 邊緣模型支援原生音訊輸入和語音辨識。大模型支援 256K context，邊緣模型 128K。\n為 Agent 時代設計——原生支援工具呼叫，Gemini Nano 4 是 Gemma 4 在 Android 上的優化版。",
+  "pros": [
+    "首次 Apache 2.0 授權——真正開源，可自由商用",
+    "31B Dense 在 Arena 排名全球第 3",
+    "E2B/E4B 可在 T4 GPU 甚至手機上跑",
+    "原生多模態（影片、圖片、音訊）",
+    "140+ 語言支援",
+    "256K context window（大模型）",
+    "為 Agent 時代設計——原生工具呼叫",
+    "與 Google 生態系整合（Android AICore、ML Kit）"
+  ],
+  "cons": [
+    "31B Dense 仍不如閉源旗艦（Claude Opus、GPT-5.4）",
+    "26B MoE 只激活 4B，能力受限",
+    "和 Gemini 的能力差距仍然很大",
+    "邊緣模型（E2B/E4B）在複雜任務上能力有限"
+  ],
+  "features": [
+    {"name": "Apache 2.0", "desc": "業界標準開源授權，可自由修改、商用、再發布"},
+    {"name": "四種尺寸", "desc": "31B Dense / 26B MoE / E4B / E2B，從雲端到邊緣全覆蓋"},
+    {"name": "原生多模態", "desc": "影片、圖片、音訊輸入，變動解析度支援"},
+    {"name": "140+ 語言", "desc": "原生多語言支援"},
+    {"name": "原生工具呼叫", "desc": "為 Agent 設計的原生 tool use 能力"},
+    {"name": "256K Context", "desc": "大模型支援 256K token，邊緣 128K"},
+    {"name": "Android 整合", "desc": "Gemini Nano 4 = Gemma 4 優化版，透過 AICore 在 Android 上跑"}
+  ],
+  "history": [
+    {"date": "2024-02", "event": "Gemma 1 發布（2B/7B）"},
+    {"date": "2024-06", "event": "Gemma 2 發布（2B/9B/27B）"},
+    {"date": "2025-03", "event": "Gemma 3 發布"},
+    {"date": "2026-04-03", "event": "Gemma 4 發布：Apache 2.0、四種尺寸、31B 排名全球第 3"}
+  ],
+  "pricing": "完全免費（Apache 2.0 授權）。可透過 Hugging Face、Kaggle、Vertex AI 下載。",
+  "competitors": ["Llama 4", "DeepSeek V3/R1", "Qwen 3", "Mistral Large 2", "Phi-4"],
+  "links": [
+    {"title": "Gemma 4 發布公告", "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemma-4/"},
+    {"title": "Gemma 4 開源部落格", "url": "https://opensource.googleblog.com/2026/03/gemma-4-expanding-the-gemmaverse-with-apache-20.html"},
+    {"title": "Gemma 4 開發者文件", "url": "https://developers.googleblog.com/bring-state-of-the-art-agentic-skills-to-the-edge-with-gemma-4/"},
+    {"title": "Gemma 4 on Google Cloud", "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemma-4-available-on-google-cloud"}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "id": "command-r",
+  "name": "Command R+",
+  "company": "Cohere",
+  "category": "開源模型",
+  "tags": ["open", "free"],
+  "oneLiner": "加拿大 Cohere 開發的 104B 開源模型，專為 RAG（檢索增強生成）和企業搜尋最佳化。",
+  "overview": "Command R+ 是加拿大 AI 公司 Cohere 開發的 104B 參數大型語言模型，專門為 RAG（Retrieval-Augmented Generation）和企業搜尋場景最佳化。\n核心差異化：它不追求通用能力的 benchmark 分數，而是專注在「從大量文件中精確找到答案並引用來源」這個企業最常見的需求。搭配 Cohere 的 Embed（向量化）和 Rerank（重排序）模型，形成完整的企業搜尋 AI 方案。\nCohere 的客戶以企業為主，強調資料隱私和可部署性。",
+  "pros": [
+    "RAG 和企業搜尋場景最佳化",
+    "引用來源的準確度高",
+    "搭配 Embed + Rerank 形成完整搜尋方案",
+    "可私有部署，符合企業資料隱私需求",
+    "多語言支援"
+  ],
+  "cons": [
+    "通用能力不如 DeepSeek、Llama、Qwen",
+    "CC-BY-NC 授權（非商用限制，商用需另外協議）",
+    "104B 部署資源需求大",
+    "社群和生態系遠不如 Llama",
+    "更新節奏較慢"
+  ],
+  "features": [
+    {"name": "RAG 最佳化", "desc": "專為檢索增強生成設計，引用準確度高"},
+    {"name": "引用來源", "desc": "回答時自動標注引用的文件段落"},
+    {"name": "Embed 整合", "desc": "搭配 Cohere Embed 模型做向量化搜尋"},
+    {"name": "Rerank 整合", "desc": "搭配 Cohere Rerank 模型做搜尋結果重排序"},
+    {"name": "可私有部署", "desc": "支援企業私有雲部署"}
+  ],
+  "history": [
+    {"date": "2024-03", "event": "Command R 發布"},
+    {"date": "2024-04", "event": "Command R+ 發布（104B）"},
+    {"date": "2024-08", "event": "Command R+ 08-2024 更新版"}
+  ],
+  "pricing": "開源（CC-BY-NC，商用需協議）。Cohere API 按量計費。",
+  "competitors": ["DeepSeek V3/R1", "Llama 4", "Qwen 3"],
+  "links": [
+    {"title": "Cohere 官網", "url": "https://cohere.com"},
+    {"title": "Command R+ Hugging Face", "url": "https://huggingface.co/CohereForAI/c4ai-command-r-plus"},
+    {"title": "Cohere API 文件", "url": "https://docs.cohere.com"}
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "mistral-large-2",
+  "name": "Mistral Large 2",
+  "company": "Mistral",
+  "category": "開源模型",
+  "tags": ["open", "free"],
+  "oneLiner": "法國 Mistral AI 的旗艦開源模型。123B Dense，128K context，80+ 語言，歐洲部署首選。",
+  "overview": "Mistral Large 2 是法國 AI 公司 Mistral AI 開發的旗艦大型語言模型，123B 參數的 Dense Transformer（非 MoE）。2024 年 11 月發布。\n支援 128K token context window、80+ 語言、80+ 程式語言，並具備進階 function calling 能力。Mistral 是歐洲最重要的 AI 公司，Mistral Large 2 被視為歐洲企業部署的首選——符合 GDPR 和歐洲資料主權要求。\nMistral 也推出了 Voxtral TTS（開源 TTS 模型，品質超越 ElevenLabs）。\nAPI 定價 $2/$6 per M tokens，性價比高。在 Artificial Analysis Intelligence Index 上排名高於同級開源模型。",
+  "pros": [
+    "歐洲公司，符合 GDPR 和歐洲資料主權要求",
+    "123B Dense 架構，不需要 MoE 的複雜部署",
+    "128K context window",
+    "80+ 語言和 80+ 程式語言",
+    "進階 function calling",
+    "Apache 2.0 授權",
+    "API 定價合理（$2/$6）",
+    "幻覺率低（fine-tuning 針對減少幻覺）"
+  ],
+  "cons": [
+    "123B Dense 部署需要大量 GPU（比 MoE 模型吃更多資源）",
+    "英文能力不如 DeepSeek V3 和 Llama 4",
+    "更新節奏較慢（2024/11 發布後尚無重大更新）",
+    "社群和生態系不如 Llama 和 Qwen 活躍"
+  ],
+  "features": [
+    {"name": "123B Dense", "desc": "非 MoE，全量 Dense Transformer"},
+    {"name": "128K Context", "desc": "128K token 上下文視窗"},
+    {"name": "80+ 語言", "desc": "多語言支援，歐洲語言特別強"},
+    {"name": "Function Calling", "desc": "進階工具呼叫能力"},
+    {"name": "低幻覺", "desc": "fine-tuning 針對減少幻覺和維持簡潔輸出"},
+    {"name": "Voxtral TTS", "desc": "同公司推出的開源 TTS，品質超越 ElevenLabs"}
+  ],
+  "history": [
+    {"date": "2023-09", "event": "Mistral 7B 發布，震驚業界"},
+    {"date": "2024-02", "event": "Mistral Large 發布"},
+    {"date": "2024-04", "event": "Mixtral 8x22B MoE 發布"},
+    {"date": "2024-11-18", "event": "Mistral Large 2 發布（123B Dense）"},
+    {"date": "2026-01", "event": "Voxtral TTS 發布（開源企業級 TTS）"}
+  ],
+  "pricing": "開源免費（Apache 2.0）。Mistral API：$2/$6 per M tokens。",
+  "competitors": ["DeepSeek V3/R1", "Llama 4", "Qwen 3", "Gemma 4"],
+  "links": [
+    {"title": "Mistral AI 官網", "url": "https://mistral.ai"},
+    {"title": "Mistral Large 2 Hugging Face", "url": "https://huggingface.co/mistralai/Mistral-Large-Instruct-2411"},
+    {"title": "Mistral API 文件", "url": "https://docs.mistral.ai"},
+    {"title": "Voxtral TTS", "url": "https://mistral.ai/news/voxtral-tts/"}
+  ]
+}
