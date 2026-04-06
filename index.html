@@ -472,7 +472,8 @@ function renderMain(filteredData) {
         if (t==='paid') return '<span class="tag tag-paid">付費</span>';
         return '';
       }).join('');
-      html += `<div class="card"><div class="card-header"><span class="card-name">${item.name}</span><span class="card-company" onclick="showCompany('${item.company}')">${item.company}</span></div><div class="card-desc">${item.desc}</div><div class="card-tags">${tagsHtml}</div></div>`;
+      const itemId = item.name.toLowerCase().replace(/[\s\/\.]+/g, '-').replace(/[^a-z0-9-]/g, '');
+      html += `<div class="card" onclick="window.location='detail.html?id=${itemId}'" style="cursor:pointer"><div class="card-header"><span class="card-name">${item.name}</span><span class="card-company" onclick="event.stopPropagation();showCompany('${item.company}')">${item.company}</span></div><div class="card-desc">${item.desc}</div><div class="card-tags">${tagsHtml}</div></div>`;
     });
     html += '</div>';
   });

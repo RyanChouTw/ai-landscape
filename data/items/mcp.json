@@ -1,0 +1,50 @@
+{
+  "id": "mcp",
+  "name": "MCP",
+  "company": "Anthropic",
+  "category": "整合協議",
+  "tags": ["open", "free"],
+  "oneLiner": "Model Context Protocol——AI 助手呼叫外部工具和服務的開放標準協議，由 Anthropic 發起並捐贈給 Linux Foundation。",
+  "overview": "MCP（Model Context Protocol）是一個開放標準，定義了 AI 模型如何與外部工具、資料來源和服務互動的通訊協議。它類似於 AI 世界的「USB 接口」——不管是什麼 AI 模型，不管要連什麼工具，只要都支援 MCP，就能互相溝通。\n在 MCP 之前，每個 AI 工具要連接外部服務都需要各自寫客製化的整合程式碼。MCP 把這個過程標準化了：工具開發者只需要寫一個 MCP Server，任何支援 MCP 的 AI 客戶端都能使用。\nMCP 由 Anthropic 在 2024 年 11 月發起並開源，2025 年 12 月捐贈給 Linux Foundation，從公司專案變成業界標準。目前 Claude Desktop、Claude Code、Cursor、Windsurf 等主流 AI 工具都支援 MCP。",
+  "pros": [
+    "開放標準，任何人都能建立 MCP Server 或 Client",
+    "一次建立的 Server 可被所有支援 MCP 的工具使用（寫一次，到處用）",
+    "已有數千個社群開發的 MCP Server（Notion、Google、Slack、GitHub 等）",
+    "由 Linux Foundation 管理，不被單一公司控制",
+    "協議設計簡潔，開發者容易上手",
+    "支援 stdio 和 SSE 兩種傳輸方式"
+  ],
+  "cons": [
+    "安全模型仍在發展中——MCP Server 有權限存取用戶資料，信任邊界需要使用者自行判斷",
+    "目前主要由 Anthropic 生態系推動，OpenAI 和 Google 的支援度較低",
+    "Server 品質參差不齊（社群開發，沒有統一審核機制）",
+    "對非技術使用者來說，安裝和設定 MCP Server 仍有門檻",
+    "與 OpenAI 的 Function Calling 和 Google 的 A2A 存在競爭關係"
+  ],
+  "features": [
+    {"name": "Tools", "desc": "MCP Server 提供工具讓 AI 呼叫（如讀取 Notion 頁面、發送 Slack 訊息）"},
+    {"name": "Resources", "desc": "MCP Server 提供資料資源讓 AI 讀取（如資料庫內容、檔案系統）"},
+    {"name": "Prompts", "desc": "MCP Server 可提供預設的 prompt 模板"},
+    {"name": "Sampling", "desc": "MCP Server 可請求 AI 模型生成內容（反向呼叫）"},
+    {"name": "多傳輸方式", "desc": "支援 stdio（本地進程間通訊）和 SSE（HTTP 串流）"},
+    {"name": "跨平台支援", "desc": "Python SDK、TypeScript SDK、以及各語言的社群 SDK"}
+  ],
+  "history": [
+    {"date": "2024-11", "event": "Anthropic 發布 MCP 開源規格，同時推出 Python 和 TypeScript SDK"},
+    {"date": "2024-12", "event": "Claude Desktop 開始支援 MCP，社群開始大量建立 MCP Server"},
+    {"date": "2025-01", "event": "Claude Code 支援 MCP，Cursor 也加入支援"},
+    {"date": "2025-03", "event": "MCP Server 數量突破 1,000 個"},
+    {"date": "2025-06", "event": "Windsurf、Kiro 等更多 IDE 加入 MCP 支援"},
+    {"date": "2025-12", "event": "Anthropic 將 MCP 捐贈給 Linux Foundation，成為業界開放標準"},
+    {"date": "2026-01", "event": "MCP Server 數量突破 5,000 個"}
+  ],
+  "pricing": "完全免費開源（MIT 授權）",
+  "competitors": ["A2A Protocol", "OpenAPI", "Agent Skills", "Tool Use / Function Calling"],
+  "links": [
+    {"title": "MCP 官方規格", "url": "https://modelcontextprotocol.io"},
+    {"title": "MCP GitHub", "url": "https://github.com/modelcontextprotocol"},
+    {"title": "MCP Server 目錄", "url": "https://github.com/modelcontextprotocol/servers"},
+    {"title": "MCP Python SDK", "url": "https://github.com/modelcontextprotocol/python-sdk"},
+    {"title": "MCP TypeScript SDK", "url": "https://github.com/modelcontextprotocol/typescript-sdk"}
+  ]
+}

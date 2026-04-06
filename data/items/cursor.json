@@ -1,0 +1,53 @@
+{
+  "id": "cursor",
+  "name": "Cursor",
+  "company": "Anysphere",
+  "category": "AI IDE",
+  "tags": ["closed", "paid"],
+  "oneLiner": "目前市佔最高的 AI IDE，基於 VS Code fork，以自動補全和 AI 輔助編程著稱，年營收突破 $20 億。",
+  "overview": "Cursor 是由 Anysphere 開發的 AI 整合開發環境，基於 VS Code fork 建構。它是目前 AI IDE 賽道的領跑者，擁有超過 200 萬付費用戶，年營收突破 $20 億（ARR）。\nCursor 的核心差異化在於它的自動補全體驗——它能理解你正在做什麼，預測你接下來要寫的程式碼，準確度在業界最高。除了自動補全，Cursor 還提供 Chat（對話式程式開發）、Composer（多檔案同時編輯）等功能。\nCursor 支援多種 LLM 後端（Claude、GPT 等），使用者可以選擇用哪個模型。它也支援 MCP，可以串接外部工具。",
+  "pros": [
+    "自動補全準確度業界最高，寫 code 的體驗最流暢",
+    "基於 VS Code，所有 VS Code 外掛都能用，遷移成本低",
+    "支援多種 LLM（Claude、GPT 等），不綁單一模型",
+    "Composer 功能可同時跨多檔案編輯",
+    "支援 MCP，可串接外部工具",
+    "200 萬+ 用戶，社群活躍",
+    "Fortune 500 有一半在用"
+  ],
+  "cons": [
+    "月費 $20 比 Windsurf（$15）和 Trae（免費）貴",
+    "不開源（VS Code 是開源的，但 Cursor 的 AI 功能是閉源的）",
+    "Agent 模式的穩定性有時不如 Claude Code CLI",
+    "大型專案的索引速度較慢",
+    "隱私顧慮——程式碼會傳送到雲端進行 AI 處理（可關閉但會失去部分功能）",
+    "更新頻率極高，偶爾會引入破壞性變更"
+  ],
+  "features": [
+    {"name": "Tab 自動補全", "desc": "業界最準確的程式碼自動補全，可預測多行甚至整個函式"},
+    {"name": "Chat", "desc": "在 IDE 內與 AI 對話，理解整個程式碼庫的上下文"},
+    {"name": "Composer", "desc": "跨多檔案同時編輯，AI 理解檔案間的關係"},
+    {"name": "Agent 模式", "desc": "AI 自主規劃和執行多步驟的程式開發任務"},
+    {"name": "MCP 支援", "desc": "透過 MCP 串接外部工具（資料庫、API、文件等）"},
+    {"name": "Codebase 索引", "desc": "自動索引整個程式碼庫，AI 理解專案結構"},
+    {"name": "多模型支援", "desc": "可選擇 Claude、GPT、或其他模型作為後端"}
+  ],
+  "history": [
+    {"date": "2023-03", "event": "Cursor 0.1 發布，首次亮相"},
+    {"date": "2023-10", "event": "獲得 A 輪融資，估值快速成長"},
+    {"date": "2024-03", "event": "Cursor 整合 Claude 3 和 GPT-4，用戶開始快速成長"},
+    {"date": "2024-09", "event": "Composer 功能發布，支援多檔案同時編輯"},
+    {"date": "2025-01", "event": "用戶突破 100 萬"},
+    {"date": "2025-06", "event": "ARR 突破 $1B，成為最快達到此里程碑的 SaaS 之一"},
+    {"date": "2025-09", "event": "支援 MCP"},
+    {"date": "2025-12", "event": "用戶突破 200 萬，ARR 突破 $2B"},
+    {"date": "2026-01", "event": "Agent 模式大幅升級，支援更複雜的多步驟任務"}
+  ],
+  "pricing": "Hobby 免費（有限額）/ Pro $20/月（500 次快速請求）/ Business $40/用戶/月",
+  "competitors": ["Windsurf", "Kiro", "Trae", "Zed", "Antigravity"],
+  "links": [
+    {"title": "Cursor 官網", "url": "https://cursor.com"},
+    {"title": "Cursor 文件", "url": "https://docs.cursor.com"},
+    {"title": "Anysphere 官網", "url": "https://anysphere.inc"}
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "claude",
+  "name": "Claude",
+  "company": "Anthropic",
+  "category": "閉源模型",
+  "tags": ["closed", "paid"],
+  "oneLiner": "Anthropic 開發的大型語言模型家族，以程式碼能力、安全性和超長 context window 著稱。",
+  "overview": "Claude 是由 Anthropic 開發的大型語言模型家族，目前最新版本為 Claude Opus 4.6（最強推理）、Sonnet 4.6（平衡）和 Haiku 4.5（快速輕量）。Claude 的核心差異化在於三點：程式碼能力在業界領先（Claude Code 是目前最強的 coding agent）、支援 1M token 的超長 context window、以及 Constitutional AI 的安全性設計。\nAnthropic 由前 OpenAI 研究副總裁 Dario Amodei 和 Daniela Amodei 於 2021 年創立，總部位於舊金山。公司的核心使命是「AI 安全」，這也反映在 Claude 的設計哲學上——它傾向於拒絕有害請求而非盲目執行。\n截至 2026 年，Claude 透過網頁介面（claude.ai）、桌面應用（Claude Desktop）、CLI 工具（Claude Code）、和 API 提供服務。Anthropic 也推出了 MCP（Model Context Protocol）作為 AI 與外部工具溝通的開放標準。",
+  "pros": [
+    "程式碼能力業界最強，Claude Code 是目前最受歡迎的 coding agent",
+    "1M token context window，可處理超長文件和大型程式碼庫",
+    "Extended thinking（深度推理模式）在複雜問題上表現優異",
+    "MCP 生態系讓 Claude 可以串接幾乎任何外部工具和服務",
+    "安全性設計（Constitutional AI）減少有害輸出",
+    "Claude Code 支援訂閱計費（Max 方案），不用按 token 付費",
+    "Cowork 功能可背景執行長時間任務"
+  ],
+  "cons": [
+    "定價較高（Max 方案 $100-200/月）",
+    "不開源，無法自行部署",
+    "Agent SDK 不支援訂閱計費，只能用 API 按量付費",
+    "高峰時段有用量限制（throttling）",
+    "多模態能力（圖像理解）不如 Gemini 原生",
+    "訓練資料知識截止日有延遲"
+  ],
+  "features": [
+    {"name": "1M Context Window", "desc": "可一次處理約 75 萬字或整個大型程式碼庫"},
+    {"name": "Extended Thinking", "desc": "深度推理模式，在複雜邏輯問題上大幅提升準確度"},
+    {"name": "Claude Code", "desc": "終端機內的 AI coding agent，支援 subagent、MCP、Skill 系統"},
+    {"name": "Claude Cowork", "desc": "雲端沙箱背景執行任務，類似 AI 同事"},
+    {"name": "MCP 支援", "desc": "透過 Model Context Protocol 串接 Notion、Google、Slack 等外部服務"},
+    {"name": "Project", "desc": "在 Claude Desktop 中建立專案知識庫，讓 Claude 記住上下文"},
+    {"name": "多模態", "desc": "支援圖片輸入理解（PDF、截圖、照片）"}
+  ],
+  "history": [
+    {"date": "2021-01", "event": "Anthropic 由 Dario Amodei 和 Daniela Amodei 創立"},
+    {"date": "2023-03", "event": "Claude 1.0 發布"},
+    {"date": "2023-07", "event": "Claude 2 發布，支援 100K context"},
+    {"date": "2024-03", "event": "Claude 3 家族發布（Opus / Sonnet / Haiku），首次支援多模態"},
+    {"date": "2024-06", "event": "Claude 3.5 Sonnet 發布，程式碼能力大幅提升"},
+    {"date": "2024-11", "event": "MCP（Model Context Protocol）開源發布"},
+    {"date": "2025-01", "event": "Claude Code（CLI coding agent）發布"},
+    {"date": "2025-02", "event": "Claude 3.5 升級為 Claude 4 系列"},
+    {"date": "2025-05", "event": "Claude Opus 4 發布，Extended Thinking 推理模式"},
+    {"date": "2025-09", "event": "Claude Cowork 功能上線"},
+    {"date": "2025-11", "event": "MCP 捐贈給 Linux Foundation"},
+    {"date": "2025-12", "event": "Claude Opus 4.6 / Sonnet 4.6 / Haiku 4.5 發布，1M context"},
+    {"date": "2026-01", "event": "Anthropic 開始封鎖第三方工具使用訂閱 OAuth token"}
+  ],
+  "pricing": "Free（免費版，用量有限）/ Pro $20/月 / Max $100-200/月（含 Claude Code 用量）/ Team $30/用戶/月 / API 按量計費（Opus $5/$25 per M tokens）",
+  "competitors": ["GPT", "Gemini", "Grok", "DeepSeek V3/R1"],
+  "links": [
+    {"title": "Claude 官網", "url": "https://claude.ai"},
+    {"title": "Anthropic 官網", "url": "https://anthropic.com"},
+    {"title": "Claude API 文件", "url": "https://docs.anthropic.com"},
+    {"title": "Claude Code 文件", "url": "https://docs.anthropic.com/en/docs/claude-code"},
+    {"title": "MCP 官網", "url": "https://modelcontextprotocol.io"}
+  ]
+}
