@@ -1,0 +1,45 @@
+{
+  "id": "aider",
+  "name": "Aider",
+  "company": "開源社群",
+  "category": "AI Coding Agent",
+  "tags": ["open", "free"],
+  "oneLiner": "開源 AI pair programming 工具。40K+ stars，支援任意 LLM，git-first 工作流，自己寫了自己 80% 的程式碼。",
+  "overview": "Aider 是一個開源的終端機 AI pair programming 工具，40,200+ GitHub stars，4.1M+ 安裝量。核心理念是「AI pair programmer in your terminal」——你和 AI 在終端機裡一起寫程式碼。\n最大特色是 git-first：Aider 自動產生有意義的 commit message 並 commit 變更，你可以用 git diff 查看 AI 改了什麼、用 git revert 撤銷。這使得 AI 的變更完全可追蹤和可逆。\n支援任意 LLM（Claude、GPT、DeepSeek R1、本地模型等），會自動建立整個程式碼庫的 map 來理解大型專案。支援 100+ 程式語言、語音輸入、圖片和網頁作為視覺上下文。\nAider 自己寫了自己 80% 的程式碼，是 vibe coding 概念的先驅之一。",
+  "pros": [
+    "開源免費，40K+ stars",
+    "支援任意 LLM（Claude、GPT、DeepSeek、本地模型）",
+    "git-first——自動 commit，變更完全可追蹤可逆",
+    "自動建立程式碼庫 map，理解大型專案",
+    "100+ 程式語言支援",
+    "語音輸入和圖片上下文",
+    "自己寫了自己 80% 的程式碼"
+  ],
+  "cons": [
+    "純 CLI，沒有 GUI",
+    "需要自備 LLM API key（工具免費但模型要錢）",
+    "沒有 IDE 整合（不是 VS Code 外掛）",
+    "功能比 Claude Code 簡單（沒有 Skills、Hooks、Subagents）"
+  ],
+  "features": [
+    {"name": "Git-first", "desc": "自動 commit 有意義的 message，變更可 diff/revert"},
+    {"name": "任意 LLM", "desc": "支援 Claude、GPT、DeepSeek、Ollama 等"},
+    {"name": "Codebase Map", "desc": "自動建立程式碼庫地圖，理解大型專案"},
+    {"name": "100+ 語言", "desc": "支援超過 100 種程式語言"},
+    {"name": "語音輸入", "desc": "用語音描述需求"},
+    {"name": "視覺上下文", "desc": "圖片和網頁作為輸入"}
+  ],
+  "history": [
+    {"date": "2023-05", "event": "Aider 首次發布"},
+    {"date": "2024-03", "event": "支援 Claude 3 和 GPT-4"},
+    {"date": "2024-09", "event": "GitHub stars 突破 20K"},
+    {"date": "2025-06", "event": "語音輸入和視覺上下文加入"},
+    {"date": "2026-01", "event": "GitHub stars 突破 40K，4.1M+ 安裝量"}
+  ],
+  "pricing": "完全免費（開源）。需自備 LLM API key。",
+  "competitors": ["Claude Code", "Codex CLI", "Gemini CLI", "Cline"],
+  "links": [
+    {"title": "Aider GitHub", "url": "https://github.com/Aider-AI/aider"},
+    {"title": "Aider 官網", "url": "https://aider.chat"}
+  ]
+}

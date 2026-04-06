@@ -1,0 +1,41 @@
+{
+  "id": "codex-cli",
+  "name": "Codex CLI",
+  "company": "OpenAI",
+  "category": "AI Coding Agent",
+  "tags": ["closed", "paid"],
+  "oneLiner": "OpenAI 的開源終端機 coding agent。Apache 2.0 授權，使用 o3/o4-mini 模型，可隨 ChatGPT Plus 訂閱使用。2026/2 推出 macOS App。",
+  "overview": "Codex CLI 是 OpenAI 推出的輕量級開源 coding agent，在終端機中運行。使用 o3 和 o4-mini 等模型，核心程式碼在 Apache 2.0 授權下開源——工具本身免費，只需付模型費用。\n2026 年 2 月推出 macOS 桌面 App（Codex App），Windows 版規劃中。可隨 ChatGPT Plus（$20/月）或 Pro（$200/月，6x 用量限制提升）訂閱使用。\n也提供 codex-mini-latest 模型（$1.50/$6 per M tokens），具有 75% prompt caching 折扣。\nCLI 是開源的，但依賴的模型是 OpenAI 的閉源模型。",
+  "pros": [
+    "CLI 開源（Apache 2.0），工具本身免費",
+    "可隨 ChatGPT Plus $20/月使用",
+    "codex-mini-latest 有 75% caching 折扣",
+    "o3/o4-mini 的推理能力在程式碼任務上強",
+    "有 macOS 桌面 App"
+  ],
+  "cons": [
+    "依賴 OpenAI 閉源模型（不能用其他 LLM）",
+    "Windows App 尚未推出",
+    "功能深度不如 Claude Code（沒有 Skills、Hooks 等系統）",
+    "Pro $200/月 才有充足用量"
+  ],
+  "features": [
+    {"name": "開源 CLI", "desc": "Apache 2.0 授權，可自由修改"},
+    {"name": "o3 / o4-mini", "desc": "使用 OpenAI 最強的推理模型"},
+    {"name": "codex-mini", "desc": "輕量模型，75% caching 折扣"},
+    {"name": "/status 指令", "desc": "可在 session 中查看剩餘用量"},
+    {"name": "macOS App", "desc": "桌面應用版本（2026/2）"}
+  ],
+  "history": [
+    {"date": "2025-07", "event": "Codex CLI 發布"},
+    {"date": "2026-02", "event": "Codex macOS App 發布"},
+    {"date": "2026-04", "event": "定價改為 API token-based"}
+  ],
+  "pricing": "CLI 免費（開源）。模型費用：ChatGPT Plus $20/月 / Pro $200/月。API：codex-mini $1.50/$6 per M tokens（75% caching 折扣）。",
+  "competitors": ["Claude Code", "Gemini CLI", "Aider"],
+  "links": [
+    {"title": "Codex 官網", "url": "https://openai.com/index/introducing-codex/"},
+    {"title": "Codex CLI GitHub", "url": "https://github.com/openai/codex"},
+    {"title": "Codex 定價", "url": "https://developers.openai.com/codex/pricing"}
+  ]
+}

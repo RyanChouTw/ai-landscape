@@ -1,0 +1,39 @@
+{
+  "id": "cline",
+  "name": "Cline",
+  "company": "開源社群",
+  "category": "AI Coding Agent",
+  "tags": ["open", "free"],
+  "oneLiner": "開源的 VS Code AI coding agent 外掛。支援多種 LLM，可在 VS Code 內執行 agentic 任務。",
+  "overview": "Cline 是一個開源的 VS Code 外掛，在 IDE 內提供 agentic coding 能力。不同於 Claude Code 的純 CLI 形式，Cline 直接嵌入 VS Code，讓你不用離開編輯器就能與 AI agent 互動。\n支援多種 LLM 後端（Claude、GPT、DeepSeek、本地模型等），自備 API key 使用。可以讀寫檔案、執行終端指令、瀏覽網頁。\n相比 Cursor/Windsurf 這種完整 IDE，Cline 的優勢是它是外掛——你可以在現有的 VS Code 環境中使用，不用換 IDE。",
+  "pros": [
+    "VS Code 外掛——不用換 IDE",
+    "開源免費",
+    "支援多種 LLM",
+    "可讀寫檔案、執行指令、瀏覽網頁",
+    "在 VS Code 生態系中無縫使用"
+  ],
+  "cons": [
+    "功能深度不如 Cursor/Windsurf 的原生整合",
+    "需自備 API key",
+    "沒有自動補全能力（專注 agentic 任務）",
+    "社群和更新速度不如商業產品"
+  ],
+  "features": [
+    {"name": "VS Code 外掛", "desc": "嵌入 VS Code，不用換 IDE"},
+    {"name": "多 LLM", "desc": "Claude、GPT、DeepSeek、本地模型"},
+    {"name": "Agentic", "desc": "可自主讀寫檔案、執行指令、瀏覽網頁"},
+    {"name": "對話式", "desc": "在 VS Code 側邊面板與 AI 對話"}
+  ],
+  "history": [
+    {"date": "2024-06", "event": "Cline 發布（原名 Claude Dev）"},
+    {"date": "2024-10", "event": "重命名為 Cline，支援多 LLM"},
+    {"date": "2025-06", "event": "加入瀏覽網頁和更多 agentic 能力"}
+  ],
+  "pricing": "免費開源。需自備 LLM API key。",
+  "competitors": ["Claude Code", "Continue", "Cursor", "Aider"],
+  "links": [
+    {"title": "Cline GitHub", "url": "https://github.com/cline/cline"},
+    {"title": "VS Code Marketplace", "url": "https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev"}
+  ]
+}

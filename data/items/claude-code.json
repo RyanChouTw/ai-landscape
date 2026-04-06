@@ -1,0 +1,49 @@
+{
+  "id": "claude-code",
+  "name": "Claude Code",
+  "company": "Anthropic",
+  "category": "AI Coding Agent",
+  "tags": ["closed", "paid"],
+  "oneLiner": "Anthropic 的終端機 AI coding agent。五層架構（MCP → Skills → Agent → Subagents → Agent Teams），可用訂閱計費。",
+  "overview": "Claude Code 是 Anthropic 推出的 CLI（命令列介面）AI coding agent，直接在你的終端機裡運行。它不是 IDE——它是一個可以讀寫檔案、執行指令、搜尋程式碼庫、並自主規劃多步驟任務的 agent。\n五層架構：MCP（外部工具連接）→ Skills（任務特定知識）→ Agent（主要工作者）→ Subagents（平行獨立工作者）→ Agent Teams（協調多 agent）。\n核心優勢：可用 Max 訂閱計費（$100-200/月）而非 API 按量，讓密集使用不需要擔心費用爆表。也可透過 `claude -p` 在腳本和 cron job 中使用。\n2026/4 最新更新加入了更快的 resume flow、新的 hook events、voice mode、改善的 Windows 支援、MCP 連線非阻塞模式等。",
+  "pros": [
+    "可用 Max 訂閱計費（不用按 token 付費）",
+    "五層架構——MCP + Skills + Subagents 極為靈活",
+    "claude -p 可在腳本和 cron job 中使用",
+    "subagent 可繼承所有工具包括 MCP",
+    "持續快速更新（每週多次）",
+    "支援 hooks（事件驅動自動化）"
+  ],
+  "cons": [
+    "純 CLI，對非技術使用者門檻高",
+    "Agent SDK 不能用訂閱計費（只能 API 按量）",
+    "高峰時段 Max 方案有限流",
+    "2026/4 起封鎖第三方使用訂閱 OAuth"
+  ],
+  "features": [
+    {"name": "Subagents", "desc": "可派出多個獨立 agent 平行處理子任務"},
+    {"name": "Skills", "desc": "自訂的可重用工作流，可透過 /skill 觸發"},
+    {"name": "MCP 支援", "desc": "串接 Notion、Google、Slack 等外部工具"},
+    {"name": "Hooks", "desc": "事件驅動自動化（PreToolUse、defer 等）"},
+    {"name": "claude -p", "desc": "headless 模式，可用於腳本和 cron job"},
+    {"name": "Voice Mode", "desc": "語音指令"},
+    {"name": "worktree 隔離", "desc": "subagent 可在獨立的 git worktree 中工作"}
+  ],
+  "history": [
+    {"date": "2025-01", "event": "Claude Code 發布"},
+    {"date": "2025-03", "event": "Skills 系統加入"},
+    {"date": "2025-06", "event": "MCP 支援加入"},
+    {"date": "2025-09", "event": "Subagents 系統加入"},
+    {"date": "2025-12", "event": "Hooks 系統加入"},
+    {"date": "2026-03", "event": "MCP 連線非阻塞、named subagents、defer hooks"},
+    {"date": "2026-04", "event": "更快 resume flow、voice mode 改善、Windows 改善"}
+  ],
+  "pricing": "隨 Claude Pro $20/月 或 Max $100-200/月 使用（含在訂閱中）。也可用 API Key 按量計費。",
+  "competitors": ["Codex CLI", "Gemini CLI", "Aider", "Cline"],
+  "links": [
+    {"title": "Claude Code 文件", "url": "https://docs.anthropic.com/en/docs/claude-code"},
+    {"title": "Claude Code GitHub", "url": "https://github.com/anthropics/claude-code"},
+    {"title": "Subagents 文件", "url": "https://docs.anthropic.com/en/docs/claude-code/sub-agents"},
+    {"title": "Advanced Patterns 教學", "url": "https://www.anthropic.com/webinars/claude-code-advanced-patterns"}
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "github-copilot",
+  "name": "GitHub Copilot",
+  "company": "GitHub / Microsoft",
+  "category": "AI Copilot",
+  "tags": ["closed", "paid"],
+  "oneLiner": "全球使用最廣泛的 AI coding 助手。五個方案（Free-Enterprise），Agent Mode 可自主修 bug，Coding Agent 可背景跑任務。",
+  "overview": "GitHub Copilot 是 GitHub（Microsoft 旗下）推出的 AI coding 助手，是目前全球使用最廣泛的 AI 程式開發工具。支援 VS Code、JetBrains、CLI。\n2026 年的重大更新：Agent Mode 在 VS Code 和 JetBrains 上都已 GA（正式版），可以蒐集完整專案上下文後建議修改，並將建議直接傳給 Coding Agent 自動生成修復 PR。Coding Agent 是完全自主的背景工作者，可獨立處理任務。\nGitHub Spark 讓 Pro+ 和 Enterprise 用戶用自然語言描述 app 並生成程式碼 + 即時預覽。語義程式碼搜尋（概念搜尋而非關鍵字比對）也是 2026 新功能。\n定價從免費（基本功能）到 Enterprise $39/用戶/月，採用 premium requests + metered billing 模式。",
+  "pros": [
+    "全球使用最廣泛，IDE 整合最好（VS Code + JetBrains）",
+    "Agent Mode 已 GA——蒐集專案上下文後建議修改",
+    "Coding Agent 可背景自主處理任務",
+    "語義程式碼搜尋（概念搜尋而非關鍵字）",
+    "GitHub Spark 自然語言建 app",
+    "支援多模型（Claude Opus 4、o3 等）",
+    "Free 方案 $0 就能開始用",
+    "Agentic Code Review 自動生成修復 PR"
+  ],
+  "cons": [
+    "Pro $10/月只有 300 premium requests",
+    "複雜 agent 任務可能快速消耗 premium requests",
+    "超額 $0.04/request",
+    "深度不如 Cursor 的專注 AI IDE 體驗",
+    "不開源"
+  ],
+  "features": [
+    {"name": "Agent Mode", "desc": "蒐集專案上下文，自主建議修改（VS Code + JetBrains GA）"},
+    {"name": "Coding Agent", "desc": "背景自主工作者，可獨立處理任務"},
+    {"name": "Agentic Code Review", "desc": "自動審查程式碼並生成修復 PR"},
+    {"name": "GitHub Spark", "desc": "自然語言描述 → 生成 app 程式碼 + 即時預覽"},
+    {"name": "語義搜尋", "desc": "概念搜尋（描述 bug → 找到相關程式碼）"},
+    {"name": "多模型", "desc": "Claude Opus 4、o3 等多模型支援"},
+    {"name": "Tab 補全", "desc": "即時程式碼補全"}
+  ],
+  "history": [
+    {"date": "2021-06", "event": "GitHub Copilot 技術預覽"},
+    {"date": "2022-06", "event": "GitHub Copilot 正式發布（$10/月）"},
+    {"date": "2023-11", "event": "Copilot Chat 發布"},
+    {"date": "2024-10", "event": "Agent Mode 預覽"},
+    {"date": "2025-06", "event": "metered billing 上線"},
+    {"date": "2025-12", "event": "Coding Agent 發布"},
+    {"date": "2026-03", "event": "Agent Mode 在 VS Code 和 JetBrains GA。Agentic Code Review、GitHub Spark 發布"}
+  ],
+  "pricing": "Free $0 / Pro $10/月（300 premium req）/ Pro+ $39/月（1,500 premium req）/ Business $19/用戶/月 / Enterprise $39/用戶/月。超額 $0.04/req。",
+  "competitors": ["Cursor", "Amazon Q", "Tabnine", "Windsurf"],
+  "links": [
+    {"title": "GitHub Copilot 官網", "url": "https://github.com/features/copilot"},
+    {"title": "GitHub Copilot 定價", "url": "https://github.com/features/copilot/plans"},
+    {"title": "GitHub Copilot 文件", "url": "https://docs.github.com/en/copilot"}
+  ]
+}

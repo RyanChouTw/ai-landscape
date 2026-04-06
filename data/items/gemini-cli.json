@@ -1,0 +1,43 @@
+{
+  "id": "gemini-cli",
+  "name": "Gemini CLI",
+  "company": "Google",
+  "category": "AI Coding Agent",
+  "tags": ["closed", "free"],
+  "oneLiner": "Google 的開源終端機 coding agent。OAuth 登入免費用（60 RPM / 1,000 RPD），內建 Google Search、檔案操作、shell 指令。",
+  "overview": "Gemini CLI 是 Google 推出的開源終端機 AI coding agent，使用 Gemini 模型。核心賣點是**用 Google 帳號 OAuth 登入就能免費使用**（60 RPM / 1,000 RPD），不需要 API key，不需要付費。\n內建工具包括 Google Search grounding（即時搜尋）、檔案操作、shell 指令、web fetching。支援 Gemini 的 1M token context window 和多模態能力。\n2026/3/25 起重要變動：免費層只能用 Gemini Flash 模型，Pro 模型需要付費訂閱。\n首次使用時自動開瀏覽器 OAuth 登入，token 存在本地自動更新。開源在 GitHub 上。",
+  "pros": [
+    "OAuth 免費層——60 RPM / 1,000 RPD，不用付費",
+    "開源",
+    "Google Search grounding 內建",
+    "1M token context window",
+    "多模態（圖片、影片輸入）",
+    "不需要 API key，Google 帳號即可"
+  ],
+  "cons": [
+    "2026/3 起免費層只能用 Flash 模型（Pro 需付費）",
+    "程式碼能力不如 Claude Code",
+    "沒有 Skills、Hooks 等進階系統",
+    "功能較基礎"
+  ],
+  "features": [
+    {"name": "OAuth 免費層", "desc": "Google 帳號登入，60 RPM / 1,000 RPD 免費"},
+    {"name": "Google Search", "desc": "內建 Google 搜尋作為 grounding"},
+    {"name": "檔案操作", "desc": "讀寫檔案、專案分析"},
+    {"name": "Shell 指令", "desc": "執行終端指令"},
+    {"name": "多模態", "desc": "支援圖片和影片輸入"},
+    {"name": "1M Context", "desc": "支援超長上下文"}
+  ],
+  "history": [
+    {"date": "2025-06", "event": "Gemini CLI 發布"},
+    {"date": "2025-12", "event": "開源到 GitHub"},
+    {"date": "2026-03-25", "event": "免費層限制為 Flash 模型，Pro 需付費"}
+  ],
+  "pricing": "OAuth 免費（60 RPM / 1,000 RPD，限 Flash 模型）。API key 免費層：10 RPM / 250 RPD。付費按 Gemini API 定價。",
+  "competitors": ["Claude Code", "Codex CLI", "Aider"],
+  "links": [
+    {"title": "Gemini CLI GitHub", "url": "https://github.com/google-gemini/gemini-cli"},
+    {"title": "Gemini CLI 文件", "url": "https://google-gemini.github.io/gemini-cli/"},
+    {"title": "Gemini CLI 配額說明", "url": "https://geminicli.com/docs/resources/quota-and-pricing/"}
+  ]
+}
