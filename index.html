@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AI Landscape 2026</title>
-<script src="https://d3js.org/d3.v7.min.js"></script>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0a; color: #e0e0e0; }
@@ -12,22 +11,12 @@ a { color: #7cb3ff; text-decoration: none; }
 
 /* Header */
 .header { background: #111; border-bottom: 1px solid #222; padding: 16px 32px; position: sticky; top: 0; z-index: 100; }
-.header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
 .header h1 { font-size: 22px; font-weight: 600; color: #fff; }
-.tabs { display: flex; gap: 4px; }
-.tab { padding: 6px 16px; border-radius: 6px; cursor: pointer; font-size: 13px; color: #888; background: transparent; border: 1px solid transparent; transition: all 0.15s; }
-.tab:hover { color: #ccc; }
-.tab.active { color: #7cb3ff; background: #1a1a2a; border-color: #333; }
 .header-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
 .search-box { flex: 1; min-width: 240px; padding: 10px 16px; border-radius: 8px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 15px; outline: none; }
 .search-box:focus { border-color: #555; }
 .stats { font-size: 13px; color: #888; white-space: nowrap; }
 
-/* Tab content */
-.tab-content { display: none; }
-.tab-content.active { display: flex; }
-.tab-content-graph { display: none; }
-.tab-content-graph.active { display: block; }
 
 /* Catalog Layout */
 .container { min-height: calc(100vh - 100px); }
@@ -56,56 +45,12 @@ a { color: #7cb3ff; text-decoration: none; }
 .tag-paid { background: #2a2a1a; color: #cfcf6d; }
 .no-results { text-align: center; padding: 60px 20px; color: #555; font-size: 16px; }
 
-/* Graph */
-.graph-container { width: 100%; height: calc(100vh - 100px); position: relative; }
-.graph-container svg { width: 100%; height: 100%; }
-.graph-legend { position: absolute; top: 16px; left: 16px; background: rgba(17,17,17,0.9); border: 1px solid #333; border-radius: 8px; padding: 12px 16px; font-size: 12px; }
-.graph-legend-title { font-weight: 600; color: #fff; margin-bottom: 8px; font-size: 13px; }
-.graph-legend-item { display: flex; align-items: center; gap: 8px; margin: 4px 0; color: #aaa; }
-.graph-legend-dot { width: 10px; height: 10px; border-radius: 50%; }
-.graph-legend-line { width: 24px; height: 0; border-top: 2px solid; }
-.graph-controls { position: absolute; top: 16px; right: 16px; display: flex; flex-direction: column; gap: 4px; }
-.graph-btn { background: rgba(17,17,17,0.9); border: 1px solid #333; border-radius: 6px; color: #aaa; padding: 6px 10px; cursor: pointer; font-size: 13px; }
-.graph-btn:hover { color: #fff; border-color: #555; }
-.graph-tooltip { position: absolute; background: rgba(20,20,20,0.95); border: 1px solid #444; border-radius: 8px; padding: 10px 14px; font-size: 13px; pointer-events: none; display: none; max-width: 300px; z-index: 10; }
-.graph-tooltip .tt-name { font-weight: 600; color: #fff; font-size: 14px; }
-.graph-tooltip .tt-company { color: #7cb3ff; font-size: 12px; margin: 2px 0 6px; }
-.graph-tooltip .tt-desc { color: #aaa; line-height: 1.4; }
-.graph-tooltip .tt-category { color: #888; font-size: 11px; margin-top: 6px; }
-.graph-search { position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); }
-.graph-search input { padding: 8px 16px; border-radius: 8px; border: 1px solid #333; background: rgba(17,17,17,0.9); color: #fff; font-size: 14px; width: 300px; outline: none; }
-.graph-search input:focus { border-color: #555; }
 
-/* Modal */
-.modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); z-index: 200; justify-content: center; align-items: center; }
-.modal-overlay.active { display: flex; }
-.modal { background: #1a1a1a; border: 1px solid #333; border-radius: 12px; padding: 24px; max-width: 600px; width: 90%; max-height: 80vh; overflow-y: auto; }
-.modal h2 { font-size: 18px; margin-bottom: 12px; color: #fff; }
-.modal-products { list-style: none; }
-.modal-products li { padding: 6px 0; font-size: 14px; color: #aaa; border-bottom: 1px solid #222; }
-.modal-close { float: right; cursor: pointer; color: #888; font-size: 20px; }
-.modal-close:hover { color: #fff; }
-
-/* Stack */
-.stack-layer { margin-bottom: 2px; border-radius: 10px; overflow: hidden; }
-.stack-layer-header { padding: 12px 20px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; }
-.stack-layer-header h3 { font-size: 14px; font-weight: 600; color: #fff; }
-.stack-layer-header .layer-desc { font-size: 12px; color: rgba(255,255,255,0.6); }
-.stack-layer-body { padding: 8px 16px 16px; display: flex; flex-wrap: wrap; gap: 6px; }
-.stack-chip { font-size: 11px; padding: 4px 10px; border-radius: 4px; background: rgba(0,0,0,0.3); color: rgba(255,255,255,0.85); cursor: default; position: relative; border: 1px solid rgba(255,255,255,0.1); transition: all 0.15s; }
-.stack-chip:hover { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); }
-.stack-chip .chip-company { display: none; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: #111; border: 1px solid #444; border-radius: 6px; padding: 6px 10px; font-size: 11px; white-space: nowrap; margin-bottom: 4px; z-index: 10; color: #aaa; }
-.stack-chip .chip-company span { color: #7cb3ff; }
-.stack-chip:hover .chip-company { display: block; }
-.stack-arrow { text-align: center; color: #444; font-size: 20px; margin: 4px 0; }
-.stack-sublayer { margin: 4px 0; padding: 6px 12px; border-radius: 6px; background: rgba(0,0,0,0.15); }
-.stack-sublayer-title { font-size: 11px; color: rgba(255,255,255,0.5); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
 
 @media (max-width: 768px) {
   .sidebar { display: none; }
   .main { padding: 16px; }
   .cards { grid-template-columns: 1fr; }
-  .graph-search input { width: 200px; }
 }
 </style>
 </head>
@@ -114,11 +59,7 @@ a { color: #7cb3ff; text-decoration: none; }
 <div class="header">
   <div class="header-top">
     <h1>AI Landscape 2026</h1>
-    <div class="tabs">
-      <div class="tab active" onclick="switchTab('catalog')">Catalog</div>
-      <div class="tab" onclick="switchTab('graph')">Knowledge Graph</div>
-      <div class="tab" onclick="switchTab('stack')">Architecture Stack</div>
-    </div>
+
   </div>
   <div class="header-row" id="catalog-search-row">
     <input type="text" class="search-box" placeholder="搜尋工具、公司、關鍵字...（按 / 聚焦）" id="search">
@@ -126,38 +67,14 @@ a { color: #7cb3ff; text-decoration: none; }
   </div>
 </div>
 
-<div class="tab-content active" id="tab-catalog">
+<div class="container" id="tab-catalog">
   <div class="sidebar" id="sidebar"></div>
   <div class="main" id="main"></div>
 </div>
 
-<div class="tab-content-graph" id="tab-graph">
-  <div class="graph-container" id="graph-container">
-    <div class="graph-legend">
-      <div class="graph-legend-title">圖例</div>
-      <div class="graph-legend-item"><div class="graph-legend-dot" style="background:#ff6b6b"></div> 閉源模型</div>
-      <div class="graph-legend-item"><div class="graph-legend-dot" style="background:#51cf66"></div> 開源模型</div>
-      <div class="graph-legend-item"><div class="graph-legend-dot" style="background:#339af0"></div> 工具</div>
-      <div class="graph-legend-item"><div class="graph-legend-dot" style="background:#ffd43b"></div> 創作</div>
-      <div class="graph-legend-item"><div class="graph-legend-dot" style="background:#b197fc"></div> 基礎設施</div>
-      <div class="graph-legend-item"><div class="graph-legend-dot" style="background:#38d9a9"></div> 應用</div>
-      <div class="graph-legend-item" style="margin-top:8px"><div class="graph-legend-line" style="border-color:#666"></div> 強關聯（同公司/直接整合）</div>
-      <div class="graph-legend-item"><div class="graph-legend-line" style="border-color:#333;border-style:dashed"></div> 弱關聯（競品/同類/間接）</div>
-    </div>
-    <div class="graph-controls">
-      <button class="graph-btn" onclick="zoomIn()">＋</button>
-      <button class="graph-btn" onclick="zoomOut()">－</button>
-      <button class="graph-btn" onclick="resetGraph()">重置</button>
-    </div>
-    <div class="graph-tooltip" id="tooltip"></div>
-    <div class="graph-search"><input type="text" placeholder="搜尋節點..." id="graph-search"></div>
-  </div>
-</div>
 
-<div class="tab-content-graph" id="tab-stack" style="display:none">
-  <div style="width:100%;height:calc(100vh - 100px);overflow-y:auto;padding:24px 32px;max-width:1400px;margin:0 auto;">
-    <div id="stack-container"></div>
-  </div>
+
+
 </div>
 
 <div class="modal-overlay" id="modal-overlay" onclick="closeModal()">
@@ -352,89 +269,6 @@ const DATA = [
 const LAYER_COLORS = { "模型":"#ff6b6b", "工具":"#339af0", "創作":"#ffd43b", "基礎設施":"#b197fc", "應用":"#38d9a9" };
 function getLayerColor(layer) { return LAYER_COLORS[layer] || "#888"; }
 
-// === GRAPH DATA ===
-function buildGraphData() {
-  const nodes = [];
-  const links = [];
-  const nodeMap = {};
-
-  DATA.forEach(cat => {
-    cat.items.forEach(item => {
-      const id = item.name;
-      if (!nodeMap[id]) {
-        nodeMap[id] = { id, company: item.company, desc: item.desc, category: cat.category, layer: cat.layer, tags: item.tags };
-        nodes.push(nodeMap[id]);
-      }
-    });
-  });
-
-  // Strong links: same company
-  const companyGroups = {};
-  nodes.forEach(n => {
-    if (!companyGroups[n.company]) companyGroups[n.company] = [];
-    companyGroups[n.company].push(n.id);
-  });
-  Object.values(companyGroups).forEach(group => {
-    for (let i = 0; i < group.length; i++) {
-      for (let j = i + 1; j < group.length; j++) {
-        links.push({ source: group[i], target: group[j], type: "strong", reason: "同公司" });
-      }
-    }
-  });
-
-  // Strong links: direct integrations
-  const integrations = [
-    ["Claude Code","MCP","直接整合"],["Claude Code","Claude","使用模型"],["Claude Desktop","MCP","直接整合"],
-    ["Claude Cowork","Claude","使用模型"],["Claude Agent SDK","Claude","使用模型"],
-    ["ChatGPT","GPT","使用模型"],["ChatGPT","DALL-E 3","整合"],["ChatGPT","ChatGPT Search","整合"],
-    ["Gemini App","Gemini","使用模型"],["Gemini CLI","Gemini","使用模型"],["Gemini CLI","Gemma","支援模型"],
-    ["Cursor","Claude","支援模型"],["Cursor","GPT","支援模型"],
-    ["Windsurf","Claude","支援模型"],["Kiro","Claude","支援模型"],
-    ["GitHub Copilot","GPT","使用模型"],["Amazon Q","Claude","使用模型"],
-    ["Ollama","Llama","支援模型"],["Ollama","Gemma","支援模型"],["Ollama","Qwen","支援模型"],
-    ["vLLM","DeepSeek","支援模型"],["llama.cpp","Llama","支援模型"],
-    ["AWS Bedrock","Claude","提供模型"],["AWS Bedrock","Llama","提供模型"],
-    ["Vertex AI","Gemini","提供模型"],["Vertex AI","Claude","提供模型"],
-    ["Azure AI Studio","GPT","提供模型"],["Azure AI Studio","Phi","提供模型"],
-    ["LangChain","LangGraph","延伸"],
-    ["Manus","Agent Swarm","不同實作"],
-    ["OpenClaw","NemoClaw","安全層"],["OpenClaw","PicoClaw","輕量版"],["OpenClaw","ZeroClaw","輕量版"],["OpenClaw","MaxClaw","競品實作"],
-    ["Claude Cowork","Claude Computer Use","同公司"],["Manus","Manus My Computer","延伸功能"],
-    ["Whisper","faster-whisper","加速版"],
-    ["Handy","Whisper","使用引擎"],["Handy","Parakeet","使用引擎"],
-    ["Groq","LPU","自研晶片"],
-    ["Browser Use","Playwright","使用框架"],["Stagehand","Playwright","使用框架"],["Puppeteer","CDP","使用協議"],["Playwright","CDP","使用協議"],
-  ];
-  integrations.forEach(([s, t, r]) => {
-    if (nodeMap[s] && nodeMap[t]) links.push({ source: s, target: t, type: "strong", reason: r });
-  });
-
-  // Weak links: competitors in same category
-  const competitors = [
-    ["Cursor","Windsurf","競品"],["Cursor","Kiro","競品"],["Windsurf","Kiro","競品"],["Cursor","Trae","競品"],
-    ["Claude Code","Codex CLI","競品"],["Claude Code","Gemini CLI","競品"],
-    ["Claude Cowork","Manus","競品"],["M365 Copilot","Google Workspace AI","競品"],
-    ["OpenClaw","Claude Computer Use","競品"],["OpenClaw","Perplexity Computer","競品"],["Claude Computer Use","Perplexity Computer","競品"],["Claude Computer Use","Manus My Computer","競品"],["OpenClaw","Tencent Workbuddy","競品"],
-    ["Midjourney","DALL-E 3","競品"],["Midjourney","Flux","競品"],["Stable Diffusion","Flux","競品"],
-    ["Sora 2","Veo 3.1","競品"],["Sora 2","Runway Gen-4","競品"],["Runway Gen-4","Kling 3.0","競品"],
-    ["ElevenLabs","Voxtral TTS","競品"],["Whisper","FunASR","競品"],["Whisper","Parakeet","競品"],
-    ["LangChain","CrewAI","競品"],["LangChain","AutoGen","競品"],["CrewAI","AutoGen","競品"],
-    ["Perplexity","Google AI Overview","競品"],["Perplexity","ChatGPT Search","競品"],
-    ["Cloudflare /crawl","Firecrawl","競品"],["Firecrawl","Crawl4AI","競品"],
-    ["Typeless","Handy","競品"],["Typeless","Wispr Flow","競品"],
-    ["DeepSeek","Llama","競品"],["Qwen","Mistral","競品"],
-    ["Kolr","CreatorIQ","競品"],
-    ["v0","Lovable","競品"],["v0","Bolt","競品"],
-    ["NotebookLM","Notion AI","競品"],
-    ["AWS Bedrock","Vertex AI","競品"],["Vertex AI","Azure AI Studio","競品"],
-  ];
-  competitors.forEach(([s, t, r]) => {
-    if (nodeMap[s] && nodeMap[t]) links.push({ source: s, target: t, type: "weak", reason: r });
-  });
-
-  return { nodes, links };
-}
-
 // === CATALOG ===
 let activeCategory = null;
 
@@ -493,98 +327,7 @@ const COMPANIES = {
 function showCompany(n) { const i=COMPANIES[n]; if(!i) return; document.getElementById('modal-title').textContent=n; document.getElementById('modal-hq').textContent='總部：'+i.hq; document.getElementById('modal-products').innerHTML=i.products.map(p=>`<li>${p}</li>`).join(''); document.getElementById('modal-overlay').classList.add('active'); }
 function closeModal() { document.getElementById('modal-overlay').classList.remove('active'); }
 
-// === GRAPH ===
-let simulation, svg, g, graphZoom, graphNodes, graphLinks;
 
-function initGraph() {
-  const container = document.getElementById('graph-container');
-  const width = container.clientWidth;
-  const height = container.clientHeight;
-  const { nodes, links } = buildGraphData();
-
-  svg = d3.select('#graph-container').append('svg').attr('width', width).attr('height', height);
-  g = svg.append('g');
-
-  graphZoom = d3.zoom().scaleExtent([0.2, 4]).on('zoom', (e) => g.attr('transform', e.transform));
-  svg.call(graphZoom);
-
-  simulation = d3.forceSimulation(nodes)
-    .force('link', d3.forceLink(links).id(d => d.id).distance(d => d.type === 'strong' ? 80 : 160))
-    .force('charge', d3.forceManyBody().strength(-200))
-    .force('center', d3.forceCenter(width / 2, height / 2))
-    .force('collision', d3.forceCollide().radius(30));
-
-  graphLinks = g.append('g').selectAll('line').data(links).join('line')
-    .attr('stroke', d => d.type === 'strong' ? '#555' : '#282828')
-    .attr('stroke-width', d => d.type === 'strong' ? 1.5 : 0.8)
-    .attr('stroke-dasharray', d => d.type === 'weak' ? '4,4' : null);
-
-  graphNodes = g.append('g').selectAll('g').data(nodes).join('g').call(
-    d3.drag().on('start', (e, d) => { if (!e.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; })
-      .on('drag', (e, d) => { d.fx = e.x; d.fy = e.y; })
-      .on('end', (e, d) => { if (!e.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; })
-  );
-
-  graphNodes.append('circle')
-    .attr('r', d => 8)
-    .attr('fill', d => getLayerColor(d.layer))
-    .attr('stroke', '#000')
-    .attr('stroke-width', 1);
-
-  graphNodes.append('text')
-    .text(d => d.id)
-    .attr('x', 12).attr('y', 4)
-    .attr('fill', '#ccc')
-    .attr('font-size', '10px');
-
-  const tooltip = document.getElementById('tooltip');
-  graphNodes.on('mouseover', (e, d) => {
-    tooltip.style.display = 'block';
-    tooltip.innerHTML = `<div class="tt-name">${d.id}</div><div class="tt-company">${d.company}</div><div class="tt-desc">${d.desc}</div><div class="tt-category">${d.category}</div>`;
-    // Highlight connected
-    const connected = new Set();
-    links.forEach(l => {
-      const sid = typeof l.source === 'object' ? l.source.id : l.source;
-      const tid = typeof l.target === 'object' ? l.target.id : l.target;
-      if (sid === d.id) connected.add(tid);
-      if (tid === d.id) connected.add(sid);
-    });
-    graphNodes.select('circle').attr('opacity', n => n.id === d.id || connected.has(n.id) ? 1 : 0.15);
-    graphNodes.select('text').attr('opacity', n => n.id === d.id || connected.has(n.id) ? 1 : 0.1);
-    graphLinks.attr('opacity', l => {
-      const sid = typeof l.source === 'object' ? l.source.id : l.source;
-      const tid = typeof l.target === 'object' ? l.target.id : l.target;
-      return sid === d.id || tid === d.id ? 1 : 0.05;
-    });
-  }).on('mousemove', (e) => {
-    tooltip.style.left = (e.pageX + 15) + 'px';
-    tooltip.style.top = (e.pageY - 10) + 'px';
-  }).on('mouseout', () => {
-    tooltip.style.display = 'none';
-    graphNodes.select('circle').attr('opacity', 1);
-    graphNodes.select('text').attr('opacity', 1);
-    graphLinks.attr('opacity', 1);
-  });
-
-  simulation.on('tick', () => {
-    graphLinks.attr('x1', d => d.source.x).attr('y1', d => d.source.y).attr('x2', d => d.target.x).attr('y2', d => d.target.y);
-    graphNodes.attr('transform', d => `translate(${d.x},${d.y})`);
-  });
-}
-
-function zoomIn() { svg.transition().duration(300).call(graphZoom.scaleBy, 1.3); }
-function zoomOut() { svg.transition().duration(300).call(graphZoom.scaleBy, 0.7); }
-function resetGraph() { const w = document.getElementById('graph-container').clientWidth; const h = document.getElementById('graph-container').clientHeight; svg.transition().duration(500).call(graphZoom.transform, d3.zoomIdentity.translate(w/2, h/2).scale(0.8).translate(-w/2, -h/2)); }
-
-document.getElementById('graph-search').addEventListener('input', (e) => {
-  const q = e.target.value.toLowerCase();
-  if (!q) { graphNodes.select('circle').attr('opacity', 1).attr('r', 8); graphNodes.select('text').attr('opacity', 1); graphLinks.attr('opacity', 1); return; }
-  graphNodes.select('circle').attr('opacity', d => d.id.toLowerCase().includes(q) || d.company.toLowerCase().includes(q) ? 1 : 0.1).attr('r', d => d.id.toLowerCase().includes(q) || d.company.toLowerCase().includes(q) ? 12 : 6);
-  graphNodes.select('text').attr('opacity', d => d.id.toLowerCase().includes(q) || d.company.toLowerCase().includes(q) ? 1 : 0.05);
-  graphLinks.attr('opacity', 0.05);
-});
-
-// === STACK ===
 function renderStack() {
   const layers = [
     { name: "Applications", desc: "終端使用者直接使用的 AI 應用", color: "#38d9a9", sublayers: [
@@ -651,20 +394,6 @@ function renderStack() {
   });
 
   document.getElementById('stack-container').innerHTML = html;
-}
-
-// === TABS ===
-let graphInitialized = false;
-let stackInitialized = false;
-function switchTab(tab) {
-  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-  document.querySelector(`.tab[onclick="switchTab('${tab}')"]`).classList.add('active');
-  document.getElementById('tab-catalog').classList.toggle('active', tab === 'catalog');
-  document.getElementById('tab-graph').classList.toggle('active', tab === 'graph');
-  document.getElementById('tab-stack').style.display = tab === 'stack' ? 'block' : 'none';
-  document.getElementById('catalog-search-row').style.display = tab === 'catalog' ? 'flex' : 'none';
-  if (tab === 'graph' && !graphInitialized) { graphInitialized = true; setTimeout(initGraph, 100); }
-  if (tab === 'stack' && !stackInitialized) { stackInitialized = true; renderStack(); }
 }
 
 // === INIT ===
