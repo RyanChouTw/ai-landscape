@@ -1,0 +1,45 @@
+{
+  "id": "manus-my-computer",
+  "name": "Manus My Computer",
+  "company": "Meta",
+  "category": "電腦代理 / Computer Use",
+  "tags": ["closed", "paid"],
+  "oneLiner": "Manus 的桌面版功能，讓 AI agent 直接操控你的本地電腦——讀寫檔案、執行指令、啟動應用程式。可從手機遠端操控。",
+  "overview": "Manus My Computer 是 Manus（已被 Meta 以 $20 億收購）於 2026/3/16 推出的桌面應用功能。它把 Manus 從雲端帶到你的本地電腦——AI agent 可以直接在你的終端機中執行 CLI 指令，讀取、分析和編輯本地檔案，啟動和控制本地應用程式。\n核心使用場景：只要你的電腦開著且 Manus Desktop 在運行，你可以從世界任何地方、任何裝置（包括手機）指派任務給你的電腦。例如：「找我桌機上的那份合約 PDF，用我的 Gmail 寄給客戶」。\n安全控制：每個終端指令都需要你明確批准才執行。兩種模式：「Allow Once」逐一審核、「Always Allow」信任常用操作。\n支援 macOS 和 Windows。",
+  "pros": [
+    "從手機遠端操控你的桌機——世界任何地方都能用",
+    "讀寫本地檔案、執行指令、啟動應用",
+    "每個操作都要使用者明確批准",
+    "支援 macOS 和 Windows",
+    "和 Manus 雲端功能整合——雲端 + 本地一體"
+  ],
+  "cons": [
+    "電腦必須開著且 Manus Desktop 在運行",
+    "Meta 擁有——隱私疑慮（雖然操作在本地但指令透過 Manus 伺服器傳遞）",
+    "每個指令要批准——大量操作時很煩（除非開 Always Allow）",
+    "仍在早期階段",
+    "需要安裝 Manus Desktop 應用"
+  ],
+  "features": [
+    {"name": "遠端操控", "desc": "從手機或任何裝置遠端指派任務給你的電腦"},
+    {"name": "CLI 執行", "desc": "在本地終端機執行指令"},
+    {"name": "檔案操作", "desc": "讀取、分析、編輯本地檔案"},
+    {"name": "應用控制", "desc": "啟動和控制本地應用程式"},
+    {"name": "許可控制", "desc": "Allow Once（逐一審核）或 Always Allow（信任操作）"},
+    {"name": "跨平台", "desc": "macOS 和 Windows"}
+  ],
+  "history": [
+    {"date": "2025-03", "event": "Manus AI 正式發布"},
+    {"date": "2025-12", "event": "Meta 以 $20 億收購 Manus"},
+    {"date": "2026-03-16", "event": "Manus My Computer 桌面應用發布（macOS + Windows）"},
+    {"date": "2026-03-18", "event": "CNBC 報導 Manus Desktop 上線"}
+  ],
+  "pricing": "包含在 Manus 方案中。Manus 有免費版（300 daily credits）和付費版。",
+  "competitors": ["OpenClaw", "Claude Computer Use", "Perplexity Computer", "NemoClaw"],
+  "links": [
+    {"title": "My Computer 官方部落格", "url": "https://manus.im/blog/manus-my-computer-desktop"},
+    {"title": "Manus Desktop 下載", "url": "https://manus.im/desktop"},
+    {"title": "My Computer Help Center", "url": "https://help.manus.im/en/articles/14178443-what-is-the-my-computer-feature-capable-of"},
+    {"title": "Manus 官網", "url": "https://manus.im"}
+  ]
+}
