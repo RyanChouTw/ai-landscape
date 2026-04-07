@@ -1,0 +1,46 @@
+{
+  "id": "pomelli",
+  "name": "Pomelli",
+  "company": "Google Labs / DeepMind",
+  "category": "AI 行銷",
+  "tags": ["closed", "free"],
+  "oneLiner": "Google Labs 的免費 AI 行銷工具。輸入網站自動分析品牌 DNA，一鍵生成社群行銷素材（圖片、影片、文案）。170+ 國可用。",
+  "overview": "Pomelli 是 Google Labs 與 Google DeepMind 合作推出的 AI 行銷工具，2025/10/28 公開測試。專為中小企業設計——三步驟完成行銷素材：\n1. 輸入你的網站 → AI 自動分析品牌 DNA（色彩、字型、語氣、風格）\n2. AI 生成量身打造的行銷活動提案 → 也可自己輸入 prompt\n3. 生成一組高品質、符合品牌的行銷素材（社群貼文、廣告、網站用圖）\n2026/1 推出 Pomelli Animate（用 Veo 3.1 將靜態素材一鍵變影片動畫）。2026/2 推出 Photoshoot 功能（用 Nano Banana 模型將手機拍的產品照變成專業攝影棚等級照片）。\n2026/3 擴展到 170+ 國，目前完全免費。",
+  "pros": [
+    "完全免費（beta 階段）",
+    "三步驟極簡流程——輸入網站就能用",
+    "自動分析品牌 DNA，生成的素材符合品牌風格",
+    "Animate 功能一鍵將靜態圖變影片（Veo 3.1 驅動）",
+    "Photoshoot 功能把手機照變專業產品照",
+    "170+ 國可用",
+    "不用登入就能試用"
+  ],
+  "cons": [
+    "beta 階段——免費能持續多久不確定",
+    "Google Labs 產品——有被關閉的風險",
+    "品牌 DNA 分析品質取決於網站內容豐富度",
+    "生成的素材仍需人工審核和調整",
+    "目前只支援英文和部分語言"
+  ],
+  "features": [
+    {"name": "品牌 DNA", "desc": "自動從網站分析色彩、字型、語氣、風格"},
+    {"name": "行銷活動提案", "desc": "AI 生成量身打造的行銷活動點子"},
+    {"name": "素材生成", "desc": "一組高品質圖片 + 文案，可直接用於社群"},
+    {"name": "Animate", "desc": "Veo 3.1 驅動，靜態素材一鍵變影片動畫（2026/1）"},
+    {"name": "Photoshoot", "desc": "Nano Banana 模型，手機照變專業產品攝影（2026/2）"},
+    {"name": "可編輯", "desc": "生成後可在工具內直接修改文字和圖片"}
+  ],
+  "history": [
+    {"date": "2025-10-28", "event": "Pomelli 公開測試發布（Google Labs + DeepMind）"},
+    {"date": "2026-01", "event": "Pomelli Animate 發布（Veo 3.1 影片動畫）"},
+    {"date": "2026-02", "event": "Photoshoot 功能發布（Nano Banana 產品攝影）"},
+    {"date": "2026-03", "event": "擴展到印度和 170+ 國"}
+  ],
+  "pricing": "完全免費（beta 階段）。無需登入。",
+  "competitors": ["Jasper", "Canva AI", "Copy.ai"],
+  "links": [
+    {"title": "Pomelli 官網", "url": "https://labs.google.com/pomelli/about"},
+    {"title": "Google 發布公告", "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/pomelli/"},
+    {"title": "Pomelli 使用指南", "url": "https://almcorp.com/blog/google-pomelli-ai-marketing-tool-complete-guide/"}
+  ]
+}
