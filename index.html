@@ -209,9 +209,6 @@ const DATA = [
     {name:"Amazon Q",company:"AWS",desc:"AWS 服務整合最強",tags:["closed","paid"]},
     {name:"Tabnine",company:"Tabnine",desc:"可地端部署",tags:["closed","paid"]},
   ]},
-  { category:"多模型聚合", desc:"聚合多家模型的平台", layer:"工具", items:[
-    {name:"Poe",company:"Quora",desc:"Claude/GPT/Gemini/開源模型聚合，單一介面切換",tags:["closed","paid"]},
-  ]},
   { category:"雲端 AI Agent", desc:"在雲端沙箱執行任務", layer:"工具", items:[
     {name:"Claude Cowork",company:"Anthropic",desc:"雲端沙箱背景執行任務",tags:["closed","paid"]},
     {name:"Manus",company:"Meta",desc:"通用 AI agent。Meta 生態整合（IG/FB/WhatsApp）",tags:["closed","paid"]},
@@ -300,6 +297,11 @@ const DATA = [
     {name:"llama.cpp",company:"社群",desc:"CPU 推論、量化",tags:["open","free"]},
     {name:"LM Studio",company:"LM Studio",desc:"桌面 GUI 跑本地模型",tags:["closed","free"]},
     {name:"TensorRT-LLM",company:"NVIDIA",desc:"GPU 最佳化推論",tags:["open","free"]},
+  ]},
+  { category:"模型路由/閘道", desc:"統一 API 存取多家模型，自動路由、負載均衡、成本最佳化", layer:"基礎設施", items:[
+    {name:"OpenRouter",company:"OpenRouter",desc:"統一 API 存取 300+ 模型，自動選最便宜/最快的",tags:["closed","paid"]},
+    {name:"LiteLLM",company:"開源社群",desc:"統一 API proxy，多模型路由，可自架",tags:["open","free"]},
+    {name:"Poe API",company:"Quora",desc:"透過 Poe 存取多家模型的 API",tags:["closed","paid"]},
   ]},
   { category:"資料擷取/爬蟲", desc:"把網頁變成 AI 可用格式", layer:"基礎設施", items:[
     {name:"Cloudflare /crawl",company:"Cloudflare",desc:"一個 API 爬整站。$5/月起",tags:["closed","paid"]},
@@ -591,7 +593,6 @@ function renderStack() {
       { title: "AI 筆記/知識管理", items: ["NotebookLM|Google","Notion AI|Notion","Obsidian+Claudian|社群"] },
     ]},
     { name: "User-facing Tools", desc: "使用者透過介面操作的 AI 工具", color: "#339af0", sublayers: [
-      { title: "多模型聚合", items: ["Poe|Quora"] },
       { title: "雲端 AI Agent", items: ["Claude Cowork|Anthropic","Manus|Meta"] },
       { title: "電腦代理 / Computer Use", items: ["OpenClaw|開源","Claude Computer Use|Anthropic","Perplexity Computer|Perplexity AI","Manus My Computer|Meta","NemoClaw|NVIDIA","Tencent Workbuddy|Tencent"] },
       { title: "辦公套件 AI", items: ["M365 Copilot|Microsoft","Google Workspace AI|Google"] },
@@ -617,7 +618,8 @@ function renderStack() {
     { name: "Infrastructure", desc: "模型推論、資料擷取、瀏覽器自動化、雲端平台", color: "#b197fc", sublayers: [
       { title: "瀏覽器自動化", items: ["Playwright|Microsoft","Puppeteer|Google","Selenium|開源","CDP|Google"] },
       { title: "資料擷取/爬蟲", items: ["Cloudflare /crawl|Cloudflare","Firecrawl|Firecrawl","Jina Reader|Jina AI","Crawl4AI|開源"] },
-      { title: "模型推論/部署", items: ["Ollama|Ollama","vLLM|社群","llama.cpp|社群","TensorRT-LLM|NVIDIA","LM Studio|LM Studio","LiteLLM|開源"] },
+      { title: "模型推論/部署", items: ["Ollama|Ollama","vLLM|社群","llama.cpp|社群","TensorRT-LLM|NVIDIA","LM Studio|LM Studio"] },
+      { title: "模型路由/閘道", items: ["OpenRouter|OpenRouter","LiteLLM|開源","Poe API|Quora"] },
       { title: "雲端 AI 平台", items: ["AWS Bedrock|Amazon","Vertex AI|Google","Azure AI Studio|Microsoft","Hugging Face|Hugging Face","Groq|Groq"] },
     ]},
     { name: "Foundation Models", desc: "大型語言模型——一切的基礎", color: "#ff6b6b", sublayers: [

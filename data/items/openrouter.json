@@ -1,0 +1,45 @@
+{
+  "id": "openrouter",
+  "name": "OpenRouter",
+  "company": "OpenRouter",
+  "category": "模型路由/閘道",
+  "tags": ["closed", "paid"],
+  "oneLiner": "統一 API 閘道器，一個 endpoint 存取 300+ AI 模型。OpenAI 相容 API，不加價，免費模型路由器。",
+  "overview": "OpenRouter 是一個 AI 模型的統一 API 閘道器，讓開發者用一個 OpenAI 相容的 API endpoint 存取 300+ 個模型（Anthropic、OpenAI、Google、DeepSeek、Meta、Mistral、xAI 等），來自 60+ 個供應商。\n核心賣點：不加價——定價和各供應商官方完全一致。你只需要改 base URL 和 API key，現有的 OpenAI SDK 程式碼就能直接用。\n提供免費模型路由器（隨機選擇免費模型，自動篩選支援所需功能的模型），以及推理模型的 step-by-step thinking 支援。\n計費方式為預付 credit，用多少扣多少，支援自動儲值。企業用戶有量折扣和發票。",
+  "pros": [
+    "300+ 模型、60+ 供應商，一個 API 全搞定",
+    "不加價——定價和供應商官方一致",
+    "OpenAI 相容 API——改 base URL 就能用",
+    "免費模型路由器——零成本使用免費模型",
+    "自動選擇支援所需功能的模型（圖片理解、tool calling 等）",
+    "支援推理模型的 thinking 參數"
+  ],
+  "cons": [
+    "多一個中間層——延遲可能略增",
+    "依賴 OpenRouter 的穩定性和可用性",
+    "免費模型有速率限制（20 req/min、200/day）",
+    "不開源"
+  ],
+  "features": [
+    {"name": "統一 API", "desc": "一個 endpoint 存取 300+ 模型，OpenAI 相容"},
+    {"name": "不加價", "desc": "定價和各供應商官方完全一致"},
+    {"name": "免費模型路由", "desc": "自動選擇免費模型，篩選支援所需功能的"},
+    {"name": "推理支援", "desc": "reasoning 參數存取模型的 step-by-step thinking"},
+    {"name": "Benchmark 頁面", "desc": "每個模型頁面顯示效能 benchmark"},
+    {"name": "預付 Credit", "desc": "用多少扣多少，支援自動儲值"}
+  ],
+  "history": [
+    {"date": "2023", "event": "OpenRouter 創立"},
+    {"date": "2024", "event": "模型數量突破 100+"},
+    {"date": "2025", "event": "模型數量突破 200+，新增免費模型路由器"},
+    {"date": "2026-04", "event": "300+ 模型、60+ 供應商、28 個免費模型"}
+  ],
+  "pricing": "Pay-as-you-go（預付 credit）。定價和各供應商一致不加價。28 個免費模型（20 req/min、200/day 限制）。企業有量折扣。",
+  "competitors": ["LiteLLM", "Poe API"],
+  "links": [
+    {"title": "OpenRouter 官網", "url": "https://openrouter.ai"},
+    {"title": "OpenRouter 定價", "url": "https://openrouter.ai/pricing"},
+    {"title": "OpenRouter 模型目錄", "url": "https://openrouter.ai/models"},
+    {"title": "OpenRouter 文件", "url": "https://openrouter.ai/docs/quickstart"}
+  ]
+}
