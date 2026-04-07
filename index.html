@@ -209,13 +209,8 @@ const DATA = [
     {name:"Amazon Q",company:"AWS",desc:"AWS 服務整合最強",tags:["closed","paid"]},
     {name:"Tabnine",company:"Tabnine",desc:"可地端部署",tags:["closed","paid"]},
   ]},
-  { category:"AI Chat 助手", desc:"對話式 AI 介面", layer:"工具", items:[
-    {name:"Claude Desktop",company:"Anthropic",desc:"MCP、Cowork、Project",tags:["closed","paid"]},
-    {name:"ChatGPT",company:"OpenAI",desc:"外掛生態最大",tags:["closed","paid"]},
-    {name:"Gemini App",company:"Google",desc:"Google 服務深度整合",tags:["closed","paid"]},
-    {name:"Perplexity",company:"Perplexity AI",desc:"AI 搜尋引擎、引用來源",tags:["closed","paid"]},
-    {name:"Kimi",company:"Moonshot AI",desc:"長文本、Agent Swarm",tags:["closed","free"]},
-    {name:"Poe",company:"Quora",desc:"多模型聚合",tags:["closed","paid"]},
+  { category:"多模型聚合", desc:"聚合多家模型的平台", layer:"工具", items:[
+    {name:"Poe",company:"Quora",desc:"Claude/GPT/Gemini/開源模型聚合，單一介面切換",tags:["closed","paid"]},
   ]},
   { category:"雲端 AI Agent", desc:"在雲端沙箱執行任務", layer:"工具", items:[
     {name:"Claude Cowork",company:"Anthropic",desc:"雲端沙箱背景執行任務",tags:["closed","paid"]},
@@ -415,7 +410,6 @@ function buildGraphData() {
   const competitors = [
     ["Cursor","Windsurf","競品"],["Cursor","Kiro","競品"],["Windsurf","Kiro","競品"],["Cursor","Trae","競品"],
     ["Claude Code","Codex CLI","競品"],["Claude Code","Gemini CLI","競品"],
-    ["Claude Desktop","ChatGPT","競品"],["Claude Desktop","Gemini App","競品"],["ChatGPT","Gemini App","競品"],
     ["Claude Cowork","Manus","競品"],["M365 Copilot","Google Workspace AI","競品"],
     ["OpenClaw","Claude Computer Use","競品"],["OpenClaw","Perplexity Computer","競品"],["Claude Computer Use","Perplexity Computer","競品"],["Claude Computer Use","Manus My Computer","競品"],["OpenClaw","Tencent Workbuddy","競品"],
     ["Midjourney","DALL-E 3","競品"],["Midjourney","Flux","競品"],["Stable Diffusion","Flux","競品"],
@@ -597,7 +591,7 @@ function renderStack() {
       { title: "AI 筆記/知識管理", items: ["NotebookLM|Google","Notion AI|Notion","Obsidian+Claudian|社群"] },
     ]},
     { name: "User-facing Tools", desc: "使用者透過介面操作的 AI 工具", color: "#339af0", sublayers: [
-      { title: "AI Chat 助手", items: ["Claude Desktop|Anthropic","ChatGPT|OpenAI","Gemini App|Google","Perplexity|Perplexity AI","Kimi|Moonshot AI","Poe|Quora"] },
+      { title: "多模型聚合", items: ["Poe|Quora"] },
       { title: "雲端 AI Agent", items: ["Claude Cowork|Anthropic","Manus|Meta"] },
       { title: "電腦代理 / Computer Use", items: ["OpenClaw|開源","Claude Computer Use|Anthropic","Perplexity Computer|Perplexity AI","Manus My Computer|Meta","NemoClaw|NVIDIA","Tencent Workbuddy|Tencent"] },
       { title: "辦公套件 AI", items: ["M365 Copilot|Microsoft","Google Workspace AI|Google"] },
