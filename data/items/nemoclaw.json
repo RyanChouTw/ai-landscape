@@ -4,40 +4,37 @@
   "company": "NVIDIA",
   "category": "電腦代理 / Computer Use",
   "tags": ["open", "free"],
-  "oneLiner": "NVIDIA 為 OpenClaw 打造的企業安全層。三重控制：核心級沙箱、外部策略引擎、隱私路由器（敏感資料走本地 Nemotron 模型）。GTC 2026 發表。",
-  "overview": "NemoClaw 是 NVIDIA 在 GTC 2026（2026/3/16）發表的開源參考堆疊，目的是讓 OpenClaw 可以安全地用在企業環境中。它不是取代 OpenClaw，而是在 OpenClaw 外面加上企業級的安全和隱私控制。\n企業一直不敢用 OpenClaw 的原因是：沒有安全沙箱、沒有策略引擎、沒有稽核軌跡。NemoClaw 一次解決這三個問題。\n三重安全控制：\n1. 核心級沙箱（deny-by-default）——AI agent 只能做被明確允許的事\n2. 外部進程策略引擎——即使 agent 被入侵也無法覆蓋安全策略\n3. 隱私路由器——敏感資料自動走本地 Nemotron 模型，複雜推理才走雲端模型\n一鍵部署：單一指令即可安裝 NVIDIA OpenShell + 安全護欄 + 本地模型。不綁定 NVIDIA 模型——也可以用 OpenAI、Anthropic 等。",
+  "oneLiner": "NVIDIA 在 OpenClaw 之上建立的生產環境安全層。不是替代品，是「安全籠子」——同樣的代理人，不同的運行環境。",
+  "overview": "NemoClaw 是 NVIDIA 在 GTC 2026 發表的開源專案，定位是 OpenClaw 的生產環境安全層。核心概念：OpenClaw 是 AI 代理人本身，NemoClaw 是在它外面打造的「安全籠子」。\n\n五大差異（vs OpenClaw）：\n1. 安全架構：引入 OpenShell 沙盒，網路隔離（未授權 API 呼叫封鎖）、檔案系統限制在 /sandbox 和 /tmp，針對 SOC 2 / GDPR 合規設計。\n2. 模型彈性：取消 OpenClaw 的任意模型插入彈性，改為透過 NVIDIA 雲端（Nemotron 系列）統一路由。\n3. 隱私保護：新增隱私路由器，資料傳送給外部模型前先過濾 PII（個人識別資訊）。OpenClaw 則直接傳完整上下文給雲端。\n4. 目標族群：企業用戶，強調安全、可擴展。目前僅支援 Linux + NVIDIA 雲端模型。\n5. 設定門檻：需要 Docker 的 Linux 伺服器和 8-16 GB RAM，比 OpenClaw（Mac Mini 10 分鐘搞定）複雜得多。\n\n目前仍在 alpha 階段。",
   "pros": [
-    "企業級安全——沙箱 + 策略引擎 + 隱私路由，一次解決",
-    "開源（可審計）",
-    "一鍵部署",
-    "隱私路由器：敏感資料走本地、複雜推理走雲端",
-    "不綁 NVIDIA 模型——可用 OpenAI、Anthropic",
-    "自動偵測可用 GPU 資源，選擇最佳本地模型",
-    "與 OpenClaw 完全相容"
+    "OpenShell 沙盒——網路隔離 + 檔案系統限制",
+    "PII 隱私過濾器——資料送出前自動過濾個人識別資訊",
+    "針對 SOC 2 / GDPR 合規設計",
+    "開源可審計",
+    "在 OpenClaw 之上，不需要重新學習"
   ],
   "cons": [
-    "仍在 Early Preview（2026/3/16 發布），非 production-ready",
-    "需要 NVIDIA GPU 才能跑本地 Nemotron 模型",
-    "增加了 OpenClaw 的部署複雜度",
-    "文件和社群支持還在早期"
+    "Alpha 階段，非 production-ready",
+    "取消模型彈性——只能用 NVIDIA 雲端 Nemotron 模型",
+    "僅支援 Linux",
+    "設定門檻高（需 Docker + 8-16 GB RAM）",
+    "犧牲了 OpenClaw 的核心賣點（任意模型、任意平台）"
   ],
   "features": [
-    {"name": "核心級沙箱", "desc": "deny-by-default，agent 只能做被明確允許的事"},
-    {"name": "外部策略引擎", "desc": "獨立進程，即使 agent 被入侵也無法覆蓋安全策略"},
-    {"name": "隱私路由器", "desc": "敏感資料走本地 Nemotron，複雜推理走雲端"},
-    {"name": "一鍵部署", "desc": "單一指令安裝 OpenShell + 護欄 + 本地模型"},
-    {"name": "不綁模型", "desc": "支援 NVIDIA Nemotron、OpenAI、Anthropic 等"},
-    {"name": "自動偵測 GPU", "desc": "自動評估可用計算資源，選最佳本地模型"}
+    {"name": "OpenShell 沙盒", "desc": "網路隔離 + 檔案系統限制在 /sandbox 和 /tmp"},
+    {"name": "PII 過濾", "desc": "隱私路由器在資料送出前過濾個人識別資訊"},
+    {"name": "SOC 2 / GDPR", "desc": "針對企業合規需求設計"},
+    {"name": "Nemotron 路由", "desc": "透過 NVIDIA 雲端統一路由模型"},
+    {"name": "開源", "desc": "可審計的安全架構"}
   ],
   "history": [
-    {"date": "2026-03-16", "event": "NVIDIA 在 GTC 2026 發表 NemoClaw（Early Preview）"}
+    {"date": "2026-03-16", "event": "NVIDIA 在 GTC 2026 發表 NemoClaw（alpha）"}
   ],
-  "pricing": "免費開源",
+  "pricing": "免費開源（alpha）",
   "competitors": ["OpenClaw", "Claude Computer Use", "Perplexity Computer"],
   "links": [
     {"title": "NemoClaw GitHub", "url": "https://github.com/NVIDIA/NemoClaw"},
     {"title": "NVIDIA NemoClaw 官網", "url": "https://www.nvidia.com/en-us/ai/nemoclaw/"},
-    {"title": "NVIDIA 新聞稿", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-nemoclaw"},
-    {"title": "TechCrunch 報導", "url": "https://techcrunch.com/2026/03/16/nvidias-version-of-openclaw-could-solve-its-biggest-problem-security/"}
+    {"title": "NVIDIA 新聞稿", "url": "https://nvidianews.nvidia.com/news/nvidia-announces-nemoclaw"}
   ]
 }
