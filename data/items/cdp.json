@@ -1,0 +1,44 @@
+{
+  "id": "cdp",
+  "name": "Chrome DevTools Protocol (CDP)",
+  "company": "Google",
+  "category": "標準與協議",
+  "tags": ["protocol", "browser", "open-source"],
+  "oneLiner": "Chrome 瀏覽器的底層除錯與自動化協議，提供比 WebDriver 更細粒度的控制——網路攔截、效能追蹤、DOM 操作、JavaScript 執行。",
+  "overview": "Chrome DevTools Protocol（CDP）是 Chrome 瀏覽器用於除錯、效能分析和自動化的底層通訊協議。透過 WebSocket 連接，可直接控制瀏覽器的幾乎所有面向——DOM 操作、JavaScript 執行、網路攔截、效能追蹤、Console 存取等。\nPlaywright 和 Puppeteer 底層都使用 CDP 與 Chromium 溝通。在 AI Agent 時代，CDP 成為 Browser Use、Agent Browser 等 AI 瀏覽器 Agent 的核心通訊管道，因為它比 WebDriver 提供更細粒度的控制能力。\n除了 Chrome 外，Edge（基於 Chromium）也完整支援 CDP。Firefox 有部分支援（透過 Remote Debugging Protocol）。",
+  "pros": [
+    "最細粒度的瀏覽器控制能力",
+    "網路攔截和修改（WebDriver 不支援）",
+    "效能追蹤和 Profiling",
+    "Playwright/Puppeteer 底層協議",
+    "AI Browser Agent 的首選協議",
+    "即時 Console 和 JavaScript 執行"
+  ],
+  "cons": [
+    "Chrome/Chromium 專屬（Firefox/Safari 不完整支援）",
+    "API 不穩定——Chrome 版本更新可能有破壞性變更",
+    "非 W3C 標準，沒有跨瀏覽器保證",
+    "學習曲線較陡，低階 API 需要深入理解瀏覽器內部",
+    "直接使用容易造成記憶體洩漏"
+  ],
+  "features": [
+    {"name": "DOM 操作", "desc": "直接存取和修改頁面 DOM 結構"},
+    {"name": "網路攔截", "desc": "攔截、修改、模擬網路請求和回應"},
+    {"name": "JavaScript 執行", "desc": "在頁面上下文中執行任意 JavaScript"},
+    {"name": "效能追蹤", "desc": "詳細的 CPU/Memory/Network profiling"},
+    {"name": "截圖與 PDF", "desc": "高品質頁面截圖和 PDF 匯出"},
+    {"name": "Console 存取", "desc": "即時讀取 Console 訊息和錯誤"}
+  ],
+  "history": [
+    {"date": "2011-01", "event": "Chrome DevTools Protocol 隨 Chrome Remote Debugging 推出"},
+    {"date": "2017-01", "event": "Puppeteer 發布，以 CDP 為基礎的 Node.js 瀏覽器自動化"},
+    {"date": "2020-01", "event": "Playwright 發布，底層使用 CDP（Chromium）+ 自有協議（Firefox/WebKit）"},
+    {"date": "2024-01", "event": "BiDi（WebDriver BiDi）標準開始整合 CDP 能力到 W3C 標準"}
+  ],
+  "pricing": "完全免費（Chrome/Chromium 內建）。",
+  "competitors": ["W3C WebDriver", "WebDriver BiDi", "Firefox Remote Protocol"],
+  "links": [
+    {"title": "CDP 文件", "url": "https://chromedevtools.github.io/devtools-protocol/"},
+    {"title": "Chrome DevTools", "url": "https://developer.chrome.com/docs/devtools/"}
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "maxclaw",
+  "name": "MaxClaw",
+  "company": "MiniMax",
+  "category": "AI Agent",
+  "tags": ["agent", "cloud", "openclaw-compatible"],
+  "oneLiner": "MiniMax 推出的雲端託管 AI Agent，基於 OpenClaw 框架，一鍵部署、無需伺服器管理，推理成本僅 Claude 的 1/7~1/20。",
+  "overview": "MaxClaw 是 MiniMax 於 2026 年 2 月 25 日正式發布的雲端 AI Agent 平台，建構在開源 OpenClaw 框架之上。核心賣點是「零運維」——無需設定 Docker、管理伺服器或配置 API Key，一鍵即可部署 always-on 的 AI 助手。\n底層使用 MiniMax M2.5（MoE 架構，229B 總參數 / 10B 啟動），推理成本僅為 Claude 3.5 Sonnet 的 1/7~1/20。2026 年 3 月 MiniMax M2.7 發布後進一步提升能力。\n支援連接 Feishu（飛書）、DingTalk、Telegram、WhatsApp、Discord、Slack 等多平台，具備持久記憶、自訂 Skill 等功能。",
+  "pros": [
+    "一鍵雲端部署，零運維成本",
+    "推理成本極低——Claude 的 1/7~1/20",
+    "完全相容 OpenClaw 框架與 Skill 生態",
+    "多平台連接（飛書、DingTalk、Telegram、WhatsApp、Discord、Slack）",
+    "持久記憶與自訂 Skill",
+    "MiniMax M2.7 模型能力持續提升"
+  ],
+  "cons": [
+    "模型能力仍不如 Claude Opus 4.6 或 GPT-5.4",
+    "雲端託管意味著資料經過 MiniMax 伺服器",
+    "中國公司背景，部分企業可能有合規顧慮",
+    "相較原版 OpenClaw 的自訂靈活度較低"
+  ],
+  "features": [
+    {"name": "一鍵部署", "desc": "雲端託管，無需 Docker、伺服器或 API Key 管理"},
+    {"name": "OpenClaw 相容", "desc": "直接使用 OpenClaw Skill 與擴充"},
+    {"name": "多平台連接", "desc": "飛書、DingTalk、Telegram、WhatsApp、Discord、Slack"},
+    {"name": "持久記憶", "desc": "跨對話保留上下文與知識"},
+    {"name": "MoE 推理引擎", "desc": "MiniMax M2.5/M2.7 MoE 架構，高效低成本"}
+  ],
+  "history": [
+    {"date": "2026-02-25", "event": "MaxClaw 正式發布，基於 MiniMax M2.5"},
+    {"date": "2026-03-18", "event": "MiniMax M2.7 模型發布，MaxClaw 同步升級"}
+  ],
+  "pricing": "免費方案可用（基礎用量）。付費方案依 API 呼叫量計費，推理成本約 Claude 的 1/7~1/20。",
+  "competitors": ["OpenClaw", "Tencent WorkBuddy", "PicoClaw", "ZeroClaw"],
+  "links": [
+    {"title": "MaxClaw 官網", "url": "https://maxclaw.ai/"},
+    {"title": "MiniMax Agent 平台", "url": "https://agent.minimax.io/max-claw"},
+    {"title": "OpenClaw 文件 - MiniMax", "url": "https://docs.openclaw.ai/providers/minimax"}
+  ]
+}

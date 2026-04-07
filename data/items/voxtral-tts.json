@@ -1,0 +1,41 @@
+{
+  "id": "voxtral-tts",
+  "name": "Voxtral TTS",
+  "company": "Mistral AI",
+  "category": "語音合成",
+  "tags": ["tts", "open-source", "voice"],
+  "oneLiner": "Mistral AI 開源的 4B 參數文字轉語音模型，支援 9 種語言、90ms TTFA、6x RTF，可快速客製化語音風格。",
+  "overview": "Voxtral TTS 是 Mistral AI 於 2026 年 3 月 26 日發布的首款文字轉語音模型，4B 參數，開放權重（CC BY NC 4.0）。支援 9 種語言（英語、法語、德語、西班牙語、荷蘭語、葡萄牙語、義大利語、印地語、阿拉伯語），可在語言切換時保持語音一致性。\n效能表現出色：Time-to-First-Audio（TTFA）僅 90ms（500 字元 / 10 秒樣本），Real-Time Factor（RTF）6x——10 秒的音訊約 1.6 秒即可渲染完成。\n支援快速語音客製化，僅需少量音訊輸入即可複製口音、語調和語速特徵。同時提供 API 服務（$0.016/千字元）。",
+  "pros": [
+    "開放權重（Hugging Face），可自行部署",
+    "4B 參數輕量模型，適合邊緣部署",
+    "90ms TTFA 低延遲，適合即時對話",
+    "9 語言支援，跨語言語音一致性",
+    "快速語音客製化，保留口音和語調",
+    "API 價格低（$0.016/千字元）"
+  ],
+  "cons": [
+    "CC BY NC 4.0 授權——商業使用需取得授權",
+    "僅 9 種語言，不支援中文和日文",
+    "相較 ElevenLabs 的情感表達豐富度較低",
+    "生態和工具鏈不如 ElevenLabs 成熟"
+  ],
+  "features": [
+    {"name": "多語言 TTS", "desc": "支援 9 種語言，跨語言切換時保持語音一致性"},
+    {"name": "低延遲推理", "desc": "TTFA 90ms、RTF 6x，適合即時語音應用"},
+    {"name": "語音客製化", "desc": "少量音訊即可複製口音、語調、語速"},
+    {"name": "開放權重", "desc": "Hugging Face 開放下載，可自行部署"},
+    {"name": "API 服務", "desc": "$0.016/千字元的雲端 API"}
+  ],
+  "history": [
+    {"date": "2025-09", "event": "Voxtral 語音理解模型發布"},
+    {"date": "2026-03-26", "event": "Voxtral TTS 發布——Mistral 首款文字轉語音模型，開放權重"}
+  ],
+  "pricing": "開放權重免費下載（CC BY NC 4.0，非商業）。API：$0.016/千字元。商業授權需洽談。",
+  "competitors": ["ElevenLabs", "OpenAI TTS", "Deepgram", "BreezyVoice TTS"],
+  "links": [
+    {"title": "Mistral 公告", "url": "https://mistral.ai/news/voxtral-tts"},
+    {"title": "Hugging Face 模型", "url": "https://huggingface.co/mistralai/Voxtral-4B-TTS-2603"},
+    {"title": "API 文件", "url": "https://docs.mistral.ai/models/voxtral-tts-26-03"}
+  ]
+}

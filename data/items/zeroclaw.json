@@ -1,0 +1,42 @@
+{
+  "id": "zeroclaw",
+  "name": "ZeroClaw",
+  "company": "Community (Open Source)",
+  "category": "AI Agent",
+  "tags": ["agent", "open-source", "rust", "edge"],
+  "oneLiner": "以 Rust 從頭設計的 OpenClaw 替代方案，3.4MB 系統常駐程式、冷啟動 <10ms，主打安全沙箱與模組化可替換架構。",
+  "overview": "ZeroClaw 不是「用 Rust 重寫的 OpenClaw」，而是從零重新思考 AI Agent 基礎設施應有的樣貌。將 AI Agent 變成一個 3.4MB 的系統常駐程式（daemon），冷啟動不到 10 毫秒。\n核心設計原則：Lean by Default（小型 Rust 二進位、快啟動、低記憶體）、Secure by Design（配對驗證、嚴格沙箱、顯式白名單、工作區限定）、Fully Swappable（所有核心系統——Provider、Channel、Tool、Memory、Tunnel——皆為 trait，可任意替換）。\n預設支援 OpenClaw 風格的身份系統（IDENTITY.md、SOUL.md 等），並提供 `zeroclaw migrate openclaw` 遷移工具，無損切換。2026 年 2 月發布，至今已超過 18,000 GitHub stars。",
+  "pros": [
+    "極致輕量——3.4MB 執行檔、冷啟動 <10ms",
+    "Rust 記憶體安全保證，適合安全敏感場景",
+    "嚴格沙箱與白名單安全模型",
+    "所有核心模組皆可替換（trait-based 架構）",
+    "OpenClaw 遷移工具，無損切換",
+    "18,000+ GitHub stars，社群活躍"
+  ],
+  "cons": [
+    "Rust 生態入門門檻較高，Skill 開發需 Rust 能力",
+    "相較 OpenClaw 的 TypeScript Skill 生態較小",
+    "快速迭代中，部分 API 尚未穩定",
+    "文件仍在完善中"
+  ],
+  "features": [
+    {"name": "3.4MB Daemon", "desc": "系統常駐程式，冷啟動 <10ms"},
+    {"name": "安全沙箱", "desc": "配對驗證、嚴格沙箱、顯式白名單、工作區限定"},
+    {"name": "模組化架構", "desc": "Provider、Channel、Tool、Memory、Tunnel 皆為 trait，可替換"},
+    {"name": "OpenClaw 遷移", "desc": "`zeroclaw migrate openclaw` 無損遷移身份與記憶"},
+    {"name": "邊緣部署", "desc": "適合低功耗邊緣裝置與嵌入式系統"},
+    {"name": "多模型支援", "desc": "透過 Provider trait 支援任意 LLM"}
+  ],
+  "history": [
+    {"date": "2026-02-13", "event": "ZeroClaw 首次在 GitHub 發布"},
+    {"date": "2026-03", "event": "突破 18,000 GitHub stars"}
+  ],
+  "pricing": "完全免費開源。",
+  "competitors": ["OpenClaw", "PicoClaw", "MaxClaw", "IronClaw"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/theonlyhennygod/zeroclaw"},
+    {"title": "ZeroClaw 官網", "url": "https://zeroclaws.io/"},
+    {"title": "Lightning AI 介紹", "url": "https://lightning.ai/blog/what-is-zeroclaw-a-rust-powered-openclaw-alternate"}
+  ]
+}

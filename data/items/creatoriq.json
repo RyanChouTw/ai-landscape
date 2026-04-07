@@ -1,0 +1,43 @@
+{
+  "id": "creatoriq",
+  "name": "CreatorIQ",
+  "company": "CreatorIQ",
+  "category": "行銷平台",
+  "tags": ["marketing", "enterprise", "paid"],
+  "oneLiner": "企業級網紅行銷平台，AI 驅動的創作者發現、活動管理和 ROI 追蹤，服務 1,300+ 品牌（Google、LVMH、Sephora 等）。",
+  "overview": "CreatorIQ 是企業級的創作者行銷（influencer marketing）平台，定位為「AI 原生的創作者驅動成長作業系統」。服務超過 1,300 個全球品牌和代理商，包括 Burson、Delta Air Lines、Google、LVMH、Nestle 和 Sephora。\n核心能力建立在 The Creator Graph 之上——AI 驅動的創作者發現引擎，可比傳統方式快 3 倍找到合適的創作者和內容。平台整合完整的活動管理工作流程：發現、溝通、合約、內容審核、發布、成效追蹤。\n2025-2026 年被 IDC MarketScape 評為全球網紅行銷平台 Leader。",
+  "pros": [
+    "AI 驅動創作者發現——比傳統方式快 3 倍",
+    "1,300+ 全球企業客戶驗證",
+    "The Creator Graph 數據引擎",
+    "完整活動生命週期管理",
+    "品牌安全監控",
+    "IDC MarketScape Leader"
+  ],
+  "cons": [
+    "起價 $2,350/月，僅適合大型企業",
+    "定價不透明，需年付承諾",
+    "學習曲線陡峭",
+    "中小企業和個人創作者不適用"
+  ],
+  "features": [
+    {"name": "Creator Graph", "desc": "AI 驅動的創作者發現和推薦引擎"},
+    {"name": "活動管理", "desc": "發現、溝通、合約、審核、發布、追蹤全流程"},
+    {"name": "ROI 追蹤", "desc": "跨平台行銷成效和投資報酬率追蹤"},
+    {"name": "品牌安全", "desc": "即時監控創作者內容的品牌安全風險"},
+    {"name": "企業整合", "desc": "與 CRM、ERP 等企業系統整合"}
+  ],
+  "history": [
+    {"date": "2014-01", "event": "CreatorIQ 成立"},
+    {"date": "2021-10", "event": "收購 Tribe Dynamics，強化 Earned Media 分析"},
+    {"date": "2023-06", "event": "推出 AI 驅動的創作者推薦引擎"},
+    {"date": "2025-12", "event": "IDC MarketScape 全球網紅行銷平台 Leader"}
+  ],
+  "pricing": "起價約 $2,350/月（年付），依企業規模和需求客製。定價不公開。",
+  "competitors": ["Aspire", "Grin", "Impact.com", "Traackr", "Upfluence"],
+  "links": [
+    {"title": "CreatorIQ 官網", "url": "https://www.creatoriq.com"},
+    {"title": "網紅行銷方案", "url": "https://www.creatoriq.com/influencer-marketing-solution"},
+    {"title": "CreatorIQ Connect 活動", "url": "https://events.creatoriq.com/creatoriqconnect/"}
+  ]
+}

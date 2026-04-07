@@ -1,0 +1,43 @@
+{
+  "id": "luma-dream-machine",
+  "name": "Luma Dream Machine",
+  "company": "Luma AI",
+  "category": "影片生成",
+  "tags": ["video", "paid", "creative"],
+  "oneLiner": "Luma AI 的 AI 影片生成平台，支援 4K 60fps 物理模擬、角色一致性種子、關鍵幀控制，超過 2,500 萬註冊用戶。",
+  "overview": "Luma Dream Machine 是 Luma AI 推出的 AI 影片生成器，自 2024 年 6 月公開 beta 以來已發展為業界標竿。2026 年支援 4K 解析度 60fps 輸出，使用 H.266 編解碼器高效串流。\n核心差異化在於物理模擬能力——尊重重力、碰撞和流體動力學。Character Seeds 功能可在多段生成影片中保持角色外觀一致性。關鍵幀控制允許用戶上傳起始幀和結束幀，模型自動生成轉場。\n超過 2,500 萬註冊用戶，是 AI 影片生成領域用戶最多的平台之一。",
+  "pros": [
+    "物理模擬能力優秀——重力、碰撞、流體動力學",
+    "Character Seeds 跨影片角色一致性",
+    "4K 60fps 高品質輸出",
+    "關鍵幀控制提供精確的創意掌控",
+    "免費方案可用（30 次/月）",
+    "2,500 萬+ 註冊用戶，社群龐大"
+  ],
+  "cons": [
+    "Pro 方案 $90/月，Ultra $300/月，價格不低",
+    "免費方案有浮水印且速度慢",
+    "長影片生成仍有一致性挑戰",
+    "與 Runway、Sora 競爭激烈"
+  ],
+  "features": [
+    {"name": "4K 60fps 輸出", "desc": "高解析度高幀率影片生成，H.266 編解碼器"},
+    {"name": "物理模擬", "desc": "尊重重力、碰撞、流體動力學的寫實影片"},
+    {"name": "Character Seeds", "desc": "跨多段影片保持角色外觀一致性"},
+    {"name": "關鍵幀控制", "desc": "上傳起始/結束幀，模型生成轉場"},
+    {"name": "文字轉影片", "desc": "自然語言描述生成影片"},
+    {"name": "圖片轉影片", "desc": "靜態圖片動畫化"}
+  ],
+  "history": [
+    {"date": "2024-06", "event": "Dream Machine 公開 beta 發布"},
+    {"date": "2024-12", "event": "Dream Machine 1.5 發布，大幅提升品質"},
+    {"date": "2025-06", "event": "支援 4K 輸出與 Character Seeds"},
+    {"date": "2026-01", "event": "支援 60fps、H.266 編解碼器、關鍵幀控制"}
+  ],
+  "pricing": "Free（30 次/月、浮水印）/ Plus $30/月 / Pro $90/月（無限生成、4K、商用授權）/ Ultra $300/月。Enterprise 報價制（API、專屬 GPU）。",
+  "competitors": ["Runway Gen-3", "Sora", "Veo 3", "Kling", "Pika"],
+  "links": [
+    {"title": "Dream Machine", "url": "https://lumalabs.ai/dream-machine"},
+    {"title": "定價頁面", "url": "https://lumalabs.ai/pricing"}
+  ]
+}

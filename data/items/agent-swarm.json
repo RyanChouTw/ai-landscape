@@ -1,0 +1,44 @@
+{
+  "id": "agent-swarm",
+  "name": "Kimi K2.5 Agent Swarm",
+  "company": "Moonshot AI",
+  "category": "AI Agent",
+  "tags": ["agent", "open-source", "multi-agent"],
+  "oneLiner": "Moonshot AI 的 Kimi K2.5 內建的 Agent Swarm 功能，可自主調度最多 100 個平行 sub-agent，BrowseComp 78.4% 超越 GPT-5.2。",
+  "overview": "Agent Swarm 是 Moonshot AI 的 Kimi K2.5 模型（2026 年 1 月 27 日發布）內建的多 Agent 調度功能。Kimi K2.5 是一個 1 兆參數的開放權重多模態模型，使用 MoE 架構（32B 啟動參數）、256K context window，透過 PARL（Parallel Agent Reinforcement Learning）訓練而成。\nAgent Swarm 可將複雜任務分解為子任務，最多調度 100 個平行 sub-agent 獨立使用工具（搜尋、生成、分析、整理）。在 BrowseComp 基準測試（網頁導航與搜尋）中取得 78.4%——超越所有測試模型包括 GPT-5.2。\n長時間工作流程執行時間減少最多 4.5 倍，適合大規模研究、長文寫作和批次處理。",
+  "pros": [
+    "100 個平行 sub-agent，大幅加速複雜任務",
+    "BrowseComp 78.4% 超越 GPT-5.2",
+    "開放權重（1T MoE / 32B 啟動）",
+    "256K context window",
+    "PARL 訓練——專門為平行任務分解最佳化",
+    "長時間工作流程加速 4.5 倍"
+  ],
+  "cons": [
+    "1T 參數模型部署門檻極高",
+    "Agent Swarm 仍為研究預覽版",
+    "中國公司背景，部分企業可能有合規考量",
+    "100 agent 平行執行的資源消耗龐大",
+    "英文和中文以外的語言支援較弱"
+  ],
+  "features": [
+    {"name": "100 平行 Sub-agent", "desc": "自主分解任務並調度最多 100 個 agent 平行執行"},
+    {"name": "PARL 訓練", "desc": "Parallel Agent Reinforcement Learning 專用訓練技術"},
+    {"name": "多模態", "desc": "支援文字、圖片、影片輸入"},
+    {"name": "256K Context", "desc": "256K token context window"},
+    {"name": "工具使用", "desc": "每個 sub-agent 可獨立使用搜尋、生成、分析等工具"},
+    {"name": "開放權重", "desc": "MoE 1T 模型開放權重下載"}
+  ],
+  "history": [
+    {"date": "2025-07", "event": "Kimi K2 發布"},
+    {"date": "2026-01-27", "event": "Kimi K2.5 發布，內建 Agent Swarm（研究預覽版）"},
+    {"date": "2026-02", "event": "BrowseComp 78.4% 成績公布，超越 GPT-5.2"}
+  ],
+  "pricing": "開放權重免費下載。API 使用依 Moonshot AI 定價。",
+  "competitors": ["Claude Cowork", "GPT-5.4 Agents", "CrewAI", "AutoGen"],
+  "links": [
+    {"title": "Kimi K2.5 官網", "url": "https://www.kimi.com/ai-models/kimi-k2-5"},
+    {"title": "GitHub", "url": "https://github.com/MoonshotAI/Kimi-K2.5"},
+    {"title": "InfoQ 報導", "url": "https://www.infoq.com/news/2026/02/kimi-k25-swarm/"}
+  ]
+}

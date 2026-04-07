@@ -1,0 +1,46 @@
+{
+  "id": "amazon-q",
+  "name": "Amazon Q Developer",
+  "company": "AWS",
+  "category": "開發工具",
+  "tags": ["coding", "paid", "cloud"],
+  "oneLiner": "AWS 推出的 AI 編程助手，深度整合 AWS 服務，支援自動化程式碼轉換、IDE 內聊天與 AWS Console 診斷。",
+  "overview": "Amazon Q Developer 是 AWS 的 AI 編程助手，提供程式碼補全、聊天、自動化 Agent 等功能。其核心差異化在於深度整合 AWS 生態系——可直接在 AWS Console 中診斷錯誤、查詢資源用量和定價資訊。\n支援 VS Code、JetBrains、Visual Studio 等主流 IDE，並提供自主 Agent 執行多步驟任務（實作新功能、重構、升級相依套件）。特色功能包括 Java 8→17 升級和 .NET Framework→.NET 8 移轉，可一次改寫數千行程式碼並自動執行測試。\n2026 年新增 Chat History（90 天保存、可搜尋匯出）以及 AWS 定價查詢能力。",
+  "pros": [
+    "深度整合 AWS 服務——Console 錯誤診斷、資源查詢、定價估算",
+    "自主 Agent 可執行多步驟任務（功能實作、重構、相依升級）",
+    "Java/NET 自動化轉換 Agent，大規模語言版本升級",
+    "永久免費方案，個人開發者零成本入門",
+    "支援多種 IDE（VS Code、JetBrains、Visual Studio）",
+    "90 天 Chat History 可搜尋並匯出"
+  ],
+  "cons": [
+    "高度綁定 AWS 生態，非 AWS 使用者價值有限",
+    "程式碼能力整體不如 Claude Code 或 Cursor",
+    "Pro 方案 $19/月/人，功能差異與免費版不夠明顯",
+    "Code Transformation Agent 超量使用按行計費（$0.003/LOC）",
+    "社群生態和外掛不如 GitHub Copilot 成熟"
+  ],
+  "features": [
+    {"name": "AI Code Completion", "desc": "IDE 內即時程式碼補全與建議"},
+    {"name": "Autonomous Agents", "desc": "多步驟任務自動化：實作功能、重構、升級相依"},
+    {"name": "Code Transformation", "desc": "Java 8→17、.NET Framework→.NET 8 大規模自動轉換"},
+    {"name": "AWS Console 整合", "desc": "在 Console 中直接聊天、診斷錯誤、查詢定價"},
+    {"name": "Chat History", "desc": "90 天聊天記錄保存、搜尋、匯出為 Markdown/HTML"},
+    {"name": "Security Scanning", "desc": "自動掃描程式碼漏洞並建議修復"}
+  ],
+  "history": [
+    {"date": "2023-11", "event": "Amazon CodeWhisperer 重新品牌為 Amazon Q Developer（預覽）"},
+    {"date": "2024-04", "event": "Amazon Q Developer 正式發布（GA）"},
+    {"date": "2024-12", "event": "新增自主 Agent 功能與 Code Transformation"},
+    {"date": "2025-06", "event": "支援更多 IDE 與 AWS 服務整合"},
+    {"date": "2026-01", "event": "新增 Chat History、AWS 定價查詢能力"}
+  ],
+  "pricing": "Free Tier（永久免費，基本補全與聊天）/ Pro $19/用戶/月（完整 Agent、進階功能）。Code Transformation：Pro 用戶含 4,000 LOC/月，超量 $0.003/LOC。",
+  "competitors": ["GitHub Copilot", "Cursor", "Claude Code", "Tabnine", "Cline"],
+  "links": [
+    {"title": "Amazon Q Developer 官網", "url": "https://aws.amazon.com/q/developer/"},
+    {"title": "定價頁面", "url": "https://aws.amazon.com/q/developer/pricing/"},
+    {"title": "文件", "url": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/"}
+  ]
+}

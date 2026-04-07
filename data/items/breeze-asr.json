@@ -1,0 +1,37 @@
+{
+  "id": "breeze-asr",
+  "name": "Breeze ASR",
+  "company": "MediaTek Research",
+  "category": "語音辨識",
+  "tags": ["asr", "open-source", "taiwanese-mandarin"],
+  "oneLiner": "聯發科技研究院開源的台灣華語自動語音辨識模型，基於 Whisper-large-v2 微調，針對台灣口音和中英混用最佳化。",
+  "overview": "Breeze ASR 25 是聯發科技研究院（MediaTek Research）開源的自動語音辨識（ASR）模型，基於 OpenAI Whisper-large-v2 微調，專門針對台灣華語（Taiwanese Mandarin）和中英混用（code-switching）情境最佳化。\n採用 Apache 2.0 寬鬆授權，是 MediaTek Research 開源繁體中文 AI 工具套件的一部分。該套件還包括視覺語言模型（V-LLM）、台灣口音 TTS（BreezyVoice）和 Function Calling 模型。\n能更好理解台灣語言的細微差異，包括中英語碼切換（code-switching）——這是台灣日常語言中非常常見的特徵。",
+  "pros": [
+    "專為台灣華語最佳化，辨識準確度高於通用 Whisper",
+    "支援中英混用（code-switching）辨識",
+    "Apache 2.0 開源授權，商用無限制",
+    "基於成熟的 Whisper 架構，生態相容性好",
+    "台灣在地語音特徵（口音、用語）處理優異"
+  ],
+  "cons": [
+    "僅針對台灣華語最佳化，其他語言表現可能不如原版 Whisper",
+    "模型較大（Whisper-large-v2 級別），邊緣部署需 GPU",
+    "社群和文件主要以研究導向為主"
+  ],
+  "features": [
+    {"name": "台灣華語 ASR", "desc": "針對台灣口音、用語、語調最佳化的語音辨識"},
+    {"name": "中英混用辨識", "desc": "準確辨識台灣常見的中英語碼切換"},
+    {"name": "Whisper 架構", "desc": "基於 Whisper-large-v2 微調，相容 Whisper 生態工具"},
+    {"name": "Apache 2.0 授權", "desc": "寬鬆開源授權，可自由商用"}
+  ],
+  "history": [
+    {"date": "2025-07", "event": "Breeze ASR 25 首次發布"},
+    {"date": "2026-03", "event": "MediaTek Research 在 AI EXPO Taiwan 2026 展示語言特定 AI 挑戰"}
+  ],
+  "pricing": "完全免費開源（Apache 2.0）。",
+  "competitors": ["OpenAI Whisper", "Google Speech-to-Text", "Azure Speech Services"],
+  "links": [
+    {"title": "Hugging Face 模型", "url": "https://huggingface.co/MediaTek-Research/Breeze-ASR-25"},
+    {"title": "GitHub", "url": "https://github.com/mtkresearch/Breeze-ASR-25"}
+  ]
+}

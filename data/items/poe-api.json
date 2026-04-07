@@ -1,0 +1,42 @@
+{
+  "id": "poe-api",
+  "name": "Poe API",
+  "company": "Quora",
+  "category": "模型聚合",
+  "tags": ["api", "multi-model", "paid"],
+  "oneLiner": "Quora 旗下 Poe 平台的開發者 API，單一介面存取 100+ AI 模型（文字/圖片/語音/影片），相容 OpenAI Chat Completion 格式。",
+  "overview": "Poe 是 Quora 推出的 AI 模型聚合平台，定位為「AI 的瀏覽器」。Poe API 允許開發者透過單一介面存取超過 100 個模型——涵蓋文字、圖片、語音和影片生成。\nAPI 相容 OpenAI Chat Completion 格式，可無縫整合到現有工具和工作流程。使用量透過 Poe 的點數制訂閱方案追蹤，每個模型呼叫消耗固定點數。\nPoe 同時也是一個 Bot 創建平台——開發者可使用 API 建立自訂 Bot 並發布到 Poe Marketplace。API 本身不收取額外費用，使用量從訂閱點數扣除。",
+  "pros": [
+    "單一 API 存取 100+ 模型（GPT/Claude/Gemini/Llama 等）",
+    "相容 OpenAI Chat Completion 格式",
+    "API 不收額外費用，從訂閱點數扣除",
+    "多模態支援（文字/圖片/語音/影片）",
+    "可建立自訂 Bot 並發布到 Marketplace",
+    "最低 $4.99/月即可使用"
+  ],
+  "cons": [
+    "點數制——高用量場景成本快速累積",
+    "各模型的 rate limit 和可用性受 Poe 平台控制",
+    "不如直接使用各模型原生 API 靈活",
+    "延遲可能高於直接 API 呼叫（多一層代理）",
+    "企業合規場景可能不適用"
+  ],
+  "features": [
+    {"name": "多模型 API", "desc": "單一介面存取 100+ AI 模型"},
+    {"name": "OpenAI 相容", "desc": "相容 Chat Completion 格式，無縫整合"},
+    {"name": "多模態", "desc": "文字、圖片、語音、影片生成"},
+    {"name": "Bot 平台", "desc": "建立自訂 Bot 並發布到 Poe Marketplace"},
+    {"name": "點數計費", "desc": "統一的點數制計費，簡化成本管理"}
+  ],
+  "history": [
+    {"date": "2023-02", "event": "Poe 平台公開上線"},
+    {"date": "2024-03", "event": "Poe Bot Creator 平台發布"},
+    {"date": "2025-07", "event": "Poe API 正式發布，開放開發者存取多模型"}
+  ],
+  "pricing": "$4.99/月（10K 點/天）/ $19.99/月（1M 點/月）/ $49.99/月（2.5M 點/月）/ $99.99/月（5M 點/月）/ $249.99/月（12.5M 點/月）。API 不收額外費用。",
+  "competitors": ["OpenRouter", "Together AI", "Fireworks AI", "Replicate"],
+  "links": [
+    {"title": "Poe 官網", "url": "https://poe.com/"},
+    {"title": "Poe API 介紹", "url": "https://poe.com/blog/introducing-the-poe-api"}
+  ]
+}

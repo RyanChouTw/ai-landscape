@@ -1,0 +1,44 @@
+{
+  "id": "openapi",
+  "name": "OpenAPI",
+  "company": "OpenAPI Initiative (Linux Foundation)",
+  "category": "標準與協議",
+  "tags": ["standard", "api", "open-source"],
+  "oneLiner": "業界標準的 REST API 描述規格（前身為 Swagger），以 YAML/JSON 定義 API 端點、參數、回應格式，驅動自動化文件、程式碼生成和測試。",
+  "overview": "OpenAPI Specification（OAS）是描述 RESTful API 的業界標準格式，由 Linux Foundation 下的 OpenAPI Initiative 維護。前身為 Swagger Specification，2016 年捐贈後更名。\n以 YAML 或 JSON 格式定義 API 的端點、HTTP 方法、請求/回應格式、認證方式等。圍繞 OAS 建立的工具生態極為豐富——Swagger UI（互動式文件）、Swagger Codegen / OpenAPI Generator（程式碼生成）、Postman（測試）等。\n在 AI Agent 時代，OpenAPI 規格成為 LLM 理解和呼叫外部 API 的關鍵介面，MCP、Function Calling 等機制大量使用 OpenAPI Schema。",
+  "pros": [
+    "業界標準——幾乎所有 REST API 工具都支援",
+    "豐富的工具生態（Swagger UI、Codegen、Postman 等）",
+    "語言和框架無關",
+    "AI Agent 時代的關鍵 API 描述格式",
+    "完全免費開源",
+    "大量企業和雲端服務採用"
+  ],
+  "cons": [
+    "僅適用於 RESTful API，不支援 GraphQL 或 gRPC",
+    "複雜 API 的 Spec 文件可能很龐大",
+    "版本遷移（2.0→3.0→3.1）有破壞性變更",
+    "Schema 表達能力有限，某些複雜資料結構難以精確描述"
+  ],
+  "features": [
+    {"name": "API 定義", "desc": "以 YAML/JSON 定義端點、參數、回應、認證"},
+    {"name": "互動式文件", "desc": "Swagger UI 自動生成可互動的 API 文件"},
+    {"name": "程式碼生成", "desc": "從 Spec 自動生成 Client SDK 和 Server Stub"},
+    {"name": "API 測試", "desc": "基於 Spec 自動化 API 測試與驗證"},
+    {"name": "AI Agent 整合", "desc": "LLM Function Calling 和 MCP 工具描述的基礎格式"}
+  ],
+  "history": [
+    {"date": "2011-01", "event": "Swagger Specification 首次發布"},
+    {"date": "2016-01", "event": "SmartBear 將 Swagger Specification 捐贈給 Linux Foundation，更名為 OpenAPI"},
+    {"date": "2017-07", "event": "OpenAPI 3.0 發布"},
+    {"date": "2021-02", "event": "OpenAPI 3.1 發布，完全對齊 JSON Schema"},
+    {"date": "2025-05", "event": "OpenAPI 4.0（Moonwalk）草案發布"}
+  ],
+  "pricing": "完全免費開源。",
+  "competitors": ["GraphQL Schema", "gRPC/Protocol Buffers", "RAML", "API Blueprint"],
+  "links": [
+    {"title": "OpenAPI 官網", "url": "https://www.openapis.org/"},
+    {"title": "OpenAPI Specification", "url": "https://spec.openapis.org/oas/latest.html"},
+    {"title": "Swagger 工具", "url": "https://swagger.io/tools/"}
+  ]
+}

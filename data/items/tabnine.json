@@ -1,0 +1,45 @@
+{
+  "id": "tabnine",
+  "name": "Tabnine",
+  "company": "Tabnine",
+  "category": "開發工具",
+  "tags": ["coding", "paid", "on-premise"],
+  "oneLiner": "企業級 AI 程式碼補全平台，主打零資料保留、可自建部署（on-premise / air-gapped），適合高合規需求的團隊。",
+  "overview": "Tabnine 是以隱私和企業合規為核心差異化的 AI 編程助手。與 GitHub Copilot、Cursor 等雲端方案不同，Tabnine 支援完全私有部署——SaaS、VPC、On-Premises 甚至完全離線（air-gapped）環境。\n核心承諾是「零資料保留」：不儲存、不訓練、不分享使用者的程式碼。2026 年初推出 Enterprise Context Engine 和 Agentic 平台，將 AI Agent 帶入 Code Review、測試和重構工作流程。\n支援主流 IDE（VS Code、JetBrains、Visual Studio），可上傳 Figma 設計稿、ER 圖或流程圖自動生成對應程式碼。",
+  "pros": [
+    "零資料保留——不儲存、不訓練、不分享使用者程式碼",
+    "支援完全私有部署（VPC、On-Premises、Air-Gapped）",
+    "Enterprise Context Engine 深度理解組織程式碼庫",
+    "Code Review Agent 自動化程式碼審查",
+    "Figma/ER 圖→程式碼自動生成",
+    "支援所有主流 IDE"
+  ],
+  "cons": [
+    "無免費方案，起價 $39-59/座/月且需年付",
+    "程式碼生成品質不如 Claude Code 或 Cursor",
+    "社群和外掛生態較小",
+    "年付鎖定，無月付選項靈活度低",
+    "Agent 功能相對較新，成熟度待驗證"
+  ],
+  "features": [
+    {"name": "AI Code Completion", "desc": "基於組織程式碼庫的高品質即時補全"},
+    {"name": "Enterprise Context Engine", "desc": "深度索引組織程式碼庫，生成符合團隊慣例的建議"},
+    {"name": "Code Review Agent", "desc": "自動化程式碼審查與建議"},
+    {"name": "私有部署", "desc": "SaaS / VPC / On-Premises / Air-Gapped 全模式支援"},
+    {"name": "設計稿轉程式碼", "desc": "Figma、ER 圖、流程圖自動轉換為 React/SQL/編排程式碼"},
+    {"name": "零資料保留", "desc": "端到端隱私保護，不留存任何使用者程式碼"}
+  ],
+  "history": [
+    {"date": "2018-01", "event": "Tabnine（原名 Codota）發布，早期基於 GPT-2 的程式碼補全"},
+    {"date": "2021-06", "event": "品牌更名為 Tabnine，推出團隊版"},
+    {"date": "2023-03", "event": "推出 Tabnine Chat 與企業方案"},
+    {"date": "2024-08", "event": "支援 On-Premises 與 Air-Gapped 部署"},
+    {"date": "2026-01", "event": "推出 Enterprise Context Engine 與 Agentic 平台（Code Review Agent）"}
+  ],
+  "pricing": "Dev $39-59/座/月（年付）。Enterprise 報價制。無免費方案。",
+  "competitors": ["GitHub Copilot", "Cursor", "Amazon Q Developer", "Cline", "Claude Code"],
+  "links": [
+    {"title": "Tabnine 官網", "url": "https://www.tabnine.com/"},
+    {"title": "定價頁面", "url": "https://www.tabnine.com/pricing/"}
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "mulesoft-agent-broker",
+  "name": "MuleSoft Agent Broker",
+  "company": "Salesforce",
+  "category": "AI Agent 平台",
+  "tags": ["enterprise", "agent", "integration", "paid"],
+  "oneLiner": "Salesforce 旗下 MuleSoft 的智慧路由服務，透過 A2A 和 MCP 協議跨 AI Agent 和系統動態路由任務，支援 Agentforce/Bedrock/Vertex/Copilot。",
+  "overview": "MuleSoft Agent Broker 是 Salesforce 旗下 MuleSoft 推出的智慧路由服務，將 AI Agent 和工具組織為業務導向的領域（domain），並動態路由任務。透過 A2A（Agent-to-Agent）和 MCP 協議連接，讓複雜的多步驟流程可在不同 Agent 和系統之間無縫執行。\nAgent Broker 是 MuleSoft Agent Fabric 平台的核心元件，於 2025 年 10 月正式 GA。2026 年 1 月 Agent Scanners 開放支援 Salesforce Agentforce、Amazon Bedrock、Google Vertex AI 和 Microsoft Copilot Studio。\nMuleSoft 在 2026 年 Gartner iPaaS Magic Quadrant 中被評為 Leader。",
+  "pros": [
+    "跨平台 Agent 路由——Agentforce/Bedrock/Vertex/Copilot",
+    "A2A 和 MCP 雙協議支援",
+    "Agent Registry + Visualizer 完整治理",
+    "企業級安全和合規",
+    "Gartner iPaaS Leader"
+  ],
+  "cons": [
+    "Salesforce 生態綁定，獨立使用成本高",
+    "企業定價不透明",
+    "學習曲線陡峭",
+    "需要 MuleSoft 平台基礎"
+  ],
+  "features": [
+    {"name": "智慧路由", "desc": "根據業務領域動態路由任務到對應的 Agent 或工具"},
+    {"name": "A2A + MCP", "desc": "支援 Agent-to-Agent 和 Model Context Protocol 雙協議"},
+    {"name": "Agent Registry", "desc": "註冊和管理所有 AI Agent 與工具"},
+    {"name": "Agent Scanners", "desc": "自動發現 Agentforce/Bedrock/Vertex/Copilot 上的 Agent"},
+    {"name": "Agent Visualizer", "desc": "視覺化 Agent 互動與任務流程"}
+  ],
+  "history": [
+    {"date": "2025-10", "event": "Agent Registry、Agent Broker、Agent Visualizer 正式 GA"},
+    {"date": "2026-01", "event": "Agent Scanners GA——支援 Agentforce/Bedrock/Vertex/Copilot Studio；MCP Server Registry GA"}
+  ],
+  "pricing": "企業定價，需洽 Salesforce 業務。隨 MuleSoft 平台授權。",
+  "competitors": ["LangChain", "CrewAI", "AutoGen", "AWS Step Functions"],
+  "links": [
+    {"title": "Agent Broker 官網", "url": "https://www.mulesoft.com/ai/agent-broker"},
+    {"title": "Agent Fabric 官網", "url": "https://www.mulesoft.com/ai/agent-fabric"},
+    {"title": "Salesforce 公告", "url": "https://www.salesforce.com/news/stories/mulesoft-agent-fabric-announcement/"}
+  ]
+}

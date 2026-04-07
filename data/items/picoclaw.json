@@ -1,0 +1,43 @@
+{
+  "id": "picoclaw",
+  "name": "PicoClaw",
+  "company": "Sipeed",
+  "category": "AI Agent",
+  "tags": ["agent", "open-source", "edge", "go"],
+  "oneLiner": "用 Go 語言從零重寫的超輕量 OpenClaw 實作，單一靜態二進位檔 <10MB RAM，可在 $10 硬體上執行 AI Agent。",
+  "overview": "PicoClaw 是由 Sipeed 團隊的中國工程師於 2026 年 2 月 9 日發布的超輕量 AI Agent 系統，以 Go 語言從零重寫 OpenClaw 架構。核心記憶體佔用比 OpenClaw 小 99%——單一靜態二進位檔使用不到 10MB RAM，冷啟動不到 1 秒，甚至能在 0.6 GHz 單核心開發板上運行。\n專為資源受限裝置和嵌入式系統設計，與 OpenClaw 的 TypeScript 實作形成鮮明對比。發布一週即獲 12,000 GitHub stars，社群採用極為快速。\n2026 年 3 月支援 Android 平台，v0.2.3 新增 System Tray UI（Windows/Linux）、sub-agent 狀態查詢、Cron 安全閘控等功能。",
+  "pros": [
+    "極致輕量——<10MB RAM、冷啟動 <1 秒",
+    "單一靜態二進位檔，零相依部署",
+    "可在 $10 硬體上運行（嵌入式、IoT）",
+    "Go 語言跨平台編譯（Linux/Windows/macOS/Android）",
+    "OpenClaw 生態相容",
+    "社群成長極快（一週 12K stars）"
+  ],
+  "cons": [
+    "功能不如完整版 OpenClaw 齊全",
+    "生態系較新，Skill 和外掛數量有限",
+    "邊緣裝置的 LLM 推理能力受限於硬體",
+    "快速迭代中，API 穩定性待驗證"
+  ],
+  "features": [
+    {"name": "超輕量執行", "desc": "<10MB RAM，單一靜態二進位檔"},
+    {"name": "邊緣裝置支援", "desc": "可在 $10 開發板、Android 裝置上運行"},
+    {"name": "System Tray UI", "desc": "Windows/Linux 系統列管理介面"},
+    {"name": "Sub-agent 管理", "desc": "sub-agent 狀態查詢與管理"},
+    {"name": "Cron 安全閘控", "desc": "排程任務安全權限管理"},
+    {"name": "OpenClaw 相容", "desc": "支援 OpenClaw Skill 與協議"}
+  ],
+  "history": [
+    {"date": "2026-02-09", "event": "PicoClaw v0.1.0 發布，一天內完成開發"},
+    {"date": "2026-02-16", "event": "一週內獲得 12,000 GitHub stars"},
+    {"date": "2026-03-17", "event": "v0.2.3 發布：System Tray UI、sub-agent 查詢、Cron 安全閘控"},
+    {"date": "2026-03-31", "event": "新增 Android 平台支援"}
+  ],
+  "pricing": "完全免費開源。",
+  "competitors": ["OpenClaw", "ZeroClaw", "MaxClaw", "Tencent WorkBuddy"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/sipeed/picoclaw"},
+    {"title": "PicoClaw 官網", "url": "https://picoclaw.io/"}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "obsidian-claudian",
+  "name": "Obsidian + Claudian",
+  "company": "Community (Open Source)",
+  "category": "知識管理",
+  "tags": ["knowledge", "agent", "open-source", "markdown"],
+  "oneLiner": "Claudian 是 Obsidian 外掛，將 Claude Code 嵌入 Vault 成為 AI 協作者——側邊欄聊天、讀寫檔案、Inline Edit、MCP 支援。",
+  "overview": "Claudian 是一款 Obsidian 外掛，基於 Claude Agent SDK 開發，將 Claude Code 的完整 Agentic 能力直接嵌入 Obsidian Vault。核心概念是讓 Vault 成為 Claude 的工作目錄，Claude 可讀取、寫入、編輯檔案，執行搜尋和 Bash 指令。\n主要功能包括：側邊欄聊天介面、自動附加聚焦中的筆記、@ 提及檔案、Vision 支援（拖放/貼上圖片）、Inline Edit（word-level diff 預覽）、MCP Server 連接外部工具。\n可選擇 Haiku、Sonnet、Opus 模型，並提供 Thinking Budget 控制。GitHub 4,600+ stars，持續活躍開發中。\n與 Obsidian 的本地 Markdown 優先理念高度契合——所有筆記保留為純文字檔案，Claude 作為智慧助手在其上操作。",
+  "pros": [
+    "Claude Code 完整能力嵌入 Obsidian",
+    "本地 Markdown 優先——資料完全自有",
+    "Inline Edit 帶 word-level diff 預覽",
+    "MCP 支援——串接外部工具和資料源",
+    "多模型選擇（Haiku/Sonnet/Opus）+ Thinking Budget 控制",
+    "Vision 支援——拖放圖片即可分析"
+  ],
+  "cons": [
+    "需要 Anthropic API key，推理費用另計",
+    "不支援訂閱計費（Max 方案），僅 API 按量付費",
+    "Agent 操作 Vault 有誤刪/誤改風險",
+    "Obsidian 本身不免費（商用授權 $50/年）",
+    "複雜操作的 token 消耗可能很高"
+  ],
+  "features": [
+    {"name": "側邊欄聊天", "desc": "Obsidian 側邊欄直接與 Claude 對話"},
+    {"name": "Vault 操作", "desc": "Claude 可讀寫編輯 Vault 中的檔案、搜尋、執行 Bash"},
+    {"name": "上下文感知", "desc": "自動附加聚焦筆記、@ 提及檔案、外部目錄存取"},
+    {"name": "Inline Edit", "desc": "Word-level diff 預覽的行內編輯"},
+    {"name": "MCP 支援", "desc": "透過 MCP 連接外部工具和資料源"},
+    {"name": "Vision", "desc": "拖放或貼上圖片讓 Claude 分析"}
+  ],
+  "history": [
+    {"date": "2025-06", "event": "Claudian 外掛首次在 GitHub 發布"},
+    {"date": "2025-12", "event": "新增 MCP 支援和 Inline Edit"},
+    {"date": "2026-01", "event": "4,600+ GitHub stars，升級至 Claude Agent SDK 整合"}
+  ],
+  "pricing": "Claudian 外掛免費開源。需自備 Anthropic API key（Opus $5/$25、Sonnet $3/$15、Haiku $1/$5 per M tokens）。Obsidian 個人免費 / 商用 $50/年。",
+  "competitors": ["Notion AI", "Copilot for Obsidian", "Smart Connections", "Agent Client"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/YishenTu/claudian"},
+    {"title": "Vibe Sparking AI 介紹", "url": "https://www.vibesparking.com/en/blog/ai/claude-code/2026-01-04-claudian-obsidian-plugin-embeds-claude-code-sidebar/"}
+  ]
+}

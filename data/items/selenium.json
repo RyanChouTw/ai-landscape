@@ -1,0 +1,45 @@
+{
+  "id": "selenium",
+  "name": "Selenium",
+  "company": "Selenium Project (Open Source)",
+  "category": "自動化工具",
+  "tags": ["automation", "browser", "open-source", "testing"],
+  "oneLiner": "最老牌的瀏覽器自動化框架，支援 Chrome/Firefox/Safari/Edge，多語言 API，AI Agent 瀏覽器操作的基礎工具之一。",
+  "overview": "Selenium 是最廣泛使用的開源瀏覽器自動化框架，由 Jason Huggins 於 2004 年在 ThoughtWorks 創建。支援 Chrome、Firefox、Safari、Edge 等主流瀏覽器，提供 Python、Java、C#、JavaScript、Ruby 等多語言 API。\n核心元件包括 WebDriver（瀏覽器控制）、Selenium Grid（分散式執行）和 Selenium IDE（錄製回放）。WebDriver 4 與 W3C WebDriver 標準完全對齊。\n在 AI Agent 時代，Selenium 仍是許多瀏覽器自動化 Agent 的底層選擇之一，但逐漸面臨 Playwright 和 CDP 直接操作的競爭。",
+  "pros": [
+    "業界最成熟的瀏覽器自動化框架（20 年歷史）",
+    "多瀏覽器支援（Chrome/Firefox/Safari/Edge）",
+    "多語言 API（Python/Java/C#/JS/Ruby）",
+    "龐大的社群、文件和 Stack Overflow 資源",
+    "Selenium Grid 分散式執行",
+    "W3C WebDriver 標準"
+  ],
+  "cons": [
+    "速度和穩定性不如 Playwright",
+    "不原生支援網路攔截和回放",
+    "設定和驅動管理較繁瑣",
+    "等待機制（implicit/explicit wait）較容易出錯",
+    "無內建截圖比對或視覺測試"
+  ],
+  "features": [
+    {"name": "WebDriver", "desc": "W3C 標準瀏覽器控制 API"},
+    {"name": "Selenium Grid", "desc": "分散式跨瀏覽器平行執行"},
+    {"name": "Selenium IDE", "desc": "Chrome/Firefox 擴充，錄製回放測試"},
+    {"name": "多瀏覽器", "desc": "Chrome、Firefox、Safari、Edge 全支援"},
+    {"name": "多語言", "desc": "Python、Java、C#、JavaScript、Ruby API"}
+  ],
+  "history": [
+    {"date": "2004-01", "event": "Jason Huggins 在 ThoughtWorks 創建 Selenium"},
+    {"date": "2011-07", "event": "Selenium 2.0 發布（整合 WebDriver）"},
+    {"date": "2018-10", "event": "W3C WebDriver 成為正式標準"},
+    {"date": "2021-10", "event": "Selenium 4.0 發布，完全對齊 W3C WebDriver"},
+    {"date": "2024-09", "event": "Selenium Manager 內建驅動管理"}
+  ],
+  "pricing": "完全免費開源（Apache 2.0）。",
+  "competitors": ["Playwright", "Cypress", "Puppeteer", "CDP"],
+  "links": [
+    {"title": "Selenium 官網", "url": "https://www.selenium.dev/"},
+    {"title": "Selenium 文件", "url": "https://www.selenium.dev/documentation/"},
+    {"title": "GitHub", "url": "https://github.com/SeleniumHQ/selenium"}
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "tencent-workbuddy",
+  "name": "Tencent WorkBuddy",
+  "company": "Tencent Cloud",
+  "category": "AI Agent",
+  "tags": ["agent", "free", "openclaw-compatible"],
+  "oneLiner": "騰訊推出的桌面 AI 工作代理，相容 OpenClaw Skill 與 MCP，支援 WeChat/WeCom 一分鐘整合，內建多模型切換。",
+  "overview": "Tencent WorkBuddy 是騰訊雲於 2026 年 3 月 9 日發布的桌面 AI Agent 工具，主打與 OpenClaw 生態完全相容。用戶無需雲端部署即可本地安裝使用，一分鐘內即可接入 WeChat / WeCom 企業微信。\n支援 20+ Skill 套件和 MCP 協議，可自動化資訊檢索、報告生成、內容撰寫等辦公任務。內建多模型切換——混元、DeepSeek、GLM、Kimi、MiniMax 均可選用。\n發布前已在騰訊內部 2,000+ 非技術員工完成測試。發布當天騰訊股價上漲 7.3%，為年內最大單日漲幅。",
+  "pros": [
+    "完全相容 OpenClaw Skill 生態系",
+    "一分鐘接入 WeChat / WeCom，無需技術背景",
+    "本地安裝、無需雲端部署",
+    "多模型切換（混元、DeepSeek、GLM、Kimi、MiniMax）",
+    "支援 20+ Skill 套件與 MCP 協議",
+    "騰訊內部 2,000+ 員工實測驗證"
+  ],
+  "cons": [
+    "深度綁定騰訊生態（WeChat/WeCom），海外用戶價值有限",
+    "中國市場定位為主，英文支援和國際文件較少",
+    "與 OpenClaw 原版的功能完整度可能有差距",
+    "多模型切換依賴各模型 API 配額"
+  ],
+  "features": [
+    {"name": "OpenClaw 相容", "desc": "直接使用 OpenClaw Skill 套件，無需修改"},
+    {"name": "WeChat/WeCom 整合", "desc": "一分鐘接入企業微信，直接在聊天中使用 Agent"},
+    {"name": "多模型切換", "desc": "支援混元、DeepSeek、GLM、Kimi、MiniMax 等模型"},
+    {"name": "MCP 支援", "desc": "透過 MCP 協議串接外部工具和資料源"},
+    {"name": "辦公自動化", "desc": "資訊檢索、報告生成、內容撰寫、會議紀錄等"},
+    {"name": "本地安裝", "desc": "桌面應用，無需伺服器或 Docker 設定"}
+  ],
+  "history": [
+    {"date": "2026-03-09", "event": "Tencent WorkBuddy 正式發布"},
+    {"date": "2026-03-10", "event": "騰訊股價因 WorkBuddy 發布上漲 7.3%，年內最大單日漲幅"}
+  ],
+  "pricing": "免費使用（模型 API 費用依選用模型而定）。",
+  "competitors": ["OpenClaw", "MaxClaw", "PicoClaw", "ZeroClaw"],
+  "links": [
+    {"title": "TechNode 報導", "url": "https://technode.com/2026/03/09/tencent-launches-openclaw-like-workplace-ai-agent-workbuddy/"},
+    {"title": "AICost Review", "url": "https://aicost.org/blog/tencent-workbuddy-review-2026-sandboxed-ai-agent"}
+  ]
+}

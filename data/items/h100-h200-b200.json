@@ -1,0 +1,55 @@
+{
+  "id": "nvidia-gpu",
+  "name": "NVIDIA GPUs",
+  "company": "NVIDIA",
+  "category": "硬體",
+  "tags": ["closed", "paid"],
+  "oneLiner": "NVIDIA AI GPU 全產品線——從消費級 RTX 5090（32GB）、桌面 AI 超級電腦 DGX Spark（128GB），到資料中心 H200/B200，以及下一代 Vera Rubin。",
+  "overview": "NVIDIA 是 AI 硬體的絕對領導者，其 GPU 產品線涵蓋從消費級到資料中心的完整光譜。\n\n**消費級：RTX 5090**（2025 年 1 月發布，$1,999）——Blackwell 架構，32GB GDDR7，21,760 CUDA cores，適合個人 AI 開發和推論。\n\n**桌面 AI 超級電腦：DGX Spark**（$4,699）——Grace Blackwell 超級晶片，128GB 統一記憶體，1 PFLOP AI 算力，20 核心 Arm CPU + Blackwell GPU 透過 NVLink-C2C（900 GB/s）連結。重量僅 1.2 kg，比 Mac Mini 還小。\n\n**資料中心：H200**——141GB HBM3e，~4.89 TB/s 頻寬，Llama 2 70B 推論 31,712 tokens/s（比 H100 快 42%）。\n\n**資料中心：B200**——192GB HBM3e，8 TB/s 頻寬，2nd-gen Transformer Engine + FP4，推論吞吐量比 H100 高 4-5 倍，優化 LLM 工作負載高 15 倍。\n\n**下一代：Vera Rubin**（2026 H2，TSMC 3nm）——HBM4，288GB/GPU，13 TB/s 頻寬，Rubin NVL144 機架 3.6 ExaFLOPS。\n\n2026 年 3 月 NVIDIA 以 $20B 授權+人才收購 Groq，GTC 2026 發布 Groq 3 LPU 作為 Vera Rubin 平台的推論協處理器。",
+  "pros": [
+    "AI GPU 市場絕對領導者——CUDA 生態系無可匹敵",
+    "完整產品線：消費級到資料中心全覆蓋",
+    "DGX Spark 將資料中心級算力帶到桌面（128GB、1 PFLOP、$4,699）",
+    "B200 推論吞吐量比 H100 高 4-15 倍",
+    "Groq 3 LPU 收購互補——35x tokens/watt 提升",
+    "NVLink-C2C 和 NVLink 互聯技術領先",
+    "Vera Rubin 下一代架構已在路線圖上"
+  ],
+  "cons": [
+    "GPU 長期缺貨，供應受限",
+    "價格極高——B200 單片數萬美元",
+    "功耗巨大——資料中心散熱挑戰",
+    "CUDA 鎖定——遷移到其他平台成本極高",
+    "DGX Spark 受限桌面散熱，非滿血效能",
+    "RTX 5090 消費級 VRAM（32GB）不夠跑大型模型",
+    "Groq 收購後的整合風險"
+  ],
+  "features": [
+    {"name": "RTX 5090", "desc": "消費級旗艦——Blackwell 架構、32GB GDDR7、21,760 CUDA cores、$1,999"},
+    {"name": "DGX Spark", "desc": "桌面 AI 超級電腦——Grace Blackwell、128GB 統一記憶體、1 PFLOP、$4,699"},
+    {"name": "H200", "desc": "資料中心 GPU——141GB HBM3e、4.89 TB/s、Llama 2 70B 31,712 tokens/s"},
+    {"name": "B200", "desc": "資料中心旗艦——192GB HBM3e、8 TB/s、FP4、推論比 H100 快 4-15x"},
+    {"name": "Vera Rubin", "desc": "下一代——HBM4、288GB、13 TB/s、3nm、2026 H2"},
+    {"name": "Groq 3 LPU", "desc": "推論協處理器——150 TB/s SRAM、1,500 tokens/s、35x tokens/watt"},
+    {"name": "CUDA 生態系", "desc": "最完整的 AI 軟體生態——PyTorch、TensorFlow、cuDNN 等"}
+  ],
+  "history": [
+    {"date": "2023-08", "event": "GH200 Grace Hopper 超級晶片發布"},
+    {"date": "2024-03", "event": "GTC 2024 發布 B200 和 GB200 Blackwell 架構"},
+    {"date": "2024-11", "event": "H200 開始量產出貨"},
+    {"date": "2025-01", "event": "RTX 5090 發布，$1,999，Blackwell 架構消費級"},
+    {"date": "2025-03", "event": "B200 和 GB200 NVL72 機架系統量產"},
+    {"date": "2025-05", "event": "DGX Spark 發布——桌面 AI 超級電腦 $4,699"},
+    {"date": "2025-12", "event": "NVIDIA 以 $20B 授權+人才收購 Groq"},
+    {"date": "2026-03", "event": "GTC 2026 發布 Groq 3 LPU，Vera Rubin 路線圖更新"},
+    {"date": "2026-H2", "event": "Vera Rubin 預計出貨，Groq 3 LPU Q3 量產"}
+  ],
+  "pricing": "RTX 5090 $1,999 / DGX Spark $4,699 / H200 約 $30,000-40,000 / B200 約 $30,000-50,000 / DGX B200 系統 $300,000+。雲端租用：H200 ~$2-4/hr、B200 ~$4-8/hr。",
+  "competitors": ["Google TPU", "AMD Instinct MI300X", "Intel Gaudi", "Groq LPU", "Apple M4/M5 Ultra"],
+  "links": [
+    {"title": "NVIDIA AI", "url": "https://www.nvidia.com/en-us/ai/"},
+    {"title": "DGX Spark", "url": "https://www.nvidia.com/en-us/products/workstations/dgx-spark/"},
+    {"title": "B200 規格", "url": "https://intuitionlabs.ai/articles/nvidia-data-center-gpu-specs"},
+    {"title": "Groq 3 LPU 公告", "url": "https://groq.com/newsroom/groq-and-nvidia-enter-non-exclusive-inference-technology-licensing-agreement-to-accelerate-ai-inference-at-global-scale"}
+  ]
+}

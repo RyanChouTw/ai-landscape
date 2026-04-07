@@ -1,0 +1,43 @@
+{
+  "id": "wispr-flow",
+  "name": "Wispr Flow",
+  "company": "Wispr AI",
+  "category": "語音輸入",
+  "tags": ["voice", "dictation", "paid"],
+  "oneLiner": "跨平台 AI 語音口述工具，多層 AI 即時修正（去除口頭禪、自動標點、風格適配），速度達打字 4 倍，支援 100+ 語言。",
+  "overview": "Wispr Flow 是唯一同時支援 Mac、Windows、iOS、Android 四大平台的 AI 語音口述工具。語音經過多層 AI 同步處理：第一層處理轉錄，後續層移除口頭禪（「嗯」「那個」「就是」）、加入智慧標點、修正回溯，並根據使用中的應用程式調整寫作風格。\n支援 100+ 語言，個人字典、風格和設定跨裝置同步。安靜環境準確率達 96-97%，內建麥克風約 93-95%。\n公司已融資超過 $80M，包含 2025 年中 Menlo Ventures 領投的 $30M Series A。",
+  "pros": [
+    "跨全平台——Mac/Windows/iOS/Android 唯一全覆蓋",
+    "多層 AI 修正——去口頭禪、自動標點、風格適配",
+    "速度達打字 4 倍",
+    "100+ 語言支援",
+    "個人字典和風格跨裝置同步",
+    "在任何應用程式中都能使用"
+  ],
+  "cons": [
+    "僅限雲端（無離線模式）",
+    "Windows 版本穩定性較差",
+    "隱私爭議——語音需上傳雲端處理",
+    "嘈雜環境準確率降至約 88%",
+    "Pro 方案 $12/月，非免費午餐"
+  ],
+  "features": [
+    {"name": "AI 語音口述", "desc": "即時語音轉文字，多層 AI 修正"},
+    {"name": "口頭禪移除", "desc": "自動移除「嗯」「那個」等填充詞"},
+    {"name": "風格適配", "desc": "根據目前使用的應用程式自動調整寫作風格"},
+    {"name": "跨平台同步", "desc": "個人字典、風格、設定跨 Mac/Windows/iOS/Android 同步"},
+    {"name": "100+ 語言", "desc": "支援超過 100 種語言的語音辨識與轉錄"}
+  ],
+  "history": [
+    {"date": "2024-03", "event": "Wispr Flow 首次發布（Mac 版）"},
+    {"date": "2025-06", "event": "Series A $30M 融資（Menlo Ventures 領投）"},
+    {"date": "2025-09", "event": "Windows 和 iOS 版本發布"},
+    {"date": "2026-01", "event": "Android 版本發布，達成四平台全覆蓋"}
+  ],
+  "pricing": "Free（基礎功能）/ Pro $12/月 / Enterprise $24/用戶/月。",
+  "competitors": ["macOS Dictation", "Windows Voice Typing", "Otter.ai", "Superwhisper"],
+  "links": [
+    {"title": "Wispr Flow 官網", "url": "https://wisprflow.ai/"},
+    {"title": "App Store", "url": "https://apps.apple.com/us/app/wispr-flow-ai-voice-keyboard/id6497229487"}
+  ]
+}

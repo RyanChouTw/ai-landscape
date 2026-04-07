@@ -1,0 +1,45 @@
+{
+  "id": "tensorrt-llm",
+  "name": "TensorRT-LLM",
+  "company": "NVIDIA",
+  "category": "推理引擎",
+  "tags": ["inference", "gpu", "open-source"],
+  "oneLiner": "NVIDIA 的 GPU 最佳化 LLM 推理引擎，提供自訂核心、FP8/FP4 量化、In-Flight Batching、Speculative Decoding 等前沿最佳化。",
+  "overview": "TensorRT-LLM 是 NVIDIA 推出的大型語言模型推理最佳化引擎，提供 Python API 定義 LLM 並在 NVIDIA GPU 上高效執行推理。核心最佳化包括自訂 Attention 核心、In-Flight Batching、Paged KV Cache、量化（FP8、FP4、INT4 AWQ、INT8 SmoothQuant）和 Speculative Decoding。\n2026 年推出 AutoDeploy（Beta）——可直接將 PyTorch 模型編譯為最佳化推理圖，無需手動整合最佳化，大幅縮短部署時間。支援 Overlap Scheduler、Chunked Prefill、Speculative Decoding 和 Cache 管理。\n新增 B200 GPU 和 NVFP4 Gemm 支援（Llama/Mixtral），以及 VisualGen API 支援 Diffusion 模型的圖片和影片生成。",
+  "pros": [
+    "NVIDIA GPU 上最高效的 LLM 推理引擎",
+    "FP8/FP4/INT4/INT8 多種量化策略",
+    "In-Flight Batching 最大化 GPU 利用率",
+    "AutoDeploy 自動化最佳化流程",
+    "Speculative Decoding 加速生成",
+    "支援最新 B200 GPU"
+  ],
+  "cons": [
+    "僅支援 NVIDIA GPU，無法在 AMD/Intel 上使用",
+    "設定和除錯門檻較高",
+    "模型轉換流程可能繁瑣（AutoDeploy 仍為 Beta）",
+    "文件和錯誤訊息品質有待改善",
+    "社群支援主要限於 NVIDIA 論壇"
+  ],
+  "features": [
+    {"name": "AutoDeploy", "desc": "自動將 PyTorch 模型編譯為最佳化推理圖（Beta）"},
+    {"name": "量化推理", "desc": "FP8、FP4、INT4 AWQ、INT8 SmoothQuant"},
+    {"name": "In-Flight Batching", "desc": "動態批次處理，最大化 GPU 吞吐量"},
+    {"name": "Paged KV Cache", "desc": "分頁式 Key-Value 快取，降低記憶體使用"},
+    {"name": "Speculative Decoding", "desc": "使用小模型預測加速大模型生成"},
+    {"name": "VisualGen API", "desc": "Diffusion 模型的圖片和影片生成推理"}
+  ],
+  "history": [
+    {"date": "2023-09", "event": "TensorRT-LLM 首次發布"},
+    {"date": "2024-06", "event": "支援 FP8 量化和 In-Flight Batching"},
+    {"date": "2025-03", "event": "支援 Speculative Decoding 和 Paged KV Cache"},
+    {"date": "2026-01", "event": "AutoDeploy Beta 發布、B200 GPU 支援、VisualGen API"}
+  ],
+  "pricing": "免費開源。需 NVIDIA GPU 硬體。",
+  "competitors": ["vLLM", "SGLang", "llama.cpp", "ONNX Runtime"],
+  "links": [
+    {"title": "GitHub", "url": "https://github.com/NVIDIA/TensorRT-LLM"},
+    {"title": "文件", "url": "https://nvidia.github.io/TensorRT-LLM/"},
+    {"title": "NVIDIA 開發者", "url": "https://developer.nvidia.com/tensorrt-llm"}
+  ]
+}

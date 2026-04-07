@@ -1,0 +1,39 @@
+{
+  "id": "breezyvoice-tts",
+  "name": "BreezyVoice TTS",
+  "company": "MediaTek Research",
+  "category": "語音合成",
+  "tags": ["tts", "open-source", "taiwanese-mandarin"],
+  "oneLiner": "聯發科技研究院開源的台灣華語語音合成系統，支援注音輸入控制發音、語音複製，自然度超越商業服務。",
+  "overview": "BreezyVoice 是聯發科技研究院開源的語音複製（voice-cloning）文字轉語音系統，專為台灣華語（Taiwanese Mandarin）設計。部分衍生自 CosyVoice 架構，在自然度方面超越競爭的商業服務。\n核心差異化是注音（Bopomofo）輸入控制——支援自動注音標注以及手動注音修正，精確控制多音字和特殊發音。架構包含 S3 tokenizer、LLM、Optimal-Transport Conditional Flow Matching（OT-CFM）模型和 Grapheme-to-Phoneme 預測模型。\n在一般語境和中英混用（code-switching）情境下均展現優異表現。",
+  "pros": [
+    "台灣華語自然度超越商業 TTS 服務",
+    "注音輸入控制——精確處理多音字和特殊發音",
+    "語音複製功能——少量音訊即可複製說話者聲音",
+    "中英混用語音合成表現優異",
+    "開源免費（Hugging Face + GitHub）"
+  ],
+  "cons": [
+    "僅針對台灣華語最佳化，其他語言支援有限",
+    "模型較大，需要 GPU 才能流暢推理",
+    "研究導向專案，生產環境部署需自行整合",
+    "社群規模較小"
+  ],
+  "features": [
+    {"name": "台灣華語 TTS", "desc": "專為台灣口音和用語最佳化的語音合成"},
+    {"name": "注音控制", "desc": "支援自動注音標注與手動注音修正，精確控制發音"},
+    {"name": "語音複製", "desc": "少量音訊即可複製說話者的音色和語調"},
+    {"name": "中英混用", "desc": "準確合成中英混用語句"},
+    {"name": "OT-CFM 架構", "desc": "S3 tokenizer + LLM + OT-CFM 高品質語音合成"}
+  ],
+  "history": [
+    {"date": "2025-09", "event": "BreezyVoice 首次在 Hugging Face 和 GitHub 發布"},
+    {"date": "2026-03", "event": "作為 MediaTek Research 繁中 AI 工具套件一部分持續更新"}
+  ],
+  "pricing": "完全免費開源。",
+  "competitors": ["Voxtral TTS", "ElevenLabs", "CosyVoice", "OpenAI TTS"],
+  "links": [
+    {"title": "Hugging Face 模型", "url": "https://huggingface.co/MediaTek-Research/BreezyVoice"},
+    {"title": "GitHub", "url": "https://github.com/mtkresearch/BreezyVoice"}
+  ]
+}
